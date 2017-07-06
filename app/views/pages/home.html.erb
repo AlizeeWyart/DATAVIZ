@@ -1,2 +1,68 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= @first_question %>
+<% if @is_first_question %>
+  <%= link_to root_path(question_id: 1) do %>
+    X
+  <% end %>
+<% end %>
+
+<% if @is_first_question %>
+  <% @first_children.each do |child| %>
+    <%= link_to root_path(question_id: child["question_id"]) do %>
+      <br>--> <%= child["label"] %>
+    <% end %>
+  <% end %>
+<% end %>
+<br>
+
+<% if @is_second_question %>
+  <%= @second_question %>
+  <%= link_to root_path(question_id: 1, graph: false) do %>
+    X
+  <% end %>
+  <br>
+  <% if !@is_third_question %>
+    <% @second_children.each do |child| %>
+      <%= link_to root_path(question_id: child["question_id"]) do %>
+        <br>--> <%= child["label"] %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @is_third_question %>
+  <%= @second_question %>
+  <%= link_to root_path(question_id: 1) do %>
+    X
+  <% end %>
+  <br>
+  <%= @third_question %>
+
+  <%= link_to root_path(question_id: @question_id.to_s[0..-2].to_i, graph: false) do %>
+    X
+  <% end %>
+  <br>
+  <% @third_children.each do |child| %>
+      <%= link_to root_path(question_id: child["question_id"], graph: child["graph"]) do %>
+        <br>--> <%= child["label"] %>
+      <% end %>
+    <% end %>
+<% end %>
+
+<% if @is_fourth_question %>
+  <%= @second_question %>
+  <br>  <%= @third_question %>
+  <br><%= @fourth_question %>
+  <%= link_to root_path(question_id: @question_id.to_s[0..-2].to_i) do %>
+    X
+  <% end %>
+  <% if @is_graph %>
+    <br> ==> <%= @graph_selected["label"] %>
+  <% else %>
+    <% @fourth_children.each do |child| %>
+        <%= link_to root_path(question_id: child["question_id"], graph: child["graph"]) do %>
+          <br>--> <%= child["label"] %>
+        <% end %>
+      <% end %>
+  <% end %>
+<% end %>
+
