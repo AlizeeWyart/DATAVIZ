@@ -1,6 +1,6 @@
 {
  "label": null,
- "question": "What product category?",
+ "question": "Show how my data is distributed over a geographical area",
  "rang": 1,
  "question_id": 1,
  "graph": false,
