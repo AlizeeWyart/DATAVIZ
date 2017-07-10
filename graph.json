@@ -1,0 +1,23 @@
+{
+  "G5" : {
+    "name": "adjacency matrix",
+    "level": "advanced",
+    "dashboard": true,
+    "reading_principle": {
+      "1": "...",
+      "2": "..."
+    },
+    "advantages": {
+      "1": "...",
+      "2": "..."
+    },
+    "disavantages":{
+      "1": "...",
+      "2": "..."
+    },
+    "how_to_do": "..."
+  },
+  "G1": {
+  
+  },
+}
