@@ -1,26 +1,68 @@
 {
-  "G5" : {
-    "name": "adjacency matrix",
-    "level": "advanced",
+  "G10" : {
+    "name": "Alluvial graph",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "Each of the two parallel axis represents a set of data.",
+      "2": "A line that represent interactions links elements from one category with elements from the other category."
+    },
+    "advantages": "Show clearly a the evolution between a beginning and an ending situation.",
+    "disadvantages": "Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled.",
+    "how_to_do": "EXCEL"
+  },
+  
+  "G20": {
+    "name": "Bar graph",
+    "level": "beginner",
     "dashboard": true,
     "reading_principle": {
-      "1": "...",
-      "2": "..."
+      "1": "The length of each bar is proportionnal to the size of the category it represents." 
+      "2": "Bars can be horizontal or vertical. Horizontal bars, for instance, are much more telling when a length is measured (life expectancy, distance, …)."
+    }
+    "advantages": "Quantify and compare different categories."
+    "disadvantages": "Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."
+    "how_to_do": "EXCEL"
+  },  
+  
+  "G45": {
+    "name": "Cartogram map",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "A geographical area is distorted and each sub-area (state, region, administrative division, …) is proportional to the corresponding quantity.",
+      "2": "The sub-areas can be replaced by simple shapes such as circles, but their relative places should remain the same."
     },
     "advantages": {
-      "1": "...",
-      "2": "..."
+      "1": "Display a geographical distribution and quantify elements on each area.",
+      "2": "Two parameters can be displayed at once if necessary, depending on the size of the symbol and its colour."
     },
-    "disavantages":{
-      "1": "...",
-      "2": "..."
+    "disadvantages":{
+      "1": "Can become overcharged there is a big amount of data",
+      "2": "Can become misleading when the disposition of the shapes is too different from geographical reality."
     },
-    "how_to_do": "..."
+    "how_to_do": "EXCEL"
   },
-  
-  "G1": {
-  
-    
-    
+
+
+"G1": {
+    "name": "",
+    "level": "",
+    "dashboard": ,
+    "reading_principle": {
+      "1": "",
+      "2": ""
+    },
+    "advantages": {
+      "1": "",
+      "2": ""
+    },
+    "disadvantages":{
+      "1": "",
+      "2": ""
+    },
+    "how_to_do": "EXCEL"
   },
+
+
 }
