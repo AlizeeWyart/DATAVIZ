@@ -44,6 +44,25 @@
     "how_to_do": "EXCEL"
   },
 
+"G50": {
+    "name": "Chloropleth map",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": "The importance of a phenomenon is colour-coded within geographical areas (states, regions, administrative divisions, …).",
+    "advantages": "Compare distributions in different geographical areas.",
+    "disadvantages":"Can become hard to read if there is a lot of data.",
+    "how_to_do": "EXCEL"
+  },
+
+"G1": {
+    "name": "Circo",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": "Interactions  are represented by arcs that linking elements disposed on the periphery of a circle.",
+    "advantages": "Interactions are emphasized and relative importances can be easily compared.",
+    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !",
+    "how_to_do": "EXCEL"
+  },
 
 "G1": {
     "name": "",
@@ -57,12 +76,11 @@
       "1": "",
       "2": ""
     },
-    "disadvantages":{
+    "disadvantages": {
       "1": "",
       "2": ""
     },
     "how_to_do": "EXCEL"
   },
-
 
 }
