@@ -1,68 +1,108 @@
-<%= @first_question %>
-<% if @is_first_question %>
-  <%= link_to root_path(question_id: 1) do %>
+<h1>Data Visualisation</h1>
+1. <%= @main_question %>
+<%= link_to root_path(question_id: 0) do %>
     X
   <% end %>
-<% end %>
+
 
 <% if @is_first_question %>
   <% @first_children.each do |child| %>
     <%= link_to root_path(question_id: child["question_id"]) do %>
-      <br>--> <%= child["label"] %>
+      <br>--> <%= child["question"] %>
     <% end %>
   <% end %>
 <% end %>
 <br>
 
+
 <% if @is_second_question %>
-  <%= @second_question %>
-  <%= link_to root_path(question_id: 1, graph: false) do %>
+  <br> <%= @second_question %>
+  <%= link_to root_path(question_id: 0) do %>
     X
   <% end %>
-  <br>
-  <% if !@is_third_question %>
-    <% @second_children.each do |child| %>
-      <%= link_to root_path(question_id: child["question_id"]) do %>
-        <br>--> <%= child["label"] %>
-      <% end %>
+  <br><br>
+  <% @second_children.each do |child| %>
+    <%= link_to root_path(question_id: child["question_id"]) do %>
+      <br>--> <%= child["question"] %>
     <% end %>
   <% end %>
 <% end %>
 
-<% if @is_third_question %>
-  <%= @second_question %>
-  <%= link_to root_path(question_id: 1) do %>
-    X
-  <% end %>
-  <br>
-  <%= @third_question %>
 
-  <%= link_to root_path(question_id: @question_id.to_s[0..-2].to_i, graph: false) do %>
+<% if @is_third_question %>
+  <br> <%= @first_question %>
+  <%= link_to root_path(question_id: 0) do %>
     X
   <% end %>
-  <br>
-  <% @third_children.each do |child| %>
-      <%= link_to root_path(question_id: child["question_id"], graph: child["graph"]) do %>
-        <br>--> <%= child["label"] %>
-      <% end %>
+  <br> <%= @second_question %>
+  <%= link_to root_path(question_id: @number_first_question) do %>
+    X
+  <% end %>
+  <br><br>
+  <% @second_children.each do |child| %>
+    <%= link_to root_path(question_id: child["question_id"]) do %>
+      <br>--> <%= child["question"] %>
     <% end %>
+  <% end %>
 <% end %>
 
 <% if @is_fourth_question %>
-  <%= @second_question %>
-  <br>  <%= @third_question %>
-  <br><%= @fourth_question %>
-  <%= link_to root_path(question_id: @question_id.to_s[0..-2].to_i) do %>
+  <br> <%= @first_question %>
+  <%= link_to root_path(question_id: 0) do %>
     X
   <% end %>
-  <% if @is_graph %>
-    <br> ==> <%= @graph_selected["label"] %>
-  <% else %>
+  <br> <%= @second_question %>
+  <%= link_to root_path(question_id: @number_first_question, graph:false) do %>
+    X
+  <% end %>
+  <br> <%= @third_question %>
+  <%= link_to root_path(question_id: @number_second_question, graph: false) do %>
+    X
+  <% end %>
+  <br><br>
+  <% @third_children.each do |child| %>
+    <% if child["graph"] == true %>
+      <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
+        <br>--> <%= child["label"] %>
+      <% end %>
+    <% else %>
+      <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
+        <br>--> <%= child["question"] %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @is_five_question %>
+  <br> <%= @first_question %>
+  <%= link_to root_path(question_id: 0) do %>
+    X
+  <% end %>
+  <br> <%= @second_question %>
+  <%= link_to root_path(question_id: @number_first_question, graph:false) do %>
+    X
+  <% end %>
+  <br> <%= @third_question %>
+  <%= link_to root_path(question_id: @number_second_question, graph: false) do %>
+    X
+  <% end %>
+  <br> <%= @fourth_question %>
+  <%= link_to root_path(question_id: @number_third_question, graph: false) do %>
+    X
+  <% end %>
+  <br><br>
+  <% if params[:graph] == false %>
     <% @fourth_children.each do |child| %>
-        <%= link_to root_path(question_id: child["question_id"], graph: child["graph"]) do %>
+      <% if child["graph"] == true %>
+        <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
           <br>--> <%= child["label"] %>
         <% end %>
+      <% else %>
+        <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
+          <br>--> <%= child["question"] %>
+        <% end %>
       <% end %>
+    <% end %>
   <% end %>
 <% end %>
 

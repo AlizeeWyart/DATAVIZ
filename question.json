@@ -1,8 +1,328 @@
-{
+[{
  "label": null,
- "question": "What product category?",
+ "question": "Show how my data is distributed over a geographical area",
  "rang": 1,
  "question_id": 1,
+ "graph": false,
+ "children": [
+  {
+   "label": null,
+   "question": "Show evolution of an attribute over different areas",
+   "rang": 2,
+   "question_id": 11,
+   "graph": false,
+   "children": [
+    {
+     "label": null,
+     "question": "Point out outliers or highlight some areas",
+     "question_id": 111,
+     "graph": false,
+     "children": [
+      {
+       "label": "isarithmic map",
+       "question": null,
+       "question_id": 1111,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "dot-density map",
+       "question": null,
+       "question_id": 1112,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "elevation map",
+       "question": null,
+       "question_id": 1113,
+       "graph": true,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": null,
+     "question": "Keep a general overview of variations over a geographical area",
+     "question_id": 112,
+     "children": [
+      {
+       "label": "T-Shirt",
+       "question": "Color of T-shirt?",
+       "children": [
+        {
+         "label": "Red",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Green",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Black",
+         "question": "Logo?",
+         "children": [
+          {
+           "label": "Rock band",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "TV show",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "No logo",
+           "question": null,
+           "children": null
+          }
+         ]
+        },
+        {
+         "label": "Orange",
+         "question": null,
+         "children": null
+        }
+       ]
+      },
+      {
+       "label": "Hoodie",
+       "question": "Color of hoodie?",
+       "children": [
+        {
+         "label": "Gray",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Blue",
+         "question": null,
+         "children": [
+          {
+           "label": "TV show",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "No logo",
+           "question": null,
+           "children": null
+          }
+         ]
+        },
+        {
+         "label": "Green",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Pink",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Brown",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Black",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Red",
+         "question": null,
+         "children": null
+        }
+       ]
+      },
+      {
+       "label": "White",
+       "question": null,
+       "children": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": null,
+   "question": "Represent a path, a route or a network",
+   "question_id": 12,
+   "graph": false,
+   "children": [
+    {
+     "label": "Ramen noodles",
+     "question": null,
+     "children": null
+    },
+    {
+     "label": "Soda pop",
+     "question": null,
+     "question_id": 121,
+     "graph": false,
+     "children": [
+      {
+       "label": "Cola",
+       "question": null,
+       "question_id": 1211,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Lemon",
+       "question": null,
+       "question_id": 1212,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Orange",
+       "question": null,
+       "question_id": 1213,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Apple",
+       "question": null,
+       "graph": true,
+       "question_id": 1213,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Bananas",
+     "question": null,
+     "question_id": 122,
+     "graph": true,
+     "children": null
+    }
+   ]
+  },
+  {
+   "label": null,
+   "question": "Represent fluxes between different areas",
+   "question_id": 13,
+   "graph": false,
+   "children": [
+    {
+     "label": "Ramen noodles",
+     "question": null,
+     "children": null
+    },
+    {
+     "label": "Soda pop",
+     "question": null,
+     "question_id": 121,
+     "graph": false,
+     "children": [
+      {
+       "label": "Cola",
+       "question": null,
+       "question_id": 1211,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Lemon",
+       "question": null,
+       "question_id": 1212,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Orange",
+       "question": null,
+       "question_id": 1213,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Apple",
+       "question": null,
+       "graph": true,
+       "question_id": 1213,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Bananas",
+     "question": null,
+     "question_id": 122,
+     "graph": true,
+     "children": null
+    }
+   ]
+  },
+  {
+   "label": null,
+   "question": "Represent a relationship between geography and time",
+   "question_id": 14,
+   "graph": false,
+   "children": [
+    {
+     "label": "Ramen noodles",
+     "question": null,
+     "children": null
+    },
+    {
+     "label": "Soda pop",
+     "question": null,
+     "question_id": 121,
+     "graph": false,
+     "children": [
+      {
+       "label": "Cola",
+       "question": null,
+       "question_id": 1211,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Lemon",
+       "question": null,
+       "question_id": 1212,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Orange",
+       "question": null,
+       "question_id": 1213,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Apple",
+       "question": null,
+       "graph": true,
+       "question_id": 1213,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Bananas",
+     "question": null,
+     "question_id": 122,
+     "graph": true,
+     "children": null
+    }
+   ]
+  }
+ ]},
+{
+ "label": null,
+ "question": "Show how my data evolves over time",
+ "rang": 1,
+ "question_id": 2,
  "graph": false,
  "children": [
   {
@@ -225,5 +545,461 @@
     }
    ]
   }
- ]
-}
+ ]},
+ {
+ "label": null,
+ "question": "Show what is the nature and organisation of elements composing my data",
+ "rang": 1,
+ "question_id": 3,
+ "graph": false,
+ "children": [
+  {
+   "label": "Clothes",
+   "question": "What type of clothing?",
+   "rang": 2,
+   "question_id": 11,
+   "graph": false,
+   "children": [
+    {
+     "label": "Jeans",
+     "question": "Color of jeans?",
+     "question_id": 111,
+     "graph": false,
+     "children": [
+      {
+       "label": "Blue",
+       "question": null,
+       "question_id": 1111,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Black",
+       "question": null,
+       "question_id": 1112,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "White",
+       "question": null,
+       "question_id": 1113,
+       "graph": true,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Shirt",
+     "question": "Type of shirt?",
+     "question_id": 112,
+     "children": [
+      {
+       "label": "T-Shirt",
+       "question": "Color of T-shirt?",
+       "children": [
+        {
+         "label": "Red",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Green",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Black",
+         "question": "Logo?",
+         "children": [
+          {
+           "label": "Rock band",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "TV show",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "No logo",
+           "question": null,
+           "children": null
+          }
+         ]
+        },
+        {
+         "label": "Orange",
+         "question": null,
+         "children": null
+        }
+       ]
+      },
+      {
+       "label": "Hoodie",
+       "question": "Color of hoodie?",
+       "children": [
+        {
+         "label": "Gray",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Blue",
+         "question": null,
+         "children": [
+          {
+           "label": "TV show",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "No logo",
+           "question": null,
+           "children": null
+          }
+         ]
+        },
+        {
+         "label": "Green",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Pink",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Brown",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Black",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Red",
+         "question": null,
+         "children": null
+        }
+       ]
+      },
+      {
+       "label": "White",
+       "question": null,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Hat",
+     "question": "Type of hat?",
+     "question_id": 113,
+     "graph": false,
+     "children": [
+      {
+       "label": "Stetson",
+       "question": null,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Sombrero",
+       "question": null,
+       "graph": true,
+       "children": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Food",
+   "question": "Type of food?",
+   "question_id": 12,
+   "graph": false,
+   "children": [
+    {
+     "label": "Ramen noodles",
+     "question": null,
+     "children": null
+    },
+    {
+     "label": "Soda pop",
+     "question": null,
+     "question_id": 121,
+     "graph": false,
+     "children": [
+      {
+       "label": "Cola",
+       "question": null,
+       "question_id": 1211,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Lemon",
+       "question": null,
+       "question_id": 1212,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Orange",
+       "question": null,
+       "question_id": 1213,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Apple",
+       "question": null,
+       "graph": true,
+       "question_id": 1213,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Bananas",
+     "question": null,
+     "question_id": 122,
+     "graph": true,
+     "children": null
+    }
+   ]
+  }
+ ]},
+{
+ "label": null,
+ "question": "Show quantities and proportions within my data",
+ "rang": 1,
+ "question_id": 4,
+ "graph": false,
+ "children": [
+  {
+   "label": "Clothes",
+   "question": "What type of clothing?",
+   "rang": 2,
+   "question_id": 11,
+   "graph": false,
+   "children": [
+    {
+     "label": "Jeans",
+     "question": "Color of jeans?",
+     "question_id": 111,
+     "graph": false,
+     "children": [
+      {
+       "label": "Blue",
+       "question": null,
+       "question_id": 1111,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Black",
+       "question": null,
+       "question_id": 1112,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "White",
+       "question": null,
+       "question_id": 1113,
+       "graph": true,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Shirt",
+     "question": "Type of shirt?",
+     "question_id": 112,
+     "children": [
+      {
+       "label": "T-Shirt",
+       "question": "Color of T-shirt?",
+       "children": [
+        {
+         "label": "Red",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Green",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Black",
+         "question": "Logo?",
+         "children": [
+          {
+           "label": "Rock band",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "TV show",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "No logo",
+           "question": null,
+           "children": null
+          }
+         ]
+        },
+        {
+         "label": "Orange",
+         "question": null,
+         "children": null
+        }
+       ]
+      },
+      {
+       "label": "Hoodie",
+       "question": "Color of hoodie?",
+       "children": [
+        {
+         "label": "Gray",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Blue",
+         "question": null,
+         "children": [
+          {
+           "label": "TV show",
+           "question": null,
+           "children": null
+          },
+          {
+           "label": "No logo",
+           "question": null,
+           "children": null
+          }
+         ]
+        },
+        {
+         "label": "Green",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Pink",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Brown",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Black",
+         "question": null,
+         "children": null
+        },
+        {
+         "label": "Red",
+         "question": null,
+         "children": null
+        }
+       ]
+      },
+      {
+       "label": "White",
+       "question": null,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Hat",
+     "question": "Type of hat?",
+     "question_id": 113,
+     "graph": false,
+     "children": [
+      {
+       "label": "Stetson",
+       "question": null,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Sombrero",
+       "question": null,
+       "graph": true,
+       "children": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Food",
+   "question": "Type of food?",
+   "question_id": 12,
+   "graph": false,
+   "children": [
+    {
+     "label": "Ramen noodles",
+     "question": null,
+     "children": null
+    },
+    {
+     "label": "Soda pop",
+     "question": null,
+     "question_id": 121,
+     "graph": false,
+     "children": [
+      {
+       "label": "Cola",
+       "question": null,
+       "question_id": 1211,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Lemon",
+       "question": null,
+       "question_id": 1212,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Orange",
+       "question": null,
+       "question_id": 1213,
+       "graph": true,
+       "children": null
+      },
+      {
+       "label": "Apple",
+       "question": null,
+       "graph": true,
+       "question_id": 1213,
+       "children": null
+      }
+     ]
+    },
+    {
+     "label": "Bananas",
+     "question": null,
+     "question_id": 122,
+     "graph": true,
+     "children": null
+    }
+   ]
+  }
+ ]}
+]
