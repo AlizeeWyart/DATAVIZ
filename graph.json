@@ -19,7 +19,7 @@
     "reading_principle": {
       "1": "The length of each bar is proportionnal to the size of the category it represents.", 
       "2": "Bars can be horizontal or vertical. Horizontal bars, for instance, are much more telling when a length is measured (life expectancy, distance, …)."
-    }
+    },
     "advantages": "Quantify and compare different categories.",
     "disadvantages": "Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped.",
     "how_to_do": "EXCEL"
