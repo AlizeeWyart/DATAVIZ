@@ -54,7 +54,7 @@
     "how_to_do": "EXCEL"
   },
 
-"G1": {
+"G55": {
     "name": "Circo",
     "level": "advanced",
     "dashboard": false,
@@ -63,6 +63,79 @@
     "disadvantages": "Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !",
     "how_to_do": "EXCEL"
   },
+
+"G75": {
+    "name": "Dasymetric map",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": "A phenomenon is quantified on a map with a colour coded scale. Geographical borders (for states, regions, administrative divisions,…) are drawn over the larger area.",
+    "advantages": "Show a distribution on a larger scale but keep geographical areas in mind as well.",
+    "disadvantages": "Finding an adequate colour scale to quantify all variations can be difficult.",
+    "how_to_do": "EXCEL"
+ },
+
+"G90": {
+    "name": "Dot-density map",
+    "level": "intermediate",
+    "dashboard": false ,
+    "reading_principle": "Each dot represents an occurrence of a phenomenon or defines a fixed quantity on a certain spot."
+    "advantages": "Link a precise quantity to an area and show it on a map."
+    "disadvantages": "Becomes unadapted when there are too many occurrences in a very small range.",
+    "how_to_do": "EXCEL"
+ },
+
+"G95": {
+    "name": "Double-sided bar graph",
+    "level": "",
+    "dashboard": yes,
+    "reading_principle": {
+      "1": "The length of each bar is proportionnal to the size of the category it represents. ",
+      "2": "Data can either be broken down into time intervalls (like histograms) or into different categories (like bar charts)."
+    },
+    "advantages": "Compare data to a quantified objective."
+    "disadvantages": "Does not detail data repartition within the chosen time intervals.",
+    "how_to_do": "EXCEL"
+ },
+
+"G100": {
+    "name": "Elevation map",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": "Data is representend on a geographical area in a continuous way : it is quantified by its altitude on a map."
+    "advantages": "Compare distributions in different geographical areas."
+    "disadvantages": "Unadapted for a situation where there are few variations within the data : the differences are hardly percievable.",
+    "how_to_do": "EXCEL"
+ },
+
+  "G115": {
+    "name": "Flow map",
+    "level": "beginner",
+    "dashboard": false,
+    "reading_principle": "Flows are superposed on a geographically accurate map.",
+    "advantages": "Show accurately movements or fluxes between geographical areas.",
+    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
+    "how_to_do": "EXCEL"
+  },
+
+  "G1": {
+    "name": "",
+    "level": "",
+    "dashboard": ,
+    "reading_principle": {
+      "1": "",
+      "2": ""
+    },
+    "advantages": {
+      "1": "",
+      "2": ""
+    },
+    "disadvantages": {
+      "1": "",
+      "2": ""
+    },
+    "how_to_do": "EXCEL"
+  },
+
 
 "G1": {
     "name": "",
