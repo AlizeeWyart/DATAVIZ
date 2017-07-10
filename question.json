@@ -4,6 +4,7 @@
  "rang": 1,
  "question_id": 1,
  "graph": false,
+ "next_graph": false,
  "children": [
   {
    "label": null,
@@ -11,18 +12,26 @@
    "rang": 2,
    "question_id": 11,
    "graph": false,
+   "next_graph": false,
    "children": [
     {
      "label": null,
      "question": "Point out outliers or highlight some areas",
      "question_id": 111,
      "graph": false,
+     "next_graph": true,
      "children": [
       {
        "label": "isarithmic map",
        "question": null,
        "question_id": 1111,
        "graph": true,
+       "next_graph": false,
+       "graph_number": "G140",
+       "comparison": [{
+         "1":"better than elevation maps to emphasize variations and quantify them on a scale",
+         "2":"better than dot-density maps to show variations on a continuous area"
+       }],
        "children": null
       },
       {
@@ -30,6 +39,12 @@
        "question": null,
        "question_id": 1112,
        "graph": true,
+       "next_graph": false,
+       "graph_number": "G90",
+       "comparison": [{
+        "1":"better than isartyhmic maps and elevation maps to show precise occurrences",
+        "2":"better than  elevation maps to quantify data"
+       }],
        "children": null
       },
       {
@@ -37,6 +52,11 @@
        "question": null,
        "question_id": 1113,
        "graph": true,
+       "comparison": [{
+        "1": "Better than isarythmic maps and elevation maps to highlight important differences between the highest and lowest values."
+       }],
+       "next_graph": false,
+       "graph_number": "G100",
        "children": null
       }
      ]

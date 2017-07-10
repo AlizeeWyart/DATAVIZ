@@ -6,6 +6,11 @@ class PagesController < ApplicationController
     filepath = 'question.json'
     serialized_questions = File.read(filepath)
     json_questions = JSON.parse(serialized_questions)
+
+    second_filepath = 'graph.json'
+    serialized_graphs = File.read(second_filepath)
+    json_graphs = JSON.parse(serialized_graphs)
+
     @question_id = params[:question_id]
     @main_question = "What do you want to show ?"
 
@@ -57,11 +62,22 @@ class PagesController < ApplicationController
       # 3. 3e question
       @number_third_question = @question_id.to_s.split('').map { |digit| digit.to_i }[2]
       @third_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["question"]
+      @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["next_graph"]
       # Cherchez les réponses à la 3e question
       @third_children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"]
+      if @next_graph
+        @number_of_results = @third_children.length
+        @results = []
+        @third_children.each do |child|
+          number_graph = child["graph_number"]
+          current_graph = json_graphs[number_graph]
+          graph_info = [number_graph, current_graph, child["comparison"][0]]
+          @results << graph_info
+        end
+      end
     end
 
-    #Aller chercher la 4e question
+    #Aller chercher la 5e question
     if @question_id.to_i < 9999 && @question_id.to_i > 1000
       #Condition pour afficher la 2e question
       @is_five_question = true
