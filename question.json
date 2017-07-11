@@ -103,7 +103,7 @@
               "next_graph": false,
               "graph_number": "G95",
               "comparison": {
-                "1":"to_do",
+                "1":"to_do"
               },
               "children":null
             },
@@ -114,7 +114,7 @@
               "next_graph": false,
               "graph_number": "G235",
               "comparison": {
-                "1":"to_do",
+                "1":"to_do"
               },
               "children":null
             },
@@ -125,7 +125,7 @@
               "next_graph": false,
               "graph_number": "G170",
               "comparison": {
-                "1":"to_do",
+                "1":"to_do"
               },
               "children":null
             }
