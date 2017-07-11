@@ -260,8 +260,8 @@
 
 "G285": {
     "name": "Vector field"
-    "level": "expert
-    "dashboard": false
+    "level": "expert"
+    "dashboard": false"
     "reading_principle": "A variation of a quantity is represented in a plane a vector field."
     "advantages": "Represent variations of a physical quantity over space."
     "disadvantages": "Can become hard to read when there is a big amount of data : the scale and breakdown of space for the measures should be chosen accordingly."
