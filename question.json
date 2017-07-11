@@ -67,103 +67,81 @@
      "question_id": 112,
      "children": [
       {
-       "label": "T-Shirt",
-       "question": "Color of T-shirt?",
-       "children": [
-        {
-         "label": "Red",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Green",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Black",
-         "question": "Logo?",
-         "children": [
-          {
-           "label": "Rock band",
-           "question": null,
-           "children": null
-          },
-          {
-           "label": "TV show",
-           "question": null,
-           "children": null
-          },
-          {
-           "label": "No logo",
-           "question": null,
-           "children": null
-          }
-         ]
-        },
-        {
-         "label": "Orange",
-         "question": null,
-         "children": null
-        }
-       ]
-      },
-      {
-       "label": "Hoodie",
-       "question": "Color of hoodie?",
-       "children": [
-        {
-         "label": "Gray",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Blue",
-         "question": null,
-         "children": [
-          {
-           "label": "TV show",
-           "question": null,
-           "children": null
-          },
-          {
-           "label": "No logo",
-           "question": null,
-           "children": null
-          }
-         ]
-        },
-        {
-         "label": "Green",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Pink",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Brown",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Black",
-         "question": null,
-         "children": null
-        },
-        {
-         "label": "Red",
-         "question": null,
-         "children": null
-        }
-       ]
-      },
-      {
-       "label": "White",
-       "question": null,
+       "label": null,
+       "question": "Display data on a geographical map",
+       "question_id": 1121,
        "children": null
+      },
+      {
+       "label": null,
+       "question": "Just highlight numbers and proportions",
+       "question_id":1122,
+       "graph":false,
+       "children": [
+        {
+         "label": null,
+         "question": "Use an abstract view that emphasizes values",
+         "question_id":11221,
+         "next_graph":true,
+         "graph":false,
+         "children": [
+            // GRAPH N°1
+            {"label":"bar graph",
+              "question":null,
+              "question_id":112211,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G20",
+              "comparison": {
+                "1":"to_do",
+              },
+              "children":null
+            },
+            // GRAPH N°2
+            {"label":"double-sided bar graph",
+              "question":null,
+              "question_id":112212,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G95",
+              "comparison": {
+                "1":"to_do",
+              },
+              "children":null
+            },
+            // GRAPH N°3
+            {"label":"stacked bar graph",
+              "question":null,
+              "question_id":112213,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G235",
+              "comparison": {
+                "1":"to_do",
+              },
+              "children":null
+            },
+            // GRAPH N°4
+            {"label":"mosaic graph",
+              "question":null,
+              "question_id":112214,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G170",
+              "comparison": {
+                "1":"to_do",
+              },
+              "children":null
+            }
+          ]
+        },
+        {
+         "label": null,
+         "question": "Use a schematic geographic view",
+         "question_id":11222,
+         "children": null
+        }
+       ]
       }
      ]
     }

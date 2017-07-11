@@ -7,8 +7,12 @@
       "1": "Each of the two parallel axis represents a set of data.",
       "2": "A line that represent interactions links elements from one category with elements from the other category."
     },
-    "advantages": "Show clearly a the evolution between a beginning and an ending situation.",
-    "disadvantages": "Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled.",
+    "advantages": {
+      "1":"Show clearly a the evolution between a beginning and an ending situation."
+    },
+    "disadvantages": {
+      "1":"Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled."
+    },
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png"
   },
@@ -21,8 +25,10 @@
       "1": "The length of each bar is proportionnal to the size of the category it represents.",
       "2": "Bars can be horizontal or vertical. Horizontal bars, for instance, are much more telling when a length is measured (life expectancy, distance, …)."
     },
-    "advantages": "Quantify and compare different categories.",
-    "disadvantages": "Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped.",
+    "advantages": {
+      "1":"Quantify and compare different categories."
+    },
+    "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."},
     "how_to_do": "EXCEL",
     "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png"
   },
@@ -51,9 +57,15 @@
     "name": "Chloropleth map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": "The importance of a phenomenon is colour-coded within geographical areas (states, regions, administrative divisions, …).",
-    "advantages": "Compare distributions in different geographical areas.",
-    "disadvantages":"Can become hard to read if there is a lot of data.",
+    "reading_principle": {
+      "1":"The importance of a phenomenon is colour-coded within geographical areas (states, regions, administrative divisions, …)."
+    },
+    "advantages": {
+      "1":"Compare distributions in different geographical areas."
+    },
+    "disadvantages":{
+      "1":"Can become hard to read if there is a lot of data."
+    },
     "how_to_do": "EXCEL",
     "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G50_bx0eau.png"
   },
@@ -62,9 +74,15 @@
     "name": "Circo",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": "Interactions  are represented by arcs that linking elements disposed on the periphery of a circle.",
-    "advantages": "Interactions are emphasized and relative importances can be easily compared.",
-    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !",
+    "reading_principle": {
+      "1":"Interactions  are represented by arcs that linking elements disposed on the periphery of a circle."
+    },
+    "advantages": {
+      "1":"Interactions are emphasized and relative importances can be easily compared."
+    },
+    "disadvantages": {
+      "1":"Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !"
+    },
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G55_octvem.png"
   },
@@ -73,9 +91,15 @@
     "name": "Dasymetric map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": "A phenomenon is quantified on a map with a colour coded scale. Geographical borders (for states, regions, administrative divisions,…) are drawn over the larger area.",
-    "advantages": "Show a distribution on a larger scale but keep geographical areas in mind as well.",
-    "disadvantages": "Finding an adequate colour scale to quantify all variations can be difficult.",
+    "reading_principle": {
+      "1":"A phenomenon is quantified on a map with a colour coded scale. Geographical borders (for states, regions, administrative divisions,…) are drawn over the larger area."
+    },
+    "advantages": {
+      "1":"Show a distribution on a larger scale but keep geographical areas in mind as well."
+    },
+    "disadvantages": {
+      "1":"Finding an adequate colour scale to quantify all variations can be difficult."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png"
  },
@@ -87,8 +111,12 @@
     "reading_principle": {
       "1": "Each dot represents an occurrence of a phenomenon or defines a fixed quantity on a certain spot."
     },
-    "advantages": "Link a precise quantity to an area and show it on a map.",
-    "disadvantages": "Becomes unadapted when there are too many occurrences in a very small range.",
+    "advantages": {
+      "1":"Link a precise quantity to an area and show it on a map."
+    },
+    "disadvantages": {
+      "1":"Becomes unadapted when there are too many occurrences in a very small range."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png"
  },
@@ -101,8 +129,12 @@
       "1": "The length of each bar is proportionnal to the size of the category it represents. ",
       "2": "Data can either be broken down into time intervalls (like histograms) or into different categories (like bar charts)."
     },
-    "advantages": "Compare data to a quantified objective.",
-    "disadvantages": "Does not detail data repartition within the chosen time intervals.",
+    "advantages": {
+      "1":"Compare data to a quantified objective."
+    },
+    "disadvantages": {
+      "1":"Does not detail data repartition within the chosen time intervals."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png"
  },
@@ -111,9 +143,15 @@
     "name": "Elevation map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {"1": "Data is representend on a geographical area in a continuous way : it is quantified by its altitude on a map."},
-    "advantages": "Compare distributions in different geographical areas.",
-    "disadvantages": "Unadapted for a situation where there are few variations within the data : the differences are hardly percievable.",
+    "reading_principle": {
+      "1": "Data is representend on a geographical area in a continuous way : it is quantified by its altitude on a map."
+    },
+    "advantages": {
+      "1":"Compare distributions in different geographical areas."
+    },
+    "disadvantages": {
+      "1":"Unadapted for a situation where there are few variations within the data : the differences are hardly percievable."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png"
  },
@@ -122,9 +160,15 @@
     "name": "Flow map",
     "level": "beginner",
     "dashboard": false,
-    "reading_principle": "Flows are superposed on a geographically accurate map.",
-    "advantages": "Show accurately movements or fluxes between geographical areas.",
-    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
+    "reading_principle": {
+      "1":"Flows are superposed on a geographically accurate map."
+    },
+    "advantages": {
+      "1":"Show accurately movements or fluxes between geographical areas."
+    },
+    "disadvantages": {
+      "1":"Can become overcharged and hard to read when there is a big amount of data."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png"
   },
@@ -137,8 +181,12 @@
       "1": "The density or importance of a phenomenon is colour-coded on a continuous scale.",
       "2": "The areas where the phenomenon can be quantified are colourised accordingly (which means that the whole map is usually not coloured)."
     },
-    "advantages": "Emphasize some areas according to the value of a parameter.",
-    "disadvantages": "Unadapted to show precise occurrences of a phenomenon over an area.",
+    "advantages": {
+      "1":"Emphasize some areas according to the value of a parameter."
+    },
+    "disadvantages": {
+      "1":"Unadapted to show precise occurrences of a phenomenon over an area."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png"
   },
@@ -148,9 +196,15 @@
     "name": "Isochrone map",
     "level": "Advanced",
     "dashboard": false,
-    "reading_principle": "Equal travel times are shown with isolines.",
-    "advantages": "Read at a glance the travel length to/from a point.",
-    "disadvantages": "A point of reference has to be chosen : the length of the travel cannot be shown for several places at once.",
+    "reading_principle": {
+      "1":"Equal travel times are shown with isolines."
+    },
+    "advantages": {
+      "1":"Read at a glance the travel length to/from a point."
+    },
+    "disadvantages": {
+      "1":"A point of reference has to be chosen : the length of the travel cannot be shown for several places at once."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png"
   },
@@ -163,8 +217,12 @@
       "1": "A geographical area is separated into smaller areas (states, regions, administrative divisions, …). In each of those  sub-areas,  a symbol proportional to the corresponding quantity is displayed.",
       "2": "Two parameters can be quantified at once if necessary with 1) the size of the  symbol and 2) its colour."
     },
-    "advantages": "Display a geographical distribution and quantify the value on each area.",
-    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
+    "advantages": {
+      "1":"Display a geographical distribution and quantify the value on each area."
+    },
+    "disadvantages": {
+      "1":"Can become overcharged and hard to read when there is a big amount of data."
+    },
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png"
   },
@@ -173,23 +231,33 @@
     "name": "Route map",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": "A real route is drawn on a geographically accurate map.",
-    "advantages": "Frame a route in its environnment or compare with alternative routes.",
-    "disadvantages": "Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information.",
+    "reading_principle": {
+      "1":"A real route is drawn on a geographically accurate map."
+    },
+    "advantages": {
+      "1":"Frame a route in its environnment or compare with alternative routes."
+    },
+    "disadvantages": {
+        "1":"Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information."
+      },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png"
   },
-  
+
  "G225": {
     "name": "Space-time cube map",
     "level": "expert",
     "dashboard": false,
-    "reading_principle": "A plane map of the geographical area is coupled to a 3D timeline (which appears above the geographical map).",
+    "reading_principle": {
+      "1":"A plane map of the geographical area is coupled to a 3D timeline (which appears above the geographical map)."
+    },
     "advantages": {
       "1": "Give a clearer version of a 2-D geographical map on which events are reported.",
       "2": "Create the possibility to read the map and the timeline separately."
     },
-    "disadvantages": "When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read.",
+    "disadvantages": {
+      "1":"When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png"
   },
@@ -198,34 +266,40 @@
     "name": "Stacked bar graph",
     "level": "beginner",
     "dashboard": true,
-    "reading_principle": "The length of the bar is proportionnal to the size of the category it represents. Each category is decomposed into smaller categories within the bar (which can be 100% stacked or not).",
+    "reading_principle": {
+      "1":"The length of the bar is proportionnal to the size of the category it represents. Each category is decomposed into smaller categories within the bar (which can be 100% stacked or not)."
+    },
     "advantages": {
       "1": "Compare a small number of categories.",
       "2": "Good (but not optimal) for showing proportions."
     },
-    "disadvantages": "The subcategories are hard to compare between different bars as they are not necessarily aligned.",
+    "disadvantages": {
+      "1":"The subcategories are hard to compare between different bars as they are not necessarily aligned."
+    },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png"
-  },  
+  },
 
 "G245": {
     "name": "Stepped relief map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": "Data is represented in each division within a larger area (state, regions, administrative division, …) by showing a bar which height is proportionnal to its importance.",
-    "advantages": "Compare distributions within different geographical areas.",
-    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
+    "reading_principle": {
+      "1":"Data is represented in each division within a larger area (state, regions, administrative division, …) by showing a bar which height is proportionnal to its importance."
+    },
+    "advantages": {"1":"Compare distributions within different geographical areas."},
+    "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png"
-  },  
+  },
 
 "G255": {
     "name": "Strip map",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": "A route is drawn but is stripped of its geographical environnment : only indications that are relevant with the route are kept.",
-    "advantages": "Describe precisely an itinerary regardless of irrelevant details.",
-    "disadvantages": "Becomes hard to remember  when the itinerary is too long or too detailed.",
+    "reading_principle": {"1":"A route is drawn but is stripped of its geographical environnment : only indications that are relevant with the route are kept."},
+    "advantages": {"1":"Describe precisely an itinerary regardless of irrelevant details."},
+    "disadvantages": {"1":"Becomes hard to remember  when the itinerary is too long or too detailed."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G255_jnq1to.png"
   },
@@ -238,8 +312,8 @@
       "1": "Different places are connected with links. Geography can be slightly distorted to make the representation easily readable by the user.",
       "2": " It can also be used to connect different thematics and show their evolution and common points."
     },
-    "advantages": "Show possible links between different elements without representing their environnment.",
-    "disadvantages": "Finding a right compromise between geographical accuracy and readability can be challenging.",
+    "advantages": {"1":"Show possible links between different elements without representing their environnment."},
+    "disadvantages": {"1":"Finding a right compromise between geographical accuracy and readability can be challenging."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G266_nhfr3m.png"
   },
@@ -252,8 +326,8 @@
       "1": "Rectangles representing categories composing the data fill the space.",
       "2": "Each rectangle is usually (but not always) sized and coloured accordingly to the quantity it withholds. Hierarchy can also be represented by including rectangles inside others."
     },
-    "advantages": "Gives an intuitive view : the biggest rectangle corresponds to the biggest element.",
-    "disadvantages": "The quantity corresponding to each rectangle is usually not displayed numerically (but it can be colour-coded).",
+    "advantages": {"1":"Gives an intuitive view : the biggest rectangle corresponds to the biggest element."},
+    "disadvantages": {"1":"The quantity corresponding to each rectangle is usually not displayed numerically (but it can be colour-coded)."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G280_yr0o4z.png"
   },
@@ -262,11 +336,11 @@
     "name": "Vector field",
     "level": "expert",
     "dashboard": "false",
-    "reading_principle": "A variation of a quantity is represented in a plane a vector field.",
-    "advantages": "Represent variations of a physical quantity over space.",
-    "disadvantages": "Can become hard to read when there is a big amount of data : the scale and breakdown of space for the measures should be chosen accordingly.",
+    "reading_principle": {"1":"A variation of a quantity is represented in a plane a vector field."},
+    "advantages": {"1":"Represent variations of a physical quantity over space."},
+    "disadvantages": {"1":"Can become hard to read when there is a big amount of data : the scale and breakdown of space for the measures should be chosen accordingly."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G285_l4j1vt.png"
-  },
+  }
 
 }
