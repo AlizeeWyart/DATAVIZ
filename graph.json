@@ -135,7 +135,7 @@
     "dashboard": false ,
     "reading_principle": {
       "1": "The density or importance of a phenomenon is colour-coded on a continuous scale.",
-      "2": "he areas where the phenomenon can be quantified are colourised accordingly (which means that the whole map is usually not coloured)."
+      "2": "The areas where the phenomenon can be quantified are colourised accordingly (which means that the whole map is usually not coloured)."
     },
     "advantages": "Emphasize some areas according to the value of a parameter.",
     "disadvantages": "Unadapted to show precise occurrences of a phenomenon over an area.",
@@ -151,7 +151,7 @@
     "reading_principle": "Equal travel times are shown with isolines.",
     "advantages": "Read at a glance the travel length to/from a point.",
     "disadvantages": "A point of reference has to be chosen : the length of the travel cannot be shown for several places at once.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png"
   },
 
@@ -179,5 +179,124 @@
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png"
   }
+  
+ "G225": {
+    "name": "Space-time cube map",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": "A plane map of the geographical area is coupled to a 3D timeline (which appears above the geographical map).",
+    "advantages": {
+      "1": "Give a clearer version of a 2-D geographical map on which events are reported.",
+      "2": "Create the possibility to read the map and the timeline separately."
+    },
+    "disadvantages": "When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read.",
+    "how_to_do": "EXCEL",
+    "image": ""
+  },
+
+  "G235": {
+    "name": "Stacked bar graph",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": "The length of the bar is proportionnal to the size of the category it represents. Each category is decomposed into smaller categories within the bar (which can be 100% stacked or not).",
+    "advantages": {
+      "1": "Compare a small number of categories.",
+      "2": "Good (but not optimal) for showing proportions."
+    },
+    "disadvantages": "The subcategories are hard to compare between different bars as they are not necessarily aligned.",
+    "how_to_do": "EXCEL",
+    "image": ""
+  },  
+
+"G245": {
+    "name": "Stepped relief map",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": "Data is represented in each division within a larger area (state, regions, administrative division, …) by showing a bar which height is proportionnal to its importance.",
+    "advantages": "Compare distributions within different geographical areas.",
+    "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
+    "how_to_do": "EXCEL",
+    "image": ""
+  },  
+
+"G140": {
+    "name": "",
+    "level": "",
+    "dashboard": ,
+    "reading_principle": {
+      "1": "",
+      "2": ""
+    },
+    "advantages": {
+      "1": "",
+      "2": ""
+    },
+    "disadvantages": {
+      "1": "",
+      "2": ""
+    },
+    "how_to_do": "EXCEL",
+    "image": ""
+  },
+
+"G140": {
+    "name": "",
+    "level": "",
+    "dashboard": ,
+    "reading_principle": {
+      "1": "",
+      "2": ""
+    },
+    "advantages": {
+      "1": "",
+      "2": ""
+    },
+    "disadvantages": {
+      "1": "",
+      "2": ""
+    },
+    "how_to_do": "EXCEL",
+    "image": ""
+  },
+
+"G140": {
+    "name": "",
+    "level": "",
+    "dashboard": ,
+    "reading_principle": {
+      "1": "",
+      "2": ""
+    },
+    "advantages": {
+      "1": "",
+      "2": ""
+    },
+    "disadvantages": {
+      "1": "",
+      "2": ""
+    },
+    "how_to_do": "EXCEL",
+    "image": ""
+  },
+
+"G140": {
+    "name": "",
+    "level": "",
+    "dashboard": ,
+    "reading_principle": {
+      "1": "",
+      "2": ""
+    },
+    "advantages": {
+      "1": "",
+      "2": ""
+    },
+    "disadvantages": {
+      "1": "",
+      "2": ""
+    },
+    "how_to_do": "EXCEL",
+    "image": ""
+  },
 
 }
