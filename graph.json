@@ -9,7 +9,8 @@
     },
     "advantages": "Show clearly a the evolution between a beginning and an ending situation.",
     "disadvantages": "Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png"
   },
 
   "G20": {
@@ -22,7 +23,8 @@
     },
     "advantages": "Quantify and compare different categories.",
     "disadvantages": "Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png"
   },
 
   "G45": {
@@ -41,7 +43,8 @@
       "1": "Can become overcharged there is a big amount of data",
       "2": "Can become misleading when the disposition of the shapes is too different from geographical reality."
     },
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G45_ayihlv.png"
   },
 
 "G50": {
@@ -51,7 +54,8 @@
     "reading_principle": "The importance of a phenomenon is colour-coded within geographical areas (states, regions, administrative divisions, …).",
     "advantages": "Compare distributions in different geographical areas.",
     "disadvantages":"Can become hard to read if there is a lot of data.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G50_bx0eau.png"
   },
 
 "G55": {
@@ -61,7 +65,8 @@
     "reading_principle": "Interactions  are represented by arcs that linking elements disposed on the periphery of a circle.",
     "advantages": "Interactions are emphasized and relative importances can be easily compared.",
     "disadvantages": "Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G55_octvem.png"
   },
 
 "G75": {
@@ -71,10 +76,11 @@
     "reading_principle": "A phenomenon is quantified on a map with a colour coded scale. Geographical borders (for states, regions, administrative divisions,…) are drawn over the larger area.",
     "advantages": "Show a distribution on a larger scale but keep geographical areas in mind as well.",
     "disadvantages": "Finding an adequate colour scale to quantify all variations can be difficult.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png"
  },
 
-"G90": {
+  "G90": {
     "name": "Dot-density map",
     "level": "intermediate",
     "dashboard": false ,
@@ -83,7 +89,8 @@
     },
     "advantages": "Link a precise quantity to an area and show it on a map.",
     "disadvantages": "Becomes unadapted when there are too many occurrences in a very small range.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png"
  },
 
 "G95": {
@@ -96,7 +103,8 @@
     },
     "advantages": "Compare data to a quantified objective.",
     "disadvantages": "Does not detail data repartition within the chosen time intervals.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png"
  },
 
 "G100": {
@@ -106,7 +114,8 @@
     "reading_principle": {"1": "Data is representend on a geographical area in a continuous way : it is quantified by its altitude on a map."},
     "advantages": "Compare distributions in different geographical areas.",
     "disadvantages": "Unadapted for a situation where there are few variations within the data : the differences are hardly percievable.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png"
  },
 
   "G115": {
@@ -116,7 +125,8 @@
     "reading_principle": "Flows are superposed on a geographically accurate map.",
     "advantages": "Show accurately movements or fluxes between geographical areas.",
     "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png"
   },
 
   "G140": {
@@ -129,7 +139,8 @@
     },
     "advantages": "Emphasize some areas according to the value of a parameter.",
     "disadvantages": "Unadapted to show precise occurrences of a phenomenon over an area.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png"
   },
 
 
@@ -141,6 +152,7 @@
     "advantages": "Read at a glance the travel length to/from a point.",
     "disadvantages": "A point of reference has to be chosen : the length of the travel cannot be shown for several places at once.",
     "how_to_do": "EXCEL"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png"
   },
 
 "G190": {
@@ -153,7 +165,8 @@
     },
     "advantages": "Display a geographical distribution and quantify the value on each area.",
     "disadvantages": "Can become overcharged and hard to read when there is a big amount of data.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png"
   },
 
 "G205": {
@@ -163,7 +176,8 @@
     "reading_principle": "A real route is drawn on a geographically accurate map.",
     "advantages": "Frame a route in its environnment or compare with alternative routes.",
     "disadvantages": "Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information.",
-    "how_to_do": "EXCEL"
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png"
   }
 
 }
