@@ -179,7 +179,7 @@
       "next_graph":false,
       "graph":true,
       "graph_number":"G225"
-    }],
+    }]
    },{
     "label":null,
     "question":"Show a path or a route",
@@ -289,7 +289,7 @@
  "question_id": 3,
  "graph": false,
  "next_graph": false,
- "children": null,
+ "children": null
 },
 {
  "label": null,
