@@ -178,7 +178,7 @@
     "disadvantages": "Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information.",
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png"
-  }
+  },
   
  "G225": {
     "name": "Space-time cube map",
@@ -219,82 +219,52 @@
     "image": ""
   },  
 
-"G140": {
-    "name": "",
-    "level": "",
-    "dashboard": ,
-    "reading_principle": {
-      "1": "",
-      "2": ""
-    },
-    "advantages": {
-      "1": "",
-      "2": ""
-    },
-    "disadvantages": {
-      "1": "",
-      "2": ""
-    },
+"G255": {
+    "name": "Strip map",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": "A route is drawn but is stripped of its geographical environnment : only indications that are relevant with the route are kept.",
+    "advantages": "Describe precisely an itinerary regardless of irrelevant details.",
+    "disadvantages": "Becomes hard to remember  when the itinerary is too long or too detailed.",
     "how_to_do": "EXCEL",
     "image": ""
   },
 
-"G140": {
-    "name": "",
-    "level": "",
-    "dashboard": ,
+"G266": {
+    "name": "Subway map",
+    "level": "advanced",
+    "dashboard": false ,
     "reading_principle": {
-      "1": "",
-      "2": ""
+      "1": "Different places are connected with links. Geography can be slightly distorted to make the representation easily readable by the user.",
+      "2": " It can also be used to connect different thematics and show their evolution and common points."
     },
-    "advantages": {
-      "1": "",
-      "2": ""
-    },
-    "disadvantages": {
-      "1": "",
-      "2": ""
-    },
+    "advantages": "Show possible links between different elements without representing their environnment.",
+    "disadvantages": "Finding a right compromise between geographical accuracy and readability can be challenging.",
     "how_to_do": "EXCEL",
     "image": ""
   },
 
-"G140": {
-    "name": "",
-    "level": "",
-    "dashboard": ,
+"G280": {
+    "name": "Treemap",
+    "level": "advanced",
+    "dashboard": false,
     "reading_principle": {
-      "1": "",
-      "2": ""
+      "1": "Rectangles representing categories composing the data fill the space.",
+      "2": "Each rectangle is usually (but not always) sized and coloured accordingly to the quantity it withholds. Hierarchy can also be represented by including rectangles inside others."
     },
-    "advantages": {
-      "1": "",
-      "2": ""
-    },
-    "disadvantages": {
-      "1": "",
-      "2": ""
-    },
+    "advantages": "Gives an intuitive view : the biggest rectangle corresponds to the biggest element.",
+    "disadvantages": "The quantity corresponding to each rectangle is usually not displayed numerically (but it can be colour-coded).",
     "how_to_do": "EXCEL",
     "image": ""
   },
 
-"G140": {
-    "name": "",
-    "level": "",
-    "dashboard": ,
-    "reading_principle": {
-      "1": "",
-      "2": ""
-    },
-    "advantages": {
-      "1": "",
-      "2": ""
-    },
-    "disadvantages": {
-      "1": "",
-      "2": ""
-    },
+"G285 {
+    "name": "Vector field"
+    "level": "expert
+    "dashboard": false
+    "reading_principle": "A variation of a quantity is represented in a plane a vector field."
+    "advantages": "Represent variations of a physical quantity over space."
+    "disadvantages": "Can become hard to read when there is a big amount of data : the scale and breakdown of space for the measures should be chosen accordingly."
     "how_to_do": "EXCEL",
     "image": ""
   },
