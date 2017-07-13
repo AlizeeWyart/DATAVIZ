@@ -14,7 +14,8 @@
       "1":"Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled."
     },
     "how_to_do": "EXCEL",
-    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png"
+    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png",
+    "similar_to": ["G25", ....]
   },
 
   "G20": {
