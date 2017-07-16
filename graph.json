@@ -15,9 +15,27 @@
     },
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png",
-    "similar_to": ["G25", ....]
+    "similar_to": ["circo", "flow map", "history flow", "hive graph", "sankey graph", "space-time cube map", "tree view"]
   },
-
+  
+  "G15" : {
+    "name": "Arc graph",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "Different elements are displayed on an axis and relationships are represented by arcs connecting them. Weight and colours can vary to show the importance of a relationship."
+    },
+    "advantages": {
+      "1":"Show interactions for elements that are naturally ordered in a linear way (chapters in a book, historical events, …)."
+    },
+    "disadvantages": {
+      "1":"Quickly becomes overcharged when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL",
+    "image" : "IMAGE",
+    "similar_to": ["adjacency matrix", "circo" ]
+  },
+  
   "G20": {
     "name": "Bar graph",
     "level": "beginner",
@@ -31,9 +49,66 @@
     },
     "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."},
     "how_to_do": "EXCEL",
-    "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png"
+    "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png",
+    "similar_to": ["double-sided bar graph", "mosaic graph", "stacked bar graph", "superposed line graphs"]
   },
-
+  
+   "G21" : {
+    "name": "Bar graph (several bars",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1": "Groups of bars are aligned on a horizontal axis and colour-coded by category.",
+      "2": "The length of each bar is proportionnal to the size of the category it represents."
+    },
+    "advantages": {
+      "1":"Compare the values of different categories over time."
+    },
+    "disadvantages": {
+      "1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."
+    },
+    "how_to_do": "EXCEL",
+    "image" : "IMAGE",
+    "similar_to": ["stacked bar graph", "superposed line graphs"]
+  },
+  
+   "G25" : {
+    "name": "Bar-and-line graph",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1": "The superposition of these two graphs can to used to display the distribution of two variables over time intervalls. The bar will represent the mean value of a parameter over an interval, while the line represents the evolution of a parameter over time. If they do not have the same unit, a third axis is necessary."
+      "2": "Precipitations and temperature graphs are a good exemple of this case."
+    },
+    "advantages": {
+      "1":"Show evolutions of different parameters over time."
+    },
+    "disadvantages": {
+      "1":"Data repartition is not detailed within the chosen time intervals."
+    },
+    "how_to_do": "EXCEL",
+    "image" : "IMAGE",
+    "similar_to": ["double-sided bar graph", "histogram", "superposed line graphs"]
+  },
+ 
+ "G30" : {
+    "name": "Basic shapes",
+    "level": "beginner",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "Each shape is proportionnal to the importance of the topic."
+    },
+    "advantages": {
+      "1": "Compare a very small number of elements."
+    },
+    "disadvantages": {
+      "1":"Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that ."
+    },
+    "how_to_do": "EXCEL",
+    "image" : "IMAGE",
+    "similar_to": ["enclosure trees", "pies and rings"]
+  },
+  
   "G45": {
     "name": "Cartogram map",
     "level": "intermediate",
