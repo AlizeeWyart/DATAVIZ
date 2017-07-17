@@ -65,18 +65,26 @@
      "label": null,
      "question": "Keep a general overview of variations over a geographical area",
      "question_id": 112,
+     "rang":3,
+     "graph":false,
+     "next_graph":false,
      "children": [
       {
        "label": null,
        "question": "Display data on a geographical map",
        "question_id": 1121,
-       "children": null
+       "graph": false,
+       "next_graph":false,
+       "rang":4,
+       "children":[]
       },
       {
        "label": null,
        "question": "Just highlight numbers and proportions",
        "question_id":1122,
        "graph":false,
+       "rang": 4,
+       "next_graph": false,
        "children": [
         {
          "label": null,
@@ -158,31 +166,45 @@
     "children":[{
       "label":"route map",
       "question":null,
-      "question_id":1211,
+      "question_id":"121G205",
       "rang":4,
       "next_graph":false,
       "graph":true,
-      "graph_number":"G205"
+      "graph_number":"G205",
+      "comparison":[{
+         "1":"better than route maps to show details associated to a particular journey",
+         "2":"better than space-time cube maps to show a trajectory on a flat surface"
+       }],
+      "children":null
     },{
       "label":"strip map",
       "question":null,
-      "question_id":1212,
+      "question_id":"121G255",
       "rang":4,
       "next_graph":false,
       "graph":true,
-      "graph_number":"G255"
+      "graph_number":"G255",
+      "comparison": [{
+         "1":"better than route maps to show details associated to a particular journey",
+         "2":"better than space-time cube maps to show a trajectory on a flat surface"
+       }],
+      "children":null
     },{
       "label":"space-time cube map",
       "question":null,
-      "question_id":1213,
+      "question_id":"121G225",
       "rang":4,
       "next_graph":false,
       "graph":true,
-      "graph_number":"G225"
+      "graph_number":"G225",
+      "comparison": [{
+         "1":"better than route map and strip map to show step by step evolution over time"
+       }],
+      "children":null
     }]
    },{
     "label":null,
-    "question":"Show a path or a route",
+    "question":"Represent a network",
     "rang":3,
     "question_id":122,
     "next_graph":true,
@@ -190,11 +212,15 @@
     "children":[{
       "label":"subway map (thematic)",
       "question":null,
-      "question_id":1221,
+      "question_id":"122G266",
       "rang":4,
       "next_graph":false,
       "graph":true,
-      "graph_number":"G265"
+      "graph_number":"G266",
+      "comparison": [{
+         "1":"N/A"
+       }],
+      "children":null
     }]
    }]
   },
@@ -208,27 +234,40 @@
    "children": [{
     "label":"circo",
     "question":null,
-    "question_id":131,
+    "question_id":"13G55",
     "rang":3,
     "next_graph":false,
     "graph":true,
-    "graph_number":"G55"
+    "graph_number":"G55",
+    "comparison": [{
+         "1":"easier to read than alluvial graphs for complex interactions",
+         "2":"better than flow maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)"
+       }],
+    "children": null
    },{
     "label":"flow map",
     "question":null,
-    "question_id":132,
+    "question_id":"13G115",
     "rang":3,
     "next_graph":false,
     "graph":true,
-    "graph_number":"G115"
+    "graph_number":"G115",
+    "comparison": [{
+      "1":"better than circos and alluvial graphs to keep geographic specificities in mind"
+    }],
+    "children": null
    },{
     "label":"alluvial graph",
     "question":null,
-    "question_id":133,
+    "question_id":"13G10",
     "rang":3,
     "next_graph":false,
     "graph":true,
-    "graph_number":"G10"
+    "graph_number":"G10",
+    "comparison": [{
+      "1":"better than circos and alluvial graphs to keep geographic specificities in mind"
+    }],
+    "children": null
    }]
   },
   {
@@ -246,21 +285,29 @@
      "next_graph":true,
      "rang":4,
      "children":[{
-      "label":"space-time cube map",
-      "question":null,
-      "question_id":1411,
-      "rang":4,
-      "next_graph":false,
-      "graph":true,
-      "graph_number":"G225"
+        "label":"space-time cube map",
+        "question":null,
+        "question_id":"141G225",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G225",
+        "comparison": [{
+          "1":"better than alluvial graph  to show step by step evolution over time"
+        }],
+        "children": null
      },{
-      "label":"alluvial graph",
-      "question":null,
-      "question_id":1412,
-      "rang":4,
-      "next_graph":false,
-      "graph":true,
-      "graph_number":"G10"
+        "label":"alluvial graph",
+        "question":null,
+        "question_id":"141G10",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G10",
+        "comparison": [{
+          "1":"better than space-time cube map to show a before/after transition"
+        }],
+        "children": null
      }]
    },{
      "label": null,
@@ -269,7 +316,19 @@
      "graph": false,
      "next_graph":true,
      "rang":4,
-     "children":null
+     "children":[{
+       "label":"isochrone map",
+        "question":null,
+        "question_id":"142G145",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G145",
+        "comparison": [{
+          "1":"N/A"
+        }],
+        "children": null
+     }]
    }]
   }
 ]},
@@ -280,7 +339,211 @@
  "question_id": 2,
  "graph": false,
  "next_graph": false,
- "children": null
+ "children": [{
+    "label":null,
+    "question": "Highlight one-time events over time",
+    "question_id":21,
+    "graph": false,
+    "next_graph": false,
+    "rang":2,
+    "children":[{
+      "label":null,
+      "question":"Makes comparisons",
+      "question_id":211,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children":[{
+        "label":"stacked bar graph",
+        "question":null,
+        "question_id":"211G125",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G125",
+        "comparison": [{
+          "1":"'better than stacked bar graphs to compare the different values of a given element over time"
+        }],
+        "children": null
+      },{
+        "label":"histogram",
+        "question":null,
+        "question_id":"211G235",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G235",
+        "comparison": [{
+          "1":"better than histograms to compare the evolutions of several categories at different points in time",
+          "2":"better than line graphs to compare values only at chosen points in time : offers a clearer view !"
+        }],
+        "children": null
+      }]
+    },{
+      "label":null,
+      "question":"Simply display the events on a timeline",
+      "question_id":212,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children":[{
+        "label":"histogram",
+        "question":null,
+        "question_id":"212G125",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G125",
+        "comparison": [{
+          "1":"better than timeline (events) to display quantities"
+        }],
+        "children": null
+      },{
+        "label":"timeline (events)",
+        "question":null,
+        "question_id":"212G272",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G272",
+        "comparison": [{
+          "1":"better than histograms to describe or explain different points in time"
+        }],
+        "children": null
+      }]
+    }]
+  },{
+    "label":null,
+    "question":"Study a global temporal evolution",
+    "question_id":22,
+    "rang":2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
+      "label":null,
+      "question":"Simply show distributions over time",
+      "question_id":221,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children": [{
+        "label":null,
+        "question":"Show a thematic change over time",
+        "question_id":2211,
+        "rang":3,
+        "graph":false,
+        "next_graph":false,
+        "children":[]
+      },{
+        "label":null,
+        "question":"Display a quantitative change over time",
+        "question_id":2212,
+        "rang":3,
+        "graph":false,
+        "next_graph":false,
+        "children":[]
+      }]
+    },{
+      "label":null,
+      "question":"Compare the evolutions of different categories over time",
+      "question_id":222,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"bar graph (several bars)",
+        "question":null,
+        "question_id":"222G21",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G21",
+        "comparison": [{
+          "1":"better than stacked bar graphs to show clearly a variation within a category between two points in time",
+          "2":"better than line graphs to compare values only at chosen points in time : offers a clearer view !"
+        }],
+        "children": null
+      },{
+        "label":"stacked bar graph",
+        "question":null,
+        "question_id":"222G235",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G235",
+        "comparison": [{
+          "1":"better than bar graphs (several) to show proportions within each category"
+        }],
+        "children": null
+      },{
+        "label":"superposed line graphs",
+        "question":null,
+        "question_id":"222G267",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G267",
+        "comparison": [{
+          "1":"better than stacked bar graphs and bar graphs (several) to display the continuous evolution of different quantities over time"
+        }],
+        "children": null
+      }]
+    }]
+  },{
+    "label":null,
+    "question":"Show how geographical flows evolved over time",
+    "question_id":23,
+    "rang":2,
+    "graph": false,
+    "next_graph": true,
+    "children":[{
+      "label":"circo",
+      "question":null,
+      "question_id":"23G55",
+      "rang":3,
+      "next_graph":false,
+      "graph":true
+    },{
+      "label":"alluvial graph",
+      "question":null,
+      "question_id":"23G10",
+      "rang":3,
+      "next_graph":false,
+      "graph":true,
+      "graph_number":"G10",
+      "comparison": [{
+        "1":"better than circos and flow maps for adding a temporal dimension easily",
+        "2":"better than space-time cube maps to show a network of flows on a large scale"
+      }],
+      "children": null
+    },{
+      "label":"flow map",
+      "question":null,
+      "question_id":"23G115",
+      "rang":3,
+      "next_graph":false,
+      "graph":true,
+      "graph_number":"G115",
+      "comparison": [{
+        "1":"better than circos and alluvial graphs to keep geographic specificities in mind",
+        "2":"better than space-time cube map to show a network of flows on a large scale"
+      }],
+      "children": null
+    },{
+      "label":"space-time cube map",
+      "question":null,
+      "question_id":"23G225",
+      "rang":3,
+      "next_graph":false,
+      "graph":true,
+      "graph_number":"G225",
+      "comparison": [{
+        "1":"better than circos and alluvial graphs to show a network of flows on a large scale",
+        "2":"better than flow maps to study the spatial and temporal evolution of a phenomenon"
+      }],
+      "children": null
+    }]
+  }]
 },
  {
  "label": null,
@@ -289,7 +552,195 @@
  "question_id": 3,
  "graph": false,
  "next_graph": false,
- "children": null
+ "children": [{
+    "label": null,
+    "question":"Show the nature and proportions of elements within my data",
+    "question_id":31,
+    "rang":2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
+      "label":null,
+      "question":"Show nature and not necessarily proportions",
+      "question_id":311,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children": [{
+        "label":null,
+        "question":"Show text data",
+        "question_id":3111,
+        "rang":3,
+        "graph":false,
+        "next_graph":true,
+        "children":[]
+      },{
+        "label":null,
+        "question":"Show numeric data",
+        "question_id":3112,
+        "rang":3,
+        "graph":false,
+        "next_graph":true,
+        "children":[]
+      }]
+    },{
+      "label":null,
+      "question":"Show both nature and proportions",
+      "question_id":312,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children": [{
+        "label":null,
+        "question":"Group my data into a very small number of categories",
+        "question_id":3121,
+        "rang":3,
+        "graph":false,
+        "next_graph":true,
+        "children":[]
+      },{
+        "label":null,
+        "question":"Show the exhaustivity of my data or create many categories",
+        "question_id":3122,
+        "rang":3,
+        "graph":false,
+        "next_graph":false,
+        "children":[]
+      }]
+    }]
+ },{
+    "label":null,
+    "question":"Show interactions and structure within my data",
+    "question_id":32,
+    "rang":2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
+      "label":null,
+      "question":"Characterise relationships or show flows",
+      "question_id":321,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children": [{
+        "label":null,
+        "question":"Emphasize flows",
+        "question_id":3211,
+        "rang":3,
+        "graph":false,
+        "next_graph":true,
+        "children":[]
+      },{
+        "label":null,
+        "question":"Map relationships",
+        "question_id":3212,
+        "rang":3,
+        "graph":false,
+        "next_graph":false,
+        "children":[]
+      }]
+    },{
+      "label":null,
+      "question":"Show organisation and structure",
+      "question_id":322,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children": [{
+        "label":null,
+        "question":"Show a network or a hierarchy",
+        "question_id":3221,
+        "rang":3,
+        "graph":false,
+        "next_graph":false,
+        "children":[]
+      },{
+        "label":null,
+        "question":"Break down data into topics and categories",
+        "question_id":3222,
+        "rang":3,
+        "graph":false,
+        "next_graph":false,
+        "children":[]
+      }]
+    }]
+ },{
+    "label":null,
+    "question":"Show evolutions in the composition of my data",
+    "question_id":33,
+    "rang":2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
+      "label":null,
+      "question":"Explain changes happening in given intervalls",
+      "question_id":331,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"alluvial graph",
+        "question":null,
+        "question_id":"??",
+        "rang":3,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"??",
+        "comparison": [{
+          "1":"??",
+          "2":"??"
+        }],
+        "children": null
+      },{
+        "label":"history flow",
+        "question":null,
+        "question_id":"??",
+        "rang":3,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"??",
+        "comparison": [{
+          "1":"??",
+          "2":"??"
+        }],
+        "children": null
+      },{
+        "label":"sankey graph",
+        "question":null,
+        "question_id":"??",
+        "rang":3,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"??",
+        "comparison": [{
+          "1":"??",
+          "2":"??"
+        }],
+        "children": null
+      }]
+    },{
+      "label":null,
+      "question":"Show a continuous evolution",
+      "question_id":332,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"stream graph",
+        "question":null,
+        "question_id":"??",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"??",
+        "comparison": [{
+          "1":"??",
+          "2":"??"
+        }],
+        "children": null
+      }]
+    }]
+ }]
 },
 {
  "label": null,
@@ -298,5 +749,240 @@
  "question_id": 4,
  "graph": false,
  "next_graph": false,
- "children": null
+ "children": [{
+    "label":null,
+    "question":"Mainly show how my data is distributed",
+    "question_id":41,
+    "rang":2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
+      "label":null,
+      "question":"Point out groupings or outliers",
+      "question_id":411,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"scatter plot",
+        "question":null,
+        "question_id":"411G215",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G215",
+        "comparison": [{
+          "1":"better than dot graphs, stripe graphs and stem-and-leaf graphs to show correlation"
+        }],
+        "children": null
+      },{
+        "label":"dot graph",
+        "question":null,
+        "question_id":"411G85",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G85",
+        "comparison": [{
+          "1":"better than scatter plots to highlight groupings and outliers",
+          "2":"easier to colour-code than stripe graphs",
+          "3":"better than stem-and-leaf graphs to show repartition rather than display precise values"
+        }],
+        "children": null
+      },{
+        "label":"stripe graph",
+        "question":null,
+        "question_id":"411G260",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G260",
+        "comparison": [{
+          "1":"better than scatter plots to highlight groupings and outliers",
+          "2":"better than dot graph to quantify precisely each element",
+          "3":"better than stem-and-leaf graphs to show repartition rather than display precise values"
+        }],
+        "children": null
+      },{
+        "label":"stem-and-leaf graph",
+        "question":null,
+        "question_id":"411G240",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G240",
+        "comparison": [{
+          "1":"better than scatter plots, dot graphs and stripe graphs to order and look up numeric values"
+        }],
+        "children": null
+      }]
+    },{
+      "label":null,
+      "question":"Show evolution over time",
+      "question_id":412,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"histogram",
+        "question":null,
+        "question_id":"412G125",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G125",
+        "comparison": [{
+          "1":"better than line graphs to compare data over time intervals",
+          "2":"better than bar-and-line graphs to study the variation of only one quantity at a time",
+          "3":"better than double-sided bar graphs to compare absolute values over time"
+        }],
+        "children": null
+      },{
+        "label":"spark line",
+        "question":null,
+        "question_id":"412G230",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G230",
+        "comparison": [{
+          "1":"better than histograms and line graphs to show a variation over a long period of time in a synthetic way"
+        }],
+        "children": null
+      },{
+        "label":"line graph",
+        "question":null,
+        "question_id":"412G155",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G155",
+        "comparison": [{
+          "1":"better than spark lines to display quantities",
+          "2":"better than histograms to show a continuous evolution"
+        }],
+        "children": null
+      }]
+    },{
+      "label":null,
+      "question":"See statistical indicators",
+      "question_id":413,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"error bar graph",
+        "question":null,
+        "question_id":"413G110",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G110",
+        "comparison": [{
+          "1":"better than box-and-whisker symbol graphs to show a margin of error on several measures"
+        }],
+        "children": null
+      },{
+        "label":"box-and-whisker symbol graph",
+        "question":null,
+        "question_id":"413G40",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G40",
+        "comparison": [{
+          "1":"better than error bar graph to show indicators such as median, quartile and standard deviation"
+        }],
+        "children": null
+      }]
+    }]
+ },{
+    "label":null,
+    "question":"Make comparisons within my data",
+    "question_id":42,
+    "rang":2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
+      "label":null,
+      "question":"Make comparisons over time",
+      "question_id":421,
+      "rang":3,
+      "graph":false,
+      "next_graph":true,
+      "children": [{
+        "label":"double-sided bar graph",
+        "question":null,
+        "question_id":"421G95",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G95",
+        "comparison": [{
+          "1":""
+        }],
+        "children": null
+      },{
+        "label":"bar-and-line graph",
+        "question":null,
+        "question_id":"421G25",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G25",
+        "comparison": [{
+          "1":""
+        }],
+        "children": null
+      },{
+        "label":"histogram",
+        "question":null,
+        "question_id":"421G125",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G125",
+        "comparison": [{
+          "1":""
+        }],
+        "children": null
+      },{
+        "label":"superposed line graphs",
+        "question":null,
+        "question_id":"421G267",
+        "rang":4,
+        "next_graph":false,
+        "graph":true,
+        "graph_number":"G267",
+        "comparison": [{
+          "1":""
+        }],
+        "children": null
+      }]
+    },{
+      "label":null,
+      "question":"Make comparisons between categories",
+      "question_id":422,
+      "rang":3,
+      "graph":false,
+      "next_graph":false,
+      "children": [{
+        "label":null,
+        "question":"Compare data according to numbers and proportions",
+        "question_id":4221,
+        "rang":4,
+        "graph":false,
+        "next_graph":false,
+        "children": []
+      },{
+        "label":null,
+        "question":"Sort and compare data according to criteria",
+        "question_id":4222,
+        "rang":4,
+        "graph":false,
+        "next_graph":true,
+        "children": []
+      }]
+    }]
+ }]
 }]

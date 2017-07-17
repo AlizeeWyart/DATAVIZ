@@ -120,8 +120,8 @@
       "1": "Show and quantify data repartition."
     },
     "disadvantages": {
-      "1": "Can become overcharged if there is a big amount of data."
-      "2": "Asks for more statistical knowledge if more elements than just the median appear.
+      "1": "Can become overcharged if there is a big amount of data.",
+      "2": "Asks for more statistical knowledge if more elements than just the median appear."
     },
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G40_ncfclc.png",
@@ -193,7 +193,7 @@
       "1":"One time period is represented on an oriented graph. The studied phenomenon is quantified by its distance to the origin of the graph."
     },
     "advantages": {
-      "1": "Represent a cyclic phenomenon on a circular period (a day, a month, a year, …)."
+      "1": "Represent a cyclic phenomenon on a circular period (a day, a month, a year, …).",
       "2": "Emphasize a change on a given period."
     },
     "disadvantages": {
@@ -212,7 +212,7 @@
       "1":"Representation of a network where clusters, technical precisions can be precisely displayed."
     },
     "advantages": {
-      "1": "Show groupings and categories within the data."
+      "1": "Show groupings and categories within the data.",
       "2": "Include technical details."
     },
     "disadvantages": {
@@ -228,7 +228,7 @@
     "level": "expert",
     "dashboard": false,
     "reading_principle": {
-      "1":"The categories that are studied are displayed on an axis delimitating a plane. The vertical axis corresponds to the parameter that quantifies the categories (number such as age, volume, …)."
+      "1":"The categories that are studied are displayed on an axis delimitating a plane. The vertical axis corresponds to the parameter that quantifies the categories (number such as age, volume, …).",
       "2": "The final result is a 3D-map."
     },
     "advantages": {
@@ -266,14 +266,14 @@
     "level": "beginner",
     "dashboard": true,
     "reading_principle": {
-      "1":"Different nodes are connected by lines and form a classical tree view."
+      "1":"Different nodes are connected by lines and form a classical tree view.",
       "2": "Levels are clearly defined : each nodes at the same distance from the first node are on the same level."
     },
     "advantages": {
       "1": "Represent clearly a hierarchy."
     },
     "disadvantages": {
-      "1":"Interaction between elements is not easily represented."
+      "1":"Interaction between elements is not easily represented.",
       "2": "Can become hard to read when there is a big amount of data."
     },
     "how_to_do": "EXCEL",
@@ -365,7 +365,7 @@
       "1":"Show a certain type of hierarchy : inclusion."
     },
     "disadvantages": {
-      "1":"Elements quickly become hard to compare when there is a big amount of data."
+      "1":"Elements quickly become hard to compare when there is a big amount of data.",
       "2":"Interactions between elements are not easily shown."
     },
     "how_to_do": "EXCEL",
@@ -388,7 +388,7 @@
     },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
-    "similar_to":
+    "similar_to": []
   },
 
   "G140": {
