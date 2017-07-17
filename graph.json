@@ -77,7 +77,7 @@
     "level": "beginner",
     "dashboard": true,
     "reading_principle": {
-      "1": "The superposition of these two graphs can to used to display the distribution of two variables over time intervalls. The bar will represent the mean value of a parameter over an interval, while the line represents the evolution of a parameter over time. If they do not have the same unit, a third axis is necessary."
+      "1": "The superposition of these two graphs can to used to display the distribution of two variables over time intervalls. The bar will represent the mean value of a parameter over an interval, while the line represents the evolution of a parameter over time. If they do not have the same unit, a third axis is necessary.",
       "2": "Precipitations and temperature graphs are a good exemple of this case."
     },
     "advantages": {
