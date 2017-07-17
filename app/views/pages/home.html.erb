@@ -59,7 +59,7 @@
     X
   <% end %>
   <br> <%= @third_question %>
-  <%= link_to root_path(question_id: @number_second_question, graph: false) do %>
+  <%= link_to root_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
     X
   <% end %>
   <br><br>
