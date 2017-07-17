@@ -185,6 +185,64 @@
     "similar_to": ["alluvial graph", "arc graph", "flow map", "isoline map", "sankey graph", "self-organising map", "space-time cube map"]
   },
 
+  "G60": {
+    "name": "Circular graph",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"One time period is represented on an oriented graph. The studied phenomenon is quantified by its distance to the origin of the graph." 
+    },
+    "advantages": {
+      "1": "Represent a cyclic phenomenon on a circular period (a day, a month, a year, …)."
+      "2": "Emphasize a change on a given period."
+    },
+    "disadvantages": {
+      "1":"This representation is pointless when the variation of the represented quantity is very faint."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G60_xrub1s.png",
+    "similar_to": ["line graph"]
+ },
+  
+    "G65": {
+    "name": "Conceptual network",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Representation of a network where clusters, technical precisions can be precisely displayed." 
+    },
+    "advantages": {
+      "1": "Show groupings and categories within the data."
+      "2": "Include technical details."
+    },
+    "disadvantages": {
+      "1":"Can scare users off if the graphics are unattractive ot too varied."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G65_d49lrq.png",
+    "similar_to": null
+ },
+  
+    "G70": {
+    "name": "Crossmap",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"The categories that are studied are displayed on an axis delimitating a plane. The vertical axis corresponds to the parameter that quantifies the categories (number such as age, volume, …)." 
+      "2": "The final result is a 3D-map."
+    },
+    "advantages": {
+      "1": "Distinguish and sort important information from the rest of the data."
+    },
+    "disadvantages": {
+      "1":"Makes quantified information difficult to read and remember."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G70_bp7n6b.png",
+    "similar_to": ["mosaic graph"]
+ },
+  
+  
 "G75": {
     "name": "Dasymetric map",
     "level": "intermediate",
@@ -199,9 +257,48 @@
       "1":"Finding an adequate colour scale to quantify all variations can be difficult."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png",
+    "similar_to": ["stepped relief map", "chloropleth map"]
  },
 
+  "G80": {
+    "name": "Dendogram",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1":"Different nodes are connected by lines and form a classical tree view."
+      "2": "Levels are clearly defined : each nodes at the same distance from the first node are on the same level."
+    },
+    "advantages": {
+      "1": "Represent clearly a hierarchy."
+    },
+    "disadvantages": {
+      "1":"Interaction between elements is not easily represented."
+      "2": "Can become hard to read when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G80_n5le2m.png",
+    "similar_to": ["enclosure tree", "link tree", "network structure", "tree view"]
+ },
+  
+    "G85": {
+    "name": "Dot graph",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1": "Dots are displayed on a unique axis that is used to organise them (usually by quantifying them)."
+    },
+    "advantages": {
+      "1": "Highlight groupings and outliers."
+    },
+    "disadvantages": {
+      "1": "Unadapted for memorising numerical values."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G85_u3dpjo.png",
+    "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
+ },
+  
   "G90": {
     "name": "Dot-density map",
     "level": "intermediate",
@@ -216,7 +313,8 @@
       "1":"Becomes unadapted when there are too many occurrences in a very small range."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png",
+    "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
  },
 
 "G95": {
@@ -234,7 +332,8 @@
       "1":"Does not detail data repartition within the chosen time intervals."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png",
+    "similar_to": ["bar-and-line graph", "bar graph", "histogram", "mosaic graph", "stacked bar graph", "superposed line graphs"]
  },
 
 "G100": {
@@ -251,7 +350,27 @@
       "1":"Unadapted for a situation where there are few variations within the data : the differences are hardly percievable."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png",
+    "similar_to": ["dot-density map", "isarithmic map"]
+ },
+  
+  "G105": {
+    "name": "Elevation map",
+    "level": "intermediate",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "Shapes (often circular, but can be squares) are included into others to highlight the category to which they belong."
+    },
+    "advantages": {
+      "1":"Show a certain type of hierarchy : inclusion."
+    },
+    "disadvantages": {
+      "1":"Elements quickly become hard to compare when there is a big amount of data."
+      "2":"Interactions between elements are not easily shown."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png",
+    "similar_to": ["dot-density map", "isarithmic map"]
  },
 
   "G115": {
@@ -268,7 +387,8 @@
       "1":"Can become overcharged and hard to read when there is a big amount of data."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
+    "similar_to": 
   },
 
   "G140": {
