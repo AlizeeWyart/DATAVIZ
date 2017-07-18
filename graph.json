@@ -616,6 +616,43 @@
     "similar_to" : ["enclosure tree", "dendogram", "link tree", "node-link graph", "radial tree", "subway map", "tree view"]
   }, 
 
+ "G180: {
+    "name": "Node-link graph",
+    "level": "intermediate
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Unhierarchised network : interaction between elements is simply represented by a line."
+    },
+    "advantages": {
+      "1":"Allows to stand back to understand repartition in a very large data set."
+    },
+    "disadvantages": {
+      "1":"Can become hard to read when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL", 
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G180_ucdaoy.png",
+    "similar_to" : ["network structure", "radial tree", "subway map"]
+  }, 
+
+ "G181: {
+    "name": "Parallel coordinates graph",
+    "level": "advanced"
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Several vertical axes represent different criteria according to which the data can be sorted and quantified.",
+      "2":"For each of the categories that are going to be compared between one another, points are displayed on the axes according to their value for each criterion. Finally, the points are joined together."
+    },
+    "advantages": {
+      "1":"Compare different profiles"
+      "2": "Quantify the strength of interactions or relationships."
+    },
+    "disadvantages": {
+      "1":"Quickly becomes overcharged when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL", 
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
+    "similar_to" : ["radar graph"]
+  }, 
 
 "G190": {
     "name": "Proportional symbol map",
