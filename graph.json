@@ -482,7 +482,8 @@
       "1":"Unadapted to show precise occurrences of a phenomenon over an area."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png",
+    "similar_to": ["dot-density map", "elevation map"]
   },
 
 
@@ -500,7 +501,26 @@
       "1":"A point of reference has to be chosen : the length of the travel cannot be shown for several places at once."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png",
+    "similar_to": null
+  },
+  
+  "G150": {
+    "name": "Isoline map",
+    "level": "Advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Like a real geographical isoline map, similar topics are showed on the same altitude"
+    },
+    "advantages": {
+      "1":"Represent the proximity between different topics in an intuitive way."
+    },
+    "disadvantages": {
+      "1":"Unadapted to represent a situation where many elements are interacting with the others. "
+    },
+    "how_to_do": "EXCEL",
+    "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
+    "similar_to": ["circo", "self-organising map"]
   },
 
 "G190": {
