@@ -433,7 +433,7 @@
     "level": "expert",
     "dashboard": false,
     "reading_principle": {
-      "1":"This representation displays the changes made between the different versions of a text over history."
+      "1":"This representation displays the changes made between the different versions of a text over history.",
       "2": "Vertical bars show the length and existence of text chnunks over time and bands representing text chunks can be colour-coded to represent characteristics (author, nature, ...)."
     },
     "advantages": {
@@ -452,11 +452,11 @@
     "level": "advanced",
     "dashboard": false,
     "reading_principle": {
-      "1":"Each axis corresponds to a category. The elements of the dataset are split into categories and quantified on the corresponding axis, then linked together."
+      "1":"Each axis corresponds to a category. The elements of the dataset are split into categories and quantified on the corresponding axis, then linked together.",
       "2": "This graph is widely used in biology to simplify networks and show interactions between genes."
     },
     "advantages": {
-      "1": "Compare different profiles."
+      "1": "Compare different profiles.",
       "2": "Quantify the strength of interactions or relationships."
     },
     "disadvantages": {
