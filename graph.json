@@ -522,6 +522,100 @@
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
     "similar_to": ["circo", "self-organising map"]
   },
+  
+   "G155": {
+    "name": "Line graph",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1":"This graph is the well-known y = f(x) graph. It displays elements according to their coordinates in a plane with two axis and connect them with a line. This is the well-known y = f(x) graph."
+    },
+    "advantages": {
+      "1":"Show  a continuous data evolution or correlation."
+    },
+    "disadvantages": {
+      "1":"Can become hard to read when the scale of one of the axes is not chosen wisely."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G155_lyvlzt.png",
+    "similar_to": ["histogram", "spark line", "circular graph]
+  },
+                   
+ "G160": {
+    "name": "Link tree",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Hierarchised tree for which at least one branch has so many elements that it takes the shape of an arc, resulting in a circular shaped tree."
+    },
+    "advantages": {
+      "1":"Represent clearly a hierarchy with many levels."
+    },
+    "disadvantages": {
+      "1":"Quickly becomes overcharged when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G160_gjjxdw.png",
+    "similar_to": ["dendogram", "enclosure tree", "network structure", "tree view"]
+  },          
+  
+   "G165": {
+    "name": "List",
+    "level": "beginner",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Elements are simply listed."
+      "2": "Indentation, size, colour can vary to point out importance or hierarchy."
+    },
+    "advantages": {
+      "1":"Show elements in a clear and ordered way."
+    },
+    "disadvantages": {
+      "1":"Quickly becomes overcharged when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G165_qxbgxf.png",
+    "similar_to": ["tag cloud"]
+  },   
+  
+    "G170": {
+    "name": "Mosaic graph",
+    "level": "intermediate
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Horizontal or vertical bars that occupy all the space are split into their different categories."
+    },
+    "advantages": {
+      "1":"Compare the repartition of elements within different categories."
+      "2": "Quantify and represent importance with two parameters (x-axis and y-axis)."
+    },
+    "disadvantages": {
+      "1":"The subcategories are hard to compare between different bars as they are not necessarily aligned, and as areas are more difficult to process than lengths for the human brain !"
+    },
+    "how_to_do": "EXCEL", 
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G170_vrgtrv.png",
+    "similar_to": ["bar graph", "crossmap", "double-sided bar graph", "enclosure tree", "stacked bar graph", "treemap"]
+  }, 
+
+ "G175: {
+    "name": "Mosaic graph",
+    "level": "intermediate
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Hierarchically organised network where interaction between elements is represented by a line."
+    },
+    "advantages": {
+      "1":"Show groupings and categories."
+      "2": "Allows to stand back to understand repartition in a very large data set."
+    },
+    "disadvantages": {
+      "1":"Can become hard to read when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL", 
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G175_qkfucp.png",
+    "similar_to" : ["enclosure tree", "dendogram", "link tree", "node-link graph", "radial tree", "subway map", "tree view"]
+  }, 
+
 
 "G190": {
     "name": "Proportional symbol map",
