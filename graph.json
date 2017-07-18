@@ -355,7 +355,7 @@
  },
 
   "G105": {
-    "name": "Elevation map",
+    "name": "Enclosure tree",
     "level": "intermediate",
     "dashboard": false,
     "reading_principle": {
@@ -369,10 +369,28 @@
       "2":"Interactions between elements are not easily shown."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png",
-    "similar_to": ["dot-density map", "isarithmic map"]
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G105_qnvlkf.png",
+    "similar_to": ["basic shapes", "dendogram", "link tree", "mosaic graph", "network structure", "pies and rings", "tag cloud", "treemap", "treeview"]
  },
 
+   "G110": {
+    "name": "Error bar graph",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "An error bar superposed to each point of a scatterplot indicates the error margin."
+    },
+    "advantages": {
+      "1":"Show the precision or the error margin corresponding to a measure."
+    },
+    "disadvantages": {
+      "1":"Choosing a scale that is both adapted to the distribution of the points and the size of the measured error can be difficult."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G110_cxteni.png",
+    "similar_to": ["box-and-whisker symbol graph"]
+ },
+  
   "G115": {
     "name": "Flow map",
     "level": "beginner",
@@ -388,9 +406,67 @@
     },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
-    "similar_to": []
+    "similar_to": ["alluvial graph", "circo", "space-time cube map"]
+  },
+  
+    "G125": {
+    "name": "Histogram",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1":" Unlike bar graphs that display categories, histograms are exclusively used to display the distribution of a variable over time intervalls. The length of each bar depends on the quantity measured in each intervall."
+    },
+    "advantages": {
+      "1": "Display distribution over a time period or interval."
+      "2": "Get a quick overview of extreme values and a rough overview of probability distribution."
+    },
+    "disadvantages": {
+      "1":"Data repartition is not detailed within the chosen time intervalls."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G125_iqo3ww.png",
+    "similar_to": ["bar-and-line graph", "double-sided bar graph", "line graph", "spark line", "stacked bar graphs", "superposed line graphs", "timeline (events)"]
   },
 
+    "G130": {
+    "name": "History flow",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"This representation displays the changes made between the different versions of a text over history."
+      "2": "Vertical bars show the length and existence of text chnunks over time and bands representing text chunks can be colour-coded to represent characteristics (author, nature, ...)."
+    },
+    "advantages": {
+      "1": "Represent thematic veriations between different versions of a text."
+    },
+    "disadvantages": {
+      "1":"Unadapted to display precise indicators regarding the content."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G130_zivq25.png",
+    "similar_to": ["alluvial graph", "sankey graph"]
+  },
+  
+   "G135": {
+    "name": "Hive graph",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Each axis corresponds to a category. The elements of the dataset are split into categories and quantified on the corresponding axis, then linked together."
+      "2": "This graph is widely used in biology to simplify networks and show interactions between genes."
+    },
+    "advantages": {
+      "1": "Compare different profiles."
+      "2": "Quantify the strength of interactions or relationships."
+    },
+    "disadvantages": {
+      "1":"Quickly becomes overcharged when there is a big amount of data."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G135_z8bqgf.png",
+    "similar_to": ["alluvial graph", "tree view"]
+  },
+  
   "G140": {
     "name": "Isarithmic map",
     "level": "intermediate",
