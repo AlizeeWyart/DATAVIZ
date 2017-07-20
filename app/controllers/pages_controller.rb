@@ -46,6 +46,19 @@ class PagesController < ApplicationController
       @second_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["question"]
       # Cherchez les réponses à la 2e question
       @second_children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"]
+
+      #Next graph ?
+      @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["next_graph"]
+      if @next_graph
+        @number_of_results = @second_children.length
+        @results = []
+        @second_children.each do |child|
+          number_graph = child["graph_number"]
+          current_graph = json_graphs[number_graph]
+          graph_info = [number_graph, current_graph, child["comparison"][0]]
+          @results << graph_info
+        end
+      end
     end
 
     #Aller chercher la 4e question

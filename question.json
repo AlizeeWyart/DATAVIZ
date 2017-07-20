@@ -76,7 +76,23 @@
        "graph": false,
        "next_graph":false,
        "rang":4,
-       "children":[]
+       "children":[{
+         "label": null,
+         "question": "Show data on a geographically accurate map",
+         "question_id": 11211,
+         "graph": false,
+         "next_graph":false,
+         "rang":5,
+         "children":[]
+       },{
+         "label": null,
+         "question": "Simplify the representation with a schematic view",
+         "question_id": 11212,
+         "graph": false,
+         "next_graph":false,
+         "rang":5,
+         "children":[]
+       }]
       },
       {
        "label": null,
@@ -430,18 +446,66 @@
         "label":null,
         "question":"Show a thematic change over time",
         "question_id":2211,
-        "rang":3,
+        "rang":4,
         "graph":false,
-        "next_graph":false,
-        "children":[]
+        "next_graph":true,
+        "children":[{
+          "label":"timeline (global)",
+          "question":null,
+          "question_id":"2211G271",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G271",
+          "comparison": [{
+            "1":"better than timelines (global) to show the relative importance/dominance of events. They are displayed in chronological order, but the timeline is not as explicit as in timelines (global)"
+          }],
+          "children": null
+        },{
+          "label":"stream graph",
+          "question":null,
+          "question_id":"2211G250",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G250",
+          "comparison": [{
+            "1":"better than stream graphs to add a precise temporal dimension to the description of historical events"
+          }],
+          "children": null
+        }]
       },{
         "label":null,
         "question":"Display a quantitative change over time",
         "question_id":2212,
         "rang":3,
         "graph":false,
-        "next_graph":false,
-        "children":[]
+        "next_graph":true,
+        "children":[{
+          "label":"line graph",
+          "question":null,
+          "question_id":"2212G155",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G155",
+          "comparison": [{
+            "1":"better than circular graph to display precise numeric quantities and exploit numerical data"
+          }],
+          "children": null
+        },{
+          "label":"circular graph",
+          "question":null,
+          "question_id":"2212G60",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G60",
+          "comparison": [{
+            "1":"better than line graphs to show a repetitive phenomenon or display a variation over a circular period (day, month, seasons, …). It is also better to compare the values over the said period."
+          }],
+          "children": null
+        }]
       }]
     },{
       "label":null,
@@ -500,9 +564,14 @@
       "label":"circo",
       "question":null,
       "question_id":"23G55",
+      "graph_number":"G55",
       "rang":3,
       "next_graph":false,
-      "graph":true
+      "graph":true,
+      "comparison":[{
+        "1":"easier to read than alluvial graphs for complex interactions",
+        "2":"better than flow maps and space-time cube maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)"
+      }]
     },{
       "label":"alluvial graph",
       "question":null,
@@ -573,7 +642,31 @@
         "rang":3,
         "graph":false,
         "next_graph":true,
-        "children":[]
+        "children":[{
+          "label":"tag cloud",
+          "question":null,
+          "question_id":"3111G270",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G270",
+          "comparison": [{
+            "1":"better than lists at emphasizing some elements"
+          }],
+          "children": null
+        },{
+          "label":"list",
+          "question":null,
+          "question_id":"3111G165",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G165",
+          "comparison": [{
+            "1":"better than tag clouds at showing elements in an ordered manner"
+          }],
+          "children": null
+        }]
       },{
         "label":null,
         "question":"Show numeric data",
@@ -581,7 +674,19 @@
         "rang":3,
         "graph":false,
         "next_graph":true,
-        "children":[]
+        "children":[{
+          "label":"stem-and-leaf graph",
+          "question":null,
+          "question_id":"3112G240",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G240",
+          "comparison": [{
+            "1":"N/A"
+          }],
+          "children": null
+        }]
       }]
     },{
       "label":null,
@@ -597,7 +702,43 @@
         "rang":3,
         "graph":false,
         "next_graph":true,
-        "children":[]
+        "children":[{
+          "label":"basic shapes",
+          "question":null,
+          "question_id":"3121G30",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G30",
+          "comparison": [{
+            "1":"better than pies & rings and enclosure trees to show relative importance of a very small number of topics"
+          }],
+          "children": null
+        },{
+          "label":"pies and rings",
+          "question":null,
+          "question_id":"3121G185",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G185",
+          "comparison": [{
+            "1":"better than basic shapes and enclosure trees to show similar or striking proportions"
+          }],
+          "children": null
+        },{
+          "label":"enclosure tree",
+          "question":null,
+          "question_id":"3121G105",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G105",
+          "comparison": [{
+            "1":"better than basic shsapes and pies and rings to show inclusion"
+          }],
+          "children": null
+        }]
       },{
         "label":null,
         "question":"Show the exhaustivity of my data or create many categories",
@@ -605,7 +746,23 @@
         "rang":3,
         "graph":false,
         "next_graph":false,
-        "children":[]
+        "children":[{
+          "label":null,
+          "question":"Read (numeric) quantities easily",
+          "question_id":31221,
+          "rang":5,
+          "graph":false,
+          "next_graph":true,
+          "children":[]
+        },{
+          "label":null,
+          "question":"Show proportion without numeric indicators",
+          "question_id":31222,
+          "rang":5,
+          "graph":false,
+          "next_graph":true,
+          "children":[]
+        }]
       }]
     }]
  },{
@@ -629,7 +786,45 @@
         "rang":3,
         "graph":false,
         "next_graph":true,
-        "children":[]
+        "children":[{
+          "label":"circo",
+          "question":null,
+          "question_id":"3211G55",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G55",
+          "comparison": [{
+            "1":"easier to read than alluvial graphs and sankey graphs for complex interactions"
+          }],
+          "children": null
+        },{
+          "label":"alluvial graph",
+          "question":null,
+          "question_id":"3211G10",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G10",
+          "comparison": [{
+            "1":"better than circos for adding a temporal dimension easily",
+            "2":"simplified sankey graph - better than sankey graphs for simplifed interactions"
+          }],
+          "children": null
+        },{
+          "label":"sankey graph",
+          "question":null,
+          "question_id":"3211G210",
+          "rang":5,
+          "next_graph":false,
+          "graph":true,
+          "graph_number":"G210",
+          "comparison": [{
+            "1":"better than alluvial graphs for complex interactions",
+            "2":"better than circos because a temporal dimension can be added easily"
+          }],
+          "children": null
+        }]
       },{
         "label":null,
         "question":"Map relationships",

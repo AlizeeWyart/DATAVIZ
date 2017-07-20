@@ -390,7 +390,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G110_cxteni.png",
     "similar_to": ["box-and-whisker symbol graph"]
  },
-  
+
   "G115": {
     "name": "Flow map",
     "level": "beginner",
@@ -408,7 +408,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
     "similar_to": ["alluvial graph", "circo", "space-time cube map"]
   },
-  
+
     "G125": {
     "name": "Histogram",
     "level": "beginner",
@@ -417,7 +417,7 @@
       "1":" Unlike bar graphs that display categories, histograms are exclusively used to display the distribution of a variable over time intervalls. The length of each bar depends on the quantity measured in each intervall."
     },
     "advantages": {
-      "1": "Display distribution over a time period or interval."
+      "1": "Display distribution over a time period or interval.",
       "2": "Get a quick overview of extreme values and a rough overview of probability distribution."
     },
     "disadvantages": {
@@ -446,7 +446,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G130_zivq25.png",
     "similar_to": ["alluvial graph", "sankey graph"]
   },
-  
+
    "G135": {
     "name": "Hive graph",
     "level": "advanced",
@@ -466,7 +466,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G135_z8bqgf.png",
     "similar_to": ["alluvial graph", "tree view"]
   },
-  
+
   "G140": {
     "name": "Isarithmic map",
     "level": "intermediate",
@@ -504,7 +504,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png",
     "similar_to": null
   },
-  
+
   "G150": {
     "name": "Isoline map",
     "level": "Advanced",
@@ -522,7 +522,7 @@
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
     "similar_to": ["circo", "self-organising map"]
   },
-  
+
    "G155": {
     "name": "Line graph",
     "level": "beginner",
@@ -538,9 +538,9 @@
     },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G155_lyvlzt.png",
-    "similar_to": ["histogram", "spark line", "circular graph]
+    "similar_to": ["histogram", "spark line", "circular graph"]
   },
-                   
+
  "G160": {
     "name": "Link tree",
     "level": "advanced",
@@ -557,14 +557,14 @@
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G160_gjjxdw.png",
     "similar_to": ["dendogram", "enclosure tree", "network structure", "tree view"]
-  },          
-  
+  },
+
    "G165": {
     "name": "List",
     "level": "beginner",
     "dashboard": false,
     "reading_principle": {
-      "1":"Elements are simply listed."
+      "1":"Elements are simply listed.",
       "2": "Indentation, size, colour can vary to point out importance or hierarchy."
     },
     "advantages": {
@@ -576,49 +576,48 @@
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G165_qxbgxf.png",
     "similar_to": ["tag cloud"]
-  },   
-  
+  },
     "G170": {
     "name": "Mosaic graph",
-    "level": "intermediate
+    "level": "intermediate",
     "dashboard": false,
     "reading_principle": {
       "1":"Horizontal or vertical bars that occupy all the space are split into their different categories."
     },
     "advantages": {
-      "1":"Compare the repartition of elements within different categories."
+      "1":"Compare the repartition of elements within different categories.",
       "2": "Quantify and represent importance with two parameters (x-axis and y-axis)."
     },
     "disadvantages": {
       "1":"The subcategories are hard to compare between different bars as they are not necessarily aligned, and as areas are more difficult to process than lengths for the human brain !"
     },
-    "how_to_do": "EXCEL", 
+    "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G170_vrgtrv.png",
     "similar_to": ["bar graph", "crossmap", "double-sided bar graph", "enclosure tree", "stacked bar graph", "treemap"]
-  }, 
+  },
 
- "G175: {
+ "G175": {
     "name": "Mosaic graph",
-    "level": "intermediate
+    "level": "intermediate",
     "dashboard": false,
     "reading_principle": {
       "1":"Hierarchically organised network where interaction between elements is represented by a line."
     },
     "advantages": {
-      "1":"Show groupings and categories."
+      "1":"Show groupings and categories.",
       "2": "Allows to stand back to understand repartition in a very large data set."
     },
     "disadvantages": {
       "1":"Can become hard to read when there is a big amount of data."
     },
-    "how_to_do": "EXCEL", 
+    "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G175_qkfucp.png",
     "similar_to" : ["enclosure tree", "dendogram", "link tree", "node-link graph", "radial tree", "subway map", "tree view"]
-  }, 
+  },
 
- "G180: {
+ "G180": {
     "name": "Node-link graph",
-    "level": "intermediate
+    "level": "intermediate",
     "dashboard": false,
     "reading_principle": {
       "1":"Unhierarchised network : interaction between elements is simply represented by a line."
@@ -629,30 +628,30 @@
     "disadvantages": {
       "1":"Can become hard to read when there is a big amount of data."
     },
-    "how_to_do": "EXCEL", 
+    "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G180_ucdaoy.png",
     "similar_to" : ["network structure", "radial tree", "subway map"]
-  }, 
+  },
 
- "G181: {
+ "G181": {
     "name": "Parallel coordinates graph",
-    "level": "advanced"
+    "level": "advanced",
     "dashboard": false,
     "reading_principle": {
       "1":"Several vertical axes represent different criteria according to which the data can be sorted and quantified.",
       "2":"For each of the categories that are going to be compared between one another, points are displayed on the axes according to their value for each criterion. Finally, the points are joined together."
     },
     "advantages": {
-      "1":"Compare different profiles"
+      "1":"Compare different profiles",
       "2": "Quantify the strength of interactions or relationships."
     },
     "disadvantages": {
       "1":"Quickly becomes overcharged when there is a big amount of data."
     },
-    "how_to_do": "EXCEL", 
+    "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
     "similar_to" : ["radar graph"]
-  }, 
+  },
 
 "G190": {
     "name": "Proportional symbol map",

@@ -26,7 +26,7 @@
   <br><br>
   <% @second_children.each do |child| %>
     <%= link_to root_path(question_id: child["question_id"]) do %>
-      <br>--> <%= child["question"] %>
+      <br>--> <%= child["question"]  %>
     <% end %>
   <% end %>
 <% end %>
@@ -42,9 +42,18 @@
     X
   <% end %>
   <br><br>
-  <% @second_children.each do |child| %>
-    <%= link_to root_path(question_id: child["question_id"]) do %>
-      <br>--> <%= child["question"] %>
+
+  <% if @next_graph %>
+    <% @second_children.each do |child| %>
+      <%= link_to root_path(question_id: child["question_id"]) do %>
+        <br>--> <%= child["label"] %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <% @second_children.each do |child| %>
+      <%= link_to root_path(question_id: child["question_id"]) do %>
+        <br>--> <%= child["question"] %>
+      <% end %>
     <% end %>
   <% end %>
 <% end %>
@@ -110,40 +119,8 @@
 <% end %>
 </div>
 
+<%= render 'shared/results', results: @results %>
 
-<div class="col-xs-8">
-  <h2>Les résultats
-  <% if @next_graph == true %>
-    <span style="font-size:18px">(<%= @number_of_results %> résultats)</span>
-  </h2>
-  <br>
-  <% @results.each do |result| %>
-    <div class="col-xs-4">
-      <img src="<%= result[1]["image"]%>" alt="" style="width:100%">
-    </div>
-    <div class="col-xs-8">
-      <h4><%= result[1]["name"] %></h4>
-      <p><b>level : </b><%= result[1]["level"] %>
-      <br><b>dashboard : </b><%= result[1]["dashboard"] %>
-      <br><b>reading principle : </b>
-        <% result[1]["reading_principle"].each do |rp| %>
-          <br> --><%= rp[1] %>
-        <% end %>
-      <br><b>advantages : </b>
-        <% result[1]["advantages"].each do |ad| %>
-          <br> --><%= ad[1] %>
-        <% end %>
-      <br><b>disavantages : </b>
-        <% result[1]["disadvantages"].each do |disad| %>
-          <br> --><%= disad[1] %>
-        <% end %>
-      <br><b>comparaison : </b>
-      <% result[2].each do |comp| %>
-        <%= comp[1] %>
-      <% end %>
-      </p>
-    </div>
-  <% end %>
-<% end %>
-</div>
+
+
 
