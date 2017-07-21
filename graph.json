@@ -755,7 +755,7 @@
       "2": "A line that represent interactions links elements from one category with elements from the other category. Buffers are added to point out similarity or different levels of interaction."
     },
     "advantages": {
-      "1": "Represent complex flux and systems."
+      "1": "Represent complex flux and systems.",
       "2": "Display the intermediate phases that can compose a stream."
     },
     "disadvantages": {
