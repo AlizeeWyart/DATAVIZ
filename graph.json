@@ -756,7 +756,7 @@
     },
     "advantages": {
       "1": "Represent complex flux and systems."
-      "2": XXX 
+      "2": "Display the intermediate phases that can compose a stream."
     },
     "disadvantages": {
         "1": "Becomes unadapted when the level of detail of the map is important : the highlighted route will be lost in the mass of information."
@@ -764,6 +764,26 @@
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G210_dvfhxc.png",
     "similar_to": ["alluvial graph", "circo", "history flow"]
+  },
+  
+    "G215": {
+    "name": "Scatter plot",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "Elements are displayed according to their coordinates on a graph with two axis."
+    },
+    "advantages": {
+      "1": "Show correlation between two parameters by superposing a trend curve.",
+      "2": "Show groupings and outliers"
+    },
+    "disadvantages": {
+        "1": "Can become hard to read when there is a huge amount of data.",
+        "2": "The scale should be chosen wisely : it should start at zero for both axis to be interpreted accurately. More complex scales such as a logarithmic scale should be used only when the public can understand it."
+      },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G215_yvtkoe.png",
+    "similar_to": ["dot graph", "stripe graph", "stem-and-leaf graph"]
   },
 
  "G225": {
