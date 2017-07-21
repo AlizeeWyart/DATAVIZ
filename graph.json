@@ -652,6 +652,25 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
     "similar_to" : ["radar graph"]
   },
+  
+ "G185": {
+    "name": "Pies and rings",
+    "level": "beginner",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"The slice representing each category has an angle proportionnal to its quantity."
+    },
+    "advantages": {
+      "1":"Deliver a strong message when proportions are striking (like real pieces of cake : halves, fourths, sixths) ! "
+    },
+    "disadvantages": {
+      "1": "Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that.",
+      "2": "Becomes nearly impossible to read and remember when there are many categories."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G185_debu9j.png",
+    "similar_to" : ["basic shapes", "enclosure tree"]
+  },
 
 "G190": {
     "name": "Proportional symbol map",
@@ -668,9 +687,47 @@
       "1":"Can become overcharged and hard to read when there is a big amount of data."
     },
     "how_to_do": "EXCEL",
-    "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png"
+    "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png",
+    "similar_to": ["cartogram map", "treemap"]
   },
 
+  "G195": {
+    "name": "Radar graph",
+    "level": "intermediate",
+    "dashboard": true,
+    "reading_principle": {
+      "1": "Parameters are measured and reported as points on different axes. These points are then linked together to form a radar graph."
+    },
+    "advantages": {
+      "1": "See how a given set of measures (profile) is different from an optimal profile.",
+      "2": "Compare different profiles."
+    },
+    "disadvantages": {
+      "1":"Very bad for comparing numeric data or remembering it."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G195_ii8n4f.png",
+    "similar_to": ["parallel coordinate graph"]
+  },
+  
+   "G200": {
+    "name": "Radial tree",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "Complex tree where the nodes that have the same number of links required to reach the center node are on the same circle."
+    },
+    "advantages": {
+      "1": "Show the proximity to a chosen element."
+    },
+    "disadvantages": {
+      "1": "Quickly becomes overcharged when there is a big amount of data. "
+    },
+    "how_to_do": "EXCEL",
+    "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G200_xdtjzp",
+    "similar_to": ["network structure", "node-link graph", "subway map"]
+  },
+  
 "G205": {
     "name": "Route map",
     "level": "advanced",
@@ -685,7 +742,28 @@
         "1":"Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information."
       },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png",
+    "similar_to": ["space-time cube map", "strip map"]
+  },
+  
+  "G210": {
+    "name": "Sankey graph",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "This is a complexified version of the alluvial graph.",
+      "2": "A line that represent interactions links elements from one category with elements from the other category. Buffers are added to point out similarity or different levels of interaction."
+    },
+    "advantages": {
+      "1": "Represent complex flux and systems."
+      "2": XXX 
+    },
+    "disadvantages": {
+        "1": "Becomes unadapted when the level of detail of the map is important : the highlighted route will be lost in the mass of information."
+      },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G210_dvfhxc.png",
+    "similar_to": ["alluvial graph", "circo", "history flow"]
   },
 
  "G225": {
