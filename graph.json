@@ -801,7 +801,28 @@
       "1":"When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png",
+    "similar_to": ["alluvial graph", "circo", "flow map", "route map", "strip map"] 
+  },
+  
+   "G230": {
+    "name": "Spark line",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {
+      "1":"A small glyph represents a variation on a line graph without any axes or indication."
+    },
+    "advantages": {
+      "1": "Focus on variations.",
+      "2": "Use this symbol as an illustration of a measured variation."
+    },
+    "disadvantages": {
+      "1":"Display numeric values.",
+      "2": "Unadapted when there are not many variations."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G230_ylggsz.png",
+    "similar_to": ["histogram", "line graph"] 
   },
 
   "G235": {
@@ -819,7 +840,8 @@
       "1":"The subcategories are hard to compare between different bars as they are not necessarily aligned."
     },
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png",
+    "similar_to": ["bar graph", "double-sided bar graph", "histogram", "mosaic graph", "superposed line graphs", "bar graph (several)"]
   },
 
 "G245": {
