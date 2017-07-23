@@ -843,6 +843,25 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png",
     "similar_to": ["bar graph", "double-sided bar graph", "histogram", "mosaic graph", "superposed line graphs", "bar graph (several)"]
   },
+  
+   "G240": {
+    "name": "Stem-and-leaf graph",
+    "level": "expert",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"This representation takes the form of a table with two columns. The left column shows the tens digits (or more). The right column shows the remaining digits to compose the whole number.",
+      "2": " This is not very intuitive at first, but it is a very practical way to array numbers if you want to look values up fast!"
+    },
+    "advantages": {
+      "1": "Array numbers in a practical war in order to look them up easily."
+    },
+    "disadvantages": {
+      "1":"Can become overcharched when there is a big amount of data. On the other hand, it becomes useless when there is a too small amount of data."
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G240_hdpzco.png",
+    "similar_to": ["dot graph", "scatter plot", "stripe graph"]
+  },
 
 "G245": {
     "name": "Stepped relief map",
@@ -851,10 +870,34 @@
     "reading_principle": {
       "1":"Data is represented in each division within a larger area (state, regions, administrative division, …) by showing a bar which height is proportionnal to its importance."
     },
-    "advantages": {"1":"Compare distributions within different geographical areas."},
-    "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
+    "advantages": {
+      "1":"Compare distributions within different geographical areas."
+    },
+    "disadvantages": {
+      "1":"Can become overcharged and hard to read when there is a big amount of data."
+    },
     "how_to_do": "EXCEL",
-    "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png"
+    "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png",
+    "similar_to": ["chloropleth map", "dasymetric map"] 
+  },
+  
+  "G250": {
+    "name": "Stream graph",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1":"Changes in a set of elements are depicted over time. Each element is represented by a different stream."
+    },
+    "advantages": {
+      "1":"Show an evolution over a certain period of time, ideally with a large dataset.",
+      "2": "Provide a quick overview of variations over time."
+    },
+    "disadvantages": {
+      "1": "Unadapted for comparisons between different categories : this graph is targeting an audience who does not want to spend too much time analysing the data !"
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G250_jahamg.png",
+    "similar_to": ["timeline (global)"] 
   },
 
 "G255": {
@@ -865,27 +908,131 @@
     "advantages": {"1":"Describe precisely an itinerary regardless of irrelevant details."},
     "disadvantages": {"1":"Becomes hard to remember  when the itinerary is too long or too detailed."},
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G255_jnq1to.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G255_jnq1to.png",
+     "similar_to": ["route map", "space-time cube map"]
   },
-
+  
+  "G260": {
+    "name": "Stripe graph",
+    "level": "beginner",
+    "dashboard": true,
+    "reading_principle": {"1":"Stripes are displayed on a unique axis that is used to organise them (usually by quantifying them)."},
+    "advantages": {"1":"Show groupings and outliers."},
+    "disadvantages": {"1":"Unadapted to memorise values concerning data repartition."},
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G260_xnoyqe.png",
+     "similar_to": ["dot graph", "scatter plot", "stem-and-leaf graph"]
+  },
+ 
+  "G265": {
+    "name": "Subway map (thematic)",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {"1":"Connect different thematics and show their evolution and common points."},
+    "advantages": {"1":"Show possible links between different elements without representing their environnment."},
+    "disadvantages": {"1":"Finding a right compromise between accuracy and readability can be challenging."},
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G265_bzc14f.png",
+    "similar_to": ["network structure", "node-link graph", "radial tree"]
+  },
+  
 "G266": {
     "name": "Subway map",
     "level": "advanced",
     "dashboard": false ,
-    "reading_principle": {
-      "1": "Different places are connected with links. Geography can be slightly distorted to make the representation easily readable by the user.",
-      "2": " It can also be used to connect different thematics and show their evolution and common points."
-    },
-    "advantages": {"1":"Show possible links between different elements without representing their environnment."},
+    "reading_principle": {"1": "Different places are connected with links. Geography can be slightly distorted to make the representation easily readable by the user."},
+    "advantages": {"1":"Show possible links between different places without representing their environnment."},
     "disadvantages": {"1":"Finding a right compromise between geographical accuracy and readability can be challenging."},
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G266_nhfr3m.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G266_nhfr3m.png",
+    "similar_to": null
   },
+  
+"G267": {
+    "name": "Superposed line graphs",
+    "level": "beginner",
+    "dashboard": true ,
+    "reading_principle": {
+      "1": "This graph displays elements according to their coordinates in a plane with two axis and connect them with a line. This is the well-known y = f(x) graph.",
+      "2": "Several line graphs can be superposed to show evolution of different elements and compare them."                   
+    },
+    "advantages": {
+      "1":"Compare evolution of different categories over times.",
+      "2": "Show  clearly continuous data evolution or correlation."
+    },
+    "disadvantages": {"1":"When several line graphs are superposed, the colours and numbers of superposed graphs must be chosen wisely, or the result becomes unreadable!"},
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G267_rvcpgv.png",
+    "similar_to": ["bar-and-line graph", "bar graph (several)", "double-sided bar graph", "histogram", "stacked bar graph"]
+  },
+ 
+"G270": {
+    "name": "Tag cloud",
+    "level": "beginner",
+    "dashboard": false ,
+    "reading_principle": {
+      "1": "Provide a quick overview of a content.",
+      "2": "Colour and size can vary to indicate the importance of a theme. For example, when a tag cloud represents a text, the size of each word is proportionnal to the number of occurrences!"                   
+    },
+    "advantages": {
+      "1":"Represent large text data sets",
+      "2": "Deliver a strong message by emphasizing some elements."
+    },
+    "disadvantages": {
+      "1":"Some words are too small to be noticed.",
+      "2": "There is no hierarchy or organisation." 
+    },
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G270_hpomv7.png",
+    "similar_to": ["enclosure tree", "list"]
+},
+  
+"G271": {
+    "name": "Timeline (global)",
+    "level": "beginner",
+    "dashboard": false ,
+    "reading_principle": {"1": "A timeline displays all elements that happened within a time period."},
+    "advantages": {"1": "Display temporal evolution of different subjects and their context."},
+    "disadvantages": {"1": "Can become overcharged and hard to read when there is a big amount of data."},
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G271_sy7oai.png",
+    "similar_to": ["stream graph"]
+},
+  
+"G272": {
+    "name": "Timeline (events)",
+    "level": "beginner",
+    "dashboard": false ,
+    "reading_principle": {"1": "A timeline displays the dates and a description of echosen elements over time."},
+    "advantages": {"1": "Display the order and dates of events throughout time."},
+    "disadvantages": {"1": "Can become overcharged and hard to read when there is a big amount of data."},
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G272_g6yigk.png",
+    "similar_to": ["histogram"]
+ },
 
+"G275": {
+    "name": "Timeline (events)",
+    "level": "beginner",
+    "dashboard": false ,
+    "reading_principle": {
+      "1": "Elements from the data set are represented by nodes, that are connected by lines.",
+      "2": "Levels are not necessarily clearly defined for this simplified version of a tree."
+    },
+    "advantages": {
+      "1": "Show elements that are not clearly hierarchised in a simple way.",
+      "2": "Represent a hierarchy with a small number of levels."
+    },
+    "disadvantages": {"1": "Can become overcharged and hard to read when there is a big amount of data."},
+    "how_to_do": "EXCEL",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G275_tcqann.png",
+    "similar_to": ["alluvial graph", "dendogram", "enclosure tree", "hive graph", "link tree", "network structure"]
+ },
+  
 "G280": {
     "name": "Treemap",
     "level": "advanced",
-    "dashboard": false,
+    "dashboard": true,
     "reading_principle": {
       "1": "Rectangles representing categories composing the data fill the space.",
       "2": "Each rectangle is usually (but not always) sized and coloured accordingly to the quantity it withholds. Hierarchy can also be represented by including rectangles inside others."
@@ -893,7 +1040,8 @@
     "advantages": {"1":"Gives an intuitive view : the biggest rectangle corresponds to the biggest element."},
     "disadvantages": {"1":"The quantity corresponding to each rectangle is usually not displayed numerically (but it can be colour-coded)."},
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G280_yr0o4z.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G280_yr0o4z.png",
+    "similar_to": ["cartogram map", "enclosure tree", "mosaic graph", "proportional symbol map"]
   },
 
 "G285": {
@@ -904,7 +1052,8 @@
     "advantages": {"1":"Represent variations of a physical quantity over space."},
     "disadvantages": {"1":"Can become hard to read when there is a big amount of data : the scale and breakdown of space for the measures should be chosen accordingly."},
     "how_to_do": "EXCEL",
-    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G285_l4j1vt.png"
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G285_l4j1vt.png",
+    "similar_to": null
   }
 
 }
