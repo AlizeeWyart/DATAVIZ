@@ -7,12 +7,8 @@
       "1": "Each of the two parallel axis represents a set of data.",
       "2": "A line that represent interactions links elements from one category with elements from the other category."
     },
-    "advantages": {
-      "1":"Show clearly a the evolution between a beginning and an ending situation."
-    },
-    "disadvantages": {
-      "1":"Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled."
-    },
+    "advantages": {"1":"Show clearly a the evolution between a beginning and an ending situation."},
+    "disadvantages": {"1":"Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled."},
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png",
     "similar_to": ["circo", "flow map", "history flow", "hive graph", "sankey graph", "space-time cube map", "tree view"]
@@ -22,18 +18,12 @@
     "name": "Arc graph",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1": "Different elements are displayed on an axis and relationships are represented by arcs connecting them. Weight and colours can vary to show the importance of a relationship."
-    },
-    "advantages": {
-      "1":"Show interactions for elements that are naturally ordered in a linear way (chapters in a book, historical events, …)."
-    },
-    "disadvantages": {
-      "1":"Quickly becomes overcharged when there is a big amount of data."
-    },
+    "reading_principle": {"1": "Different elements are displayed on an axis and relationships are represented by arcs connecting them. Weight and colours can vary to show the importance of a relationship."},
+    "advantages": {"1":"Show interactions for elements that are naturally ordered in a linear way (chapters in a book, historical events, …)."},
+    "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask images/G15_cngyyw.png",
-    "similar_to": ["adjacency matrix", "circo" ]
+    "similar_to": ["adjacency matrix", "circo"]
   },
 
   "G20": {
@@ -44,9 +34,7 @@
       "1": "The length of each bar is proportionnal to the size of the category it represents.",
       "2": "Bars can be horizontal or vertical. Horizontal bars, for instance, are much more telling when a length is measured (life expectancy, distance, …)."
     },
-    "advantages": {
-      "1":"Quantify and compare different categories."
-    },
+    "advantages": {"1":"Quantify and compare different categories."},
     "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."},
     "how_to_do": "EXCEL",
     "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png",
@@ -61,12 +49,8 @@
       "1": "Groups of bars are aligned on a horizontal axis and colour-coded by category.",
       "2": "The length of each bar is proportionnal to the size of the category it represents."
     },
-    "advantages": {
-      "1":"Compare the values of different categories over time."
-    },
-    "disadvantages": {
-      "1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."
-    },
+    "advantages": {"1":"Compare the values of different categories over time."},
+    "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."},
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1500298563/Datask%20images/G21_pik0wk.png",
     "similar_to": ["stacked bar graph", "superposed line graphs"]
@@ -80,12 +64,8 @@
       "1": "The superposition of these two graphs can to used to display the distribution of two variables over time intervalls. The bar will represent the mean value of a parameter over an interval, while the line represents the evolution of a parameter over time. If they do not have the same unit, a third axis is necessary.",
       "2": "Precipitations and temperature graphs are a good exemple of this case."
     },
-    "advantages": {
-      "1":"Show evolutions of different parameters over time."
-    },
-    "disadvantages": {
-      "1":"Data repartition is not detailed within the chosen time intervals."
-    },
+    "advantages": {"1":"Show evolutions of different parameters over time."},
+    "disadvantages": {"1":"Data repartition is not detailed within the chosen time intervals."},
     "how_to_do": "EXCEL",
     "image" : "IMAGE",
     "similar_to": ["double-sided bar graph", "histogram", "superposed line graphs"]
@@ -95,15 +75,9 @@
     "name": "Basic shapes",
     "level": "beginner",
     "dashboard": false,
-    "reading_principle": {
-      "1": "Each shape is proportionnal to the importance of the topic."
-    },
-    "advantages": {
-      "1": "Compare a very small number of elements."
-    },
-    "disadvantages": {
-      "1":"Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that ."
-    },
+    "reading_principle": {"1": "Each shape is proportionnal to the importance of the topic."},
+    "advantages": {"1": "Compare a very small number of elements."},
+    "disadvantages": {"1":"Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that ."},
     "how_to_do": "EXCEL",
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G25_bvynvm.png",
     "similar_to": ["enclosure trees", "pies and rings"]
@@ -113,12 +87,8 @@
     "name": "Box-and-whisker symbol graph",
     "level": "expert",
     "dashboard": false,
-    "reading_principle": {
-      "1": "A box-and-whisker symbol superposed to a point represents statistical indicators on a scatterplot."
-    },
-    "advantages": {
-      "1": "Show and quantify data repartition."
-    },
+    "reading_principle": {"1": "A box-and-whisker symbol superposed to a point represents statistical indicators on a scatterplot."},
+    "advantages": {"1": "Show and quantify data repartition."},
     "disadvantages": {
       "1": "Can become overcharged if there is a big amount of data.",
       "2": "Asks for more statistical knowledge if more elements than just the median appear."
@@ -153,15 +123,9 @@
     "name": "Chloropleth map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1":"The importance of a phenomenon is colour-coded within geographical areas (states, regions, administrative divisions, …)."
-    },
-    "advantages": {
-      "1":"Compare distributions in different geographical areas."
-    },
-    "disadvantages":{
-      "1":"Can become hard to read if there is a lot of data."
-    },
+    "reading_principle": {"1":"The importance of a phenomenon is colour-coded within geographical areas (states, regions, administrative divisions, …)."},
+    "advantages": {"1":"Compare distributions in different geographical areas."},
+    "disadvantages":{"1":"Can become hard to read if there is a lot of data."},
     "how_to_do": "EXCEL",
     "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G50_bx0eau.png",
     "similar_to": ["dasymetric map", "stepped relief map"]
@@ -171,15 +135,9 @@
     "name": "Circo",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Interactions  are represented by arcs that linking elements disposed on the periphery of a circle."
-    },
-    "advantages": {
-      "1":"Interactions are emphasized and relative importances can be easily compared."
-    },
-    "disadvantages": {
-      "1":"Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !"
-    },
+    "reading_principle": {"1":"Interactions  are represented by arcs that linking elements disposed on the periphery of a circle."},
+    "advantages": {"1":"Interactions are emphasized and relative importances can be easily compared."},
+    "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !"},
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G55_octvem.png",
     "similar_to": ["alluvial graph", "arc graph", "flow map", "isoline map", "sankey graph", "self-organising map", "space-time cube map"]
@@ -189,16 +147,12 @@
     "name": "Circular graph",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"One time period is represented on an oriented graph. The studied phenomenon is quantified by its distance to the origin of the graph."
-    },
+    "reading_principle": {"1":"One time period is represented on an oriented graph. The studied phenomenon is quantified by its distance to the origin of the graph."},
     "advantages": {
       "1": "Represent a cyclic phenomenon on a circular period (a day, a month, a year, …).",
       "2": "Emphasize a change on a given period."
     },
-    "disadvantages": {
-      "1":"This representation is pointless when the variation of the represented quantity is very faint."
-    },
+    "disadvantages": {"1":"This representation is pointless when the variation of the represented quantity is very faint."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G60_xrub1s.png",
     "similar_to": ["line graph"]
@@ -208,16 +162,12 @@
     "name": "Conceptual network",
     "level": "expert",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Representation of a network where clusters, technical precisions can be precisely displayed."
-    },
+    "reading_principle": {"1":"Representation of a network where clusters, technical precisions can be precisely displayed."},
     "advantages": {
       "1": "Show groupings and categories within the data.",
       "2": "Include technical details."
     },
-    "disadvantages": {
-      "1":"Can scare users off if the graphics are unattractive ot too varied."
-    },
+    "disadvantages": {"1":"Can scare users off if the graphics are unattractive ot too varied."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G65_d49lrq.png",
     "similar_to": null
@@ -231,12 +181,8 @@
       "1":"The categories that are studied are displayed on an axis delimitating a plane. The vertical axis corresponds to the parameter that quantifies the categories (number such as age, volume, …).",
       "2": "The final result is a 3D-map."
     },
-    "advantages": {
-      "1": "Distinguish and sort important information from the rest of the data."
-    },
-    "disadvantages": {
-      "1":"Makes quantified information difficult to read and remember."
-    },
+    "advantages": {"1": "Distinguish and sort important information from the rest of the data."},
+    "disadvantages": {"1":"Makes quantified information difficult to read and remember."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G70_bp7n6b.png",
     "similar_to": ["mosaic graph"]
@@ -247,15 +193,9 @@
     "name": "Dasymetric map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1":"A phenomenon is quantified on a map with a colour coded scale. Geographical borders (for states, regions, administrative divisions,…) are drawn over the larger area."
-    },
-    "advantages": {
-      "1":"Show a distribution on a larger scale but keep geographical areas in mind as well."
-    },
-    "disadvantages": {
-      "1":"Finding an adequate colour scale to quantify all variations can be difficult."
-    },
+    "reading_principle": {"1":"A phenomenon is quantified on a map with a colour coded scale. Geographical borders (for states, regions, administrative divisions,…) are drawn over the larger area."},
+    "advantages": {"1":"Show a distribution on a larger scale but keep geographical areas in mind as well."},
+    "disadvantages": {"1":"Finding an adequate colour scale to quantify all variations can be difficult."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png",
     "similar_to": ["stepped relief map", "chloropleth map"]
@@ -269,9 +209,7 @@
       "1":"Different nodes are connected by lines and form a classical tree view.",
       "2": "Levels are clearly defined : each nodes at the same distance from the first node are on the same level."
     },
-    "advantages": {
-      "1": "Represent clearly a hierarchy."
-    },
+    "advantages": {"1": "Represent clearly a hierarchy."},
     "disadvantages": {
       "1":"Interaction between elements is not easily represented.",
       "2": "Can become hard to read when there is a big amount of data."
@@ -285,15 +223,9 @@
     "name": "Dot graph",
     "level": "beginner",
     "dashboard": true,
-    "reading_principle": {
-      "1": "Dots are displayed on a unique axis that is used to organise them (usually by quantifying them)."
-    },
-    "advantages": {
-      "1": "Highlight groupings and outliers."
-    },
-    "disadvantages": {
-      "1": "Unadapted for memorising numerical values."
-    },
+    "reading_principle": {"1": "Dots are displayed on a unique axis that is used to organise them (usually by quantifying them)."},
+    "advantages": {"1": "Highlight groupings and outliers."},
+    "disadvantages": {"1": "Unadapted for memorising numerical values."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G85_u3dpjo.png",
     "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
@@ -303,15 +235,9 @@
     "name": "Dot-density map",
     "level": "intermediate",
     "dashboard": false ,
-    "reading_principle": {
-      "1": "Each dot represents an occurrence of a phenomenon or defines a fixed quantity on a certain spot."
-    },
-    "advantages": {
-      "1":"Link a precise quantity to an area and show it on a map."
-    },
-    "disadvantages": {
-      "1":"Becomes unadapted when there are too many occurrences in a very small range."
-    },
+    "reading_principle": {"1": "Each dot represents an occurrence of a phenomenon or defines a fixed quantity on a certain spot."},
+    "advantages": {"1":"Link a precise quantity to an area and show it on a map."},
+    "disadvantages": {"1":"Becomes unadapted when there are too many occurrences in a very small range."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png",
     "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
@@ -325,12 +251,8 @@
       "1": "The length of each bar is proportionnal to the size of the category it represents. ",
       "2": "Data can either be broken down into time intervalls (like histograms) or into different categories (like bar charts)."
     },
-    "advantages": {
-      "1":"Compare data to a quantified objective."
-    },
-    "disadvantages": {
-      "1":"Does not detail data repartition within the chosen time intervals."
-    },
+    "advantages": {"1":"Compare data to a quantified objective."},
+    "disadvantages": {"1":"Does not detail data repartition within the chosen time intervals."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png",
     "similar_to": ["bar-and-line graph", "bar graph", "histogram", "mosaic graph", "stacked bar graph", "superposed line graphs"]
@@ -340,15 +262,9 @@
     "name": "Elevation map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1": "Data is representend on a geographical area in a continuous way : it is quantified by its altitude on a map."
-    },
-    "advantages": {
-      "1":"Compare distributions in different geographical areas."
-    },
-    "disadvantages": {
-      "1":"Unadapted for a situation where there are few variations within the data : the differences are hardly percievable."
-    },
+    "reading_principle": {"1": "Data is representend on a geographical area in a continuous way : it is quantified by its altitude on a map."},
+    "advantages": {"1":"Compare distributions in different geographical areas."},
+    "disadvantages": {"1":"Unadapted for a situation where there are few variations within the data : the differences are hardly percievable."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png",
     "similar_to": ["dot-density map", "isarithmic map"]
@@ -358,12 +274,8 @@
     "name": "Enclosure tree",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1": "Shapes (often circular, but can be squares) are included into others to highlight the category to which they belong."
-    },
-    "advantages": {
-      "1":"Show a certain type of hierarchy : inclusion."
-    },
+    "reading_principle": {"1": "Shapes (often circular, but can be squares) are included into others to highlight the category to which they belong."},
+    "advantages": {"1":"Show a certain type of hierarchy : inclusion."},
     "disadvantages": {
       "1":"Elements quickly become hard to compare when there is a big amount of data.",
       "2":"Interactions between elements are not easily shown."
@@ -377,15 +289,9 @@
     "name": "Error bar graph",
     "level": "expert",
     "dashboard": false,
-    "reading_principle": {
-      "1": "An error bar superposed to each point of a scatterplot indicates the error margin."
-    },
-    "advantages": {
-      "1":"Show the precision or the error margin corresponding to a measure."
-    },
-    "disadvantages": {
-      "1":"Choosing a scale that is both adapted to the distribution of the points and the size of the measured error can be difficult."
-    },
+    "reading_principle": {"1": "An error bar superposed to each point of a scatterplot indicates the error margin."},
+    "advantages": {"1":"Show the precision or the error margin corresponding to a measure."},
+    "disadvantages": {"1":"Choosing a scale that is both adapted to the distribution of the points and the size of the measured error can be difficult."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G110_cxteni.png",
     "similar_to": ["box-and-whisker symbol graph"]
@@ -395,15 +301,9 @@
     "name": "Flow map",
     "level": "beginner",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Flows are superposed on a geographically accurate map."
-    },
-    "advantages": {
-      "1":"Show accurately movements or fluxes between geographical areas."
-    },
-    "disadvantages": {
-      "1":"Can become overcharged and hard to read when there is a big amount of data."
-    },
+    "reading_principle": {"1":"Flows are superposed on a geographically accurate map."},
+    "advantages": {"1":"Show accurately movements or fluxes between geographical areas."},
+    "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
     "similar_to": ["alluvial graph", "circo", "space-time cube map"]
@@ -413,16 +313,12 @@
     "name": "Histogram",
     "level": "beginner",
     "dashboard": true,
-    "reading_principle": {
-      "1":" Unlike bar graphs that display categories, histograms are exclusively used to display the distribution of a variable over time intervalls. The length of each bar depends on the quantity measured in each intervall."
-    },
+    "reading_principle": {"1":" Unlike bar graphs that display categories, histograms are exclusively used to display the distribution of a variable over time intervalls. The length of each bar depends on the quantity measured in each intervall."},
     "advantages": {
       "1": "Display distribution over a time period or interval.",
       "2": "Get a quick overview of extreme values and a rough overview of probability distribution."
     },
-    "disadvantages": {
-      "1":"Data repartition is not detailed within the chosen time intervalls."
-    },
+    "disadvantages": {"1":"Data repartition is not detailed within the chosen time intervalls."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G125_iqo3ww.png",
     "similar_to": ["bar-and-line graph", "double-sided bar graph", "line graph", "spark line", "stacked bar graphs", "superposed line graphs", "timeline (events)"]
@@ -436,12 +332,8 @@
       "1":"This representation displays the changes made between the different versions of a text over history.",
       "2": "Vertical bars show the length and existence of text chnunks over time and bands representing text chunks can be colour-coded to represent characteristics (author, nature, ...)."
     },
-    "advantages": {
-      "1": "Represent thematic veriations between different versions of a text."
-    },
-    "disadvantages": {
-      "1":"Unadapted to display precise indicators regarding the content."
-    },
+    "advantages": {"1": "Represent thematic veriations between different versions of a text."},
+    "disadvantages": {"1":"Unadapted to display precise indicators regarding the content."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G130_zivq25.png",
     "similar_to": ["alluvial graph", "sankey graph"]
@@ -459,9 +351,7 @@
       "1": "Compare different profiles.",
       "2": "Quantify the strength of interactions or relationships."
     },
-    "disadvantages": {
-      "1":"Quickly becomes overcharged when there is a big amount of data."
-    },
+    "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G135_z8bqgf.png",
     "similar_to": ["alluvial graph", "tree view"]
@@ -475,12 +365,8 @@
       "1": "The density or importance of a phenomenon is colour-coded on a continuous scale.",
       "2": "The areas where the phenomenon can be quantified are colourised accordingly (which means that the whole map is usually not coloured)."
     },
-    "advantages": {
-      "1":"Emphasize some areas according to the value of a parameter."
-    },
-    "disadvantages": {
-      "1":"Unadapted to show precise occurrences of a phenomenon over an area."
-    },
+    "advantages": {"1":"Emphasize some areas according to the value of a parameter."},
+    "disadvantages": {"1":"Unadapted to show precise occurrences of a phenomenon over an area."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png",
     "similar_to": ["dot-density map", "elevation map"]
@@ -491,15 +377,9 @@
     "name": "Isochrone map",
     "level": "Advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Equal travel times are shown with isolines."
-    },
-    "advantages": {
-      "1":"Read at a glance the travel length to/from a point."
-    },
-    "disadvantages": {
-      "1":"A point of reference has to be chosen : the length of the travel cannot be shown for several places at once."
-    },
+    "reading_principle": {"1":"Equal travel times are shown with isolines."},
+    "advantages": {"1":"Read at a glance the travel length to/from a point."},
+    "disadvantages": {"1":"A point of reference has to be chosen : the length of the travel cannot be shown for several places at once."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png",
     "similar_to": null
@@ -509,15 +389,9 @@
     "name": "Isoline map",
     "level": "Advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Like a real geographical isoline map, similar topics are showed on the same altitude"
-    },
-    "advantages": {
-      "1":"Represent the proximity between different topics in an intuitive way."
-    },
-    "disadvantages": {
-      "1":"Unadapted to represent a situation where many elements are interacting with the others. "
-    },
+    "reading_principle": {"1":"Like a real geographical isoline map, similar topics are showed on the same altitude"},
+    "advantages": {"1":"Represent the proximity between different topics in an intuitive way."},
+    "disadvantages": {"1":"Unadapted to represent a situation where many elements are interacting with the others. "},
     "how_to_do": "EXCEL",
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
     "similar_to": ["circo", "self-organising map"]
@@ -527,15 +401,9 @@
     "name": "Line graph",
     "level": "beginner",
     "dashboard": true,
-    "reading_principle": {
-      "1":"This graph is the well-known y = f(x) graph. It displays elements according to their coordinates in a plane with two axis and connect them with a line. This is the well-known y = f(x) graph."
-    },
-    "advantages": {
-      "1":"Show  a continuous data evolution or correlation."
-    },
-    "disadvantages": {
-      "1":"Can become hard to read when the scale of one of the axes is not chosen wisely."
-    },
+    "reading_principle": {"1":"This graph is the well-known y = f(x) graph. It displays elements according to their coordinates in a plane with two axis and connect them with a line. This is the well-known y = f(x) graph."},
+    "advantages": {"1":"Show  a continuous data evolution or correlation."},
+    "disadvantages": {"1":"Can become hard to read when the scale of one of the axes is not chosen wisely."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G155_lyvlzt.png",
     "similar_to": ["histogram", "spark line", "circular graph"]
@@ -545,21 +413,15 @@
     "name": "Link tree",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Hierarchised tree for which at least one branch has so many elements that it takes the shape of an arc, resulting in a circular shaped tree."
-    },
-    "advantages": {
-      "1":"Represent clearly a hierarchy with many levels."
-    },
-    "disadvantages": {
-      "1":"Quickly becomes overcharged when there is a big amount of data."
-    },
+    "reading_principle": {"1":"Hierarchised tree for which at least one branch has so many elements that it takes the shape of an arc, resulting in a circular shaped tree."},
+    "advantages": {"1":"Represent clearly a hierarchy with many levels."},
+    "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G160_gjjxdw.png",
     "similar_to": ["dendogram", "enclosure tree", "network structure", "tree view"]
   },
 
-   "G165": {
+  "G165": {
     "name": "List",
     "level": "beginner",
     "dashboard": false,
@@ -567,30 +429,23 @@
       "1":"Elements are simply listed.",
       "2": "Indentation, size, colour can vary to point out importance or hierarchy."
     },
-    "advantages": {
-      "1":"Show elements in a clear and ordered way."
-    },
-    "disadvantages": {
-      "1":"Quickly becomes overcharged when there is a big amount of data."
-    },
+    "advantages": {"1":"Show elements in a clear and ordered way."},
+    "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G165_qxbgxf.png",
     "similar_to": ["tag cloud"]
   },
-    "G170": {
+  
+ "G170": {
     "name": "Mosaic graph",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Horizontal or vertical bars that occupy all the space are split into their different categories."
-    },
+    "reading_principle": {"1":"Horizontal or vertical bars that occupy all the space are split into their different categories."},
     "advantages": {
       "1":"Compare the repartition of elements within different categories.",
       "2": "Quantify and represent importance with two parameters (x-axis and y-axis)."
     },
-    "disadvantages": {
-      "1":"The subcategories are hard to compare between different bars as they are not necessarily aligned, and as areas are more difficult to process than lengths for the human brain !"
-    },
+    "disadvantages": {"1":"The subcategories are hard to compare between different bars as they are not necessarily aligned, and as areas are more difficult to process than lengths for the human brain !"},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G170_vrgtrv.png",
     "similar_to": ["bar graph", "crossmap", "double-sided bar graph", "enclosure tree", "stacked bar graph", "treemap"]
@@ -600,16 +455,12 @@
     "name": "Mosaic graph",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Hierarchically organised network where interaction between elements is represented by a line."
-    },
+    "reading_principle": {"1":"Hierarchically organised network where interaction between elements is represented by a line."},
     "advantages": {
       "1":"Show groupings and categories.",
       "2": "Allows to stand back to understand repartition in a very large data set."
     },
-    "disadvantages": {
-      "1":"Can become hard to read when there is a big amount of data."
-    },
+    "disadvantages": {"1":"Can become hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G175_qkfucp.png",
     "similar_to" : ["enclosure tree", "dendogram", "link tree", "node-link graph", "radial tree", "subway map", "tree view"]
@@ -619,15 +470,9 @@
     "name": "Node-link graph",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Unhierarchised network : interaction between elements is simply represented by a line."
-    },
-    "advantages": {
-      "1":"Allows to stand back to understand repartition in a very large data set."
-    },
-    "disadvantages": {
-      "1":"Can become hard to read when there is a big amount of data."
-    },
+    "reading_principle": {"1":"Unhierarchised network : interaction between elements is simply represented by a line."},
+    "advantages": {"1":"Allows to stand back to understand repartition in a very large data set."},
+    "disadvantages": {"1":"Can become hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G180_ucdaoy.png",
     "similar_to" : ["network structure", "radial tree", "subway map"]
@@ -645,9 +490,7 @@
       "1":"Compare different profiles",
       "2": "Quantify the strength of interactions or relationships."
     },
-    "disadvantages": {
-      "1":"Quickly becomes overcharged when there is a big amount of data."
-    },
+    "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
     "similar_to" : ["radar graph"]
@@ -657,12 +500,8 @@
     "name": "Pies and rings",
     "level": "beginner",
     "dashboard": false,
-    "reading_principle": {
-      "1":"The slice representing each category has an angle proportionnal to its quantity."
-    },
-    "advantages": {
-      "1":"Deliver a strong message when proportions are striking (like real pieces of cake : halves, fourths, sixths) ! "
-    },
+    "reading_principle": {"1":"The slice representing each category has an angle proportionnal to its quantity."},
+    "advantages": {"1":"Deliver a strong message when proportions are striking (like real pieces of cake : halves, fourths, sixths) ! "},
     "disadvantages": {
       "1": "Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that.",
       "2": "Becomes nearly impossible to read and remember when there are many categories."
@@ -680,12 +519,8 @@
       "1": "A geographical area is separated into smaller areas (states, regions, administrative divisions, …). In each of those  sub-areas,  a symbol proportional to the corresponding quantity is displayed.",
       "2": "Two parameters can be quantified at once if necessary with 1) the size of the  symbol and 2) its colour."
     },
-    "advantages": {
-      "1":"Display a geographical distribution and quantify the value on each area."
-    },
-    "disadvantages": {
-      "1":"Can become overcharged and hard to read when there is a big amount of data."
-    },
+    "advantages": {"1":"Display a geographical distribution and quantify the value on each area."},
+    "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png",
     "similar_to": ["cartogram map", "treemap"]
@@ -695,16 +530,12 @@
     "name": "Radar graph",
     "level": "intermediate",
     "dashboard": true,
-    "reading_principle": {
-      "1": "Parameters are measured and reported as points on different axes. These points are then linked together to form a radar graph."
-    },
+    "reading_principle": {"1": "Parameters are measured and reported as points on different axes. These points are then linked together to form a radar graph."},
     "advantages": {
       "1": "See how a given set of measures (profile) is different from an optimal profile.",
       "2": "Compare different profiles."
     },
-    "disadvantages": {
-      "1":"Very bad for comparing numeric data or remembering it."
-    },
+    "disadvantages": {"1":"Very bad for comparing numeric data or remembering it."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G195_ii8n4f.png",
     "similar_to": ["parallel coordinate graph"]
@@ -714,15 +545,9 @@
     "name": "Radial tree",
     "level": "expert",
     "dashboard": false,
-    "reading_principle": {
-      "1": "Complex tree where the nodes that have the same number of links required to reach the center node are on the same circle."
-    },
-    "advantages": {
-      "1": "Show the proximity to a chosen element."
-    },
-    "disadvantages": {
-      "1": "Quickly becomes overcharged when there is a big amount of data. "
-    },
+    "reading_principle": {"1": "Complex tree where the nodes that have the same number of links required to reach the center node are on the same circle."},
+    "advantages": {"1": "Show the proximity to a chosen element."},
+    "disadvantages": {"1": "Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G200_xdtjzp",
     "similar_to": ["network structure", "node-link graph", "subway map"]
@@ -732,15 +557,9 @@
     "name": "Route map",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"A real route is drawn on a geographically accurate map."
-    },
-    "advantages": {
-      "1":"Frame a route in its environnment or compare with alternative routes."
-    },
-    "disadvantages": {
-        "1":"Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information."
-      },
+    "reading_principle": {"1":"A real route is drawn on a geographically accurate map."},
+    "advantages": {"1":"Frame a route in its environnment or compare with alternative routes."},
+    "disadvantages": {"1":"Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png",
     "similar_to": ["space-time cube map", "strip map"]
@@ -758,9 +577,7 @@
       "1": "Represent complex flux and systems.",
       "2": "Display the intermediate phases that can compose a stream."
     },
-    "disadvantages": {
-        "1": "Becomes unadapted when the level of detail of the map is important : the highlighted route will be lost in the mass of information."
-      },
+    "disadvantages": {"1": "Becomes unadapted when the level of detail of the map is important : the highlighted route will be lost in the mass of information."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G210_dvfhxc.png",
     "similar_to": ["alluvial graph", "circo", "history flow"]
@@ -770,9 +587,7 @@
     "name": "Scatter plot",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1": "Elements are displayed according to their coordinates on a graph with two axis."
-    },
+    "reading_principle": {"1": "Elements are displayed according to their coordinates on a graph with two axis."},
     "advantages": {
       "1": "Show correlation between two parameters by superposing a trend curve.",
       "2": "Show groupings and outliers"
@@ -790,16 +605,12 @@
     "name": "Space-time cube map",
     "level": "expert",
     "dashboard": false,
-    "reading_principle": {
-      "1":"A plane map of the geographical area is coupled to a 3D timeline (which appears above the geographical map)."
-    },
+    "reading_principle": {"1":"A plane map of the geographical area is coupled to a 3D timeline (which appears above the geographical map)."},
     "advantages": {
       "1": "Give a clearer version of a 2-D geographical map on which events are reported.",
       "2": "Create the possibility to read the map and the timeline separately."
     },
-    "disadvantages": {
-      "1":"When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read."
-    },
+    "disadvantages": {"1":"When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png",
     "similar_to": ["alluvial graph", "circo", "flow map", "route map", "strip map"] 
@@ -809,9 +620,7 @@
     "name": "Spark line",
     "level": "beginner",
     "dashboard": true,
-    "reading_principle": {
-      "1":"A small glyph represents a variation on a line graph without any axes or indication."
-    },
+    "reading_principle": {"1":"A small glyph represents a variation on a line graph without any axes or indication."},
     "advantages": {
       "1": "Focus on variations.",
       "2": "Use this symbol as an illustration of a measured variation."
@@ -829,16 +638,12 @@
     "name": "Stacked bar graph",
     "level": "beginner",
     "dashboard": true,
-    "reading_principle": {
-      "1":"The length of the bar is proportionnal to the size of the category it represents. Each category is decomposed into smaller categories within the bar (which can be 100% stacked or not)."
-    },
+    "reading_principle": {"1":"The length of the bar is proportionnal to the size of the category it represents. Each category is decomposed into smaller categories within the bar (which can be 100% stacked or not)."},
     "advantages": {
       "1": "Compare a small number of categories.",
       "2": "Good (but not optimal) for showing proportions."
     },
-    "disadvantages": {
-      "1":"The subcategories are hard to compare between different bars as they are not necessarily aligned."
-    },
+    "disadvantages": {"1":"The subcategories are hard to compare between different bars as they are not necessarily aligned."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png",
     "similar_to": ["bar graph", "double-sided bar graph", "histogram", "mosaic graph", "superposed line graphs", "bar graph (several)"]
@@ -852,12 +657,8 @@
       "1":"This representation takes the form of a table with two columns. The left column shows the tens digits (or more). The right column shows the remaining digits to compose the whole number.",
       "2": " This is not very intuitive at first, but it is a very practical way to array numbers if you want to look values up fast!"
     },
-    "advantages": {
-      "1": "Array numbers in a practical war in order to look them up easily."
-    },
-    "disadvantages": {
-      "1":"Can become overcharched when there is a big amount of data. On the other hand, it becomes useless when there is a too small amount of data."
-    },
+    "advantages": {"1": "Array numbers in a practical war in order to look them up easily."},
+    "disadvantages": {"1":"Can become overcharched when there is a big amount of data. On the other hand, it becomes useless when there is a too small amount of data."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G240_hdpzco.png",
     "similar_to": ["dot graph", "scatter plot", "stripe graph"]
@@ -867,15 +668,9 @@
     "name": "Stepped relief map",
     "level": "intermediate",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Data is represented in each division within a larger area (state, regions, administrative division, …) by showing a bar which height is proportionnal to its importance."
-    },
-    "advantages": {
-      "1":"Compare distributions within different geographical areas."
-    },
-    "disadvantages": {
-      "1":"Can become overcharged and hard to read when there is a big amount of data."
-    },
+    "reading_principle": {"1":"Data is represented in each division within a larger area (state, regions, administrative division, …) by showing a bar which height is proportionnal to its importance."},
+    "advantages": {"1":"Compare distributions within different geographical areas."},
+    "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png",
     "similar_to": ["chloropleth map", "dasymetric map"] 
@@ -885,16 +680,12 @@
     "name": "Stream graph",
     "level": "advanced",
     "dashboard": false,
-    "reading_principle": {
-      "1":"Changes in a set of elements are depicted over time. Each element is represented by a different stream."
-    },
+    "reading_principle": {"1":"Changes in a set of elements are depicted over time. Each element is represented by a different stream."},
     "advantages": {
       "1":"Show an evolution over a certain period of time, ideally with a large dataset.",
       "2": "Provide a quick overview of variations over time."
     },
-    "disadvantages": {
-      "1": "Unadapted for comparisons between different categories : this graph is targeting an audience who does not want to spend too much time analysing the data !"
-    },
+    "disadvantages": {"1": "Unadapted for comparisons between different categories : this graph is targeting an audience who does not want to spend too much time analysing the data !"},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G250_jahamg.png",
     "similar_to": ["timeline (global)"] 
