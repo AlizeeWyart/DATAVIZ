@@ -54,13 +54,13 @@
        "label": "elevation map",
        "question": null,
        "question_id": 1113,
-       "rangg": 4,
+       "rang": 4,
        "graph": true,
+       "next_graph": false,
+       "graph_number": "G100",
        "comparison": [{
         "1": "Better than isarythmic maps and elevation maps to highlight important differences between the highest and lowest values."
        }],
-       "next_graph": false,
-       "graph_number": "G100",
        "children": null
       }
      ]
@@ -77,24 +77,24 @@
        "label": null,
        "question": "Display data on a geographical map",
        "question_id": 1121,
+       "rang":4,
        "graph": false,
        "next_graph":false,
-       "rang":4,
        "children":[{
          "label": null,
          "question": "Show data on a geographically accurate map",
          "question_id": 11211,
+         "rang": 5,
          "graph": false,
          "next_graph":false,
-         "rang":5,
          "children":[
           {
          "label": null,
          "question": "Represent the variations of a physical quantity over space.",
          "question_id": 112111,
+         "rang":6,
          "graph": false,
-         "next_graph":true,
-         "rang":6, 
+         "next_graph":true, 
          "children":[{
            "label": "Vector field",
            "question": null,
@@ -109,9 +109,9 @@
          "label": null,
          "question": "Represent other types of variations over space.",
          "question_id": 112112,
+         "rang": 6,
          "graph": false,
          "next_graph":true,
-         "rang":6, 
          "children":[{
            "label": "Dasymetric map",
            "question": null,
@@ -126,6 +126,7 @@
            "label": "Stepped relief map",
            "question": null,
            "question_id": 1121122,
+           "rang": 7,
            "graph": true,
            "next_graph": false,
            "graph_number": "G245"
@@ -139,6 +140,7 @@
            "label": "Chloropleth map",
            "question": null,
            "question_id": 1121123,
+           "rang": 7,
            "graph": true,
            "next_graph": false,
            "graph_number": "G50"
@@ -155,30 +157,32 @@
          "label": null,
          "question": "Simplify the representation with a schematic view",
          "question_id": 11212,
+         "rang": 5,
          "graph": false,
          "next_graph":false,
-         "rang":5,
          "children":[]
        }]
       },
       {
        "label": null,
        "question": "Just highlight numbers and proportions",
-       "question_id":1122,
-       "graph":false,
+       "question_id": 1122,
        "rang": 4,
+       "graph":false,
        "next_graph": false,
        "children": [
         {
          "label": null,
          "question": "Use an abstract view that emphasizes values",
          "question_id":11221,
-         "next_graph":true,
-         "graph":false,
+         "rang": 5,
+         "next_graph": true,
+         "graph": false,
          "children": [
             {"label":"bar graph",
               "question":null,
               "question_id":112211,
+              "rang": 6,
               "graph":true,
               "next_graph": false,
               "graph_number": "G20",
@@ -188,6 +192,7 @@
             {"label":"double-sided bar graph",
               "question":null,
               "question_id":112212,
+              "rang": 6,
               "graph":true,
               "next_graph": false,
               "graph_number": "G95",
@@ -197,6 +202,7 @@
             {"label":"stacked bar graph",
               "question":null,
               "question_id":112213,
+              "rang": 6,
               "graph":true,
               "next_graph": false,
               "graph_number": "G235",
@@ -209,6 +215,7 @@
             {"label":"mosaic graph",
               "question":null,
               "question_id":112214,
+              "rang": 6,
               "graph":true,
               "next_graph": false,
               "graph_number": "G170",
