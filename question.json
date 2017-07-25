@@ -129,7 +129,7 @@
            "rang": 7,
            "graph": true,
            "next_graph": false,
-           "graph_number": "G245"
+           "graph_number": "G245",
            "comparison": [{
            "1": "Better than dasymetric maps to compare data in different areas.",
            "2": "Better than chloropleth maps to deliver a strong message."
@@ -143,7 +143,7 @@
            "rang": 7,
            "graph": true,
            "next_graph": false,
-           "graph_number": "G50"
+           "graph_number": "G50",
            "comparison": [{
            "1": "Better than dasymetric maps to compare data in different areas.",
            "2": "Better than stepped relief map to represent clearly a lot of data."
