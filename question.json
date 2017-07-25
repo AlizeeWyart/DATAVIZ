@@ -101,10 +101,11 @@
            "question_id": 1121111,
            "graph": true,
            "next_graph": false,
-           "graph_number": "G285"
+           "graph_number": "G285",
            "comparison": null,
            "children": null
           }],
+          },
           {
          "label": null,
          "question": "Represent other types of variations over space.",
@@ -150,7 +151,6 @@
            }],
            "children": null
           },
-          ]
          ] 
          },
        {
@@ -171,6 +171,7 @@
            "comparison": [{"1": "Better than cartogram map and treemap to keep geographic distribution in mind."}],
            "children": null
           },
+          {
            "label": "Cartogram map",
            "question": null,
            "question_id": 112122,
