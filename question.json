@@ -160,7 +160,38 @@
          "rang": 5,
          "graph": false,
          "next_graph":false,
-         "children":[]
+         "children":[{
+           "label": "Proportional symbol map",
+           "question": null,
+           "question_id": 112121,
+           "rang": 6,
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G190",
+           "comparison": [{"1": "Better than cartogram map and treemap to keep geographic distribution in mind."}],
+           "children": null
+          },
+           "label": "Cartogram map",
+           "question": null,
+           "question_id": 112122,
+           "rang": 6,
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G45",
+           "comparison": [{"1": "Better than proportional symbol maps and treemaps to highlight a striking difference between the size of a geographical area and the quantity it withholds."}],
+           "children": null
+          }, 
+           "label": "Treemap",
+           "question": null,
+           "question_id": 112123,
+           "rang": 6,
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G280",
+           "comparison": [{"1": "Better than proportional symbol map and cartogram map to compare values between different areas on a scale."}],
+           "children": null
+          },
+          ]
        }]
       },
       {
@@ -232,16 +263,16 @@
          "next_graph":true,
          "graph":false,
          "children": [{
-          "label":"treemap",
-          "question": null,
-          "question_id":"112221",
-          "rang":6,
-          "next_graph": false,
-          "graph":true,
-          "graph_number":"G280",
-          "comparison": null,
-          "children": null
-        }]
+           "label":"treemap",
+           "question": null,
+           "question_id":"112221",
+           "rang":6,
+           "next_graph": false,
+           "graph":true,
+           "graph_number":"G280",
+           "comparison": null,
+           "children": null
+         }]
         }
        ]
       }
