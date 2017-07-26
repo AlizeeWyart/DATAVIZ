@@ -1610,179 +1610,178 @@
  "next_graph": false,
  "children": [{
     "label":null,
-    "question":"Mainly show how my data is distributed",
-    "question_id":41,
-    "rang":2,
+    "question": "Mainly show how my data is distributed",
+    "question_id": 41,
+    "rang": 2,
     "graph": false,
     "next_graph": false,
-    "children":[{
-      "label":null,
-      "question":"Point out groupings or outliers",
-      "question_id":411,
-      "rang":3,
-      "graph":false,
-      "next_graph":true,
+    "children": [{
+      "label": null,
+      "question": "Point out groupings or outliers",
+      "question_id": 411,
+      "rang": 3,
+      "graph": false,
+      "next_graph": true,
       "children": [{
-        "label":"scatter plot",
-        "question":null,
-        "question_id":"411G215",
-        "rang":4,
-        "next_graph":false,
+        "label": "Scatter plot",
+        "question": null,
+        "question_id": "411G215",
+        "rang": 4,
+        "next_graph": false,
         "graph":true,
-        "graph_number":"G215",
+        "graph_number": "G215",
         "comparison": [{
-          "1":"better than dot graphs, stripe graphs and stem-and-leaf graphs to show correlation"
+          "1": "Better than dot graphs, stripe graphs and stem-and-leaf graphs to show correlation."
         }],
         "children": null
       },{
-        "label":"dot graph",
+        "label": "Dot graph",
         "question":null,
         "question_id":"411G85",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G85",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G85",
         "comparison": [{
-          "1":"better than scatter plots to highlight groupings and outliers",
-          "2":"easier to colour-code than stripe graphs",
-          "3":"better than stem-and-leaf graphs to show repartition rather than display precise values"
+          "1": "Better than scatter plots to highlight groupings and outliers.",
+          "2": "Easier to colour-code than stripe graphs.",
+          "3": "Better than stem-and-leaf graphs to show repartition rather than display precise values."
         }],
         "children": null
       },{
-        "label":"stripe graph",
-        "question":null,
-        "question_id":"411G260",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G260",
+        "label": "Stripe graph",
+        "question": null,
+        "question_id": "411G260",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G260",
         "comparison": [{
-          "1":"better than scatter plots to highlight groupings and outliers",
-          "2":"better than dot graph to quantify precisely each element",
-          "3":"better than stem-and-leaf graphs to show repartition rather than display precise values"
+          "1": "Better than scatter plots to highlight groupings and outliers.",
+          "2": "Better than dot graph to quantify precisely each element.",
+          "3": "Better than stem-and-leaf graphs to show repartition rather than display precise values."
         }],
         "children": null
       },{
-        "label":"stem-and-leaf graph",
-        "question":null,
-        "question_id":"411G240",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G240",
+        "label": "Stem-and-leaf graph",
+        "question": null,
+        "question_id": "411G240",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G240",
         "comparison": [{
-          "1":"better than scatter plots, dot graphs and stripe graphs to order and look up numeric values"
+          "1": "Better than scatter plots, dot graphs and stripe graphs to order and look up numeric values."
+        }],
+        "children": null
+      }]
+    },{
+      "label": null,
+      "question": "Show evolution over time",
+      "question_id": 412,
+      "rang": 3,
+      "graph": false,
+      "next_graph": true,
+      "children": [{
+        "label": "histogram",
+        "question": null,
+        "question_id": "412G125",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G125",
+        "comparison": [{
+          "1": "Better than line graphs to compare data over time intervals.",
+          "2": "Better than bar-and-line graphs to study the variation of only one quantity at a time."
+        }],
+        "children": null
+      },{
+        "label": "Spark line",
+        "question": null,
+        "question_id": "412G230",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G230",
+        "comparison": [{
+          "1": "Better than histograms and line graphs to show a variation over a long period of time in a synthetic way."
+        }],
+        "children": null
+      },{
+        "label": "line graph",
+        "question": null,
+        "question_id": "412G155",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G155",
+        "comparison": [{
+          "1": "Better than spark lines to display quantities.",
+          "2": "Better than histograms to show a continuous evolution."
         }],
         "children": null
       }]
     },{
       "label":null,
-      "question":"Show evolution over time",
-      "question_id":412,
-      "rang":3,
-      "graph":false,
-      "next_graph":true,
+      "question": "See statistical indicators",
+      "question_id": 413,
+      "rang": 3,
+      "graph": false,
+      "next_graph": true,
       "children": [{
-        "label":"histogram",
-        "question":null,
-        "question_id":"412G125",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G125",
+        "label": "Error bar graph",
+        "question": null,
+        "question_id": "413G110",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G110",
         "comparison": [{
-          "1":"better than line graphs to compare data over time intervals",
-          "2":"better than bar-and-line graphs to study the variation of only one quantity at a time",
-          "3":"better than double-sided bar graphs to compare absolute values over time"
+          "1": "Better than box-and-whisker symbol graphs to show a margin of error on several measures."
         }],
         "children": null
       },{
-        "label":"spark line",
-        "question":null,
-        "question_id":"412G230",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G230",
+        "label": "Box-and-whisker symbol graph",
+        "question": null,
+        "question_id": "413G40",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G40",
         "comparison": [{
-          "1":"better than histograms and line graphs to show a variation over a long period of time in a synthetic way"
-        }],
-        "children": null
-      },{
-        "label":"line graph",
-        "question":null,
-        "question_id":"412G155",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G155",
-        "comparison": [{
-          "1":"better than spark lines to display quantities",
-          "2":"better than histograms to show a continuous evolution"
-        }],
-        "children": null
-      }]
-    },{
-      "label":null,
-      "question":"See statistical indicators",
-      "question_id":413,
-      "rang":3,
-      "graph":false,
-      "next_graph":true,
-      "children": [{
-        "label":"error bar graph",
-        "question":null,
-        "question_id":"413G110",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G110",
-        "comparison": [{
-          "1":"better than box-and-whisker symbol graphs to show a margin of error on several measures"
-        }],
-        "children": null
-      },{
-        "label":"box-and-whisker symbol graph",
-        "question":null,
-        "question_id":"413G40",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G40",
-        "comparison": [{
-          "1":"better than error bar graph to show indicators such as median, quartile and standard deviation"
+          "1": "Better than error bar graph to show indicators such as median, quartile and standard deviation."
         }],
         "children": null
       }]
     }]
  },{
-    "label":null,
-    "question":"Make comparisons within my data",
-    "question_id":42,
-    "rang":2,
+    "label": null,
+    "question": "Make comparisons within my data",
+    "question_id": 42,
+    "rang": 2,
     "graph": false,
     "next_graph": false,
     "children":[{
-      "label":null,
-      "question":"Make comparisons over time",
-      "question_id":421,
-      "rang":3,
-      "graph":false,
-      "next_graph":true,
+      "label": null,
+      "question": "Make comparisons over time",
+      "question_id": 421,
+      "rang": 3,
+      "graph": false,
+      "next_graph": true,
       "children": [{
-        "label":"double-sided bar graph",
-        "question":null,
-        "question_id":"421G95",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G95",
+        "label": "Double-sided bar graph",
+        "question": null,
+        "question_id": "421G95",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G95",
         "comparison": [{
-          "1":""
+          "1":"Better than bar-and-line graphs, histograms and superposed line graphs to compare values to a quantified objective."
         }],
         "children": null
       },{
-        "label":"bar-and-line graph",
+        "label": "Bar-and-line graph",
         "question":null,
         "question_id":"421G25",
         "rang":4,
@@ -1790,57 +1789,174 @@
         "graph":true,
         "graph_number":"G25",
         "comparison": [{
-          "1":""
+          "1":"Better than superposed line graphs to show variation over time intervals.",
+          "2": "Better than histograms to study the variation of only one quantity at a time.",
+          "3": "Better than double-sided bar graphs to compare absolute values over time."
         }],
         "children": null
       },{
-        "label":"histogram",
-        "question":null,
-        "question_id":"421G125",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G125",
+        "label": "Histogram",
+        "question": null,
+        "question_id": "421G125",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G125",
         "comparison": [{
-          "1":""
+          "1":"Better than line graphs, double-sided bar graphs and bar-and-line graphs to compare data over time intervals."
         }],
         "children": null
       },{
-        "label":"superposed line graphs",
-        "question":null,
-        "question_id":"421G267",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"G267",
+        "label": "Superposed line graphs",
+        "question": null,
+        "question_id": "421G267",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G267",
         "comparison": [{
-          "1":""
+          "1": "Better than histograms, bar-and-line graphs or double-sided bar graphs to display the continuous evolution of different quantities over time."
         }],
         "children": null
       }]
     },{
-      "label":null,
-      "question":"Make comparisons between categories",
-      "question_id":422,
-      "rang":3,
-      "graph":false,
-      "next_graph":false,
+      "label": null,
+      "question": "Make comparisons between categories",
+      "question_id": 422,
+      "rang": 3,
+      "graph": false,
+      "next_graph": false,
       "children": [{
-        "label":null,
-        "question":"Compare data according to numbers and proportions",
-        "question_id":4221,
-        "rang":4,
-        "graph":false,
-        "next_graph":false,
-        "children": []
+        "label": null,
+        "question": "Compare data according to numbers and proportions",
+        "question_id": 4221,
+        "rang": 4,
+        "graph": false,
+        "next_graph": false,
+        "children": [{
+          "label": null,
+          "question": "Emphasize key values and make quick numeric comparisons possible",
+          "question_id": 42211,
+          "rang": 5,
+          "graph": false,
+          "next_graph": true,
+          "children": [{
+            "label": "Bar graph",
+            "question": null,
+            "question_id": "42211G20",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G20",
+            "comparison": [{
+              "1":"Better than stacked bars to show clearly a variation between categories.",
+              "2": "Better than double-sided bar graphs to show absolute variations between categories."
+            }],
+            "children": null
+          },{
+            "label": "Stacked bar graph",
+            "question": null,
+            "question_id": "42211G235",
+            "rang": 6,
+            "next_graph": false,
+            "graph":true,
+            "graph_number": "G235",
+            "comparison": [{
+              "1": "Better than bar graphs and double-sided bar graphs to show how a group is broken down into categories and their proportions.",
+              "2": "Better than superposed line graphs to compare values only at chosen point in time."
+            }],
+            "children": null
+          },{
+            "label": "Double-sided bar graph",
+            "question": null,
+            "question_id": "42211G95",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G95",
+            "comparison": [{
+              "1": "Better than bar graphs and stacked bar graphs to show the deviation to a quantified objective.",
+              "2": "Better than superposed line graphs to compare values at the same point in time."
+            }],
+            "children": null
+          },{
+            "label": "Superposed line graphs",
+            "question": null,
+            "question_id": "42211G267",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G267",
+            "comparison": [{
+              "1": "Better than stacked bar graphs,  bar graphs and double-sided bar graphs  to display the continuous evolution of different quantities over time."
+            }],
+            "children": null
+          }]
+        }, {
+          "label": null,
+          "question": "Compare data according to numbers and proportions",
+          "question_id": 42212,
+          "rang": 5,
+          "graph": false,
+          "next_graph": true,
+          "children": [{
+            "label": "Pies and rings",
+            "question": null,
+            "question_id": "42212G185",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G185",
+            "comparison": [{
+              "1": "Better than basic shapes to show similar or striking proportions."
+            }],
+            "children": null
+          },{
+            "label": "Basic shapes",
+            "question": null,
+            "question_id": "42212G30",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G30",
+            "comparison": [{
+              "1": "Better than pies & rings to show relative importance of a very small number of topics ."
+            }],
+            "children": null
+          }]
+        },]
       },{
-        "label":null,
-        "question":"Sort and compare data according to criteria",
-        "question_id":4222,
-        "rang":4,
-        "graph":false,
-        "next_graph":true,
-        "children": []
+        "label": null,
+        "question": "Sort and compare data according to criteria",
+        "question_id": 4222,
+        "rang": 4,
+        "graph": false,
+        "next_graph": true,
+        "children": [{
+            "label": "Radar graph",
+            "question": null,
+            "question_id": "4222G181",
+            "rang": 5,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G181",
+            "comparison": [{
+              "1": "Better than parallel coordinate graphs to compare data according to a small number of criteria."
+            }],
+            "children": null
+          },{
+            "label": "Parallel coordinates graph",
+            "question": null,
+            "question_id": "4222G195",
+            "rang": 5,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G195",
+            "comparison": [{
+              "1": "Better than radar graphs to compare data according to a great number of categories."
+            }],
+            "children": null
+          }]
       }]
     }]
  }]
