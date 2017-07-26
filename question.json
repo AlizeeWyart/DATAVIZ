@@ -1046,7 +1046,85 @@
             "rang": 6,
             "graph": false,
             "next_graph": false,
-            "children":[]
+            "children":[{
+              "label": null,
+              "question": "There are many subcategories within my data",
+              "question_id": 3212121,
+              "rang": 7,
+              "graph": false,
+              "next_graph": true,
+              "children":[{
+                "label": "Arc graph",
+                "question": null,
+                "question_id": "3212121G15",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G15",
+                "comparison": [{
+                  "1": "Better than circos for showing interactions between elements that can be linearly organised (e.g. chapters in a book, historical events,…)."
+                }],
+                "children":null
+              }, {
+                "label": "Circo",
+                "question": null,
+                "question_id": "3212121G55",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G55",
+                "comparison": [{
+                  "1": "Better than adjacency matrix to single out interactions."
+                }],
+                "children":null
+              }]
+            }, {
+              "label": null,
+              "question": "There are few subcategories within my data",
+              "question_id": 3212122,
+              "rang": 7,
+              "graph": false,
+              "next_graph": true,
+              "children":[{
+                "label": "Hive graph",
+                "question": null,
+                "question_id": "3212122G135",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G135",
+                "comparison": [{
+                  "1": "Better than tree views to classify elements in a few categories.",
+                  "2": "Can compare more dimensions than an alluvial graph."
+                }],
+                "children":null
+              }{
+                "label": "Alluvial graph",
+                "question": null,
+                "question_id": "3212121G10",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G10",
+                "comparison": [{
+                  "1": "Better than tree views and hive graphs to show evolution.",
+                  "2": "Better than tree views to structure elements into categories."
+                }],
+                "children":null
+              },{
+                "label": "Tree view",
+                "question": null,
+                "question_id": "3212121G275",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G275",
+                "comparison": [{
+                  "1": "Better than alluvial graphs and hive graphs when there are few interactions and many independant elements."
+                }],
+                "children":null
+              }]
+            }]
           }]
       }, {
           "label": null,
@@ -1055,7 +1133,87 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "children":[]
+          "children":[{
+            "label": null,
+            "question": "Include (technical) specificities about different clusters and entities",
+            "question_id": 321221,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children":[{
+              "label": "Conceptual network",
+              "question": null,
+              "question_id": "321221G65",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G65",
+              "comparison": null,
+              "children":null
+            }]
+        }, {
+            "label": null,
+            "question": "Do not include technical specifications",
+            "question_id": 321222,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children":[{
+              "label": "Node-link graph",
+              "question": null,
+              "question_id": "321222G180",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G80",
+              "comparison": [{
+                "1:": "Better than radial trees to show a network without emphasizing on a certain topic.",
+                "2": "Simplified network - unhierarchised network structure.",
+                "3": "Better than subway maps to display complex interactions."
+              }],
+              "children":null
+            }{
+              "label": "Subway map",
+              "question": null,
+              "question_id": "321222G265",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G265",
+              "comparison": null,
+              "children": [{
+                "1": "Better than node-link graphs, network structures and radial graphs to show evolutions.",
+                "2": "Better than node-link graphs and network structures when there are not too many interactions between elements."
+              }]
+            }{
+              "label": "Network structure",
+              "question": null,
+              "question_id": "321222G175",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G175",
+              "comparison": null,
+              "children": [{
+                "1": "Better than node-link graphs to show hierarchy within a network.",
+                "2": "Better than radial trees to show a network without emphasizing on a certain topic.",
+                "3": "Better than subway maps to display complex interactions."
+              }]
+            }{
+              "label": "Radial tree",
+              "question": null,
+              "question_id": "321222G200",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G200",
+              "comparison": null,
+              "children": [{
+              "1": "Better than node-link graphs, network structures and subway maps to show organisation of a network around a certain topic."
+              }]
+            }]
+        }]
+      }]
       }]
       }]
     },{
