@@ -1327,7 +1327,7 @@
               "comparison": [{
                 "1": "Better than dendograms, link trees and enclosure trees for representing many elements and few hierarchical levels.",
                 "2": "Better than network structures to show an organisation where lower elements are not interdependant.",
-              }]
+              }],
               "children": null
               }, {
               "label": "Dendogram",
@@ -1341,8 +1341,8 @@
                 "1": "Better than link trees and enclosure trees for representing elements and few hierarchical levels.",
                 "2": "Better than network structures to show an organisation where lower elements are not interdependant."
               }]
-              }, {,
-              "children": null
+              }, {
+              "children": null,
               "label": "Link tree",
               "question": null,
               "question_id": "322121G160",
