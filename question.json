@@ -889,84 +889,174 @@
         }
           ]
         },{
-          "label":null,
-          "question":"Show proportion without numeric indicators",
-          "question_id":31222,
-          "rang":5,
-          "graph":false,
-          "next_graph":true,
-          "children":[]
+          "label": null,
+          "question": "Show proportion without numeric indicators",
+          "question_id": 31222,
+          "rang": 5,
+          "graph": false,
+          "next_graph": true,
+          "children":[{
+            "label": "Tag cloud",
+            "question": null,
+            "question_id": "31222G270",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G270",
+            "comparison": [{
+              "1": "Better than enclosure trees to show a bunch of unhierarchised topics."
+          },{
+            "label": "Enclosure tree",
+            "question": null,
+            "question_id": "31222G105",
+            "rang": 6,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G105",
+            "comparison": [{
+              "1": "Better than tag clouds to show hierarchy."
+          }]
         }]
       }]
     }]
  },{
-    "label":null,
-    "question":"Show interactions and structure within my data",
-    "question_id":32,
-    "rang":2,
+    "label": null,
+    "question": "Show interactions and structure within my data",
+    "question_id": 32,
+    "rang": 2,
     "graph": false,
     "next_graph": false,
     "children":[{
-      "label":null,
-      "question":"Characterise relationships or show flows",
-      "question_id":321,
-      "rang":3,
-      "graph":false,
-      "next_graph":false,
+      "label": null,
+      "question": "Characterise relationships or show flows",
+      "question_id": 321,
+      "rang": 3,
+      "graph": false,
+      "next_graph": false,
       "children": [{
-        "label":null,
-        "question":"Emphasize flows",
-        "question_id":3211,
-        "rang":3,
-        "graph":false,
-        "next_graph":true,
-        "children":[{
-          "label":"circo",
-          "question":null,
-          "question_id":"3211G55",
-          "rang":5,
-          "next_graph":false,
+        "label": null,
+        "question": "Emphasize flows",
+        "question_id": 3211,
+        "rang": 4,
+        "graph": false,
+        "next_graph": true,
+        "children": [{
+          "label": "Circo",
+          "question": null,
+          "question_id": "3211G55",
+          "rang": 5,
+          "next_graph": false,
           "graph":true,
-          "graph_number":"G55",
+          "graph_number": "G55",
           "comparison": [{
-            "1":"easier to read than alluvial graphs and sankey graphs for complex interactions"
+            "1":"Easier to read than alluvial graphs and sankey graphs for complex interactions."
           }],
           "children": null
         },{
-          "label":"alluvial graph",
-          "question":null,
-          "question_id":"3211G10",
-          "rang":5,
-          "next_graph":false,
-          "graph":true,
-          "graph_number":"G10",
+          "label": "Alluvial graph",
+          "question": null,
+          "question_id": "3211G10",
+          "rang": 5,
+          "next_graph": false,
+          "graph": true,
+          "graph_number": "G10",
           "comparison": [{
-            "1":"better than circos for adding a temporal dimension easily",
-            "2":"simplified sankey graph - better than sankey graphs for simplifed interactions"
+            "1": "Better than circos for adding a temporal dimension easily.",
+            "2": "Simplified sankey graph - better than sankey graphs for simple interactions."
           }],
           "children": null
         },{
-          "label":"sankey graph",
-          "question":null,
-          "question_id":"3211G210",
-          "rang":5,
-          "next_graph":false,
-          "graph":true,
-          "graph_number":"G210",
+          "label": "Sankey graph",
+          "question": null,
+          "question_id": "3211G210",
+          "rang": 5,
+          "next_graph": false,
+          "graph": true,
+          "graph_number": "G210",
           "comparison": [{
-            "1":"better than alluvial graphs for complex interactions",
-            "2":"better than circos because a temporal dimension can be added easily"
+            "1": "Better than alluvial graphs for complex interactions",
+            "2": "Better than circos because a temporal dimension can be added easily"
           }],
           "children": null
         }]
       },{
-        "label":null,
-        "question":"Map relationships",
-        "question_id":3212,
-        "rang":3,
-        "graph":false,
-        "next_graph":false,
-        "children":[]
+        "label": null,
+        "question": "Map relationships",
+        "question_id": 3212,
+        "rang": 4,
+        "graph": false,
+        "next_graph": false,
+        "children":[{
+          "label": null,
+          "question": "Emphasize relationships",
+          "question_id": 32121,
+          "rang": 5,
+          "graph": false,
+          "next_graph": false,
+          "children":[{
+            "label": null,
+            "question": "Highlight the strengh of a relationship",
+            "question_id": 321211,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children":[{
+              "label": "Adjacency matrix",
+              "question": null,
+              "question_id": "321211G5",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G5",
+              "comparison": [{
+                "1": "Better than circos and arc graphs when all elements are interacting with each other and each interaction can be quantified."
+              }],
+              "children":null
+            }, {
+              "label": "Arc graph",
+              "question": null,
+              "question_id": "321211G15",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G15",
+              "comparison": [{
+                "1": "Better than circos for showing interactions between elements that can be linearly organised.",
+                "2": "Better than adjacency matrix to single out interactions."
+              }],
+              "children":null
+            }, {
+              "label": "Circo",
+              "question": null,
+              "question_id": "321211G55",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G55",
+              "comparison": [{
+                "1": "Easier to read than arc graphs for complex interactions.",
+                "2": "Better than adjacency matrix to single out interactions."
+              }],
+              "children":null
+            }]
+          }, {
+            "label": null,
+            "question": "Show existing relationships",
+            "question_id": 321212,
+            "rang": 6,
+            "graph": false,
+            "next_graph": false,
+            "children":[]
+          }]
+      }, {
+          "label": null,
+          "question": "Represent a network",
+          "question_id": 32122,
+          "rang": 5,
+          "graph": false,
+          "next_graph": false,
+          "children":[]
+      }]
       }]
     },{
       "label":null,
