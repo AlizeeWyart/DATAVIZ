@@ -1149,7 +1149,7 @@
               "next_graph": false,
               "graph_number": "G65",
               "comparison": null,
-              "children":null
+              "children": null
             }]
         }, {
             "label": null,
@@ -1172,7 +1172,7 @@
                 "3": "Better than subway maps to display complex interactions."
               }],
               "children":null
-            }{
+            },{
               "label": "Subway map",
               "question": null,
               "question_id": "321222G265",
@@ -1180,12 +1180,12 @@
               "graph": true,
               "next_graph": false,
               "graph_number": "G265",
-              "comparison": null,
-              "children": [{
+              "comparison": [{
                 "1": "Better than node-link graphs, network structures and radial graphs to show evolutions.",
                 "2": "Better than node-link graphs and network structures when there are not too many interactions between elements."
-              }]
-            }{
+              }],
+              "children": null
+            },{
               "label": "Network structure",
               "question": null,
               "question_id": "321222G175",
@@ -1193,13 +1193,13 @@
               "graph": true,
               "next_graph": false,
               "graph_number": "G175",
-              "comparison": null,
-              "children": [{
+              "comparison": [{
                 "1": "Better than node-link graphs to show hierarchy within a network.",
                 "2": "Better than radial trees to show a network without emphasizing on a certain topic.",
                 "3": "Better than subway maps to display complex interactions."
-              }]
-            }{
+              }],
+              "children": null
+            },{
               "label": "Radial tree",
               "question": null,
               "question_id": "321222G200",
@@ -1207,38 +1207,300 @@
               "graph": true,
               "next_graph": false,
               "graph_number": "G200",
-              "comparison": null,
-              "children": [{
+              "comparison": [{
               "1": "Better than node-link graphs, network structures and subway maps to show organisation of a network around a certain topic."
-              }]
+              }],
+              "children": null
             }]
         }]
       }]
       }]
       }]
     },{
-      "label":null,
-      "question":"Show organisation and structure",
-      "question_id":322,
-      "rang":3,
-      "graph":false,
-      "next_graph":false,
+      "label": null,
+      "question": "Show organisation and structure",
+      "question_id": 322,
+      "rang": 3,
+      "graph": false,
+      "next_graph": false,
       "children": [{
-        "label":null,
-        "question":"Show a network or a hierarchy",
-        "question_id":3221,
-        "rang":3,
-        "graph":false,
-        "next_graph":false,
-        "children":[]
+        "label": null,
+        "question": "Show a network or a hierarchy",
+        "question_id": 3221,
+        "rang": 4,
+        "graph": false,
+        "next_graph": false,
+        "children": [{
+          "label": null,
+          "question": "Represent a network",
+          "question_id": 32211,
+          "rang": 5,
+          "graph": false,
+          "next_graph": false,
+          "children": [{
+            "label": null,
+            "question": "Include (technical) specificities about different clusters and entities",
+            "question_id": 322111,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children": [{
+              "label": "Conceptual network",
+              "question": null,
+              "question_id": "322111G65",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G65",
+              "comparison": null,
+              "children": null,
+            }]
+          }, {
+            "label": null,
+            "question": "Do not include technical specificities",
+            "question_id": 322112,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children": [{
+              "label": "Node-link graph",
+              "question": null,
+              "question_id": "322112G180",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G180",
+              "comparison": [{
+                "1": "Better than radial trees to show a network without emphasizing on a certain topic.",
+                "2": "Simplified network - unhierarchised network structure."
+              }],
+              "children": null,
+            }, {
+              "label": "Network structure",
+              "question": null,
+              "question_id": "322112G200",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G200",
+              "comparison": [{
+                "1": "Better than node-link graphs to show hierarchy within a network.",
+                "2": "Better than radial trees to show a network without emphasizing on a certain topic."
+              }],
+              "children": null,
+            }, {
+              "label": "Radial tree",
+              "question": null,
+              "question_id": "322112G175",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G175",
+              "comparison": null,
+              "children": [{
+                "1": "Better than node-link graphs, network structures and subway maps to show organisation of a network around a certain topic."
+              }],
+            }]
+          }]
+        },{ 
+          "label": null,
+          "question": "Show a clear hierarchy",
+          "question_id": 32212,
+          "rang": 5,
+          "graph": false,
+          "next_graph": false,
+          "children": [{ 
+            "label": null,
+            "question": "Show a clear hierarchy",
+            "question_id": 322121,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children": [{
+              "label": "Tree view",
+              "question": null,
+              "question_id": "322121G275",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G275",
+              "comparison": [{
+                "1": "Better than dendograms, link trees and enclosure trees for representing many elements and few hierarchical levels.",
+                "2": "Better than network structures to show an organisation where lower elements are not interdependant.",
+              }]
+              "children": null
+              }, {
+              "label": "Dendogram",
+              "question": null,
+              "question_id": "322121G80",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G80",
+              "comparison": [{
+                "1": "Better than link trees and enclosure trees for representing elements and few hierarchical levels.",
+                "2": "Better than network structures to show an organisation where lower elements are not interdependant."
+              }]
+              }, {,
+              "children": null
+              "label": "Link tree",
+              "question": null,
+              "question_id": "322121G160",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G160",
+              "comparison": [{
+                "1": "Better than tree view and dendogram to show a very large number of hierarchy levels in a limited space.",
+                "2": "Better than network structures and enclosure trees to represent a hierarchy simply."
+              }],
+              "children": null
+              }, {
+              "label": "Network structure",
+              "question": null,
+              "question_id": "322121G175",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G175",
+              "comparison": [{
+                "1": "Better than tree views, dendograms, link trees and enclosure trees to show interdependance between elements in addition to showing hierarchy."
+              }],
+              "children": null
+              }, {
+              "label": "Enclosure tree",
+              "question": null,
+              "question_id": "322121G105",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G105",
+              "comparison": [{
+                "1": "Better than tree views, dendograms, link trees and network structures to show inclusion."
+              }],
+              "children": null
+          }, { 
+            "label": null,
+            "question": "Show a clear hierarchy",
+            "question_id": 322122,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children": [{
+              "label": "Treemap",
+              "question": null,
+              "question_id": "322122G280",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G280",
+              "comparison": null,
+              "children": null
+          }]
+        }]
       },{
-        "label":null,
-        "question":"Break down data into topics and categories",
-        "question_id":3222,
-        "rang":3,
-        "graph":false,
-        "next_graph":false,
-        "children":[]
+        "label": null,
+        "question": "Break down data into topics and categories",
+        "question_id": 3222,
+        "rang": 4,
+        "graph": false,
+        "next_graph": false,
+        "children":[{
+          "label": null,
+          "question": "Show categories and their composition",
+          "question_id": 32221,
+          "rang": 5,
+          "graph": false,
+          "next_graph": false,
+          "children":[{
+            "label": null,
+            "question": "Show volume correponding to each category",
+            "question_id": 322211,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children":[{
+              "label": "Enclosure tree",
+              "question": null,
+              "question_id": "322211G105",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G105",
+              "comparison": [{
+                "1": "Better than treemaps to represent a small quantity of data.",
+               "2": "Better than mosaic graph to show inclusion."
+              }],
+              "children": null
+          }, {
+              "label": "Treemap",
+              "question": null,
+              "question_id": "322211G280",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G280",
+              "comparison": [{
+                "1": "Better than mosaic graphs to represent huge quantities of data and show a colour-coded characteristic.",
+                "2": "Better than enclosure trees to represent data in an organised way and show more data."
+              }],
+              "children": null
+          }, {
+              "label": "Mosaic graph",
+              "question": null,
+              "question_id": "322211G170",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G170",
+              "comparison": [{
+                "1": "Better than treemaps and enclosure trees to display numbers.",
+                "2": "Better than enclosure trees to represent data in an organised way."
+              }],
+              "children": null
+          }]
+          }, {
+            "label": null,
+            "question": "Show composition of each category",
+            "question_id": 322212,
+            "rang": 6,
+            "graph": false,
+            "next_graph": true,
+            "children":[]
+        }]
+        }, {
+          "label": null,
+          "question": "Show topics and their proximity",
+          "question_id": 32222,
+          "rang": 5, 
+          "graph": false,
+          "next_graph": true,
+          "children":[{
+              "label": "Circo",
+              "question": null,
+              "question_id": "32222G55",
+              "rang": 6,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G55",
+              "comparison": [{
+                "1": "Better than isoline maps to emphasize on links between topics."
+              }],
+              "children": null
+          }, {
+              "label": "Isoline map",
+              "question": null,
+              "question_id": "32222G150",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G150",
+              "comparison": [{
+                "1": "Better than circos to show groupings by topics."
+              }],
+              "children": null
+          }]
+      }]
       }]
     }]
  },{
