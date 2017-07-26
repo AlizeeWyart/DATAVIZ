@@ -1466,7 +1466,31 @@
             "rang": 6,
             "graph": false,
             "next_graph": true,
-            "children":[]
+            "children":[{
+              "label": "Crossmap",
+              "question": null,
+              "question_id": "322212G70",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G70",
+              "comparison": [{
+                "1": "Better than mosaic graphs to emphasize important categories and fade out the less important ones."
+              }],
+              "children": null
+          }, {
+              "label": "Mosaic graph",
+              "question": null,
+              "question_id": "322212G170",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G170",
+              "comparison": [{
+                "1": "Better than crossmaps to read quantity and proportions."
+              }],
+              "children": null
+          }]
         }]
         }, {
           "label": null,
@@ -1505,77 +1529,73 @@
     }]
  },{
     "label":null,
-    "question":"Show evolutions in the composition of my data",
-    "question_id":33,
-    "rang":2,
+    "question": "Show evolutions in the composition of my data",
+    "question_id": 33,
+    "rang": 2,
     "graph": false,
     "next_graph": false,
-    "children":[{
-      "label":null,
-      "question":"Explain changes happening in given intervalls",
-      "question_id":331,
+    "children": [{
+      "label": null,
+      "question": "Explain changes happening in given intervalls",
+      "question_id": 331,
       "rang":3,
-      "graph":false,
-      "next_graph":true,
+      "graph": false,
+      "next_graph": true,
       "children": [{
-        "label":"alluvial graph",
-        "question":null,
-        "question_id":"??",
-        "rang":3,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"??",
+        "label": "Alluvial graph",
+        "question": null,
+        "question_id": "331G10",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number":"G10",
         "comparison": [{
-          "1":"??",
-          "2":"??"
+          "1":"Simplified sankey graph - better than sankey graphs for simple interactions.",
+          "2":"Better than history flows to show detailed changes between two versions of a document."
         }],
         "children": null
       },{
-        "label":"history flow",
-        "question":null,
-        "question_id":"??",
-        "rang":3,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"??",
+        "label": "History flow",
+        "question": null,
+        "question_id": "331G130",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G130",
         "comparison": [{
-          "1":"??",
-          "2":"??"
+          "1": "Better than alluvial graphs and sankey graphs to keep track of thematic variations within a text between several versions."
         }],
         "children": null
       },{
-        "label":"sankey graph",
-        "question":null,
-        "question_id":"??",
-        "rang":3,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"??",
+        "label": "Sankey graph",
+        "question": null,
+        "question_id": "331G210",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G210",
         "comparison": [{
-          "1":"??",
-          "2":"??"
+          "1": "Better than alluvial graphs for simplified interactions.",
+          "2": "Better than history flows to show detailed changes between two versions of a document."
         }],
         "children": null
       }]
     },{
-      "label":null,
-      "question":"Show a continuous evolution",
-      "question_id":332,
-      "rang":3,
-      "graph":false,
-      "next_graph":true,
+      "label": null,
+      "question": "Show a continuous evolution",
+      "question_id": 332,
+      "rang": 3,
+      "graph": false,
+      "next_graph": true,
       "children": [{
-        "label":"stream graph",
-        "question":null,
-        "question_id":"??",
-        "rang":4,
-        "next_graph":false,
-        "graph":true,
-        "graph_number":"??",
-        "comparison": [{
-          "1":"??",
-          "2":"??"
-        }],
+        "label": "Stream graph",
+        "question": null,
+        "question_id": "332G250",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G250",
+        "comparison": null,
         "children": null
       }]
     }]
