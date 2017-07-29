@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
+  skip_before_action :authenticate_user!, only: [:home, :atlas]
 
   def home
     require 'json'
@@ -107,13 +107,38 @@ class PagesController < ApplicationController
       # 4. 4e question
       @number_fourth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[3]
       # Cherchez les réponses à la 4e question
+      @last_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
       if params[:graph] == false
         @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
         @fourth_children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"]
       else
         @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["label"]
       end
+      # Afficher les réponses ?
+      @children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"]
+      @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["next_graph"]
+      if @next_graph
+        @number_of_results = @children.length
+        @results = []
+        @children.each do |child|
+          number_graph = child["graph_number"]
+          current_graph = json_graphs[number_graph]
+          graph_info = [number_graph, current_graph, child["comparison"][0]]
+          @results << graph_info
+        end
+      end
     end
 
+  end
+
+  def atlas
+    @graph_number = params[:graph_number]
+
+    require 'json'
+    second_filepath = 'graph.json'
+    serialized_graphs = File.read(second_filepath)
+    json_graphs = JSON.parse(serialized_graphs)
+
+    @graph_info = json_graphs[@graph_number]
   end
 end
