@@ -5,21 +5,24 @@
  "rang": 1,
  "graph": false,
  "next_graph": false,
- "children": [{
+ "children": [
+  {
    "label": null,
    "question": "Show evolution of an attribute over different areas",
    "question_id": 11,
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "children": [{
+   "children": [
+    {
      "label": null,
      "question": "Point out outliers or highlight some areas",
      "question_id": 111,
      "rang": 3,
      "graph": false,
      "next_graph": true,
-     "children":[{
+     "children": [
+      {
        "label": "isarithmic map",
        "question": null,
        "question_id": "111G140",
@@ -32,7 +35,8 @@
          "2":"Better than dot-density maps to show variations on a continuous area"
        }],
        "children": null
-     },{
+      },
+      {
        "label": "dot-density map",
        "question": null,
        "question_id": "111G90",
@@ -45,7 +49,8 @@
         "2":"Better than  elevation maps to quantify data"
        }],
        "children": null
-     },{
+      },
+      {
        "label": "elevation map",
        "question": null,
        "question_id": "111G100",
@@ -57,15 +62,18 @@
         "1": "Better than isarythmic maps and elevation maps to highlight important differences between the highest and lowest values."
        }],
        "children": null
-     }]
-   },{
+      }
+     ]
+    },
+    {
      "label": null,
      "question": "Keep a general overview of variations over a geographical area",
      "question_id": 112,
      "rang":3,
      "graph":false,
      "next_graph":false,
-     "children": [{
+     "children": [
+      {
        "label": null,
        "question": "Display data on a geographical map",
        "question_id": 1121,
@@ -79,67 +87,74 @@
          "rang": 5,
          "graph": false,
          "next_graph":false,
+         "children":[
+          {
+         "label": null,
+         "question": "Represent the variations of a physical quantity over space.",
+         "question_id": 112111,
+         "graph": false,
+         "next_graph":true,
+         "children":[
+          {
+           "label": "Vector field",
+           "question": null,
+           "question_id": 1121111,
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G285",
+           "comparison": null,
+           "children": null
+          }],
+         "rang":6
+          },
+          {
+         "label": null,
+         "question": "Represent other types of variations over space.",
+         "question_id": 112112,
+         "rang": 6,
+         "graph": false,
+         "next_graph":true,
          "children":[{
-           "label": null,
-           "question": "Represent the variations of a physical quantity over space.",
-           "question_id": 112111,
-           "graph": false,
-           "next_graph":true,
-           "children":[{
-             "label": "Vector field",
-             "question": null,
-             "question_id": 1121111,
-             "graph": true,
-             "next_graph": false,
-             "graph_number": "G285",
-             "comparison": null,
-             "children": null
-           }]
-         },{
-           "label": null,
-           "question": "Represent other types of variations over space.",
-           "question_id": 112112,
-           "rang": 6,
-           "graph": false,
-           "next_graph":true,
-           "children": [{
-               "label": "Dasymetric map",
-               "question": null,
-               "question_id": "112112G75",
-               "graph": true,
-               "next_graph": false,
-               "graph_number": "G75",
-               "comparison": [{"1": "Better than stepped relief maps and chloropleth maps to show a phenomenon that is not specific to geographical areas."}],
-               "children": null
-           },{
-               "label": "Stepped relief map",
-               "question": null,
-               "question_id": "112112G245",
-               "rang": 7,
-               "graph": true,
-               "next_graph": false,
-               "graph_number": "G245",
-               "comparison": [{
-                 "1": "Better than dasymetric maps to compare data in different areas.",
-                 "2": "Better than chloropleth maps to deliver a strong message."
-               }],
-               "children": null
-           },{
-               "label": "Chloropleth map",
-               "question": null,
-               "question_id": "112112G50",
-               "rang": 7,
-               "graph": true,
-               "next_graph": false,
-               "graph_number": "G50",
-               "comparison": [{
-                 "1": "Better than dasymetric maps to compare data in different areas.",
-                 "2": "Better than stepped relief map to represent clearly a lot of data."
-               }],
-               "children": null
-           }]
-         }]
-       },{
+           "label": "Dasymetric map",
+           "question": null,
+           "question_id": "112112G75",
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G75",
+           "comparison": [{"1": "Better than stepped relief maps and chloropleth maps to show a phenomenon that is not specific to geographical areas."}],
+           "children": null
+          },
+          {
+           "label": "Stepped relief map",
+           "question": null,
+           "question_id": "112112G245",
+           "rang": 7,
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G245",
+           "comparison": [{
+           "1": "Better than dasymetric maps to compare data in different areas.",
+           "2": "Better than chloropleth maps to deliver a strong message."
+           }],
+           "children": null
+          },
+          {
+           "label": "Chloropleth map",
+           "question": null,
+           "question_id": "112112G50",
+           "rang": 7,
+           "graph": true,
+           "next_graph": false,
+           "graph_number": "G50",
+           "comparison": [{
+           "1": "Better than dasymetric maps to compare data in different areas.",
+           "2": "Better than stepped relief map to represent clearly a lot of data."
+           }],
+           "children": null
+          }
+         ]
+         },
+       {
          "label": null,
          "question": "Simplify the representation with a schematic view",
          "question_id": 11212,
@@ -158,7 +173,8 @@
             "1": "Better than cartogram map and treemap to keep geographic distribution in mind."
            }],
            "children": null
-         },{
+          },
+          {
            "label": "Cartogram map",
            "question": null,
            "question_id": "11212G45",
@@ -168,7 +184,8 @@
            "graph_number": "G45",
            "comparison": [{"1": "Better than proportional symbol maps and treemaps to highlight a striking difference between the size of a geographical area and the quantity it withholds."}],
            "children": null
-         },{
+          },
+          {
            "label": "Treemap",
            "question": null,
            "question_id": "11212G280",
@@ -180,74 +197,78 @@
             "1": "Better than proportional symbol map and cartogram map to compare values between different areas on a scale."
            }],
            "children": null
-         }]
+          }]
        }]
-     },{
+      },
+      {
        "label": null,
        "question": "Just highlight numbers and proportions",
        "question_id": 1122,
        "rang": 4,
        "graph":false,
        "next_graph": false,
-       "children":[{
+       "children": [
+        {
          "label": null,
          "question": "Use an abstract view that emphasizes values",
          "question_id": 11221,
          "rang": 5,
          "next_graph": true,
          "graph": false,
-         "children":[{
-            "label":"bar graph",
-            "question":null,
-            "question_id":"11221G20",
-            "rang": 6,
-            "graph":true,
-            "next_graph": false,
-            "graph_number": "G20",
-            "comparison": [{"1":"Better than stacked bar graphs, double-sided bar graphs and mosaic graphs to emphasize only on the quantity within a category."}],
-            "children":null
-         },{
-            "label":"double-sided bar graph",
-            "question":null,
-            "question_id": "11221G95",
-            "rang": 6,
-            "graph":true,
-            "next_graph": false,
-            "graph_number": "G95",
-            "comparison": [{"1":"Better than bar graphs, stacked bar graphs and mosaic graphs to show the deviation to a quantified objective."}],
-            "children":null
-         },{
-            "label":"stacked bar graph",
-            "question":null,
-            "question_id": "11221G235",
-            "rang": 6,
-            "graph":true,
-            "next_graph": false,
-            "graph_number": "G235",
-            "comparison": [{
-              "1": "Better than bar graphs and double-sided bar graphs to show how a group is broken down into categories and their proportions.",
-              "2": "Better than mosaic graphs to rank and emphasize each element according to only one characteristic (length or height)."
-            }],
-            "children":null
-         },{
-            "label":"mosaic graph",
-            "question":null,
-            "question_id": "11221G170",
-            "rang": 6,
-            "graph":true,
-            "next_graph": false,
-            "graph_number": "G170",
-            "comparison": [{"1":"Better than bar graphs, stacked bar graphs and double-sided bar graphs to rank and emphasize each element according to two characteristics."}],
-            "children":null
-         }]
-       },{
-        "label": null,
+         "children": [
+            {"label":"bar graph",
+              "question":null,
+              "question_id":"11221G20",
+              "rang": 6,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G20",
+              "comparison": [{"1":"Better than stacked bar graphs, double-sided bar graphs and mosaic graphs to emphasize only on the quantity within a category."}],
+              "children":null
+            },
+            {"label":"double-sided bar graph",
+              "question":null,
+              "question_id": "11221G95",
+              "rang": 6,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G95",
+              "comparison": [{"1":"Better than bar graphs, stacked bar graphs and mosaic graphs to show the deviation to a quantified objective."}],
+              "children":null
+            },
+            {"label":"stacked bar graph",
+              "question":null,
+              "question_id": "11221G235",
+              "rang": 6,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G235",
+              "comparison": [{
+                "1": "Better than bar graphs and double-sided bar graphs to show how a group is broken down into categories and their proportions.",
+                "2": "Better than mosaic graphs to rank and emphasize each element according to only one characteristic (length or height)."
+              }],
+              "children":null
+            },
+            {"label":"mosaic graph",
+              "question":null,
+              "question_id": "11221G170",
+              "rang": 6,
+              "graph":true,
+              "next_graph": false,
+              "graph_number": "G170",
+              "comparison": [{"1":"Better than bar graphs, stacked bar graphs and double-sided bar graphs to rank and emphasize each element according to two characteristics."}],
+              "children":null
+            }
+          ]
+        },
+        {
+         "label": null,
          "question": "Use a schematic geographic view",
          "question_id": 11222,
          "rang": 5,
          "next_graph":true,
          "graph":false,
-         "children":[{
+         "children": [{
            "label":"treemap",
            "question": null,
            "question_id": "11222G280",
@@ -258,10 +279,13 @@
            "comparison": null,
            "children": null
          }]
-       }]
-     }]
-   }]
- },{
+        }
+       ]
+      }
+     ]
+    }]
+  },
+  {
    "label": null,
    "question": "Represent a path, a route or a network",
    "question_id": 12,
@@ -275,7 +299,7 @@
     "question_id": 121,
     "next_graph": true,
     "graph": false,
-    "children":[{
+    "children": [{
       "label": "route map",
       "question": null,
       "question_id": "121G205",
@@ -321,7 +345,7 @@
     "question_id": 122,
     "next_graph": true,
     "graph": false,
-    "children":[{
+    "children": [{
       "label": "Subway map (thematic)",
       "question": null,
       "question_id": "122G266",
@@ -333,14 +357,15 @@
       "children": null
     }]
    }]
- },{
+  },
+  {
    "label": null,
    "question": "Represent fluxes between different areas",
    "question_id": 13,
    "rang": 2,
    "next_graph": true,
    "graph": false,
-   "children":[{
+   "children": [{
      "label": "Circo",
      "question": null,
      "question_id": "13G55",
@@ -353,7 +378,7 @@
           "2": "Better than flow maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)."
         }],
      "children": null
-   },{
+    },{
      "label": "Flow map",
      "question": null,
      "question_id": "13G115",
@@ -365,7 +390,7 @@
        "1": "Better than circos and alluvial graphs to keep geographic specificities in mind."
      }],
      "children": null
-   },{
+    },{
      "label": "Alluvial graph",
      "question": null,
      "question_id": "13G10",
@@ -377,22 +402,23 @@
        "1": "Better than circos and alluvial graphs to keep geographic specificities in mind."
      }],
      "children": null
-   }]
- },{
+    }]
+  },
+  {
    "label": null,
    "question": "Represent a relationship between geography and time",
    "question_id": 14,
    "graph": false,
    "next_graph": false,
    "rang": 3,
-   "children":[{
+   "children": [{
      "label": null,
      "question": "Show evolution",
      "question_id": 141,
      "graph": false,
      "next_graph": true,
      "rang": 4,
-     "children": [{
+     "children":[{
         "label": "Space-time cube map",
         "question": null,
         "question_id": "141G225",
@@ -418,14 +444,14 @@
         "children": null
      }]
    },{
-    "label": null,
+     "label": null,
      "question": "Display travel time",
      "question_id": 142,
      "graph": false,
      "next_graph": true,
      "rang": 3,
-     "children": [{
-        "label": "Isochrone map",
+     "children":[{
+       "label": "Isochrone map",
         "question": null,
         "question_id": "142G145",
         "rang": 4,
@@ -436,60 +462,111 @@
         "children": null
      }]
    }]
- }]
-},{
+  }
+]},
+{
  "label": null,
  "question": "Show how my data evolves over time",
  "rang": 1,
  "question_id": 2,
  "graph": false,
  "next_graph": false,
- "children": [{
-   "label":null,
-   "question": "Highlight one-time events over time",
-   "question_id": 21,
-   "rang": 2,
-   "graph": false,
-   "next_graph": false,
-   "children": [{
+ "children": [
+  {
+    "label":null,
+    "question": "Highlight one-time events over time",
+    "question_id": 21,
+    "rang": 2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
       "label": null,
       "question": "Makes comparisons",
       "question_id": 211,
       "rang": 3,
       "graph": false,
       "next_graph": true,
-      "children":null
-   },{
-     "label": null,
-     "question": "Simply display the events on a timeline",
-     "question_id": 212,
-     "rang": 3,
-     "graph": false,
-     "next_graph": false,
-     "children":null
-   }]
- },{
-   "label": null,
-   "question": "Study a global temporal evolution",
-   "question_id": 22,
-   "rang": 2,
-   "graph": false,
-   "next_graph": false,
-   "children":[{
+      "children":[{
+        "label": "Stacked bar graph",
+        "question": null,
+        "question_id": "211G125",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G125",
+        "comparison": [{
+          "1": "Better than stacked bar graphs to compare the different values of a given element over time."
+        }],
+        "children": null
+      },{
+        "label": "Histogram",
+        "question": null,
+        "question_id": "211G235",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G235",
+        "comparison": [{
+          "1":"Better than histograms to compare the evolutions of several categories at different points in time."
+        }],
+        "children": null
+      }]
+    },{
       "label": null,
-      "question": "Simply show distributions over time",
-      "question_id": 221,
+      "question": "Simply display the events on a timeline",
+      "question_id": 212,
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "children":[{
+      "children": [{
+        "label": "Histogram",
+        "question": null,
+        "question_id": "212G125",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G125",
+        "comparison": [{
+          "1":"Better than timeline (events) to display quantities."
+        }],
+        "children": null
+      },{
+        "label": "Timeline (events)",
+        "question": null,
+        "question_id": "212G272",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G272",
+        "comparison": [{
+          "1": "Better than histograms to describe or explain different points in time."
+        }],
+        "children": null
+      }]
+    }]
+  },
+  {
+    "label": null,
+    "question": "Study a global temporal evolution",
+    "question_id": 22,
+    "rang": 2,
+    "graph": false,
+    "next_graph": false,
+    "children": [{
+      "label": null,
+      "question": "Simply show distributions over time",
+      "question_id":221,
+      "rang": 3,
+      "graph": false,
+      "next_graph": false,
+      "children": [{
         "label": null,
         "question": "Show a thematic change over time",
         "question_id": 2211,
         "rang": 4,
         "graph": false,
         "next_graph": true,
-        "children":[{
+        "children": [{
           "label": "Timeline (global)",
           "question": null,
           "question_id": "2211G271",
@@ -521,7 +598,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": true,
-        "children":[{
+        "children": [{
           "label": "Line graph",
           "question": null,
           "question_id": "2212G155",
@@ -547,8 +624,8 @@
           "children": null
         }]
       }]
-   },{
-     "label": null,
+    },{
+      "label": null,
       "question": "Compare the evolutions of different categories over time",
       "question_id": 222,
       "rang": 3,
@@ -592,96 +669,100 @@
         }],
         "children": null
       }]
-   }]
- },{
-  "label":null,
-  "question":"Show how geographical flows evolved over time",
-  "question_id":23,
-  "rang": 2,
-  "graph": false,
-  "next_graph": true,
-  "children": [{
-    "label": "Circo",
-    "question": null,
-    "question_id": "23G55",
-    "graph_number": "G55",
-    "rang": 3,
-    "next_graph": false,
-    "graph": true,
-    "comparison":[{
-      "1":"Easier to read than alluvial graphs for complex interactions.",
-      "2":"Better than flow maps and space-time cube maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)."
     }]
-  },{
-    "label": "Alluvial graph",
-    "question": null,
-    "question_id": "23G10",
-    "rang": 3,
-    "next_graph": false,
-    "graph": true,
-    "graph_number": "G10",
-    "comparison": [{
-      "1": "Better than circos and flow maps for adding a temporal dimension easily",
-      "2": "Better than space-time cube maps to show a network of flows on a large scale"
-    }],
-    "children": null
-  },{
-    "label": "Flow map",
-    "question": null,
-    "question_id": "23G115",
-    "rang": 3,
-    "next_graph": false,
-    "graph": true,
-    "graph_number": "G115",
-    "comparison": [{
-      "1": "Better than circos and alluvial graphs to keep geographic specificities in mind.",
-      "2": "Better than space-time cube map to show a network of flows on a large scale."
-    }],
-    "children": null
-  },{
-    "label": "Space-time cube map",
-    "question": null,
-    "question_id": "23G225",
-    "rang": 3,
-    "next_graph": false,
-    "graph": true,
-    "graph_number": "G225",
-    "comparison": [{
-      "1": "Better than circos and alluvial graphs to show a network of flows on a large scale.",
-      "2": "Better than flow maps to study the spatial and temporal evolution of a phenomenon."
-    }],
-    "children": null
-  }]
- }]
-},{
+  },
+  {
+    "label":null,
+    "question":"Show how geographical flows evolved over time",
+    "question_id":23,
+    "rang": 2,
+    "graph": false,
+    "next_graph": true,
+    "children": [{
+      "label": "Circo",
+      "question": null,
+      "question_id": "23G55",
+      "graph_number": "G55",
+      "rang": 3,
+      "next_graph": false,
+      "graph": true,
+      "comparison":[{
+        "1":"Easier to read than alluvial graphs for complex interactions.",
+        "2":"Better than flow maps and space-time cube maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)."
+      }]
+    },{
+      "label": "Alluvial graph",
+      "question": null,
+      "question_id": "23G10",
+      "rang": 3,
+      "next_graph": false,
+      "graph": true,
+      "graph_number": "G10",
+      "comparison": [{
+        "1": "Better than circos and flow maps for adding a temporal dimension easily",
+        "2": "Better than space-time cube maps to show a network of flows on a large scale"
+      }],
+      "children": null
+    },{
+      "label": "Flow map",
+      "question": null,
+      "question_id": "23G115",
+      "rang": 3,
+      "next_graph": false,
+      "graph": true,
+      "graph_number": "G115",
+      "comparison": [{
+        "1": "Better than circos and alluvial graphs to keep geographic specificities in mind.",
+        "2": "Better than space-time cube map to show a network of flows on a large scale."
+      }],
+      "children": null
+    },{
+      "label": "Space-time cube map",
+      "question": null,
+      "question_id": "23G225",
+      "rang": 3,
+      "next_graph": false,
+      "graph": true,
+      "graph_number": "G225",
+      "comparison": [{
+        "1": "Better than circos and alluvial graphs to show a network of flows on a large scale.",
+        "2": "Better than flow maps to study the spatial and temporal evolution of a phenomenon."
+      }],
+      "children": null
+    }]
+  }
+ ]
+}]},
+{
  "label": null,
  "question": "Show what is the nature and organisation of elements composing my data",
  "rang": 1,
  "question_id": 3,
  "graph": false,
  "next_graph": false,
- "children": [{
-   "label": null,
-   "question": "Show the nature and proportions of elements within my data",
-   "question_id": 31,
-   "rang": 2,
-   "graph": false,
-   "next_graph": false,
-   "children": [{
+ "children": [
+  {
+    "label": null,
+    "question": "Show the nature and proportions of elements within my data",
+    "question_id": 31,
+    "rang": 2,
+    "graph": false,
+    "next_graph": false,
+    "children": [{
       "label": null,
       "question": "Show nature and not necessarily proportions",
       "question_id": 311,
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "children":[{
+      "children": [{
         "label": null,
         "question": "Show text data",
         "question_id": 3111,
         "rang": 3,
         "graph": false,
         "next_graph": true,
-        "children":[{
+        "children": [{
           "label":" Tag cloud",
           "question": null,
           "question_id": "3111G270",
@@ -713,7 +794,7 @@
         "rang": 3,
         "graph": false,
         "next_graph": true,
-        "children":[{
+        "children": [{
           "label": "Stem-and-leaf graph",
           "question": null,
           "question_id": "3112G240",
@@ -725,14 +806,15 @@
           "children": null
         }]
       }]
-   },{
+    },
+    {
       "label": null,
       "question": "Show both nature and proportions",
       "question_id": 312,
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "children":[{
+      "children": [{
         "label": null,
         "question": "Group my data into a very small number of categories",
         "question_id": 3121,
@@ -783,14 +865,15 @@
         "rang": 3,
         "graph": false,
         "next_graph": false,
-        "children":[{
-          "label": null,
-          "question": "Read (numeric) quantities easily",
-          "question_id": 31221,
-          "rang": 5,
-          "graph": false,
-          "next_graph": true,
-          "children":[{
+        "children": [
+          {
+            "label": null,
+            "question": "Read (numeric) quantities easily",
+            "question_id": 31221,
+            "rang": 5,
+            "graph": false,
+            "next_graph": true,
+            "children":[{
             "label": "Mosaic graph",
             "question": null,
             "question_id": "31221G170",
@@ -814,15 +897,18 @@
               "1": "Better than mosaic graphs to represent huge quantities of data and show a colour-coded characteristic."
             }],
             "children": null
-          }]
-        },{
+          }
+          ]
+        },
+        {
           "label": null,
           "question": "Show proportion without numeric indicators",
           "question_id": 31222,
           "rang": 5,
           "graph": false,
           "next_graph": true,
-          "children":[{
+          "children":[
+            {
               "label": "Tag cloud",
               "question": null,
               "question_id": "31222G270",
@@ -832,7 +918,8 @@
               "graph_number": "G270",
               "comparison": [{"1": "Better than enclosure trees to show a bunch of unhierarchised topics."}],
               "children":null
-          },{
+
+            {
               "label": "Enclosure tree",
               "question": null,
               "question_id": "31222G105",
@@ -840,34 +927,37 @@
               "next_graph": false,
               "graph": true,
               "graph_number": "G105",
-              "comparison": [{"1": "Better than tag clouds to show hierarchy."}],
-              "children":null
-          }]
-        }]
-      }]
-   }]
- },{
-   "label": null,
-   "question": "Show interactions and structure within my data",
-   "question_id": 32,
-   "rang": 2,
-   "graph": false,
-   "next_graph": false,
-   "children": [{
+              "comparison": [{
+                "1": "Better than tag clouds to show hierarchy."
+            }
+          ]
+        }
+      ]
+    }]
+    }]
+  },
+  {
+    "label": null,
+    "question": "Show interactions and structure within my data",
+    "question_id": 32,
+    "rang": 2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
       "label": null,
       "question": "Characterise relationships or show flows",
       "question_id": 321,
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "children":[{
+      "children": [{
         "label": null,
         "question": "Emphasize flows",
         "question_id": 3211,
         "rang": 4,
         "graph": false,
         "next_graph": true,
-        "children":[{
+        "children": [{
           "label": "Circo",
           "question": null,
           "question_id": "3211G55",
@@ -939,7 +1029,7 @@
                 "1": "Better than circos and arc graphs when all elements are interacting with each other and each interaction can be quantified."
               }],
               "children":null
-            },{
+            }, {
               "label": "Arc graph",
               "question": null,
               "question_id": "321211G15",
@@ -952,7 +1042,7 @@
                 "2": "Better than adjacency matrix to single out interactions."
               }],
               "children":null
-            },{
+            }, {
               "label": "Circo",
               "question": null,
               "question_id": "321211G55",
@@ -966,7 +1056,7 @@
               }],
               "children":null
             }]
-          },{
+          }, {
             "label": null,
             "question": "Show existing relationships",
             "question_id": 321212,
@@ -980,18 +1070,80 @@
               "rang": 7,
               "graph": false,
               "next_graph": true,
-              "children":
-            },{
+              "children":[{
+                "label": "Arc graph",
+                "question": null,
+                "question_id": "3212121G15",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G15",
+                "comparison": [{
+                  "1": "Better than circos for showing interactions between elements that can be linearly organised (e.g. chapters in a book, historical events,…)."
+                }],
+                "children":null
+              }, {
+                "label": "Circo",
+                "question": null,
+                "question_id": "3212121G55",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G55",
+                "comparison": [{
+                  "1": "Better than adjacency matrix to single out interactions."
+                }],
+                "children":null
+              }]
+            }, {
               "label": null,
               "question": "There are few subcategories within my data",
               "question_id": 3212122,
               "rang": 7,
               "graph": false,
               "next_graph": true,
-              "children":
+              "children":[{
+                "label": "Hive graph",
+                "question": null,
+                "question_id": "3212122G135",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G135",
+                "comparison": [{
+                  "1": "Better than tree views to classify elements in a few categories.",
+                  "2": "Can compare more dimensions than an alluvial graph."
+                }],
+                "children":null
+              },{
+                "label": "Alluvial graph",
+                "question": null,
+                "question_id": "3212121G10",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G10",
+                "comparison": [{
+                  "1": "Better than tree views and hive graphs to show evolution.",
+                  "2": "Better than tree views to structure elements into categories."
+                }],
+                "children":null
+              },{
+                "label": "Tree view",
+                "question": null,
+                "question_id": "3212121G275",
+                "rang": 8,
+                "graph": true,
+                "next_graph": false,
+                "graph_number": "G275",
+                "comparison": [{
+                  "1": "Better than alluvial graphs and hive graphs when there are few interactions and many independant elements."
+                }],
+                "children":null
+              }]
             }]
           }]
-        },{
+      }, {
           "label": null,
           "question": "Represent a network",
           "question_id": 32122,
@@ -1016,7 +1168,7 @@
               "comparison": null,
               "children": null
             }]
-          },{
+        }, {
             "label": null,
             "question": "Do not include technical specifications",
             "question_id": 321222,
@@ -1077,38 +1229,39 @@
               }],
               "children": null
             }]
-          }]
         }]
       }]
-   },{
+      }]
+      }]
+    },{
       "label": null,
       "question": "Show organisation and structure",
       "question_id": 322,
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "children":[{
+      "children": [{
         "label": null,
         "question": "Show a network or a hierarchy",
         "question_id": 3221,
         "rang": 4,
         "graph": false,
         "next_graph": false,
-        "children":[{
+        "children": [{
           "label": null,
           "question": "Represent a network",
           "question_id": 32211,
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "children":[{
+          "children": [{
             "label": null,
             "question": "Include (technical) specificities about different clusters and entities",
             "question_id": 322111,
             "rang": 6,
             "graph": false,
             "next_graph": true,
-            "children":[{
+            "children": [{
               "label": "Conceptual network",
               "question": null,
               "question_id": "322111G65",
@@ -1119,7 +1272,7 @@
               "comparison": null,
               "children": null
             }]
-          },{
+          }, {
             "label": null,
             "question": "Do not include technical specificities",
             "question_id": 322112,
@@ -1152,7 +1305,7 @@
                 "2": "Better than radial trees to show a network without emphasizing on a certain topic."
               }],
               "children": null
-            },{
+            }, {
               "label": "Radial tree",
               "question": null,
               "question_id": "322112G175",
@@ -1180,15 +1333,85 @@
             "rang": 6,
             "graph": false,
             "next_graph": true,
-            "children":
-          },{
+            "children": [{
+              "label": "Tree view",
+              "question": null,
+              "question_id": "322121G275",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G275",
+              "comparison": [{
+                "1": "Better than dendograms, link trees and enclosure trees for representing many elements and few hierarchical levels.",
+                "2": "Better than network structures to show an organisation where lower elements are not interdependant."
+              }],
+              "children": null
+              },{
+              "label": "Dendogram",
+              "question": null,
+              "question_id": "322121G80",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G80",
+              "comparison": [{
+                "1": "Better than link trees and enclosure trees for representing elements and few hierarchical levels.",
+                "2": "Better than network structures to show an organisation where lower elements are not interdependant."
+              }]
+              }, {
+              "label": "Link tree",
+              "question": null,
+              "question_id": "322121G160",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G160",
+              "comparison": [{
+                "1": "Better than tree view and dendogram to show a very large number of hierarchy levels in a limited space.",
+                "2": "Better than network structures and enclosure trees to represent a hierarchy simply."
+              }],
+              "children": null
+              }, {
+              "label": "Network structure",
+              "question": null,
+              "question_id": "322121G175",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G175",
+              "comparison": [{
+                "1": "Better than tree views, dendograms, link trees and enclosure trees to show interdependance between elements in addition to showing hierarchy."
+              }],
+              "children": null
+              }, {
+              "label": "Enclosure tree",
+              "question": null,
+              "question_id": "322121G105",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G105",
+              "comparison": [{
+                "1": "Better than tree views, dendograms, link trees and network structures to show inclusion."
+              }],
+              "children": null
+          }, {
             "label": null,
             "question": "Show a clear hierarchy",
             "question_id": 322122,
             "rang": 6,
             "graph": false,
             "next_graph": true,
-            "children":
+            "children": [{
+              "label": "Treemap",
+              "question": null,
+              "question_id": "322122G280",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G280",
+              "comparison": null,
+              "children": null
           }]
         }]
       },{
@@ -1212,17 +1435,80 @@
             "rang": 6,
             "graph": false,
             "next_graph": true,
-            "children":
-          },{
+            "children":[{
+              "label": "Enclosure tree",
+              "question": null,
+              "question_id": "322211G105",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G105",
+              "comparison": [{
+                "1": "Better than treemaps to represent a small quantity of data.",
+               "2": "Better than mosaic graph to show inclusion."
+              }],
+              "children": null
+          }, {
+              "label": "Treemap",
+              "question": null,
+              "question_id": "322211G280",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G280",
+              "comparison": [{
+                "1": "Better than mosaic graphs to represent huge quantities of data and show a colour-coded characteristic.",
+                "2": "Better than enclosure trees to represent data in an organised way and show more data."
+              }],
+              "children": null
+          }, {
+              "label": "Mosaic graph",
+              "question": null,
+              "question_id": "322211G170",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G170",
+              "comparison": [{
+                "1": "Better than treemaps and enclosure trees to display numbers.",
+                "2": "Better than enclosure trees to represent data in an organised way."
+              }],
+              "children": null
+          }]
+          }, {
             "label": null,
             "question": "Show composition of each category",
             "question_id": 322212,
             "rang": 6,
             "graph": false,
             "next_graph": true,
-            "children":
+            "children":[{
+              "label": "Crossmap",
+              "question": null,
+              "question_id": "322212G70",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G70",
+              "comparison": [{
+                "1": "Better than mosaic graphs to emphasize important categories and fade out the less important ones."
+              }],
+              "children": null
+          }, {
+              "label": "Mosaic graph",
+              "question": null,
+              "question_id": "322212G170",
+              "rang": 7,
+              "graph": true,
+              "next_graph": false,
+              "graph_number": "G170",
+              "comparison": [{
+                "1": "Better than crossmaps to read quantity and proportions."
+              }],
+              "children": null
           }]
-        },{
+        }]
+        }, {
           "label": null,
           "question": "Show topics and their proximity",
           "question_id": 32222,
@@ -1241,7 +1527,7 @@
                 "1": "Better than isoline maps to emphasize on links between topics."
               }],
               "children": null
-          },{
+          }, {
               "label": "Isoline map",
               "question": null,
               "question_id": "32222G150",
@@ -1253,37 +1539,26 @@
                 "1": "Better than circos to show groupings by topics."
               }],
               "children": null
-          },{
-              "label": "self-organizing map",
-              "question": null,
-              "question_id": "32222G120",
-              "rang": 7,
-              "graph": true,
-              "next_graph": false,
-              "graph_number": "G120",
-              "comparison": [{
-                "1": "to_do"
-              }],
-              "children": null
           }]
-        }]
       }]
-   }]
- },{
-   "label":null,
-   "question": "Show evolutions in the composition of my data",
-   "question_id": 33,
-   "rang": 2,
-   "graph": false,
-   "next_graph": false,
-   "children": [{
+      }]
+    }]
+  },
+  {
+    "label":null,
+    "question": "Show evolutions in the composition of my data",
+    "question_id": 33,
+    "rang": 2,
+    "graph": false,
+    "next_graph": false,
+    "children": [{
       "label": null,
       "question": "Explain changes happening in given intervalls",
       "question_id": 331,
       "rang":3,
       "graph": false,
       "next_graph": true,
-      "children":[{
+      "children": [{
         "label": "Alluvial graph",
         "question": null,
         "question_id": "331G10",
@@ -1322,14 +1597,14 @@
         }],
         "children": null
       }]
-   },{
+    },{
       "label": null,
       "question": "Show a continuous evolution",
       "question_id": 332,
       "rang": 3,
       "graph": false,
       "next_graph": true,
-      "children":[{
+      "children": [{
         "label": "Stream graph",
         "question": null,
         "question_id": "332G250",
@@ -1340,30 +1615,32 @@
         "comparison": null,
         "children": null
       }]
-   }]
+    }]
  }]
-},{
+},
+{
  "label": null,
  "question": "Show quantities and proportions within my data",
  "rang": 1,
  "question_id": 4,
  "graph": false,
  "next_graph": false,
- "children": [{
+ "children": [
+  {
     "label":null,
     "question": "Mainly show how my data is distributed",
     "question_id": 41,
     "rang": 2,
     "graph": false,
     "next_graph": false,
-    "children":[{
+    "children": [{
       "label": null,
       "question": "Point out groupings or outliers",
       "question_id": 411,
       "rang": 3,
       "graph": false,
       "next_graph": true,
-      "children":[{
+      "children": [{
         "label": "Scatter plot",
         "question": null,
         "question_id": "411G215",
@@ -1423,7 +1700,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": true,
-      "children":[{
+      "children": [{
         "label": "histogram",
         "question": null,
         "question_id": "412G125",
@@ -1469,7 +1746,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": true,
-      "children":[{
+      "children": [{
         "label": "Error bar graph",
         "question": null,
         "question_id": "413G110",
@@ -1495,14 +1772,15 @@
         "children": null
       }]
     }]
- },{
-   "label": null,
-   "question": "Make comparisons within my data",
-   "question_id": 42,
-   "rang": 2,
-   "graph": false,
-   "next_graph": false,
-   "children":[{
+  },
+  {
+    "label": null,
+    "question": "Make comparisons within my data",
+    "question_id": 42,
+    "rang": 2,
+    "graph": false,
+    "next_graph": false,
+    "children":[{
       "label": null,
       "question": "Make comparisons over time",
       "question_id": 421,
@@ -1560,7 +1838,7 @@
         }],
         "children": null
       }]
-   },{
+    },{
       "label": null,
       "question": "Make comparisons between categories",
       "question_id": 422,
@@ -1574,14 +1852,14 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
-        "children":[{
+        "children": [{
           "label": null,
           "question": "Emphasize key values and make quick numeric comparisons possible",
           "question_id": 42211,
           "rang": 5,
           "graph": false,
           "next_graph": true,
-          "children":[{
+          "children": [{
             "label": "Bar graph",
             "question": null,
             "question_id": "42211G20",
@@ -1633,14 +1911,14 @@
             }],
             "children": null
           }]
-        },{
+        }, {
           "label": null,
           "question": "Compare data according to numbers and proportions",
           "question_id": 42212,
           "rang": 5,
           "graph": false,
           "next_graph": true,
-          "children":[{
+          "children": [{
             "label": "Pies and rings",
             "question": null,
             "question_id": "42212G185",
@@ -1673,32 +1951,36 @@
         "rang": 4,
         "graph": false,
         "next_graph": true,
-        "children":[{
-          "label": "Radar graph",
-          "question": null,
-          "question_id": "4222G181",
-          "rang": 5,
-          "next_graph": false,
-          "graph": true,
-          "graph_number": "G181",
-          "comparison": [{
-            "1": "Better than parallel coordinate graphs to compare data according to a small number of criteria."
-          }],
-          "children": null
-        },{
-          "label": "Parallel coordinates graph",
-          "question": null,
-          "question_id": "4222G195",
-          "rang": 5,
-          "next_graph": false,
-          "graph": true,
-          "graph_number": "G195",
-          "comparison": [{
-            "1": "Better than radar graphs to compare data according to a great number of categories."
-          }],
-          "children": null
-        }]
+        "children": [{
+            "label": "Radar graph",
+            "question": null,
+            "question_id": "4222G181",
+            "rang": 5,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G181",
+            "comparison": [{
+              "1": "Better than parallel coordinate graphs to compare data according to a small number of criteria."
+            }],
+            "children": null
+          },{
+            "label": "Parallel coordinates graph",
+            "question": null,
+            "question_id": "4222G195",
+            "rang": 5,
+            "next_graph": false,
+            "graph": true,
+            "graph_number": "G195",
+            "comparison": [{
+              "1": "Better than radar graphs to compare data according to a great number of categories."
+            }],
+            "children": null
+          }]
       }]
-   }]
- }]
+    }]
+ }
+]
+}]
+}]
+}]
 }]
