@@ -1,10 +1,10 @@
-<h1>Data Visualisation</h1>
+<h1 class="hidden">Data Visualisation</h1>
 
 <div class="col-xs-4">
 <h2>Les question</h2>
 1. <%= @main_question %>
 <%= link_to root_path(question_id: 0) do %>
-    X
+    Retry
   <% end %>
 
 
@@ -68,7 +68,7 @@
     X
   <% end %>
   <br> <%= @third_question %>
-  <%= link_to root_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
+  <%= link_to root_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
     X
   <% end %>
   <br><br>
@@ -95,11 +95,11 @@
     X
   <% end %>
   <br> <%= @third_question %>
-  <%= link_to root_path(question_id: @number_second_question, graph: false) do %>
+  <%= link_to root_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
     X
   <% end %>
-  <br> <%= @fourth_question %>
-  <%= link_to root_path(question_id: @number_third_question, graph: false) do %>
+  <br> <%= @last_question %>
+  <%= link_to root_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
     X
   <% end %>
   <br><br>

@@ -1,0 +1,36 @@
+<% if !@graph_number.nil? && !@graph_info.nil?%>
+  <%= @graph_info %>
+  <h1><%= @graph_info["name"] %></h1>
+  <img src="<%= @graph_info["image"]%>" alt="" style="width:30%">
+  <p>
+  level : <%= @graph_info["level"] %>
+  <br>
+  dashboard : <%= @graph_info["dashboard"] %>
+  <br>
+  Reading Principle :
+  <% @graph_info["reading_principle"].each do |rp| %>
+    --><%= rp[1] %>
+  <% end %>
+  <br>
+  </p>
+  <div class="row">
+    <div class="col-xs-6">
+      <h3>+</h3>
+      <p>
+        <% @graph_info["advantages"].each do |ad| %>
+          --><%= ad[1] %>
+        <% end %>
+      </p>
+    </div>
+    <div class="col-xs-6">
+      <h3>-</h3>
+      <p>
+        <% @graph_info["disadvantages"].each do |da| %>
+          --><%= da[1] %>
+        <% end %>
+      </p>
+    </div>
+  </div>
+<% else %>
+error
+<% end %>
