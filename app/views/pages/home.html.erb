@@ -78,7 +78,7 @@
         <br>--> <%= child["label"] %>
       <% end %>
     <% else %>
-      <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
+      <%= link_to root_path(question_id: child["question_id"], graph: false) do %>
         <br>--> <%= child["question"] %>
       <% end %>
     <% end %>
@@ -103,14 +103,87 @@
     X
   <% end %>
   <br><br>
-  <% if params[:graph] == false %>
-    <% @fourth_children.each do |child| %>
+  <% if params[:graph] == "false" %>
+    <% @children.each do |child| %>
       <% if child["graph"] == true %>
         <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
           <br>--> <%= child["label"] %>
         <% end %>
       <% else %>
+        <%= link_to root_path(question_id: child["question_id"], graph: false) do %>
+          <br>--> <%= child["question"] %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @is_sixth_question %>
+  <br> <%= @first_question %>
+  <%= link_to root_path(question_id: 0) do %>
+    X
+  <% end %>
+  <br> <%= @second_question %>
+  <%= link_to root_path(question_id: @number_first_question, graph:false) do %>
+    X
+  <% end %>
+  <br> <%= @third_question %>
+  <%= link_to root_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
+    X
+  <% end %>
+  <br> <%= @fourth_question %>
+  <%= link_to root_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
+    X
+  <% end %>
+  <br> <%= @last_question %>
+  <%= link_to root_path(question_id: @number_first_question * 1000 + @number_second_question * 100 + @number_third_question * 10 + @number_fourth_question, graph: false) do %>
+    X
+  <% end %>
+  <% if params[:graph] == "false" %>
+    <% @children.each do |child| %>
+      <% if child["graph"] == true %>
         <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
+          <br>--> <%= child["label"] %>
+        <% end %>
+      <% else %>
+        <%= link_to root_path(question_id: child["question_id"], graph: false) do %>
+          <br>--> <%= child["question"] %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
+</div>
+
+<% if @is_seventh_question %>
+  <br> <%= @first_question %>
+  <%= link_to root_path(question_id: 0) do %>
+    X
+  <% end %>
+  <br> <%= @second_question %>
+  <%= link_to root_path(question_id: @number_first_question, graph:false) do %>
+    X
+  <% end %>
+  <br> <%= @third_question %>
+  <%= link_to root_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
+    X
+  <% end %>
+  <br> <%= @fourth_question %>
+  <%= link_to root_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
+    X
+  <% end %>
+  <br> <%= @last_question %>
+  <%= link_to root_path(question_id: @number_first_question * 1000 + @number_second_question * 100 + @number_third_question * 10 + @number_fourth_question, graph: false) do %>
+    X
+  <% end %>
+  <% if params[:graph] == "false" %>
+    <% @children.each do |child| %>
+      <% if child["graph"] == true %>
+        <%= link_to root_path(question_id: child["question_id"], graph: true) do %>
+          <br>--> <%= child["label"] %>
+        <% end %>
+      <% else %>
+        <%= link_to root_path(question_id: child["question_id"], graph: false) do %>
           <br>--> <%= child["question"] %>
         <% end %>
       <% end %>

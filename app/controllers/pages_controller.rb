@@ -108,9 +108,9 @@ class PagesController < ApplicationController
       @number_fourth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[3]
       # Cherchez les réponses à la 4e question
       @last_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
+      @fourth_children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"]
       if params[:graph] == false
         @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
-        @fourth_children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"]
       else
         @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["label"]
       end
@@ -127,6 +127,67 @@ class PagesController < ApplicationController
           @results << graph_info
         end
       end
+    end
+
+    #Aller chercher la 6e question
+    if @question_id.to_i < 99999 && @question_id.to_i > 10000
+      #Pour affiche la prochaine question
+      @is_sixth_question = true
+      # Récupérer les N° et les phrases de question
+      # 1. 1e question
+      @number_first_question = @question_id.to_s.split('').map { |digit| digit.to_i }.first
+      @first_question = json_questions[@number_first_question - 1]["question"]
+      # 2. 2e question
+      @number_second_question = @question_id.to_s.split('').map { |digit| digit.to_i }[1]
+      @second_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["question"]
+      # 3. 3e question
+      @number_third_question = @question_id.to_s.split('').map { |digit| digit.to_i }[2]
+      @third_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["question"]
+      # 4. 4e question
+      @number_fourth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[3]
+      @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
+      # 5. 5e question
+      @number_fifth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[4]
+      @last_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["question"]
+      # Réponses
+      @children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"]
+      # next graph ? si les "children" sont des graphs alors présentation des résultats
+      @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["next_graph"]
+      if @next_graph
+        @number_of_results = @children.length
+        @results = []
+        @children.each do |child|
+          number_graph = child["graph_number"]
+          current_graph = json_graphs[number_graph]
+          graph_info = [number_graph, current_graph, child["comparison"][0]]
+          @results << graph_info
+        end
+      end
+    end
+
+    #Aller chercher la 7e question
+    if @question_id.to_i < 999999 && @question_id.to_i > 100000
+      #Pour affiche la prochaine question
+      @is_seventh_question = true
+      # Récupérer les N° et les phrases de question
+      # 1. 1e question
+      @number_first_question = @question_id.to_s.split('').map { |digit| digit.to_i }.first
+      @first_question = json_questions[@number_first_question - 1]["question"]
+      # 2. 2e question
+      @number_second_question = @question_id.to_s.split('').map { |digit| digit.to_i }[1]
+      @second_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["question"]
+      # 3. 3e question
+      @number_third_question = @question_id.to_s.split('').map { |digit| digit.to_i }[2]
+      @third_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["question"]
+      # 4. 4e question
+      @number_fourth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[3]
+      @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
+      # 5. 5e question
+      @number_fifth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[4]
+      @fifth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["question"]
+      #6. 6e question
+      @number_sixth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[5]
+      @sixth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["question"]
     end
 
   end
