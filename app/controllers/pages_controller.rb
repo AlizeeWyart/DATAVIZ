@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :atlas]
+  skip_before_action :authenticate_user!, only: [:home, :atlas, :find]
 
-  def home
+  def find
     require 'json'
     filepath = 'question.json'
     serialized_questions = File.read(filepath)
@@ -18,6 +18,7 @@ class PagesController < ApplicationController
     if @question_id.to_i < 1
       @is_first_question = true
       @first_children = json_questions
+      @before_results = json_graphs = JSON.parse(serialized_graphs)
     end
 
     #Deuxième question
@@ -46,7 +47,6 @@ class PagesController < ApplicationController
       @second_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["question"]
       # Cherchez les réponses à la 2e question
       @second_children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"]
-
       #Next graph ?
       @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["next_graph"]
       if @next_graph
@@ -187,7 +187,63 @@ class PagesController < ApplicationController
       @fifth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["question"]
       #6. 6e question
       @number_sixth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[5]
+      @last_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["question"]
+      #children
+      @children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["children"]
+      # is next_graph ?
+      @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["next_graph"]
+      if @next_graph
+        @number_of_results = @children.length
+        @results = []
+        @children.each do |child|
+          number_graph = child["graph_number"]
+          current_graph = json_graphs[number_graph]
+          graph_info = [number_graph, current_graph, child["comparison"][0]]
+          @results << graph_info
+        end
+      end
+    end
+
+    #Aller chercher la 7e question
+    if @question_id.to_i < 9999999 && @question_id.to_i > 1000000
+      #Pour affiche la prochaine question
+      @is_eight_question = true
+      # Récupérer les N° et les phrases de question
+      # 1. 1e question
+      @number_first_question = @question_id.to_s.split('').map { |digit| digit.to_i }.first
+      @first_question = json_questions[@number_first_question - 1]["question"]
+      # 2. 2e question
+      @number_second_question = @question_id.to_s.split('').map { |digit| digit.to_i }[1]
+      @second_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["question"]
+      # 3. 3e question
+      @number_third_question = @question_id.to_s.split('').map { |digit| digit.to_i }[2]
+      @third_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["question"]
+      # 4. 4e question
+      @number_fourth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[3]
+      @fourth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["question"]
+      # 5. 5e question
+      @number_fifth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[4]
+      @fifth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["question"]
+      #6. 6e question
+      @number_sixth_question = @question_id.to_s.split('').map { |digit| digit.to_i }[5]
       @sixth_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["question"]
+      #7. 7e question
+      @number_seventh_question = @question_id.to_s.split('').map { |digit| digit.to_i }[6]
+      @last_question = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["children"][@number_seventh_question - 1]["question"]
+      #children
+      @children = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["children"][@number_seventh_question - 1]["children"]
+      # is next_graph ?
+      @next_graph = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["next_graph"]
+      if @next_graph
+        @number_of_results = @children.length
+        @results = []
+        @children.each do |child|
+          number_graph = child["graph_number"]
+          current_graph = json_graphs[number_graph]
+          graph_info = [number_graph, current_graph, child["comparison"][0]]
+          @results << graph_info
+        end
+      end
     end
 
   end

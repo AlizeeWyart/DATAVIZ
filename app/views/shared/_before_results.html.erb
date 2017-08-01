@@ -1,0 +1,7 @@
+<div class="col-xs-4 of-y-scroll h-90vh">
+  <% if before_results != nil %>
+    <% before_results.each do |result| %>
+      <img src="<%= result[1]["image"]%>" alt="" style="width:100%">
+    <% end %>
+  <% end %>
+</div>
