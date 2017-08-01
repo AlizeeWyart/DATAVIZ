@@ -5,6 +5,7 @@
  "rang": 1,
  "graph": false,
  "next_graph": false,
+ "before_results":["G55", "G115"],
  "children": [{
    "label": null,
    "question": "Show evolution of an attribute over different areas",
@@ -92,7 +93,7 @@
              "graph": true,
              "next_graph": false,
              "graph_number": "G285",
-             "comparison": null,
+             "comparison": [{"1":null}],
              "children": null
            }]
          },{
@@ -329,7 +330,7 @@
       "next_graph": false,
       "graph": true,
       "graph_number": "G266",
-      "comparison": null,
+      "comparison": [{"1":null}],
       "children": null
     }]
    }]
@@ -1036,7 +1037,7 @@
             "question_id": 321212,
             "rang": 6,
             "graph": false,
-            "next_graph": false,
+            "next_graph": true,
             "children":[{
               "label": null,
               "question": "There are many subcategories within my data",
@@ -1139,7 +1140,7 @@
               "graph": true,
               "next_graph": false,
               "graph_number": "G65",
-              "comparison": null,
+              "comparison": [{"1":null}],
               "children": null
             }]
           },{
@@ -1242,7 +1243,7 @@
               "graph": true,
               "next_graph": false,
               "graph_number": "G65",
-              "comparison": null,
+              "comparison": [{"1":null}],
               "children": null
             }]
           },{
@@ -1599,7 +1600,7 @@
         "next_graph": false,
         "graph": true,
         "graph_number": "G250",
-        "comparison": null,
+        "comparison": [{"1":null}],
         "children": null
       }]
    }]
