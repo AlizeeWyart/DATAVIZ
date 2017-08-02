@@ -5,7 +5,7 @@
  "rang": 1,
  "graph": false,
  "next_graph": false,
- "before_results":["G55", "G115"],
+ "before_results":["G10", "G20", "G45", "G50", "G55", "G75", "G90", "G95", "G100", "G115", "G140", "G145", "G170", "G190", "G205", "G225", "G235", "G245", "G255", "G266", "G280", "G285"],
  "children": [{
    "label": null,
    "question": "Show evolution of an attribute over different areas",
@@ -13,6 +13,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G20", "G45", "G50", "G75", "G90", "G95", "G100", "G140", "G170", "G190", "G235", "G245", "G280", "G285"],
    "children": [{
      "label": null,
      "question": "Point out outliers or highlight some areas ",
@@ -66,6 +67,7 @@
      "rang":3,
      "graph":false,
      "next_graph":false,
+     "before_results":["G20", "G45", "G50", "G75", "G95", "G170", "G190", "G235", "G245", "G280", "G285"],
      "children": [{
        "label": null,
        "question": "Display data on a geographical map",
@@ -73,6 +75,7 @@
        "rang":4,
        "graph": false,
        "next_graph":false,
+       "before_results":["G45", "G50", "G75", "G190", "G245", "G280", "G285"],
        "children":[{
          "label": null,
          "question": "Show data on a geographically accurate map",
@@ -80,6 +83,7 @@
          "rang": 5,
          "graph": false,
          "next_graph":false,
+         "before_results":["G45", "G50", "G75", "G285"],
          "children":[{
            "label": null,
            "question": "Represent the variations of a physical quantity over space.",
@@ -190,6 +194,7 @@
        "rang": 4,
        "graph":false,
        "next_graph": false,
+       "before_results":["G20", "G95", "G170", "G235", "G280"],
        "children":[{
          "label": null,
          "question": "Use an abstract view that emphasizes values",
@@ -269,6 +274,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G205", "G225", "G255", "G266"],
    "children": [{
     "label": null,
     "question": "Show a path or a route",
@@ -385,6 +391,7 @@
    "question_id": 14,
    "graph": false,
    "next_graph": false,
+   "before_results":["G10", "G145", "G225"],
    "rang": 3,
    "children":[{
      "label": null,
@@ -445,6 +452,7 @@
  "question_id": 2,
  "graph": false,
  "next_graph": false,
+ "before_results":["G10", "G21", "G55", "G60", "G115", "G125", "G155", "G225", "G235", "G250", "G267", "G271", "G272"],
  "children": [{
    "label":null,
    "question": "Highlight one-time events over time",
@@ -452,6 +460,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G125", "G235", "G272"],
    "children": [{
       "label": null,
       "question": "Makes comparisons",
@@ -460,69 +469,29 @@
       "graph": false,
       "next_graph": true,
       "children":[{
-        "label": null,
-        "question": "Show a thematic change over time",
-        "question_id": 2211,
+        "label": "Stacked bar graph",
+        "question": null,
+        "question_id": "211G125",
         "rang": 4,
-        "graph": false,
-        "next_graph": true,
-        "children": [{
-          "label": "Timeline (global)",
-          "question": null,
-          "question_id": "2211G271",
-          "rang": 5,
-          "next_graph": false,
-          "graph": true,
-          "graph_number": "G271",
-          "comparison": [{
-            "1": "Better than stream graphs to emphasize on single events and give detail."
-          }],
-          "children": null
-        },{
-          "label": "Stream graph",
-          "question": null,
-          "question_id": "2211G250",
-          "rang": 5,
-          "next_graph": false,
-          "graph": true,
-          "graph_number": "G250",
-          "comparison": [{
-            "1": "Better than timelines (global) to show the relative importance/dominance of events. They are displayed in chronological order, but the timeline is not as explicit as in timelines (global)."
-          }],
-          "children": null
-        }]
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G125",
+        "comparison": [{
+          "1": "Better than histograms to compare the evolutions of several categories at different points in time."
+        }],
+        "children": null
       },{
-        "label": null,
-        "question": "Display a quantitative change over time",
-        "question_id": 2212,
+        "label": "Histogram",
+        "question": null,
+        "question_id": "211G235",
         "rang": 4,
-        "graph": false,
-        "next_graph": true,
-        "children":[{
-          "label": "Line graph",
-          "question": null,
-          "question_id": "2212G155",
-          "rang": 5,
-          "next_graph": false,
-          "graph": true,
-          "graph_number": "G155",
-          "comparison": [{
-            "1": "Better than circular graph to display precise numeric quantities and exploit numerical data."
-          }],
-          "children": null
-        },{
-          "label": "Circular graph",
-          "question": null,
-          "question_id": "2212G60",
-          "rang": 5,
-          "next_graph": false,
-          "graph": true,
-          "graph_number": "G60",
-          "comparison": [{
-            "1": "Better than line graphs to show a repetitive phenomenon or display a variation over a circular period (day, month, seasons, …). It is also better to compare the values over the said period."
-          }],
-          "children": null
-        }]
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G235",
+        "comparison": [{
+          "1": "Better than stacked bar graphs to compare the different values of a given element over time."
+        }],
+        "children": null
       }]
    },{
      "label": null,
@@ -530,8 +499,32 @@
      "question_id": 212,
      "rang": 3,
      "graph": false,
-     "next_graph": false,
-     "children":null
+     "next_graph": true,
+     "children":[{
+        "label": "Timeline (events)",
+        "question": null,
+        "question_id": "212G272",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G272",
+        "comparison": [{
+          "1": "Better than histograms to describe or explain different points in time."
+        }],
+        "children": null
+      },{
+        "label": "Histogram",
+        "question": null,
+        "question_id": "212G235",
+        "rang": 4,
+        "next_graph": false,
+        "graph": true,
+        "graph_number": "G235",
+        "comparison": [{
+          "1": "Better than timeline (events) to display quantities."
+        }],
+        "children": null
+      }]
    }]
  },{
    "label": null,
@@ -540,6 +533,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G21", "G60", "G155", "G235", "G250", "G267", "G271"],
    "children":[{
       "label": null,
       "question": "Simply show distributions over time",
@@ -547,6 +541,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
+      "before_results":["G60", "G155", "G250", "G271"],
       "children":[{
         "label": null,
         "question": "Show a thematic change over time",
@@ -725,6 +720,7 @@
  "question_id": 3,
  "graph": false,
  "next_graph": false,
+ "before_results":["G5", "G10", "G15", "G30", "G55", "G65", "G70", "G80", "G105", "G130", "G135", "G150", "G160", "G165", "G170", "G175", "G180", "G185", "G200", "G210", "G240", "G250", "G265", "G270", "G275", "G280"],
  "children": [{
    "label": null,
    "question": "Show the nature and proportions of elements within my data",
@@ -732,6 +728,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G30", "G105", "G165", "G170", "G185", "G240", "G270", "G280"],
    "children": [{
       "label": null,
       "question": "Show nature and not necessarily proportions",
@@ -739,6 +736,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
+    "before_results":["G165", "G240", "G270"],
       "children":[{
         "label": null,
         "question": "Show text data",
@@ -797,6 +795,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
+      "before_results":["G30", "G105", "G170", "G185", "G270", "G280"],
       "children":[{
         "label": null,
         "question": "Group my data into a very small number of categories",
@@ -848,6 +847,7 @@
         "rang": 3,
         "graph": false,
         "next_graph": false,
+        "before_results":["G105", "G170", "G270", "G280"],
         "children":[{
           "label": null,
           "question": "Read (numeric) quantities easily",
@@ -918,6 +918,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G5", "G10", "G15", "G55", "G65", "G70", "G105", "G135", "G150", "G160", "G170", "G175", "G180", "G200", "G210", "G265", "G275", "G280"],
    "children": [{
       "label": null,
       "question": "Characterise relationships or show flows",
@@ -925,6 +926,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
+      "before_results":["G5", "G10", "G15", "G55", "G65", "G135", "G175", "G180", "G200", "G210", "G265", "G275"],
       "children":[{
         "label": null,
         "question": "Emphasize flows",
@@ -978,6 +980,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
+        "before_results":["G5", "G10", "G15", "G55", "G65", "G135", "G175", "G180", "G200", "G265", "G275"],
         "children":[{
           "label": null,
           "question": "Emphasize relationships",
@@ -985,6 +988,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
+          "before_results":["G5", "G10", "G15", "G55", "G135", "G275"],
           "children":[{
             "label": null,
             "question": "Highlight the strengh of a relationship",
@@ -1125,6 +1129,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
+          "before_results":["G65", "G175", "G180", "G200", "G265"],
           "children":[{
             "label": null,
             "question": "Include (technical) specificities about different clusters and entities",
@@ -1214,6 +1219,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
+      "before_results":["G55", "G65", "G70", "G80", "G105", "G150", "G160", "G170", "G175", "G180", "G200", "G275", "G280"],
       "children":[{
         "label": null,
         "question": "Show a network or a hierarchy",
@@ -1221,6 +1227,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
+        "before_results":["G65", "G80", "G105", "G160", "G175", "G180", "G200", "G275", "G280"],
         "children":[{
           "label": null,
           "question": "Represent a network",
@@ -1228,6 +1235,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
+          "before_results":["G65", "G175", "G180", "G200"],
           "children":[{
             "label": null,
             "question": "Include (technical) specificities about different clusters and entities",
@@ -1300,6 +1308,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
+          "before_results":["G80", "G105", "G160", "G175", "G275", "G280"],
           "children": [{
             "label": null,
             "question": "Show a clear hierarchy",
@@ -1398,6 +1407,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
+        "before_results":["G55", "G70", "G105", "G150", "G170", "G280"],
         "children":[{
           "label": null,
           "question": "Show categories and their composition",
@@ -1405,6 +1415,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
+          "before_results":["G70", "G105", "G170", "G280"],
           "children":[{
             "label": null,
             "question": "Show volume correponding to each category",
