@@ -2,12 +2,15 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
-
+body {
+  background:rgb(247, 247, 247)
+}
 
 .banner {
   color: white;
   text-align: center;
   height: 90vh;
+  background-position:bottom;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -72,11 +75,48 @@ button.slide {
 }
 
 
+.card-graph {
+  box-shadow:1px 1px 3px #E7E5E5;
+  cursor:pointer;
+  transition:ease-in-out 0.3s;
+  background:white
+}
+
+.card-graph:hover {
+  transform:translateY(-6px);
+  -webkit-box-shadow:0 10px 10px #E7E5E5;
+
+}
+
+a:hover {
+  text-decoration:none
+}
+.img-content {
+  background-size: cover !important;
+  height: 100%;
+  background-position:center;
+}
+
+.description-card-graph {
+ background: white;
+ padding:20px 20px 20px 20px;
+ background:rgb(251, 250, 250);
+}
+
+.img-card-graph {
+  padding: 20px;
+  background: white;
+}
+
+
 
 button.slide:hover, .slide:focus {
   box-shadow: inset 30em 0 0 0 #50307B;
 }
 
+.color-wavestone {
+  color:#50307B
+}
 
 
 
@@ -91,4 +131,58 @@ button.slide:hover, .slide:focus {
 .h-90vh {
   height:85vh !important;
   height:85%
+}
+
+.fs-24px {
+  font-size:24px
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.p-lr-40px {
+  padding-left:40px;
+  padding-right:40px
+}
+
+.mt-40px {
+  margin-top:40px
+}
+
+.b-2px-wavestone {
+  border:2px solid #50307B
+}
+
+.h-200px {
+  height:200px
+}
+
+.no-underline {
+  text-decoration:none
+}
+.no-mt {
+  margin-top:0;
+}
+
+.color-grey {
+  color:#8F8F8F;
+}
+
+.ml-10px {
+  margin-left:10px
+}
+
+.position-abs {
+  position:absolute
+}
+
+.position-rel {
+  position:relative
+}
+
+.dashboard {
+  left: 295px;
+    font-size: 20px;
+    top: -3px;
 }

@@ -5,6 +5,7 @@
 <% if !@next_graph & @is_first_question %>
 </div>
 <div class="col-xs-4 h-90vh">
+<h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
   <% if @is_first_question %>
     <% @first_children.each do |child| %>
       <%= link_to find_path(question_id: child["question_id"]) do %>

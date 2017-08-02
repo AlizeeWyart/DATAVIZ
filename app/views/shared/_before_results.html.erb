@@ -1,7 +1,28 @@
 <div class="col-xs-4 of-y-scroll h-90vh">
+
+  <h2 class="fs-24px txt-center color-wavestone"><%= before_results.length %> possibilities left</h2>
   <% if before_results != nil %>
     <% before_results.each do |result| %>
-      <img src="<%= result[1]["image"]%>" alt="" style="width:100%">
+      <a>
+      <div class="card-graph mt-40px" style="margin-left:40px">
+        <div class="img-card-graph h-200px">
+          <div class="img-content" style="background-image:url('<%= result[1]["image"]%>')">
+          </div>
+        </div>
+        <div class="description-card-graph">
+          <h4 class="color-wavestone no-underline no-mt"><%= result[1]["name"] %>
+
+          </h4>
+          <p class="color-grey position-abs">Level
+            <% if result[1]["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+            <% if result[1]["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+            <% if result[1]["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+            <% if result[1]["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
+            <span class="position-rel dashboard"><i class="fa fa-tachometer <% if  result[1]["dashboard"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      </a>
+
     <% end %>
   <% end %>
 </div>
