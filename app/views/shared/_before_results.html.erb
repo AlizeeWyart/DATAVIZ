@@ -4,7 +4,7 @@
   <% if before_results != nil %>
     <% before_results.each do |result| %>
       <%= link_to atlas_path(graph_number: result[0] ) do %>
-      <div class="card-graph mt-40px" style="margin-left:40px">
+      <div class="card-graph mb-40px" style="margin-left:40px">
         <div class="img-card-graph h-200px">
           <div class="img-content" style="background-image:url('<%= result[1]["image"]%>')">
           </div>
@@ -13,12 +13,15 @@
           <h4 class="color-wavestone no-underline no-mt"><%= result[1]["name"] %>
 
           </h4>
-          <p class="color-grey position-abs">Level
-            <% if result[1]["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
-            <% if result[1]["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
-            <% if result[1]["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
-            <% if result[1]["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
-            <span class="position-rel dashboard"><i class="fa fa-tachometer <% if  result[1]["dashboard"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span>
+          <div class="flexbox-space-between">
+            <p class="color-grey">Level
+              <% if result[1]["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+              <% if result[1]["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+              <% if result[1]["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+              <% if result[1]["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
+              <p><span class="dashboard position-abs"><i class="fa fa-tachometer position-rel <% if  result[1]["dashboard"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span></p>
+          </div>
+
         </div>
       </div>
       <% end %>

@@ -114,23 +114,28 @@
 <% end %>
 
 <% if @is_five_question %>
-  <br>2. <%= @first_question %>
-  <%= link_to find_path(question_id: 0) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>3. <%= @second_question %>
-  <%= link_to find_path(question_id: @number_first_question, graph:false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>4. <%= @third_question %>
-  <%= link_to find_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>5. <%= @last_question %>
-  <%= link_to find_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br><br>
+
+<div class="choices-box">
+  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
+  <p><%= @first_question %>
+    <%= link_to find_path(question_id: 0) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @second_question %>
+    <%= link_to find_path(question_id: @number_first_question, graph:false) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @third_question %>
+    <%= link_to find_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @last_question %>
+    <%= link_to find_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  </p>
+</div>
+
   <% if params[:graph] == "false" && !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
@@ -152,26 +157,32 @@
 <% end %>
 
 <% if @is_sixth_question %>
-  <br>2. <%= @first_question %>
-  <%= link_to find_path(question_id: 0) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>3. <%= @second_question %>
-  <%= link_to find_path(question_id: @number_first_question, graph:false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>4. <%= @third_question %>
-  <%= link_to find_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>5. <%= @fourth_question %>
-  <%= link_to find_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>6. <%= @last_question %>
+<div class="choices-box">
+  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
+  <p><%= @first_question %>
+    <%= link_to find_path(question_id: 0) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @second_question %>
+    <%= link_to find_path(question_id: @number_first_question, graph:false) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @third_question %>
+    <%= link_to find_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @fourth_question %>
+    <%= link_to find_path(question_id: @number_first_question * 100 + @number_second_question * 10 + @number_third_question, graph: false) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @last_question %>
   <%= link_to find_path(question_id: @number_first_question * 1000 + @number_second_question * 100 + @number_third_question * 10 + @number_fourth_question, graph: false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  </p>
+</div>
+
+
   <% if params[:graph] == "false" && !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">

@@ -83,6 +83,10 @@ button.slide {
   width:90%
 }
 
+.flexbox-wrap-space-between .card-graph {
+  flex: 0 0 48%
+}
+
 .choices-box {
   box-shadow:1px 1px 3px #E7E5E5;
   background:white;
@@ -138,6 +142,10 @@ button.slide:hover, .slide:focus {
 
 .mt-50px {
   margin-top:50px
+}
+
+.mb-50px {
+  margin-bottom:50px
 }
 
 .of-y-scroll {
@@ -230,9 +238,9 @@ button.slide:hover, .slide:focus {
 }
 
 .dashboard {
-  left: 295px;
-    font-size: 20px;
-    top: -3px;
+  // left: 295px;
+  font-size: 20px;
+  // top: -3px;
 }
 
 .graph-show {
@@ -244,6 +252,38 @@ button.slide:hover, .slide:focus {
   background-color: white
 }
 
+.bc-transparent {
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+.h-100percent {
+  height:100%
+}
+
 .bc-wavestone {
   background-color:#50307B
+}
+
+.flexbox-space-between {
+  display:flex;
+  justify-content:space-between;
+  i {
+    top: -5px;
+    left: -30px;
+  }
+}
+
+.flexbox-wrap-space-between {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.no-hover {
+  opacity:0;
+  transition:ease-in-out 0.4s
+}
+
+ .no-hover:hover {
+  opacity:1
 }

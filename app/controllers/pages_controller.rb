@@ -18,7 +18,7 @@ class PagesController < ApplicationController
     if @question_id.to_i < 1
       @is_first_question = true
       @first_children = json_questions
-      @before_results = json_graphs = JSON.parse(serialized_graphs)
+      @before_results = json_graphs
     end
 
     #Deuxième question
@@ -31,6 +31,7 @@ class PagesController < ApplicationController
       @second_question = json_questions[@number_question - 1]["question"]
       # Cherchez les réponses à la 1e question
       @second_children = json_questions[@number_question - 1]["children"]
+      @array_before_results = "ff"
     end
 
     #Aller chercher la 3e question
@@ -258,4 +259,26 @@ class PagesController < ApplicationController
 
     @graph_info = json_graphs[@graph_number]
   end
+
+
+  private
+
+  def before_results(array_of_graph_numbers)
+    require 'json'
+    second_filepath = 'graph.json'
+    serialized_graphs = File.read(second_filepath)
+    json_graphs = JSON.parse(serialized_graphs)
+
+    @results = []
+
+    array_of_graph_numbers.each do |child|
+      number_graph = child["graph_number"]
+      current_graph = json_graphs[number_graph]
+      graph_info = [number_graph, current_graph, child["comparison"][0]]
+      @results << graph_info
+    end
+
+    return @results
+  end
+
 end
