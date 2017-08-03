@@ -1,6 +1,11 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :atlas, :find]
 
+  def home
+    @home_text = ["Need to visualise a huge amount of data?", "Have absolutely no clue of how to show data?","Want to learn new ways of representing data?","Want to find new data visualisation ideas? "]
+    @rand_text = @home_text.sample(2)
+  end
+
   def find
     require 'json'
     filepath = 'question.json'
@@ -13,6 +18,10 @@ class PagesController < ApplicationController
 
     @question_id = params[:question_id]
     @main_question = "What do you want to show ?"
+
+    #SENTENT WHAT DO YOU WANT TO DO
+    @to_do = ["What next ?", "What do we do now ?", "And then ?", "And now ?", "What would you most like to do ?", "Which choice suits you best ?"]
+    @rand_text = @to_do.sample
 
     #Première question
     if @question_id.to_i < 1
@@ -31,7 +40,10 @@ class PagesController < ApplicationController
       @second_question = json_questions[@number_question - 1]["question"]
       # Cherchez les réponses à la 1e question
       @second_children = json_questions[@number_question - 1]["children"]
-      @array_before_results = "ff"
+      @array_before_results = json_questions[@number_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
+      end
     end
 
     #Aller chercher la 3e question
@@ -271,13 +283,10 @@ class PagesController < ApplicationController
 
     @results = []
 
-    array_of_graph_numbers.each do |child|
-      number_graph = child["graph_number"]
-      current_graph = json_graphs[number_graph]
-      graph_info = [number_graph, current_graph, child["comparison"][0]]
-      @results << graph_info
+    array_of_graph_numbers.each do |nb_graph|
+      graph_info = json_graphs[nb_graph]
+      @results << {nb_graph => graph_info}
     end
-
     return @results
   end
 

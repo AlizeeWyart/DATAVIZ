@@ -1,8 +1,10 @@
 <div class="col-xs-4 of-y-scroll of-x-hidden h-90vh">
-
-  <h2 class="fs-24px txt-center color-wavestone"><%= before_results.length %> possibilities left</h2>
   <% if before_results != nil %>
+  <h2 class="fs-24px txt-center color-wavestone"><%= before_results.length %> possibilities left</h2>
     <% before_results.each do |result| %>
+      <% if !@is_first_question %>
+        <% result = result.first %>
+      <% end %>
       <%= link_to atlas_path(graph_number: result[0] ) do %>
       <div class="card-graph mb-40px" style="margin-left:40px">
         <div class="img-card-graph h-200px">

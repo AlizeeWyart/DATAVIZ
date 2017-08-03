@@ -1,27 +1,19 @@
-<div class="navbar-wagon">
+<div class="navbar-wagon flexbox-space-between hidden-xs hidden-sm">
   <!-- Logo -->
-  <a href="/" class="navbar-wagon-brand">
-    <%= image_tag("logo.jpg") %>
-  </a>
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <!-- Text link -->
-    <a href="/find" class="navbar-wagon-item navbar-wagon-link">Find the perfect graph</a>
-
-    <!-- Text link -->
-    <a href="/atlas" class="navbar-wagon-item navbar-wagon-link">Atlas</a>
-</div>
-  <!-- Dropdown appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="/find">Find the perfect graph</a></li>
-        <li><a href="/atlas">Atlas</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
-    </div>
+  <div style="flex:0 0 48%" class="txt-right">
+    <a href="/find" class="navbar-wagon-item navbar-wagon-link">FIND THE PERFECT GRAPH</a>
+    <a href="/" class="navbar-wagon-item navbar-wagon-link">ALL GRAPHS <span class="fs-8px">(soon)</span></a>
   </div>
+
+  <div style="flex:0 0 2%" class="text-center">
+    <a href="/" class="navbar-wagon-brand">
+      <img src="<%= asset_url "logo.png" %>" alt="" class="mt-10px">
+    </a>
+  </div>
+
+  <div style="flex:0 0 48%">
+    <a href="/" class="navbar-wagon-item navbar-wagon-link">BEST PRACTICES <span class="fs-8px">(soon)</span></a>
+    <a href="/" class="navbar-wagon-item navbar-wagon-link">ABOUT <span class="fs-8px">(soon)</span></a>
+  </div>
+
 </div>

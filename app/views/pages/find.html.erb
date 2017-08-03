@@ -8,7 +8,13 @@
 </div>
 </div>
 <div class="col-xs-4 h-90vh">
-<h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+<h2 class="fs-24px txt-center color-wavestone">
+  <% if @is_first_question %>
+    First things first, what would you most like to show ?
+  <% else %>
+    <%= @rand_text %>
+  <% end %>
+</h2>
   <% if @is_first_question %>
     <% @first_children.each do |child| %>
       <%= link_to find_path(question_id: child["question_id"]) do %>
@@ -35,7 +41,7 @@
   <% if !@next_graph %>
   </div>
   <div class="col-xs-4 h-90vh">
-  <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+  <h2 class="fs-24px txt-center color-wavestone"><%= @rand_text %></h2>
     <% @second_children.each do |child| %>
     <%= link_to find_path(question_id: child["question_id"]) do %>
       <br><button class="slide"> <%= child["question"] %></button>
@@ -43,7 +49,7 @@
   <% end %>
   </div>
   <% end %>
-
+<%= render 'shared/before_results', before_results: @before_results %>
 <% end %>
 
 
@@ -64,7 +70,7 @@
   <% if !@next_graph %>
   </div>
   <div class="col-xs-4 h-90vh">
-  <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+  <h2 class="fs-24px txt-center color-wavestone"><%= @rand_text %></h2>
     <% @second_children.each do |child| %>
       <%= link_to find_path(question_id: child["question_id"]) do %>
         <br><button class="slide"> <%= child["question"] %></button>
@@ -96,7 +102,7 @@
   <% if !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
-    <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+    <h2 class="fs-24px txt-center color-wavestone"><%= @rand_text %></h2>
 
     <% @third_children.each do |child| %>
       <% if child["graph"] == true %>
@@ -139,7 +145,7 @@
   <% if params[:graph] == "false" && !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
-    <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+    <h2 class="fs-24px txt-center color-wavestone"><%= @rand_text %></h2>
 
     <% @children.each do |child| %>
       <% if child["graph"] == true %>
@@ -186,7 +192,7 @@
   <% if params[:graph] == "false" && !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
-    <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+    <h2 class="fs-24px txt-center color-wavestone"><%= @rand_text %></h2>
 
     <% @children.each do |child| %>
       <% if child["graph"] == false %>
