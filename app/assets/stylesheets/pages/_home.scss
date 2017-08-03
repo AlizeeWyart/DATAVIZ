@@ -79,7 +79,23 @@ button.slide {
   box-shadow:1px 1px 3px #E7E5E5;
   cursor:pointer;
   transition:ease-in-out 0.3s;
-  background:white
+  background:white;
+  width:90%
+}
+
+.choices-box {
+  box-shadow:1px 1px 3px #E7E5E5;
+  background:white;
+  width:80%;
+  h2 {
+    margin-bottom:0
+  }
+}
+
+.choices-box p {
+  padding:20px 15px;
+  color:#6A6E6F;
+  font-size:14px
 }
 
 .card-graph:hover {
@@ -104,14 +120,14 @@ a:hover {
 }
 
 .img-card-graph {
-  padding: 20px;
   background: white;
 }
 
 
 
 button.slide:hover, .slide:focus {
-  box-shadow: inset 30em 0 0 0 #50307B;
+  // box-shadow: inset 30em 0 0 0 #50307B;
+  background-color:#50307B
 }
 
 .color-wavestone {
@@ -127,14 +143,30 @@ button.slide:hover, .slide:focus {
 .of-y-scroll {
   overflow-y:scroll
 }
+.of-x-hidden {
+  overflow-x:hidden
+}
 
 .h-90vh {
   height:85vh !important;
   height:85%
 }
+.fs-16px {
+  font-size:16px
+}
+
+.fs-20px {
+  font-size:20px
+}
 
 .fs-24px {
   font-size:24px
+}
+.fs-50px {
+  font-size:50px
+}
+.lh-1-5 {
+  line-height: 1.5
 }
 
 .txt-center {
@@ -144,6 +176,18 @@ button.slide:hover, .slide:focus {
 .p-lr-40px {
   padding-left:40px;
   padding-right:40px
+}
+
+.p-20px {
+  padding:20px
+}
+
+.p-10px {
+  padding:10px
+}
+
+.mt-30px {
+  margin-top:30px
 }
 
 .mt-40px {
@@ -169,6 +213,10 @@ button.slide:hover, .slide:focus {
   color:#8F8F8F;
 }
 
+.color-white {
+  color:white
+}
+
 .ml-10px {
   margin-left:10px
 }
@@ -185,4 +233,17 @@ button.slide:hover, .slide:focus {
   left: 295px;
     font-size: 20px;
     top: -3px;
+}
+
+.graph-show {
+  width:50%;
+  margin:auto
+}
+
+.bc-white {
+  background-color: white
+}
+
+.bc-wavestone {
+  background-color:#50307B
 }

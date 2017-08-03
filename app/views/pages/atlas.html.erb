@@ -1,36 +1,48 @@
+<div class="graph-show">
 <% if !@graph_number.nil? && !@graph_info.nil?%>
-  <%= @graph_info %>
-  <h1><%= @graph_info["name"] %></h1>
-  <img src="<%= @graph_info["image"]%>" alt="" style="width:30%">
-  <p>
-  level : <%= @graph_info["level"] %>
+  <div class="bc-white p-20px" style="margin-top:25px;margin-bottom:50px;box-shadow: 1px 1px 3px #E7E5E5">
+  <h1 class="fs-50px no-mt color-wavestone"><%= @graph_info["name"] %></h1>
+  <img src="<%= @graph_info["image"]%>" alt="" style="width:100%;margin-bottom:15px">
+
+
+  <p class="color-grey position-abs">Level
+    <% if @graph_info["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+    <% if @graph_info["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+    <% if @graph_info["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+    <% if @graph_info["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
+    <span class="position-rel dashboard"><i class="fa fa-tachometer <% if  @graph_info["level"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span>
   <br>
-  dashboard : <%= @graph_info["dashboard"] %>
-  <br>
-  Reading Principle :
+  <h2 class="color-wavestone fs-24px"><i class="fa fa-pencil fs-16px" aria-hidden="true"></i> Description</h2>
   <% @graph_info["reading_principle"].each do |rp| %>
-    --><%= rp[1] %>
+    <p class="lh-1-5"><%= rp[1] %></p>
   <% end %>
   <br>
-  </p>
   <div class="row">
     <div class="col-xs-6">
-      <h3>+</h3>
+      <h2 class="color-wavestone fs-24px"><i class="fa fa-plus fs-16px" aria-hidden="true"></i> Advantage</h2>
       <p>
         <% @graph_info["advantages"].each do |ad| %>
-          --><%= ad[1] %>
+          <p class="lh-1-5"><%= ad[1] %></p>
         <% end %>
       </p>
     </div>
     <div class="col-xs-6">
-      <h3>-</h3>
+      <h2 class="color-wavestone fs-24px"><i class="fa fa-minus fs-16px" aria-hidden="true"></i> Inconvenient</h2>
       <p>
         <% @graph_info["disadvantages"].each do |da| %>
-          --><%= da[1] %>
+          <p class="lh-1-5"><%= da[1] %></p>
         <% end %>
       </p>
     </div>
   </div>
+
+  <h2 class="color-wavestone fs-24px"><i class="fa fa-bar-chart fs-16px" aria-hidden="true"></i> Visualisation tool</h2>
+  <p class="lh-1-5">Available soon</p>
+
+  <h2 class="color-wavestone fs-24px"><i class="fa fa-thumbs-up fs-16px" aria-hidden="true"></i> You could also like</h2>
+  <p class="lh-1-5">Available soon</p>
+</div>
 <% else %>
 error
 <% end %>
+</div>

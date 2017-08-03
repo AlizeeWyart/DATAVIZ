@@ -1,8 +1,11 @@
-<div class="col-xs-4 mt-50px h-90vh">
-1. <%= @main_question %>
-<%= link_to find_path(question_id: 0) do %><i class="fa fa-refresh" aria-hidden="true"></i><% end %>
+<div class="col-xs-4 mt-30px h-90vh">
+
 
 <% if !@next_graph & @is_first_question %>
+<div class="choices-box">
+  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
+  <p>Please pick a choice first</p>
+</div>
 </div>
 <div class="col-xs-4 h-90vh">
 <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
@@ -21,14 +24,18 @@
 
 
 <% if @is_second_question %>
-
-  <br>2. <%= @second_question %>
-  <%= link_to find_path(question_id: 0) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
+<div class="choices-box">
+  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
+  <p><%= @second_question %>
+    <%= link_to find_path(question_id: 0) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  </p>
+</div>
   <% if !@next_graph %>
   </div>
   <div class="col-xs-4 h-90vh">
+  <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
     <% @second_children.each do |child| %>
     <%= link_to find_path(question_id: child["question_id"]) do %>
       <br><button class="slide"> <%= child["question"] %></button>
@@ -41,19 +48,23 @@
 
 
 <% if @is_third_question %>
-  <br>2. <%= @first_question %>
-  <%= link_to find_path(question_id: 0) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>3. <%= @second_question %>
-  <%= link_to find_path(question_id: @number_first_question) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br><br>
+<div class="choices-box">
+  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
+  <p><%= @first_question %>
+    <%= link_to find_path(question_id: 0) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @second_question %>
+    <%= link_to find_path(question_id: @number_first_question) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  </p>
+</div>
 
   <% if !@next_graph %>
   </div>
   <div class="col-xs-4 h-90vh">
+  <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
     <% @second_children.each do |child| %>
       <%= link_to find_path(question_id: child["question_id"]) do %>
         <br><button class="slide"> <%= child["question"] %></button>
@@ -64,23 +75,29 @@
 <% end %>
 
 <% if @is_fourth_question %>
-  <br>1. <%= @first_question %>
-  <%= link_to find_path(question_id: 0) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>2. <%= @second_question %>
-  <%= link_to find_path(question_id: @number_first_question, graph:false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br>3. <%= @third_question %>
-  <%= link_to find_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  <% end %>
-  <br><br>
+<div class="choices-box">
+  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
+  <p><%= @first_question %>
+    <%= link_to find_path(question_id: 0) do %>
+      <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @second_question %>
+    <%= link_to find_path(question_id: @number_first_question, graph:false) do %>
+          <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  <br><br><%= @third_question %>
+    <%= link_to find_path(question_id: @number_first_question * 10 + @number_second_question, graph: false) do %>
+          <i class="fa fa-times-circle color-wavestone" aria-hidden="true"></i>
+    <% end %>
+  </p>
+</div>
+
 
   <% if !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
+    <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+
     <% @third_children.each do |child| %>
       <% if child["graph"] == true %>
         <%= link_to find_path(question_id: child["question_id"], graph: true) do %>
@@ -117,6 +134,8 @@
   <% if params[:graph] == "false" && !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
+    <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+
     <% @children.each do |child| %>
       <% if child["graph"] == true %>
         <%= link_to find_path(question_id: child["question_id"], graph: true) do %>
@@ -156,6 +175,8 @@
   <% if params[:graph] == "false" && !@next_graph %>
     </div>
     <div class="col-xs-4 h-90vh">
+    <h2 class="fs-24px txt-center color-wavestone">What do you want to do ?</h2>
+
     <% @children.each do |child| %>
       <% if child["graph"] == false %>
         <%= link_to find_path(question_id: child["question_id"], graph: false) do %>
