@@ -1528,7 +1528,7 @@
               }],
               "children": null
           },{
-              "label": "self-organizing map",
+              "label": "Self-organizing map",
               "question": null,
               "question_id": "32222G120",
               "rang": 7,
@@ -1550,6 +1550,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G10", "G130", "G210", "G250"],
    "children": [{
       "label": null,
       "question": "Explain changes happening in given intervalls",
@@ -1623,6 +1624,7 @@
  "question_id": 4,
  "graph": false,
  "next_graph": false,
+ "before_results":["G20", "G25", "G30", "G40", "G85", "G95", "G110", "G125", "G155", "G181", "G185", "G195", "G215", "G230", "G235", "G240", "G260", "G267"],
  "children": [{
     "label":null,
     "question": "Mainly show how my data is distributed",
@@ -1630,6 +1632,7 @@
     "rang": 2,
     "graph": false,
     "next_graph": false,
+    "before_results":["G40", "G85", "G110", "G125", "G155", "G215", "G230", "G240", "G260"],
     "children":[{
       "label": null,
       "question": "Point out groupings or outliers",
@@ -1776,6 +1779,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
+   "before_results":["G20", "G25", "G30", "G95", "G125", "G181", "G185", "G195", "G235", "G267"],
    "children":[{
       "label": null,
       "question": "Make comparisons over time",
@@ -1841,6 +1845,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
+      "before_results":["G20", "G30", "G95", "G181", "G185", "G195", "G235", "G267"],
       "children": [{
         "label": null,
         "question": "Compare data according to numbers and proportions",
@@ -1848,6 +1853,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
+        "before_results":["G20", "G30", "G95", "G185", "G235", "G267"],
         "children":[{
           "label": null,
           "question": "Emphasize key values and make quick numeric comparisons possible",
