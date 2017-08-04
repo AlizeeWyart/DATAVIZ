@@ -178,6 +178,10 @@ button.slide:hover, .slide:focus {
 .fs-50px {
   font-size:50px
 }
+.ff-normal {
+  font-family:"Open Sans", "Helvetica", "sans-serif"
+}
+
 .lh-1-5 {
   line-height: 1.5
 }
@@ -447,7 +451,8 @@ a.home-btn {
     left: calc(0.7em * 1.2);
     right: calc(0.7em * 1.2);
     height: 3px;
-    background: #f26522;
+    // background: #f26522;
+    background: #50307B;
     z-index: -1;
     transition:
       transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
@@ -460,7 +465,8 @@ a.home-btn {
 
 .line {
   position: absolute;
-  background: #f26522;
+  // background: #f26522;
+  background: #50307B;
 
   &.-right,
   &.-left {

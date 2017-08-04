@@ -79,7 +79,7 @@
        "rang":4,
        "graph": false,
        "next_graph":false,
-       "before_results":null,
+       "before_results":["G45","G50","G75","G190","G245","G280","G285"],
        "children":[{
          "label": null,
          "question": "Show data on a geographically accurate map",
@@ -87,7 +87,7 @@
          "rang": 5,
          "graph": false,
          "next_graph":false,
-         "before_results":null,
+         "before_results":["G45","G50","G75","G285"],
          "children":[{
            "label": null,
            "question": "Represent the variations of a physical quantity over space.",
@@ -208,7 +208,7 @@
        "rang": 4,
        "graph":false,
        "next_graph": false,
-       "before_results":null,
+       "before_results":["G20","G95","G170","G235","G280"],
        "children":[{
          "label": null,
          "question": "Use an abstract view that emphasizes values",
@@ -506,75 +506,31 @@
       "next_graph": true,
       "before_results":null,
       "children":[{
-        "label": null,
-        "question": "Show a thematic change over time",
-        "question_id": 2211,
+        "label": "Stacked bar graph",
+        "question": null,
+        "question_id": "211G235",
         "rang": 4,
-        "graph": false,
-        "next_graph": true,
+        "graph": true,
+        "next_graph": false,
         "before_results":null,
-        "children": [{
-          "label": "Timeline (global)",
-          "question": null,
-          "question_id": "2211G271",
-          "rang": 5,
-          "next_graph": false,
-          "before_results":null,
-          "graph": true,
-          "graph_number": "G271",
+        "graph_number": "G235",
           "comparison": [{
-            "1": "Better than stream graphs to emphasize on single events and give detail."
+            "1": "Better than histograms to compare the evolutions of several categories at different points in time."
           }],
-          "children": null
-        },{
-          "label": "Stream graph",
-          "question": null,
-          "question_id": "2211G250",
-          "rang": 5,
-          "next_graph": false,
-          "before_results":null,
-          "graph": true,
-          "graph_number": "G250",
-          "comparison": [{
-            "1": "Better than timelines (global) to show the relative importance/dominance of events. They are displayed in chronological order, but the timeline is not as explicit as in timelines (global)."
-          }],
-          "children": null
-        }]
+        "children": null
       },{
-        "label": null,
-        "question": "Display a quantitative change over time",
-        "question_id": 2212,
+        "label": "histogram",
+        "question": null,
+        "question_id": "211G125",
         "rang": 4,
-        "graph": false,
-        "next_graph": true,
+        "graph": true,
+        "next_graph": false,
         "before_results":null,
-        "children":[{
-          "label": "Line graph",
-          "question": null,
-          "question_id": "2212G155",
-          "rang": 5,
-          "next_graph": false,
-          "before_results":null,
-          "graph": true,
-          "graph_number": "G155",
+        "graph_number": "G125",
           "comparison": [{
-            "1": "Better than circular graph to display precise numeric quantities and exploit numerical data."
+            "1": "Better than stacked bar graphs to compare the different values of a given element over time."
           }],
-          "children": null
-        },{
-          "label": "Circular graph",
-          "question": null,
-          "question_id": "2212G60",
-          "rang": 5,
-          "next_graph": false,
-          "before_results":null,
-          "graph": true,
-          "graph_number": "G60",
-          "comparison": [{
-            "1": "Better than line graphs to show a repetitive phenomenon or display a variation over a circular period (day, month, seasons, …). It is also better to compare the values over the said period."
-          }],
-          "children": null
-        }]
+        "children":null
       }]
    },{
      "label": null,
@@ -582,9 +538,35 @@
      "question_id": 212,
      "rang": 3,
      "graph": false,
-     "next_graph": false,
+     "next_graph": true,
      "before_results":null,
-     "children":null
+     "children":[{
+        "label": "Timeline (events)",
+        "question": null,
+        "question_id": "212G272",
+        "rang": 4,
+        "graph": true,
+        "next_graph": false,
+        "before_results":null,
+        "graph_number": "G272",
+          "comparison": [{
+            "1": "Better than histograms to describe or explain different points in time."
+          }],
+        "children": null
+      },{
+        "label": "Histogram",
+        "question": null,
+        "question_id": "212G125",
+        "rang": 4,
+        "graph": true,
+        "next_graph": false,
+        "before_results":null,
+        "graph_number": "G125",
+          "comparison": [{
+            "1": "Better than timeline (events) to display quantities."
+          }],
+        "children":null
+      }]
    }]
  },{
    "label": null,
