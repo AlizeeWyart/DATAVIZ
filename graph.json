@@ -10,6 +10,18 @@
     "advantages": {"1":"Show clearly a the evolution between a beginning and an ending situation."},
     "disadvantages": {"1":"Becomes hard to read when there are too many fluxes, or where the axes are not clearly labelled."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"name",
+        "description":"blabla",
+        "url":"https://google.fr"
+      },
+      "2":{
+        "name":"name2",
+        "description":"blabla2",
+        "url":"https://google2.fr"
+      }
+    },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png",
     "similar_to": ["circo", "flow map", "history flow", "hive graph", "sankey graph", "space-time cube map", "tree view"]
   },
@@ -435,7 +447,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G165_qxbgxf.png",
     "similar_to": ["tag cloud"]
   },
-  
+
  "G170": {
     "name": "Mosaic graph",
     "level": "intermediate",
@@ -495,7 +507,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
     "similar_to" : ["radar graph"]
   },
-  
+
  "G185": {
     "name": "Pies and rings",
     "level": "beginner",
@@ -540,7 +552,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G195_ii8n4f.png",
     "similar_to": ["parallel coordinate graph"]
   },
-  
+
    "G200": {
     "name": "Radial tree",
     "level": "expert",
@@ -552,7 +564,7 @@
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G200_xdtjzp",
     "similar_to": ["network structure", "node-link graph", "subway map"]
   },
-  
+
 "G205": {
     "name": "Route map",
     "level": "advanced",
@@ -564,7 +576,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png",
     "similar_to": ["space-time cube map", "strip map"]
   },
-  
+
   "G210": {
     "name": "Sankey graph",
     "level": "advanced",
@@ -582,7 +594,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G210_dvfhxc.png",
     "similar_to": ["alluvial graph", "circo", "history flow"]
   },
-  
+
     "G215": {
     "name": "Scatter plot",
     "level": "advanced",
@@ -613,9 +625,9 @@
     "disadvantages": {"1":"When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read."},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png",
-    "similar_to": ["alluvial graph", "circo", "flow map", "route map", "strip map"] 
+    "similar_to": ["alluvial graph", "circo", "flow map", "route map", "strip map"]
   },
-  
+
    "G230": {
     "name": "Spark line",
     "level": "beginner",
@@ -631,7 +643,7 @@
     },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G230_ylggsz.png",
-    "similar_to": ["histogram", "line graph"] 
+    "similar_to": ["histogram", "line graph"]
   },
 
   "G235": {
@@ -648,7 +660,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png",
     "similar_to": ["bar graph", "double-sided bar graph", "histogram", "mosaic graph", "superposed line graphs", "bar graph (several)"]
   },
-  
+
    "G240": {
     "name": "Stem-and-leaf graph",
     "level": "expert",
@@ -673,9 +685,9 @@
     "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png",
-    "similar_to": ["chloropleth map", "dasymetric map"] 
+    "similar_to": ["chloropleth map", "dasymetric map"]
   },
-  
+
   "G250": {
     "name": "Stream graph",
     "level": "advanced",
@@ -688,7 +700,7 @@
     "disadvantages": {"1": "Unadapted for comparisons between different categories : this graph is targeting an audience who does not want to spend too much time analysing the data !"},
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G250_jahamg.png",
-    "similar_to": ["timeline (global)"] 
+    "similar_to": ["timeline (global)"]
   },
 
 "G255": {
@@ -702,7 +714,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G255_jnq1to.png",
      "similar_to": ["route map", "space-time cube map"]
   },
-  
+
   "G260": {
     "name": "Stripe graph",
     "level": "beginner",
@@ -714,7 +726,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G260_xnoyqe.png",
      "similar_to": ["dot graph", "scatter plot", "stem-and-leaf graph"]
   },
- 
+
   "G265": {
     "name": "Subway map (thematic)",
     "level": "advanced",
@@ -726,7 +738,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G265_bzc14f.png",
     "similar_to": ["network structure", "node-link graph", "radial tree"]
   },
-  
+
 "G266": {
     "name": "Subway map",
     "level": "advanced",
@@ -738,14 +750,14 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G266_nhfr3m.png",
     "similar_to": null
   },
-  
+
 "G267": {
     "name": "Superposed line graphs",
     "level": "beginner",
     "dashboard": true ,
     "reading_principle": {
       "1": "This graph displays elements according to their coordinates in a plane with two axis and connect them with a line. This is the well-known y = f(x) graph.",
-      "2": "Several line graphs can be superposed to show evolution of different elements and compare them."                   
+      "2": "Several line graphs can be superposed to show evolution of different elements and compare them."
     },
     "advantages": {
       "1":"Compare evolution of different categories over times.",
@@ -756,14 +768,14 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G267_rvcpgv.png",
     "similar_to": ["bar-and-line graph", "bar graph (several)", "double-sided bar graph", "histogram", "stacked bar graph"]
   },
- 
+
 "G270": {
     "name": "Tag cloud",
     "level": "beginner",
     "dashboard": false ,
     "reading_principle": {
       "1": "Provide a quick overview of a content.",
-      "2": "Colour and size can vary to indicate the importance of a theme. For example, when a tag cloud represents a text, the size of each word is proportionnal to the number of occurrences!"                   
+      "2": "Colour and size can vary to indicate the importance of a theme. For example, when a tag cloud represents a text, the size of each word is proportionnal to the number of occurrences!"
     },
     "advantages": {
       "1":"Represent large text data sets",
@@ -771,13 +783,13 @@
     },
     "disadvantages": {
       "1":"Some words are too small to be noticed.",
-      "2": "There is no hierarchy or organisation." 
+      "2": "There is no hierarchy or organisation."
     },
     "how_to_do": "EXCEL",
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G270_hpomv7.png",
     "similar_to": ["enclosure tree", "list"]
 },
-  
+
 "G271": {
     "name": "Timeline (global)",
     "level": "beginner",
@@ -789,7 +801,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G271_sy7oai.png",
     "similar_to": ["stream graph"]
 },
-  
+
 "G272": {
     "name": "Timeline (events)",
     "level": "beginner",
@@ -819,7 +831,7 @@
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G275_tcqann.png",
     "similar_to": ["alluvial graph", "dendogram", "enclosure tree", "hive graph", "link tree", "network structure"]
  },
-  
+
 "G280": {
     "name": "Treemap",
     "level": "advanced",

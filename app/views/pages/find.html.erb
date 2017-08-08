@@ -6,8 +6,20 @@
   <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
   <p>Please pick a choice first</p>
 </div>
-</div>
-<div class="col-xs-4 h-90vh">
+<h2 class="fs-24px txt-center color-wavestone">
+    <% if @is_first_question %>
+    First things first, what would you most like to show ?
+    <% else %>
+      <%= @rand_text %>
+    <% end %>
+</h2>
+  <% if @is_first_question %>
+    <% @first_children.each do |child| %>
+      <%= link_to find_path(question_id: child["question_id"]) do %>
+        <p class="btn-choices" style="margin:1px"><%= child["question"] %></p>
+      <% end %>
+    <% end %>
+  <% end %>
 <h2 class="fs-24px txt-center color-wavestone">
   <% if @is_first_question %>
     First things first, what would you most like to show ?

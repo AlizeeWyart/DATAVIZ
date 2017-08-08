@@ -37,8 +37,13 @@
   </div>
 
   <h2 class="color-wavestone fs-24px"><i class="fa fa-bar-chart fs-16px" aria-hidden="true"></i> Visualisation tool</h2>
-  <p class="lh-1-5">Available soon</p>
-
+  <% if @graph_info["tools"] %>
+    <% @graph_info["tools"].each do |tool| %>
+      <p class="lh-1-5"><%= link_to tool[1]["url"] do %><%= tool[1]["name"] %><% end %> : <%= tool[1]["description"] %></p>
+    <% end %>
+  <% else %>
+    <p class="lh-1-5">Available soon</p>
+  <% end %>
   <h2 class="color-wavestone fs-24px"><i class="fa fa-thumbs-up fs-16px" aria-hidden="true"></i> You could also like</h2>
   <p class="lh-1-5">Available soon</p>
 </div>
