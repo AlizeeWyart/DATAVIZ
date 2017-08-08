@@ -72,6 +72,11 @@ class PagesController < ApplicationController
           @results << graph_info
         end
       end
+      # Before results
+      @array_before_results = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
+      end
     end
 
     #Aller chercher la 4e question
@@ -100,6 +105,11 @@ class PagesController < ApplicationController
           graph_info = [number_graph, current_graph, child["comparison"][0]]
           @results << graph_info
         end
+      end
+      # Before results
+      @array_before_results = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
       end
     end
 
@@ -140,6 +150,11 @@ class PagesController < ApplicationController
           @results << graph_info
         end
       end
+      # Before results
+      @array_before_results = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
+      end
     end
 
     #Aller chercher la 6e question
@@ -175,6 +190,11 @@ class PagesController < ApplicationController
           graph_info = [number_graph, current_graph, child["comparison"][0]]
           @results << graph_info
         end
+      end
+      # Before results
+      @array_before_results = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
       end
     end
 
@@ -214,6 +234,11 @@ class PagesController < ApplicationController
           graph_info = [number_graph, current_graph, child["comparison"][0]]
           @results << graph_info
         end
+      end
+      # Before results
+      @array_before_results = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
       end
     end
 
@@ -257,6 +282,11 @@ class PagesController < ApplicationController
           @results << graph_info
         end
       end
+      # Before results
+      @array_before_results = json_questions[@number_first_question - 1]["children"][@number_second_question - 1]["children"][@number_third_question - 1]["children"][@number_fourth_question - 1]["children"][@number_fifth_question - 1]["children"][@number_sixth_question - 1]["children"][@number_sixth_question - 1]["before_results"]
+      if !@array_before_results.nil? && @array_before_results.length > 0
+        @before_results = before_results(@array_before_results)
+      end
     end
 
   end
@@ -270,6 +300,9 @@ class PagesController < ApplicationController
     json_graphs = JSON.parse(serialized_graphs)
 
     @graph_info = json_graphs[@graph_number]
+
+    @all_results = json_graphs
+    @results = @all_results
   end
 
 

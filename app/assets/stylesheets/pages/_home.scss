@@ -6,10 +6,22 @@ body {
   background:rgb(247, 247, 247)
 }
 
+p {
+  font-weight:300
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:300
+}
+
+.mb-5px {
+  margin-bottom:5px
+}
+
 .banner {
   color: white;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   background-position:top;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
@@ -81,37 +93,62 @@ button.slide {
   cursor:pointer;
   transition:ease-in-out 0.3s;
   background:white;
-  width:90%
+  // width:90%
 }
 
 .flexbox-wrap-space-between .card-graph {
-  flex: 0 0 48%
+  flex: 0 0 32%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.btn-choices {
-  background: #50307B;
+.choices-box.question-box {
+  padding-bottom:10px
+}
+
+.choices-box p.btn-choices {
+  background: rgba(61, 33, 95, 0.5);
   color: white;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 1px 2px 1px #12081f;
+  margin:10px 20px;
+  padding:10px 20px 10px 15px;
+  transition: background ease-in-out 0.3s;
+  i {
+    right: 10px;
+    top: 40%;
+    transition:ease-in-out 0.3s
+  }
 }
 
-.btn-choices:hover {
-  background:#3d2163
+.choices-box p.btn-choices:hover {
+  background:#3d2163;
+  i {
+    right: 5px;
+  }
 }
+
+
 .choices-box {
   box-shadow:1px 1px 3px #E7E5E5;
   background:white;
-  width:80%;
+  // width:80%;
   h2 {
-    margin-bottom:0
+    margin-bottom:0;
+    font-weight:300;
   }
+}
+
+.upper {
+  text-transform:uppercase;
 }
 
 .choices-box p {
   padding:20px 15px;
   color:#6A6E6F;
   font-size:14px
+}
+
+.choices-box.question-box {
+  background:#50307B
 }
 
 
@@ -132,7 +169,7 @@ a:hover {
 
 .description-card-graph {
  background: white;
- padding:20px 20px 20px 20px;
+ padding:10px;
  background:rgb(251, 250, 250);
 }
 
@@ -167,6 +204,9 @@ button.slide:hover, .slide:focus {
 .of-x-hidden {
   overflow-x:hidden
 }
+.of-y-hidden {
+  overflow-y:hidden
+}
 
 .h-90vh {
   height:85vh !important;
@@ -176,8 +216,16 @@ button.slide:hover, .slide:focus {
 .fs-8px {
   font-size:8px
 }
+
+.fs-13px {
+  font-size:13px
+}
 .fs-16px {
   font-size:16px
+}
+
+.fs-18px {
+  font-size:18px
 }
 
 .fs-20px {
@@ -231,6 +279,10 @@ button.slide:hover, .slide:focus {
   border:2px solid #50307B
 }
 
+.h-170px {
+  height:170px
+}
+
 .h-200px {
   height:200px
 }
@@ -240,6 +292,9 @@ button.slide:hover, .slide:focus {
 }
 .no-mt {
   margin-top:0;
+}
+.no-mb {
+  margin-bottom:0;
 }
 
 .color-grey {
@@ -270,6 +325,11 @@ button.slide:hover, .slide:focus {
 
 .graph-show {
   width:50%;
+  margin:auto
+}
+
+.research-show {
+  width:75%;
   margin:auto
 }
 
@@ -309,9 +369,11 @@ button.slide:hover, .slide:focus {
   transition:ease-in-out 0.4s
 }
 
- .no-hover:hover {
+.card-graph:hover .no-hover, .no-hover:hover {
   opacity:1
 }
+
+
 
 
 
@@ -450,7 +512,7 @@ a.home-btn {
 
   .text {
     // padding: 0 0.3em;
-    font-family: proxima-nova;
+    font-family: "Roboto", "Helvetica", sans-serif;
     transform: translate3d(0,0.7em,0);
     display: block;
     transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
@@ -565,3 +627,13 @@ a.home-btn:active {
   }
 
 }
+
+.fw-300 {
+  font-weight:300
+}
+
+
+.hover-underline:hover, .underline {
+  border-bottom:1px solid #50307B
+}
+

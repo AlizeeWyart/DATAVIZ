@@ -1,19 +1,19 @@
 <div class="navbar-wagon flexbox-space-between hidden-xs hidden-sm">
   <!-- Logo -->
   <div style="flex:0 0 48%" class="txt-right">
-    <a href="/find" class="navbar-wagon-item navbar-wagon-link">FIND THE PERFECT GRAPH</a>
-    <a href="/" class="navbar-wagon-item navbar-wagon-link">ALL GRAPHS <span class="fs-8px">(soon)</span></a>
+    <a href="/find" class="navbar-wagon-item navbar-wagon-link"><span class="hover-underline <% if current_page?(:controller => 'pages', :action => 'find') %>color-wavestone underline<% end %>">FIND THE PERFECT GRAPH</span></a>
+    <a href="/atlas" class="navbar-wagon-item navbar-wagon-link"><span class="hover-underline <% if current_page?(:controller => 'pages', :action => 'atlas') %>color-wavestone underline<% end %>">ALL GRAPHS</span></a>
   </div>
 
   <div style="flex:0 0 2%" class="text-center">
     <a href="/" class="navbar-wagon-brand">
-      <img src="<%= asset_url "logo.png" %>" alt="" class="mt-10px">
+      <img src="<%= asset_url "logo.png" %>" alt="logo dataviz datatask">
     </a>
   </div>
 
   <div style="flex:0 0 48%">
-    <a href="/" class="navbar-wagon-item navbar-wagon-link">BEST PRACTICES <span class="fs-8px">(soon)</span></a>
-    <a href="/" class="navbar-wagon-item navbar-wagon-link">ABOUT <span class="fs-8px">(soon)</span></a>
+    <a href="/" class="navbar-wagon-item navbar-wagon-link"><span class="hover-underline">BEST PRACTICES <span class="fs-8px">(soon)</span></span></a>
+    <a href="/" class="navbar-wagon-item navbar-wagon-link"><span class="hover-underline">ABOUT <span class="fs-8px">(soon)</span></span></a>
   </div>
 
 </div>

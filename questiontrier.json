@@ -90,15 +90,7 @@ question_id: 1121,
 rang: 4,
 graph: false,
 next_graph: false,
-before_results: [
-"G45",
-"G50",
-"G75",
-"G190",
-"G245",
-"G280",
-"G285"
-],
+before_results: ["G45","G50","G75","G190","G245","G280","G285"],
 children: [
 {
 label: null,

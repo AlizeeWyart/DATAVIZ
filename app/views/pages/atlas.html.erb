@@ -1,5 +1,5 @@
-<div class="graph-show">
 <% if !@graph_number.nil? && !@graph_info.nil?%>
+<div class="graph-show">
   <div class="bc-white p-20px" style="margin-top:25px;margin-bottom:50px;box-shadow: 1px 1px 3px #E7E5E5">
   <h1 class="fs-50px no-mt color-wavestone"><%= @graph_info["name"] %></h1>
   <img src="<%= @graph_info["image"]%>" alt="" style="width:100%;margin-bottom:15px">
@@ -47,7 +47,10 @@
   <h2 class="color-wavestone fs-24px"><i class="fa fa-thumbs-up fs-16px" aria-hidden="true"></i> You could also like</h2>
   <p class="lh-1-5">Available soon</p>
 </div>
-<% else %>
-error
-<% end %>
 </div>
+<% else %>
+  <div class="research-show">
+
+    <%= render 'shared/research_results', research_results: @results %>
+  </div>
+<% end %>

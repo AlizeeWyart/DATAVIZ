@@ -295,7 +295,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G205","G225","G255","G266"],
    "children": [{
     "label": null,
     "question": "Show a path or a route",
@@ -422,7 +422,7 @@
    "question_id": 14,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G10","G145","G225"],
    "rang": 3,
    "children":[{
      "label": null,
@@ -488,7 +488,7 @@
  "question_id": 2,
  "graph": false,
  "next_graph": false,
- "before_results":null,
+ "before_results":["G10","G21","G55","G60","G115","G125","G155","G225","G235","G250","G267","G271","G272"],
  "children": [{
    "label":null,
    "question": "Highlight one-time events over time",
@@ -496,7 +496,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G125","G235","G272"],
    "children": [{
       "label": null,
       "question": "Makes comparisons",
@@ -575,7 +575,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G21","G60","G155","G235","G250","G267","G271"],
    "children":[{
       "label": null,
       "question": "Simply show distributions over time",
@@ -583,7 +583,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "before_results":null,
+      "before_results":["G60","G155","G250","G271"],
       "children":[{
         "label": null,
         "question": "Show a thematic change over time",
@@ -777,7 +777,7 @@
  "question_id": 3,
  "graph": false,
  "next_graph": false,
- "before_results":null,
+ "before_results":["G5","G10","G15","G30","G55","G65","G70","G80","G105","G130","G135","G150","G160","G165","G170","G175","G180","G185","G200","G210","G240","G250","G265","G270","G275","G280"],
  "children": [{
    "label": null,
    "question": "Show the nature and proportions of elements within my data",
@@ -785,7 +785,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G30","G105","G165","G170","G185","G240","G270","G280"],
    "children": [{
       "label": null,
       "question": "Show nature and not necessarily proportions",
@@ -793,7 +793,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "before_results":null,
+      "before_results":["G165","G240","G270"],
       "children":[{
         "label": null,
         "question": "Show text data",
@@ -857,7 +857,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "before_results":null,
+      "before_results":["G30","G105","G170","G185","G270","G280"],
       "children":[{
         "label": null,
         "question": "Group my data into a very small number of categories",
@@ -921,7 +921,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": true,
-          "before_results":null,
+          "before_results":["G105","G170","G270","G280"],
           "children":[{
             "label": "Mosaic graph",
             "question": null,
@@ -990,7 +990,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G5","G10","G15","G55","G65","G70","G105","G135","G150","G160","G170","G175","G180","G200","G210","G265","G275","G280"],
    "children": [{
       "label": null,
       "question": "Characterise relationships or show flows",
@@ -998,7 +998,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "before_results":null,
+      "before_results":["G5","G10","G15","G55","G65","G135","G175","G180","G200","G210","G265","G275"],
       "children":[{
         "label": null,
         "question": "Emphasize flows",
@@ -1056,7 +1056,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
-        "before_results":null,
+        "before_results":["G5","G10","G15","G55","G65","G135","G175","G180","G200","G265","G275"],
         "children":[{
           "label": null,
           "question": "Emphasize relationships",
@@ -1064,7 +1064,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "before_results":null,
+          "before_results":["G5","G10","G15","G55","G135","G275"],
           "children":[{
             "label": null,
             "question": "Highlight the strengh of a relationship",
@@ -1217,7 +1217,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "before_results":null,
+          "before_results":["G65","G175","G180","G200","G265"],
           "children":[{
             "label": null,
             "question": "Include (technical) specificities about different clusters and entities",
@@ -1314,7 +1314,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "before_results":null,
+      "before_results":["G55","G65","G70","G80","G105","G150","G160","G170","G175","G180","G200","G275","G280"],
       "children":[{
         "label": null,
         "question": "Show a network or a hierarchy",
@@ -1322,7 +1322,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
-        "before_results":null,
+        "before_results":["G65","G80","G105","G160","G175","G180","G200","G275","G280"],
         "children":[{
           "label": null,
           "question": "Represent a network",
@@ -1330,7 +1330,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "before_results":null,
+          "before_results":["G65","G175","G180","G200"],
           "children":[{
             "label": null,
             "question": "Include (technical) specificities about different clusters and entities",
@@ -1409,7 +1409,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "before_results":null,
+          "before_results":["G80","G105","G160","G175","G275","G280"],
           "children": [{
             "label": null,
             "question": "Show a clear hierarchy",
@@ -1516,7 +1516,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
-        "before_results":null,
+        "before_results":["G55","G70","G105","G150","G170","G280"],
         "children":[{
           "label": null,
           "question": "Show categories and their composition",
@@ -1524,7 +1524,7 @@
           "rang": 5,
           "graph": false,
           "next_graph": false,
-          "before_results":null,
+          "before_results":["G70","G105","G170","G280"],
           "children":[{
             "label": null,
             "question": "Show volume correponding to each category",
@@ -1670,7 +1670,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G10","G130","G210","G250"],
    "children": [{
       "label": null,
       "question": "Explain changes happening in given intervalls",
@@ -1750,7 +1750,7 @@
  "question_id": 4,
  "graph": false,
  "next_graph": false,
- "before_results":null,
+ "before_results":["G20","G25","G30","G40","G85","G95","G110","G125","G155","G181","G185","G195","G215","G230","G235","G240","G260","G267"],
  "children": [{
     "label":null,
     "question": "Mainly show how my data is distributed",
@@ -1758,7 +1758,7 @@
     "rang": 2,
     "graph": false,
     "next_graph": false,
-    "before_results":null,
+    "before_results":["G40","G85","G110","G125","G155","G215","G230","G240","G260"],
     "children":[{
       "label": null,
       "question": "Point out groupings or outliers",
@@ -1917,7 +1917,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results":null,
+   "before_results":["G20","G25","G30","G95","G125","G181","G185","G195","G235","G267"],
    "children":[{
       "label": null,
       "question": "Make comparisons over time",
@@ -1988,7 +1988,7 @@
       "rang": 3,
       "graph": false,
       "next_graph": false,
-      "before_results":null,
+      "before_results":["G20","G30","G95","G181","G185","G195","G235","G267"],
       "children": [{
         "label": null,
         "question": "Compare data according to numbers and proportions",
@@ -1996,7 +1996,7 @@
         "rang": 4,
         "graph": false,
         "next_graph": false,
-        "before_results":null,
+        "before_results":["G20","G30","G95","G185","G235","G267"],
         "children":[{
           "label": null,
           "question": "Emphasize key values and make quick numeric comparisons possible",

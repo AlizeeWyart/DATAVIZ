@@ -1,8 +1,8 @@
-<div class="col-xs-9 mt-30px of-y-scroll h-90vh">
-  <% if before_results != nil %>
-  <h2 class="fs-24px txt-center color-wavestone"><%= before_results.length %> possibilities left</h2>
-  <div class="flexbox-wrap-space-between" id="before-results">
-  <% before_results.each do |result| %>
+<div class="mt-30px h-90vh">
+  <% if research_results != nil %>
+  <h2 class="fs-24px txt-center color-wavestone"><%= research_results.length %> possibilities left</h2>
+  <div class="flexbox-wrap-space-between" id="research-results">
+  <% research_results.each do |result| %>
     <% if !@is_first_question %>
       <% result = result.first %>
     <% end %>
