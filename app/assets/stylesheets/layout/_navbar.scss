@@ -21,7 +21,7 @@
 
 /* Navbar logo */
 .navbar-wagon-brand img {
-  width: 30px;
+  width: 36px;
 }
 
 /* Navbar right section (with form, links, button) */
@@ -130,4 +130,25 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.name-logo {
+  top: -4px;
+  // left: 37px;
+  left:-12px;
+  height: 34px;
+  width: auto !important;
+  opacity:0;
+  transition:ease-in-out 0.5s;
+}
+
+.navbar-wagon:hover .logo-dataviz {
+  margin-left: -69px;
+}
+.logo-dataviz {
+  transition:ease-in-out 0.5s;
+}
+.navbar-wagon:hover .name-logo {
+  left: -31px;
+  opacity:1
 }

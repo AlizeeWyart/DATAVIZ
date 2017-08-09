@@ -102,6 +102,10 @@ button.slide {
   margin-bottom: 10px;
 }
 
+#research-results.flexbox-wrap-space-between .card-graph {
+  flex: 0 0 23%;
+}
+
 .choices-box.question-box {
   padding-bottom:10px
 }
@@ -110,7 +114,7 @@ button.slide {
   background: rgba(61, 33, 95, 0.5);
   color: white;
   margin:10px 20px;
-  padding:10px 20px 10px 15px;
+  padding:10px 25px 10px 15px;
   transition: background ease-in-out 0.3s;
   i {
     right: 10px;
@@ -171,6 +175,9 @@ a:hover {
  background: white;
  padding:10px;
  background:rgb(251, 250, 250);
+ p {
+  font-size:14px;
+ }
 }
 
 .img-card-graph {
@@ -215,6 +222,9 @@ button.slide:hover, .slide:focus {
 
 .fs-8px {
   font-size:8px
+}
+.fs-12px {
+  font-size:12px
 }
 
 .fs-13px {
@@ -279,8 +289,8 @@ button.slide:hover, .slide:focus {
   border:2px solid #50307B
 }
 
-.h-170px {
-  height:170px
+.h-140px {
+  height:140px
 }
 
 .h-200px {
@@ -329,7 +339,7 @@ button.slide:hover, .slide:focus {
 }
 
 .research-show {
-  width:75%;
+  width:90%;
   margin:auto
 }
 
@@ -340,6 +350,10 @@ button.slide:hover, .slide:focus {
 .bc-transparent {
   background-color: rgba(255, 255, 255, 0.9)
 }
+.min-h-100percent {
+  height:100%
+}
+
 
 .h-100percent {
   height:100%
@@ -635,5 +649,34 @@ a.home-btn:active {
 
 .hover-underline:hover, .underline {
   border-bottom:1px solid #50307B
+}
+
+
+.curved-arrow {
+  width: 150px;
+  transform: rotate(100deg);
+}
+
+.first-choice-txt {
+  top: 0px;
+  left: 30px;
+  /* font-weight: 400; */
+  font-size: 20px;
+}
+
+@keyframes Ymove {
+  0% {transform:translateY(0);}
+  50% {transform:translateY(20px);}
+  100% {transform:translateY(0);}
+}
+.move-y {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  animation: Ymove 2s infinite ease;
+}
+
+.plr-50px {
+  padding-left:50px;
+  padding-right:50px
 }
 

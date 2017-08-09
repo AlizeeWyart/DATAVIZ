@@ -22,12 +22,13 @@ class PagesController < ApplicationController
     #SENTENT WHAT DO YOU WANT TO DO
     @to_do = ["What next ?", "What do we do now ?", "And then ?", "And now ?", "What would you most like to do ?", "Which choice suits you best ?"]
     @rand_text = @to_do.sample
+    @end_result_text = "<i class=\"fa fa-hand-spock-o\" aria-hidden=\"true\"></i>"
 
     #Première question
     if @question_id.to_i < 1
       @is_first_question = true
       @first_children = json_questions
-      @before_results = json_graphs
+      @before_results = nil
     end
 
     #Deuxième question
@@ -302,11 +303,77 @@ class PagesController < ApplicationController
     @graph_info = json_graphs[@graph_number]
 
     @all_results = json_graphs
-    @results = @all_results
+    # Récupérer les filtres
+    @level_nb = params["level"].to_i
+    @is_dashboard = params["dashboard"]
+    @name_search = params[:search]
+    # Trouver les n° des graphs correspondant
+    @array_of_graph_numbers = []
+    @level_array_of_graph_numbers = []
+    @dashboard_array_of_graph_numbers = []
+    @search_array_of_graph_numbers = []
+
+
+    @all_results.each do |result|
+      # ne prendre que les niveaux
+      if @level_nb != 0 && @level_nb != nil && @name_search.nil?
+        @graph_level_nb = find_level(result[1]["level"])
+        if @graph_level_nb != nil && @graph_level_nb <= @level_nb
+          @level_array_of_graph_numbers << result[0]
+        end
+      end
+      # ne prendre que les dashboard
+      if !@is_dashboard.nil? && @name_search.nil?
+        @graph_dashboard = result[1]["dashboard"]
+        if @graph_dashboard.to_s == @is_dashboard.to_s
+          @dashboard_array_of_graph_numbers << result[0]
+        end
+      end
+      #trouver search name
+      if !@name_search.nil?
+        @name_search = @name_search.downcase
+        @graph_name = result[1]["name"].downcase
+        if @graph_name.include? @name_search
+          @search_array_of_graph_numbers << result[0]
+        end
+      end
+      # garder que les éléments en commun
+      if @level_nb == 0 && @is_dashboard.nil? && @name_search.nil?
+        @array_of_graph_numbers << result[0]
+      end
+    end
+
+    if @level_nb != 0 && @level_nb != nil &&  !@is_dashboard.nil? && @name_search.nil?
+      @array_results = @dashboard_array_of_graph_numbers & @level_array_of_graph_numbers
+    elsif @level_nb > 0 && @is_dashboard.nil? && @name_search.nil?
+      @array_results = @level_array_of_graph_numbers && @name_search.nil?
+    elsif @level_nb == 0 && !@is_dashboard.nil? && @name_search.nil?
+      @array_results = @dashboard_array_of_graph_numbers
+    elsif @level_nb == 0 && @is_dashboard.nil? && @name_search.nil?
+      @array_results = @array_of_graph_numbers
+    elsif !@name_search.nil?
+      @array_results = @search_array_of_graph_numbers
+    end
+    # trouver les attributs
+    @results = before_results(@array_results)
   end
 
 
   private
+
+  def find_level(level)
+    if level == "Beginner" || level == "beginner"
+      return 1
+    elsif level == "Intermediate" || level == "intermediate"
+      return 2
+    elsif level == "Advanced" || level == "advanced"
+      return 3
+    elsif level == "Expert" || level == "expert"
+      return 4
+    else
+      return nil
+    end
+  end
 
   def before_results(array_of_graph_numbers)
     require 'json'

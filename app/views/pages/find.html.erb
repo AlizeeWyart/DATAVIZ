@@ -1,9 +1,5 @@
 <div class="col-xs-3 mt-30px h-90vh">
 <% if !@next_graph & @is_first_question %>
-<div class="choices-box">
-  <h2 class="color-white no-mt bc-wavestone p-10px txt-center fs-20px">Your choices</h2>
-  <p>Please pick a choice first</p>
-</div>
 <div class="choices-box question-box">
   <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
       <% if @is_first_question %>
@@ -38,11 +34,15 @@
     </p>
   </div>
 
-  <% if !@next_graph %>
   <div class="choices-box question-box">
     <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
+      <% if !@next_graph %>
         <%= @rand_text %>
+      <% else %>
+        <%= @end_result_text.html_safe %>
+      <% end %>
     </h2>
+      <% if !@next_graph %>
         <% @second_children.each do |child| %>
           <%= link_to find_path(question_id: child["question_id"]) do %>
             <p class="btn-choices position-rel"><%= child["question"] %>
@@ -50,11 +50,13 @@
             </p>
           <% end %>
         <% end %>
+      <% end %>
     </div>
   </div>
-  <% end %>
+
 
 <% end %>
+
 
 
 <% if @is_third_question %>
@@ -71,21 +73,26 @@
   </p>
 </div>
 
-  <% if !@next_graph %>
+
     <div class="choices-box question-box">
       <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
-        <%= @rand_text %>
+        <% if !@next_graph %>
+          <%= @rand_text %>
+        <% else %>
+          <%= @end_result_text.html_safe %>
+        <% end %>
       </h2>
-        <% @second_children.each do |child| %>
-          <%= link_to find_path(question_id: child["question_id"]) do %>
-            <p class="btn-choices position-rel"><%= child["question"] %>
-              <i class="fa fa-arrow-right position-abs" aria-hidden="true"></i>
-            </p>
+        <% if !@next_graph %>
+          <% @second_children.each do |child| %>
+            <%= link_to find_path(question_id: child["question_id"]) do %>
+              <p class="btn-choices position-rel"><%= child["question"] %>
+                <i class="fa fa-arrow-right position-abs" aria-hidden="true"></i>
+              </p>
+            <% end %>
           <% end %>
         <% end %>
       </div>
     </div>
-  <% end %>
   </div>
 
 <% end %>
@@ -109,24 +116,29 @@
 </div>
 
 
-  <% if !@next_graph %>
+
 
   <div class="choices-box question-box">
     <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
-      <%= @rand_text %>
+      <% if !@next_graph %>
+        <%= @rand_text %>
+      <% else %>
+        <%= @end_result_text.html_safe %>
+      <% end %>
     </h2>
-      <% @third_children.each do |child| %>
-        <% if child["graph"] != true %>
-          <%= link_to find_path(question_id: child["question_id"], graph: false) do %>
-            <p class="btn-choices position-rel"><%= child["question"] %>
-              <i class="fa fa-arrow-right position-abs" aria-hidden="true"></i>
-            </p>
+      <% if !@next_graph %>
+        <% @third_children.each do |child| %>
+          <% if child["graph"] != true %>
+            <%= link_to find_path(question_id: child["question_id"], graph: false) do %>
+              <p class="btn-choices position-rel"><%= child["question"] %>
+                <i class="fa fa-arrow-right position-abs" aria-hidden="true"></i>
+              </p>
+            <% end %>
           <% end %>
         <% end %>
       <% end %>
     </div>
   </div>
-  <% end %>
   </div>
 
 <% end %>
@@ -154,20 +166,25 @@
   </p>
 </div>
 
-  <% if params[:graph] == "false" && !@next_graph %>
+
     <div class="choices-box question-box">
       <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
+      <% if params[:graph] == "false" && !@next_graph %>
         <%= @rand_text %>
+      <% else %>
+        <%= @end_result_text.html_safe %>
+      <% end %>
       </h2>
-      <% @children.each do |child| %>
-        <%= link_to find_path(question_id: child["question_id"], graph: false) do %>
-          <p class="btn-choices position-rel"><%= child["question"] %>
-            <i class="fa fa-arrow-right position-abs" aria-hidden="true"></i>
-          </p>
+      <% if params[:graph] == "false" && !@next_graph %>
+        <% @children.each do |child| %>
+          <%= link_to find_path(question_id: child["question_id"], graph: false) do %>
+            <p class="btn-choices position-rel"><%= child["question"] %>
+              <i class="fa fa-arrow-right position-abs" aria-hidden="true"></i>
+            </p>
+          <% end %>
         <% end %>
       <% end %>
     </div>
-  <% end %>
 
 <% end %>
 

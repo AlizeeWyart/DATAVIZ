@@ -1,6 +1,45 @@
 <div class="mt-30px h-90vh">
+
+  <div id="research-bar">
+    <p>Filter by</p>
+    <p>Audience Level
+      <%= link_to atlas_path(level: 1, dashboard: @is_dashboard) do %>
+        <i class="fa fa-rocket <% if params["level"].to_i == 1 || params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
+      <% end %>
+      <%= link_to atlas_path(level: 2, dashboard: @is_dashboard) do %>
+        <i class="fa fa-rocket <% if params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
+      <% end %>
+      <%= link_to atlas_path(level: 3, dashboard: @is_dashboard) do %>
+        <i class="fa fa-rocket <% if params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
+      <% end %>
+      <%= link_to atlas_path(level: 4, dashboard: @is_dashboard) do %>
+        <i class="fa fa-rocket <% if params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
+      <% end %>
+    </p>
+    <p>Dashboard
+      <%= link_to atlas_path(dashboard: true, level: @level_nb) do %>
+        <span class="<% if @is_dashboard == "true" %>color-wavestone <% else %>color-grey<% end %>">YES</span>
+      <% end %>
+      <%= link_to atlas_path(dashboard: false, level: @level_nb) do %>
+        <span class="<% if @is_dashboard == "false" %>color-wavestone <% else %>color-grey<% end %>">NO</span>
+      <% end %>
+      <%= link_to atlas_path(dashboard: nil, level: @level_nb) do %>
+        <span class="<% if @is_dashboard.nil? %>color-wavestone <% else %>color-grey<% end %>">ALL</span>
+      <% end %>
+    </p>
+
+
+    <%= text_field_tag 'search_name', @name_search %>
+    <button id="search-name">GO=</button>
+    <%= link_to atlas_path do %>
+      Delete all filters
+    <% end %>
+  </div>
+
+  <% if research_results != nil && !@name_search.nil? %>
+    OUPS GRUMPY CATS
+  <% end %>
   <% if research_results != nil %>
-  <h2 class="fs-24px txt-center color-wavestone"><%= research_results.length %> possibilities left</h2>
   <div class="flexbox-wrap-space-between" id="research-results">
   <% research_results.each do |result| %>
     <% if !@is_first_question %>
@@ -8,7 +47,7 @@
     <% end %>
         <div class="card-graph">
           <%= link_to atlas_path(graph_number: result[0] ) do %>
-          <div class="img-card-graph position-rel h-170px">
+          <div class="img-card-graph position-rel h-140px">
             <div class="img-content" style="background-image:url('<%= result[1]["image"]%>')">
             </div>
           </div>
@@ -21,7 +60,7 @@
                 <% if result[1]["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span><% end %>
                 <% if result[1]["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span><% end %>
               </p>
-              <p class="color-grey no-mt">Dashboard <span class="dashboard ml-10px"><i class="fa fa-tachometer <% if  result[1]["dashboard"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span></p>
+              <p class="color-grey no-mt no-mb">Dashboard <span class="dashboard ml-10px"><i class="fa fa-tachometer <% if  result[1]["dashboard"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span></p>
             </div>
 
           </div>
@@ -35,7 +74,6 @@
 
   <% end %>
   </div>
-
 <% end %>
 </div>
 
