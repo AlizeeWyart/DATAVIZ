@@ -22,7 +22,7 @@ class PagesController < ApplicationController
     #SENTENT WHAT DO YOU WANT TO DO
     @to_do = ["What next ?", "What do we do now ?", "And then ?", "And now ?", "What would you most like to do ?", "Which choice suits you best ?"]
     @rand_text = @to_do.sample
-    @end_result_text = "<i class=\"fa fa-hand-spock-o\" aria-hidden=\"true\"></i>"
+    @end_result_text = "<br><i class=\"fa fa-hand-spock-o\" aria-hidden=\"true\"></i> Great! <br><p style=\"font-size:16px;padding:10px 35px;line-height:23px;color:white\">Now you're done with the questions, you should have a look at this!</p>"
 
     #Première question
     if @question_id.to_i < 1
@@ -343,10 +343,11 @@ class PagesController < ApplicationController
       end
     end
 
+
     if @level_nb != 0 && @level_nb != nil &&  !@is_dashboard.nil? && @name_search.nil?
       @array_results = @dashboard_array_of_graph_numbers & @level_array_of_graph_numbers
     elsif @level_nb > 0 && @is_dashboard.nil? && @name_search.nil?
-      @array_results = @level_array_of_graph_numbers && @name_search.nil?
+      @array_results = @level_array_of_graph_numbers
     elsif @level_nb == 0 && !@is_dashboard.nil? && @name_search.nil?
       @array_results = @dashboard_array_of_graph_numbers
     elsif @level_nb == 0 && @is_dashboard.nil? && @name_search.nil?

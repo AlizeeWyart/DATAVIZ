@@ -680,3 +680,33 @@ a.home-btn:active {
   padding-right:50px
 }
 
+
+.research-bar-box {
+  flex: 0 0 20%
+}
+
+.txt-right {
+  text-align:right
+}
+
+input#search_name {
+  background: transparent;
+  border-style: none;
+  border-bottom: 1px solid rgba(106, 110, 111, 0.64);
+}
+
+.clear-filter {
+      padding: 5px 10Px;
+    background: #50307B;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.pt-20px {
+  padding-top:20px
+}
+
+.pointer {
+  cursor:pointer
+}

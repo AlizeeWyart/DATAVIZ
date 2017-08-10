@@ -1,43 +1,53 @@
 <div class="mt-30px h-90vh">
-
-  <div id="research-bar">
-    <p>Filter by</p>
-    <p>Audience Level
-      <%= link_to atlas_path(level: 1, dashboard: @is_dashboard) do %>
-        <i class="fa fa-rocket <% if params["level"].to_i == 1 || params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
+  <div id="research-bar" class="flexbox-space-between">
+    <div class="research-bar-box">
+      <p>Filter by</p>
+    </div>
+    <div class="research-bar-box">
+      <p>Audience Level
+        <%= link_to atlas_path(level: 1, dashboard: @is_dashboard) do %>
+          <i class="fa fa-rocket <% if params["level"].to_i == 1 || params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
+        <% end %>
+        <%= link_to atlas_path(level: 2, dashboard: @is_dashboard) do %>
+          <i class="fa fa-rocket <% if params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
+        <% end %>
+        <%= link_to atlas_path(level: 3, dashboard: @is_dashboard) do %>
+          <i class="fa fa-rocket <% if params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
+        <% end %>
+        <%= link_to atlas_path(level: 4, dashboard: @is_dashboard) do %>
+          <i class="fa fa-rocket <% if params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
+        <% end %>
+      </p>
+    </div>
+    <div class="research-bar-box">
+      <p>Dashboard
+        <%= link_to atlas_path(dashboard: true, level: @level_nb) do %>
+          <span class="<% if @is_dashboard == "true" %>color-wavestone <% else %>color-grey<% end %>">YES</span>
+        <% end %>
+        <%= link_to atlas_path(dashboard: false, level: @level_nb) do %>
+          <span class="<% if @is_dashboard == "false" %>color-wavestone <% else %>color-grey<% end %>">NO</span>
+        <% end %>
+        <%= link_to atlas_path(dashboard: nil, level: @level_nb) do %>
+          <span class="<% if @is_dashboard.nil? %>color-wavestone <% else %>color-grey<% end %>">ALL</span>
+        <% end %>
+      </p>
+    </div>
+    <div class="research-bar-box">
+      <%= text_field_tag 'search_name', @name_search %>
+      <a id="search-name"><i class="fa fa-search color-grey" aria-hidden="true"></i></a>
+    </div>
+    <div class="research-bar-box txt-right">
+      <%= link_to atlas_path do %>
+        <span class="clear-filter">Clear filters <i class="fa fa-times ml-10px" aria-hidden="true"></i></span>
       <% end %>
-      <%= link_to atlas_path(level: 2, dashboard: @is_dashboard) do %>
-        <i class="fa fa-rocket <% if params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
-      <% end %>
-      <%= link_to atlas_path(level: 3, dashboard: @is_dashboard) do %>
-        <i class="fa fa-rocket <% if params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
-      <% end %>
-      <%= link_to atlas_path(level: 4, dashboard: @is_dashboard) do %>
-        <i class="fa fa-rocket <% if params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
-      <% end %>
-    </p>
-    <p>Dashboard
-      <%= link_to atlas_path(dashboard: true, level: @level_nb) do %>
-        <span class="<% if @is_dashboard == "true" %>color-wavestone <% else %>color-grey<% end %>">YES</span>
-      <% end %>
-      <%= link_to atlas_path(dashboard: false, level: @level_nb) do %>
-        <span class="<% if @is_dashboard == "false" %>color-wavestone <% else %>color-grey<% end %>">NO</span>
-      <% end %>
-      <%= link_to atlas_path(dashboard: nil, level: @level_nb) do %>
-        <span class="<% if @is_dashboard.nil? %>color-wavestone <% else %>color-grey<% end %>">ALL</span>
-      <% end %>
-    </p>
-
-
-    <%= text_field_tag 'search_name', @name_search %>
-    <button id="search-name">GO=</button>
-    <%= link_to atlas_path do %>
-      Delete all filters
-    <% end %>
+    </div>
   </div>
 
-  <% if research_results != nil && !@name_search.nil? %>
-    OUPS GRUMPY CATS
+  <% if research_results != nil && !@name_search.nil? && @results.length == 0 %>
+    <div class="txt-center mt-50px">
+      <p>Ooops! We couldn't find a graph named "<%= @name_search %>"</p>
+      <img src="https://media.giphy.com/media/3oGRFkmoqoui9nzL2g/giphy.gif" alt="" style="width:32%">
+    </div>
   <% end %>
   <% if research_results != nil %>
   <div class="flexbox-wrap-space-between" id="research-results">
