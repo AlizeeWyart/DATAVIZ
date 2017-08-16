@@ -1,4 +1,28 @@
 {
+  "G5" : {
+    "name": "Adjacency matrix",
+    "level": "advanced",
+    "dashboard": false,
+    "reading_principle": {
+      "1": "The strength of each interaction between elements can be quantified on a scale (0 if there is no interaction).",
+      "2": "Elements are displayed on the side of perpendicular axes, and the intersection of two elements is coloured according to the strengh of their interaction."
+    },
+    "advantages": {
+      "1":"Uncover trends and groupings.",
+      "2":"Represent a large quantity of data."},
+    "disadvantages": {"1":"Data may have to be re-organised along the axes so that the graph becomes easier to read."},
+    "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"There is no tool dedicated to adjacency matrixes (yet!) but the result can be obtained easily by creating the relationship table on excel and defining a rule to highlight cells according to their value.",
+        "url":null
+      }
+    },
+    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G5_pfjbnw.png",
+    "similar_to": ["vector field"]
+  },
+  
   "G10" : {
     "name": "Alluvial graph",
     "level": "intermediate",
@@ -12,14 +36,19 @@
     "how_to_do": "EXCEL",
     "tools": {
       "1":{
-        "name":"name",
-        "description":"blabla",
-        "url":"https://google.fr"
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
       },
       "2":{
-        "name":"name2",
-        "description":"blabla2",
-        "url":"https://google2.fr"
+        "name":"Sankeymatic",
+        "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"www.sankeymatic.com/build"
+      },
+      "3":{
+        "name":"The Sankey Diagram Generator",
+        "description":"The Sankey Diagram Generator is not immediately intuitive to use but has a very beautiful final render. One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"sankey-diagram-generator.acquireprocure.com"
       }
     },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png",
@@ -34,6 +63,13 @@
     "advantages": {"1":"Show interactions for elements that are naturally ordered in a linear way (chapters in a book, historical events, …)."},
     "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Protovis",
+        "description":"The only free solution to create an arc graph is code (for the moment!). You can find all documention on Protovis.",
+        "url":"mbostock.github.io/protovis/ex/arc.html"
+      }
+    }, 
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask images/G15_cngyyw.png",
     "similar_to": ["adjacency matrix", "circo"]
   },
@@ -47,8 +83,25 @@
       "2": "Bars can be horizontal or vertical. Horizontal bars, for instance, are much more telling when a length is measured (life expectancy, distance, …)."
     },
     "advantages": {"1":"Quantify and compare different categories."},
-    "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."},
+    "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories: some categories may have to be grouped."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph !",
+        "url":null
+      },
+      "2":{
+        "name":"Datahero",
+        "description":"A  wide range of customisable graphs is proposed on Datahero! You only need to sign up, it's free! A big advantage is that Datahero also has a dashboard-creating option.",
+        "url":"apps.datahero.com"
+      },
+      "3":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    },
     "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png",
     "similar_to": ["double-sided bar graph", "mosaic graph", "stacked bar graph", "superposed line graphs"]
   },
@@ -64,6 +117,23 @@
     "advantages": {"1":"Compare the values of different categories over time."},
     "disadvantages": {"1":"Becomes problematic to label when there is a huge number of categories : some categories may have to be grouped."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph !",
+        "url":null
+      },
+      "2":{
+        "name":"Datahero",
+        "description":"A  wide range of customisable graphs is proposed on Datahero! You only need to sign up, it's free! A big advantage is that Datahero also has a dashboard-creating option.",
+        "url":"apps.datahero.com"
+      },
+      "3":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    }, 
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1500298563/Datask%20images/G21_pik0wk.png",
     "similar_to": ["stacked bar graph", "superposed line graphs"]
   },
@@ -79,7 +149,19 @@
     "advantages": {"1":"Show evolutions of different parameters over time."},
     "disadvantages": {"1":"Data repartition is not detailed within the chosen time intervals."},
     "how_to_do": "EXCEL",
-    "image" : "IMAGE",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph !",
+        "url":null
+      },
+      "2":{
+        "name":"Datahero",
+        "description":"A  wide range of customisable graphs is proposed on Datahero! You only need to sign up, it's free! A big advantage is that Datahero also has a dashboard-creating option.",
+        "url":"apps.datahero.com"
+      }
+    },  
+    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G25_bvynvm.png",
     "similar_to": ["double-sided bar graph", "histogram", "superposed line graphs"]
   },
 
@@ -89,9 +171,16 @@
     "dashboard": false,
     "reading_principle": {"1": "Each shape is proportionnal to the importance of the topic."},
     "advantages": {"1": "Compare a very small number of elements."},
-    "disadvantages": {"1":"Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that ."},
+    "disadvantages": {"1":"Very bad for comparing or remembering proportions - you should  use a bar graph if you want to do that."},
     "how_to_do": "EXCEL",
-    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G25_bvynvm.png",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is the simplest and most accessible tool for this graph!",
+        "url":null
+      }
+    },
+    "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G30_y7qcpk.png",
     "similar_to": ["enclosure trees", "pies and rings"]
   },
 
@@ -106,6 +195,18 @@
       "2": "Asks for more statistical knowledge if more elements than just the median appear."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
+      }
+    }, 
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G40_ncfclc.png",
     "similar_to": ["error bar graph"]
   },
@@ -127,6 +228,13 @@
       "2": "Can become misleading when the disposition of the shapes is too different from geographical reality."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"ScapeToad",
+        "description":"Very acccurate cartogram maps can be created using ScapeToad and many parameters can be modified while creating it. The only disadvantages are that it is quite slow to run and that Java has to be installed on your computer!",
+        "url":"scapetoad.choros.ch"
+      }
+    }, 
     "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G45_ayihlv.png",
     "similar_to": ["proportional symbol map", "treemap"]
   },
@@ -139,6 +247,18 @@
     "advantages": {"1":"Compare distributions in different geographical areas."},
     "disadvantages":{"1":"Can become hard to read if there is a lot of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Datahero",
+        "description":"A  wide range of customisable graphs is proposed on Datahero! You only need to sign up, it's free! A big advantage is that Datahero also has a dashboard-creating option.",
+        "url":"apps.datahero.com"
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    }, 
     "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G50_bx0eau.png",
     "similar_to": ["dasymetric map", "stepped relief map"]
 },
@@ -151,6 +271,13 @@
     "advantages": {"1":"Interactions are emphasized and relative importances can be easily compared."},
     "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data or when there are too many interactions !"},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Circos",
+        "description":"Beautiful circos visualisation tool. It can be done online by clicking on circos online on their website and uploading your data in the form of a relationship table (txt format is good but accepted formats are detailed on the website).",
+        "url":"circos.ca"
+      }
+    }, 
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G55_octvem.png",
     "similar_to": ["alluvial graph", "arc graph", "flow map", "isoline map", "sankey graph", "self-organising map", "space-time cube map"]
   },
@@ -166,6 +293,13 @@
     },
     "disadvantages": {"1":"This representation is pointless when the variation of the represented quantity is very faint."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"To be found...",
+        "description":"Sorry, but we haven't found a tool to plot this graph (...yet!).",
+        "url":null
+      }
+    },  
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G60_xrub1s.png",
     "similar_to": ["line graph"]
  },
@@ -181,6 +315,18 @@
     },
     "disadvantages": {"1":"Can scare users off if the graphics are unattractive ot too varied."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Draw.io",
+        "description":"Draw.io can be an adapted tool for conceptual networks.",
+        "url":"https://www.draw.io/"
+      },
+      "2":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is rather adapted for this representation.",
+        "url":null
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G65_d49lrq.png",
     "similar_to": null
  },
@@ -196,6 +342,13 @@
     "advantages": {"1": "Distinguish and sort important information from the rest of the data."},
     "disadvantages": {"1":"Makes quantified information difficult to read and remember."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"To be found...",
+        "description":"Sorry, but we haven't found a tool to plot this graph (...yet!).",
+        "url":null
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G70_bp7n6b.png",
     "similar_to": ["mosaic graph"]
  },
@@ -209,6 +362,13 @@
     "advantages": {"1":"Show a distribution on a larger scale but keep geographical areas in mind as well."},
     "disadvantages": {"1":"Finding an adequate colour scale to quantify all variations can be difficult."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Google fusion tables",
+        "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
+        "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png",
     "similar_to": ["stepped relief map", "chloropleth map"]
  },
@@ -227,6 +387,23 @@
       "2": "Can become hard to read when there is a big amount of data."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Xmind",
+        "description":"Xmind is one of the best mind-mapping tools available today.",
+        "url":"http://www.xmind.net/fr/"
+      },
+      "3":{
+        "name":"RAWgraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"apps.rawgraphs.io"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G80_n5le2m.png",
     "similar_to": ["enclosure tree", "link tree", "network structure", "tree view"]
  },
@@ -239,6 +416,13 @@
     "advantages": {"1": "Highlight groupings and outliers."},
     "disadvantages": {"1": "Unadapted for memorising numerical values."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G85_u3dpjo.png",
     "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
  },
@@ -251,6 +435,18 @@
     "advantages": {"1":"Link a precise quantity to an area and show it on a map."},
     "disadvantages": {"1":"Becomes unadapted when there are too many occurrences in a very small range."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Datavisual",
+        "description":"After signing up, several graphs are available and can be edited online by adding your data and changing manually graph appearance (colours, size). For maps in particular, it is not the fastest process but allows zoomin in and out to select a view and customising every aspect of the map.",
+        "url":"datavisu.al/map/"
+      },
+      "2":{
+        "name":"Google fusion tables",
+        "description":"Add google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
+        "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png",
     "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
  },
@@ -266,6 +462,18 @@
     "advantages": {"1":"Compare data to a quantified objective."},
     "disadvantages": {"1":"Does not detail data repartition within the chosen time intervals."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png",
     "similar_to": ["bar-and-line graph", "bar graph", "histogram", "mosaic graph", "stacked bar graph", "superposed line graphs"]
  },
@@ -278,9 +486,35 @@
     "advantages": {"1":"Compare distributions in different geographical areas."},
     "disadvantages": {"1":"Unadapted for a situation where there are few variations within the data : the differences are hardly percievable."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel 3D maps",
+        "description":"Create surprisingly cool maps with Excel!",
+        "url":"https://support.office.com/en-us/article/Get-started-with-3D-Maps-6b56a50d-3c3e-4a9e-a527-eea62a387030"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png",
     "similar_to": ["dot-density map", "isarithmic map"]
  },
+  
+ "G101": {
+    "name": "Elevation profile",
+    "level": "advanced",
+    "dashboard": false ,
+    "reading_principle": {"1": "Relief is displayed in the form of a topographic profile."},
+    "advantages": {"1": "Display geographical relief."},
+    "disadvantages": {"1": "Values can become hard to read when the scale is not chosen accurately."},
+    "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Geocontext",
+        "description":"Geocontext is an extremely simple tool which instantly maps the profile of a chosen region.",
+        "url":"http://www.geocontext.org/publ/2010/04/profiler/en/"
+      }
+    }, 
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1502700900/Datask%20images/G101_iqan2l.png",
+    "similar_to": ["vector field"]
+ },   
 
   "G105": {
     "name": "Enclosure tree",
@@ -293,6 +527,13 @@
       "2":"Interactions between elements are not easily shown."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"apps.rawgraphs.io"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G105_qnvlkf.png",
     "similar_to": ["basic shapes", "dendogram", "link tree", "mosaic graph", "network structure", "pies and rings", "tag cloud", "treemap", "treeview"]
  },
@@ -305,6 +546,13 @@
     "advantages": {"1":"Show the precision or the error margin corresponding to a measure."},
     "disadvantages": {"1":"Choosing a scale that is both adapted to the distribution of the points and the size of the measured error can be difficult."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      }
+    },  
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G110_cxteni.png",
     "similar_to": ["box-and-whisker symbol graph"]
  },
@@ -317,6 +565,13 @@
     "advantages": {"1":"Show accurately movements or fluxes between geographical areas."},
     "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Anycharts",
+        "description":"A huge range of maps is proposed on Anycharts, so you can find almost anything there. The only inconvenient is that it's code - but the page corresponding to each graph is explained step by step in details!",
+        "url":"https://docs.anychart.com/Maps/Connector_Maps"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
     "similar_to": ["alluvial graph", "circo", "space-time cube map"]
   },
@@ -332,6 +587,18 @@
     },
     "disadvantages": {"1":"Data repartition is not detailed within the chosen time intervalls."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and the most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"apps.rawgraphs.io"
+      }
+    },   
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G125_iqo3ww.png",
     "similar_to": ["bar-and-line graph", "double-sided bar graph", "line graph", "spark line", "stacked bar graphs", "superposed line graphs", "timeline (events)"]
   },
@@ -347,6 +614,18 @@
     "advantages": {"1": "Represent thematic veriations between different versions of a text."},
     "disadvantages": {"1":"Unadapted to display precise indicators regarding the content."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Sankeymatic",
+        "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"www.sankeymatic.com/build"
+      },
+      "2":{
+        "name":"The Sankey Diagram Generator",
+        "description":"The Sankey Diagram Generator is not immediately intuitive to use but has a very beautiful final render. One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"sankey-diagram-generator.acquireprocure.com"
+      }
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G130_zivq25.png",
     "similar_to": ["alluvial graph", "sankey graph"]
   },
@@ -365,6 +644,13 @@
     },
     "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Sankeymatic",
+        "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"www.sankeymatic.com/build"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G135_z8bqgf.png",
     "similar_to": ["alluvial graph", "tree view"]
   },
@@ -380,6 +666,13 @@
     "advantages": {"1":"Emphasize some areas according to the value of a parameter."},
     "disadvantages": {"1":"Unadapted to show precise occurrences of a phenomenon over an area."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Google fusion tables",
+        "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
+        "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
+      }
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png",
     "similar_to": ["dot-density map", "elevation map"]
   },
@@ -393,6 +686,13 @@
     "advantages": {"1":"Read at a glance the travel length to/from a point."},
     "disadvantages": {"1":"A point of reference has to be chosen : the length of the travel cannot be shown for several places at once."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Iso4App",
+        "description":"Simple app dedicated to isochrone and isodistance maps.",
+        "url":"https://www.iso4app.net/"
+      }
+    },  
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png",
     "similar_to": null
   },
@@ -405,6 +705,13 @@
     "advantages": {"1":"Represent the proximity between different topics in an intuitive way."},
     "disadvantages": {"1":"Unadapted to represent a situation where many elements are interacting with the others. "},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Contour Map Creator",
+        "description":"With Contour Map Creator you only have to define a rectangle on a map and isolines are drawn for same altitudes. You can choose the number, unit, and meny other parameters of the isolines.",
+        "url":"http://contourmapcreator.urgr8.ch/"
+      }
+    },  
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
     "similar_to": ["circo", "self-organising map"]
   },
@@ -417,6 +724,18 @@
     "advantages": {"1":"Show  a continuous data evolution or correlation."},
     "disadvantages": {"1":"Can become hard to read when the scale of one of the axes is not chosen wisely."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G155_lyvlzt.png",
     "similar_to": ["histogram", "spark line", "circular graph"]
   },
@@ -429,6 +748,18 @@
     "advantages": {"1":"Represent clearly a hierarchy with many levels."},
     "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Xmind",
+        "description":"Xmind is one of the best mind-mapping tools available today.",
+        "url":"http://www.xmind.net/fr/"
+      }
+    },      
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G160_gjjxdw.png",
     "similar_to": ["dendogram", "enclosure tree", "network structure", "tree view"]
   },
@@ -444,6 +775,18 @@
     "advantages": {"1":"Show elements in a clear and ordered way."},
     "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Word",
+        "description":"Word is also good for the simplest lists.",
+        "url":null
+      }
+    },      
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G165_qxbgxf.png",
     "similar_to": ["tag cloud"]
   },
@@ -459,12 +802,19 @@
     },
     "disadvantages": {"1":"The subcategories are hard to compare between different bars as they are not necessarily aligned, and as areas are more difficult to process than lengths for the human brain !"},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      }
+    },      
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G170_vrgtrv.png",
     "similar_to": ["bar graph", "crossmap", "double-sided bar graph", "enclosure tree", "stacked bar graph", "treemap"]
   },
 
  "G175": {
-    "name": "Mosaic graph",
+    "name": "Network structure",
     "level": "intermediate",
     "dashboard": false,
     "reading_principle": {"1":"Hierarchically organised network where interaction between elements is represented by a line."},
@@ -474,6 +824,13 @@
     },
     "disadvantages": {"1":"Can become hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Google fusion tables",
+        "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
+        "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
+      }
+    },      
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G175_qkfucp.png",
     "similar_to" : ["enclosure tree", "dendogram", "link tree", "node-link graph", "radial tree", "subway map", "tree view"]
   },
@@ -486,6 +843,13 @@
     "advantages": {"1":"Allows to stand back to understand repartition in a very large data set."},
     "disadvantages": {"1":"Can become hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Google fusion tables",
+        "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
+        "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G180_ucdaoy.png",
     "similar_to" : ["network structure", "radial tree", "subway map"]
   },
@@ -504,6 +868,13 @@
     },
     "disadvantages": {"1":"Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
     "similar_to" : ["radar graph"]
   },
@@ -519,6 +890,18 @@
       "2": "Becomes nearly impossible to read and remember when there are many categories."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool fror this graph!",
+        "url":"app.rawgraphs.io"
+      },
+      "2":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
+      }
+    },  
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G185_debu9j.png",
     "similar_to" : ["basic shapes", "enclosure tree"]
   },
@@ -534,6 +917,18 @@
     "advantages": {"1":"Display a geographical distribution and quantify the value on each area."},
     "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Datavisual",
+        "description":"After signing up, several graphs are available and can be edited online by adding your data and changing manually graph appearance (colours, size). For maps in particular, it is not the fastest process but allows zoomin in and out to select a view and customising every aspect of the map.",
+        "url":"https://datavisu.al/map/"
+      },
+      "2":{
+        "name":"Khartis",
+        "description":"Khartis : Not the the most intuitive app you have ever tried, but you can get quite quickly to a result with it. One big advantage of Khartis is that a very wide range of maps is proposed.",
+        "url":"www.sciencespo.fr/cartographie/khartis/app/project/new/step1"
+      }
+    },    
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png",
     "similar_to": ["cartogram map", "treemap"]
   },
@@ -549,6 +944,13 @@
     },
     "disadvantages": {"1":"Very bad for comparing numeric data or remembering it."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      }
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G195_ii8n4f.png",
     "similar_to": ["parallel coordinate graph"]
   },
@@ -561,6 +963,13 @@
     "advantages": {"1": "Show the proximity to a chosen element."},
     "disadvantages": {"1": "Quickly becomes overcharged when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is a rather adapted tool for this graph.",
+        "url":null
+      }
+    },    
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G200_xdtjzp",
     "similar_to": ["network structure", "node-link graph", "subway map"]
   },
@@ -572,7 +981,14 @@
     "reading_principle": {"1":"A real route is drawn on a geographically accurate map."},
     "advantages": {"1":"Frame a route in its environnment or compare with alternative routes."},
     "disadvantages": {"1":"Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information."},
-    "how_to_do": "EXCEL",
+    "how_to_do": "EXCEL", 
+    "tools": {
+      "1":{
+        "name":"Google My Maps",
+        "description":"My Maps enables you to draw routes, mark places, and save the result as a map in your Drive.",
+        "url":"https://www.google.fr/mymaps"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png",
     "similar_to": ["space-time cube map", "strip map"]
   },
@@ -591,6 +1007,23 @@
     },
     "disadvantages": {"1": "Becomes unadapted when the level of detail of the map is important : the highlighted route will be lost in the mass of information."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
+      },
+      "2":{
+        "name":"Sankeymatic",
+        "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"www.sankeymatic.com/build"
+      },
+      "3":{
+        "name":"The Sankey Diagram Generator",
+        "description":"The Sankey Diagram Generator is not immediately intuitive to use but has a very beautiful final render. One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"sankey-diagram-generator.acquireprocure.com"
+      } 
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G210_dvfhxc.png",
     "similar_to": ["alluvial graph", "circo", "history flow"]
   },
@@ -609,6 +1042,18 @@
         "2": "The scale should be chosen wisely : it should start at zero for both axis to be interpreted accurately. More complex scales such as a logarithmic scale should be used only when the public can understand it."
       },
     "how_to_do": "EXCEL",
+     "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G215_yvtkoe.png",
     "similar_to": ["dot graph", "stripe graph", "stem-and-leaf graph"]
   },
@@ -624,6 +1069,13 @@
     },
     "disadvantages": {"1":"When the geographical evolution is a complex pattern, the 3D-timeline becomes hard to read."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"ArcGIS",
+        "description":"The only free solution to create a space-time cube map is code (for the moment !). You can find all documention on ArcGIS but this is one of the most complicated graphs to create!",
+        "url":"http://pro.arcgis.com/fr/pro-app/tool-reference/space-time-pattern-mining/create-space-time-cube.htm"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png",
     "similar_to": ["alluvial graph", "circo", "flow map", "route map", "strip map"]
   },
@@ -642,6 +1094,18 @@
       "2": "Unadapted when there are not many variations."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    },      
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G230_ylggsz.png",
     "similar_to": ["histogram", "line graph"]
   },
@@ -657,6 +1121,18 @@
     },
     "disadvantages": {"1":"The subcategories are hard to compare between different bars as they are not necessarily aligned."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png",
     "similar_to": ["bar graph", "double-sided bar graph", "histogram", "mosaic graph", "superposed line graphs", "bar graph (several)"]
   },
@@ -672,6 +1148,18 @@
     "advantages": {"1": "Array numbers in a practical war in order to look them up easily."},
     "disadvantages": {"1":"Can become overcharched when there is a big amount of data. On the other hand, it becomes useless when there is a too small amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Calculatorsoup",
+        "description":"Despite its confusing name, Calculatorsoup helps you generate a stem-and-leaf graph very quickly!",
+        "url":"https://www.calculatorsoup.com/calculators/statistics/stemleaf.php"
+      }
+    },      
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G240_hdpzco.png",
     "similar_to": ["dot graph", "scatter plot", "stripe graph"]
   },
@@ -684,6 +1172,13 @@
     "advantages": {"1":"Compare distributions within different geographical areas."},
     "disadvantages": {"1":"Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Create surpisingly cool 3D maps with Excel!",
+        "url":"https://support.office.com/en-us/article/Get-started-with-3D-Maps-6b56a50d-3c3e-4a9e-a527-eea62a387030"
+      }
+    },      
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png",
     "similar_to": ["chloropleth map", "dasymetric map"]
   },
@@ -699,6 +1194,18 @@
     },
     "disadvantages": {"1": "Unadapted for comparisons between different categories : this graph is targeting an audience who does not want to spend too much time analysing the data !"},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
+      },
+      "2":{
+        "name":"Sankeymatic",
+        "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
+        "url":"www.sankeymatic.com/build"
+      } 
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G250_jahamg.png",
     "similar_to": ["timeline (global)"]
   },
@@ -711,6 +1218,13 @@
     "advantages": {"1":"Describe precisely an itinerary regardless of irrelevant details."},
     "disadvantages": {"1":"Becomes hard to remember  when the itinerary is too long or too detailed."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Google My Maps",
+        "description":"My Maps enables you to draw routes, mark places, and save the result as a map in your Drive.",
+        "url":"https://www.google.fr/mymaps"
+      }
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G255_jnq1to.png",
      "similar_to": ["route map", "space-time cube map"]
   },
@@ -723,6 +1237,13 @@
     "advantages": {"1":"Show groupings and outliers."},
     "disadvantages": {"1":"Unadapted to memorise values concerning data repartition."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      }
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G260_xnoyqe.png",
      "similar_to": ["dot graph", "scatter plot", "stem-and-leaf graph"]
   },
@@ -735,6 +1256,13 @@
     "advantages": {"1":"Show possible links between different elements without representing their environnment."},
     "disadvantages": {"1":"Finding a right compromise between accuracy and readability can be challenging."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Metro Map Creator",
+        "description":"Metro Map creator enables you to create your subway map online. It's very simple to understand its use but the tool is not very ergonomic … but it's the only free subway map creator available fot now!",
+        "url":"https://beno.org.uk/metromapcreator/"
+      }
+    },    
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G265_bzc14f.png",
     "similar_to": ["network structure", "node-link graph", "radial tree"]
   },
@@ -747,6 +1275,13 @@
     "advantages": {"1":"Show possible links between different places without representing their environnment."},
     "disadvantages": {"1":"Finding a right compromise between geographical accuracy and readability can be challenging."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Metro Map Creator",
+        "description":"Metro Map creator enables you to create your subway map online. It's very simple to understand its use but the tool is not very ergonomic … but it's the only free subway map creator available fot now!",
+        "url":"https://beno.org.uk/metromapcreator/"
+      }
+    },     
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G266_nhfr3m.png",
     "similar_to": null
   },
@@ -765,6 +1300,18 @@
     },
     "disadvantages": {"1":"When several line graphs are superposed, the colours and numbers of superposed graphs must be chosen wisely, or the result becomes unreadable!"},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Datamatic",
+        "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
+        "url":"datamatic.io/index.html"
+      }
+    },       
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G267_rvcpgv.png",
     "similar_to": ["bar-and-line graph", "bar graph (several)", "double-sided bar graph", "histogram", "stacked bar graph"]
   },
@@ -786,6 +1333,13 @@
       "2": "There is no hierarchy or organisation."
     },
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Wordcloud",
+        "description":"A very simple tool to create tag clouds online is Wordlclouds.",
+        "url":"http://www.wordclouds.com/"
+      }
+    },       
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G270_hpomv7.png",
     "similar_to": ["enclosure tree", "list"]
 },
@@ -798,6 +1352,18 @@
     "advantages": {"1": "Display temporal evolution of different subjects and their context."},
     "disadvantages": {"1": "Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"When you don't have too much data to show, powerpoint is one of the simplest and most acessible tools for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Tiki-toki",
+        "description":"Tiki-toki offers great possibilities to design timelines online.",
+        "url":"https://www.tiki-toki.com/"
+      }
+    },  
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G271_sy7oai.png",
     "similar_to": ["stream graph"]
 },
@@ -810,12 +1376,24 @@
     "advantages": {"1": "Display the order and dates of events throughout time."},
     "disadvantages": {"1": "Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"When you don't have too much data to show, powerpoint is one of the simplest and most acessible tools for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Tiki-toki",
+        "description":"Tiki-toki offers great possibilities to design timelines online.",
+        "url":"https://www.tiki-toki.com/"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G272_g6yigk.png",
     "similar_to": ["histogram"]
  },
-
+  
 "G275": {
-    "name": "Timeline (events)",
+    "name": "Tree view",
     "level": "beginner",
     "dashboard": false ,
     "reading_principle": {
@@ -828,6 +1406,18 @@
     },
     "disadvantages": {"1": "Can become overcharged and hard to read when there is a big amount of data."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Powerpoint",
+        "description":"Powerpoint is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+      "2":{
+        "name":"Xmind",
+        "description":"Xmind is one of the best mind-mapping tools available today.",
+        "url":"http://www.xmind.net/fr/"
+      }
+    }, 
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G275_tcqann.png",
     "similar_to": ["alluvial graph", "dendogram", "enclosure tree", "hive graph", "link tree", "network structure"]
  },
@@ -843,6 +1433,18 @@
     "advantages": {"1":"Gives an intuitive view : the biggest rectangle corresponds to the biggest element."},
     "disadvantages": {"1":"The quantity corresponding to each rectangle is usually not displayed numerically (but it can be colour-coded)."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Excel",
+        "description":"Excel is the simplest and most accessible tool for this graph!",
+        "url":null
+      },
+     "2":{
+        "name":"RAWGraphs",
+        "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
+        "url":"app.rawgraphs.io"
+      } 
+    },   
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G280_yr0o4z.png",
     "similar_to": ["cartogram map", "enclosure tree", "mosaic graph", "proportional symbol map"]
   },
@@ -855,6 +1457,13 @@
     "advantages": {"1":"Represent variations of a physical quantity over space."},
     "disadvantages": {"1":"Can become hard to read when there is a big amount of data : the scale and breakdown of space for the measures should be chosen accordingly."},
     "how_to_do": "EXCEL",
+    "tools": {
+      "1":{
+        "name":"Desmos",
+        "description":"Powerful online calculator, Desmos enables you to solve complex sets of equations and plot the results.",
+        "url":"https://www.desmos.com/calculator/eijhparfmd"
+      }
+    },   
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G285_l4j1vt.png",
     "similar_to": null
   }
