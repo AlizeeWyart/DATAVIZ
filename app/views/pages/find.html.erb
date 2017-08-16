@@ -1,3 +1,5 @@
+<div class="row pt-40px"></div>
+
 <div class="col-xs-3 mt-30px h-90vh">
 <% if !@next_graph & @is_first_question %>
 <div class="choices-box question-box">
@@ -35,11 +37,13 @@
   </div>
 
   <div class="choices-box question-box">
-    <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
+    <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px position-rel">
       <% if !@next_graph %>
         <%= @rand_text %>
       <% else %>
         <%= @end_result_text.html_safe %>
+        <img src="<%= asset_url "curved_arrow.svg" %>" alt="" class="curved-arrow result-arrow position-abs">
+
       <% end %>
     </h2>
       <% if !@next_graph %>
@@ -75,11 +79,13 @@
 
 
     <div class="choices-box question-box">
-      <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
+      <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px position-rel">
         <% if !@next_graph %>
           <%= @rand_text %>
         <% else %>
           <%= @end_result_text.html_safe %>
+          <img src="<%= asset_url "curved_arrow.svg" %>" alt="" class="curved-arrow result-arrow position-abs">
+
         <% end %>
       </h2>
         <% if !@next_graph %>
@@ -119,11 +125,13 @@
 
 
   <div class="choices-box question-box">
-    <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
+    <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px position-rel">
       <% if !@next_graph %>
         <%= @rand_text %>
       <% else %>
         <%= @end_result_text.html_safe %>
+        <img src="<%= asset_url "curved_arrow.svg" %>" alt="" class="curved-arrow result-arrow position-abs">
+
       <% end %>
     </h2>
       <% if !@next_graph %>
@@ -168,11 +176,12 @@
 
 
     <div class="choices-box question-box">
-      <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px">
+      <h2 class="txt-center color-white no-mt p-10px txt-center fs-20px position-rel">
       <% if params[:graph] == "false" && !@next_graph %>
         <%= @rand_text %>
       <% else %>
         <%= @end_result_text.html_safe %>
+        <img src="<%= asset_url "curved_arrow.svg" %>" alt="" class="curved-arrow result-arrow position-abs">
       <% end %>
       </h2>
       <% if params[:graph] == "false" && !@next_graph %>

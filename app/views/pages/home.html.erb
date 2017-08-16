@@ -1,25 +1,30 @@
-<div class="banner" style="background-image: url('<%= asset_url "font_dataviz.png" %>');">
-  <div class="banner-content">
-
-    <div class="roll">
-      <div class="rollvisible">
-        <ul>
-          <li> <h1>Lost in DataViz ?</h1></li>
-          <li> <h1><%= @rand_text.first %></h1></li>
-          <li> <h1><%= @rand_text.last %></h1></li>
-        </ul>
-      </div>
+<div class="row pt-40px"></div>
+<h1 class="hidden">Datask - Find the perfect graph</h1>
+<div class="banner">
+  <div class="col-sm-6 col-xs-12 h-100percent hover-zoom" style="background-image: url('<%= asset_url "font_dataviz.png" %>');background-position: center center;background-size: cover;">
+    <h2 class="mt-50px">Lost in DataViz?</h2>
+    <p class="color-white w-40percent m-auto mt-45px min-h-70px">Answer step by step our questions to find the right graph for you.</p>
+    <div class="w-100percent" style="padding-left:25%;margin-top:80px">
+      <a href="/find" class="home-btn">
+        <span class="text ff-normal">Let's go!</span>
+        <span class="line -right"></span>
+        <span class="line -top"></span>
+        <span class="line -left"></span>
+        <span class="line -bottom"></span>
+      </a>
     </div>
-
   </div>
-  <div class="position-abs text-center mt-30px mb-50px">
-    <a href="/find" class="home-btn position-rel" style="top:80px">
-      <span class="text ff-normal">Find a solution</span>
-      <span class="line -right"></span>
-      <span class="line -top"></span>
-      <span class="line -left"></span>
-      <span class="line -bottom"></span>
-    </a>
+  <div class="col-sm-6 col-xs-12 h-100percent hover-zoom" style="background-image: url('<%= asset_url "rocket.png" %>');background-position: top center;background-size: cover;">
+    <h2 class="mt-50px color-black">Want to master DataViz?</h2>
+    <p class="color-black w-40percent m-auto mt-45px min-h-70px">Browse the graphs database, get new ideas and learn new facts about dataviz !</p>
+    <div class="w-100percent" style="padding-left:25%;margin-top:80px">
+      <a href="/atlas" class="home-btn">
+        <span class="text ff-normal color-black">Start now!</span>
+        <span class="line -right"></span>
+        <span class="line -top"></span>
+        <span class="line -left"></span>
+        <span class="line -bottom"></span>
+      </a>
+    </div>
   </div>
-</div>
-
+<div>

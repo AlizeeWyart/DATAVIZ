@@ -1,7 +1,7 @@
-<div class="mt-30px h-90vh">
+<div class="h-90vh" style="margin-top:18px">
   <div id="research-bar" class="flexbox-space-between">
     <div class="research-bar-box">
-      <p>Filter by</p>
+      <p>Filter by:</p>
     </div>
     <div class="research-bar-box">
       <p>Audience Level
@@ -34,7 +34,7 @@
     </div>
     <div class="research-bar-box">
       <%= text_field_tag 'search_name', @name_search %>
-      <a id="search-name"><i class="fa fa-search color-grey" aria-hidden="true"></i></a>
+      <a id="search-name" class="pointer"><i class="fa fa-search color-grey" aria-hidden="true"></i></a>
     </div>
     <div class="research-bar-box txt-right">
       <%= link_to atlas_path do %>

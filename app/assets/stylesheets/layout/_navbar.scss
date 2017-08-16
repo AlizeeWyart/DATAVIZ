@@ -8,6 +8,9 @@
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index:10000
 }
 
 /* Optional class to fix the navbar on top */
@@ -151,4 +154,21 @@
 .navbar-wagon:hover .name-logo {
   left: -31px;
   opacity:1
+}
+
+#research-bar .research-bar-box .fa.fa-rocket:hover {
+  color:#50307B !important;
+}
+
+#research-bar .research-bar-box .fa.fa-rocket {
+  transition:ease-in-out 0.3s;
+}
+
+input#search_name {
+  transition: border-bottom ease-in-out 0.3s
+}
+
+input#search_name:focus {
+    outline:none;
+    border-bottom:2px solid #50307B
 }

@@ -2,7 +2,7 @@
   <h2 class="fs-24px txt-center color-wavestone mt-10px fw-300">You should have a look at...
   <% if @next_graph == true %>
   </h2>
-  <div class="flexbox-wrap-space-between">
+  <div class="flexbox-wrap-space-between" id="find-results">
   <% results.each do |result| %>
         <div class="card-graph">
           <%= link_to atlas_path(graph_number: result[0] ) do %>

@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:300
 }
 
+
+.m-auto {
+  margin:auto
+}
 .mb-5px {
   margin-bottom:5px
 }
@@ -285,6 +289,14 @@ button.slide:hover, .slide:focus {
   margin-top:40px
 }
 
+.mt-45px {
+  margin-top:45px
+}
+
+.min-h-70px {
+  min-height:70px
+}
+
 .b-2px-wavestone {
   border:2px solid #50307B
 }
@@ -313,6 +325,10 @@ button.slide:hover, .slide:focus {
 
 .color-white {
   color:white
+}
+
+.color-black {
+  color:black
 }
 
 .ml-10px {
@@ -354,6 +370,13 @@ button.slide:hover, .slide:focus {
   height:100%
 }
 
+.w-100percent {
+  width:100%
+}
+
+.w-40percent {
+  width:40%
+}
 
 .h-100percent {
   height:100%
@@ -511,17 +534,16 @@ button.slide:hover, .slide:focus {
 
 
 a.home-btn {
-  position: fixed;
   cursor: pointer;
-  top: 50vh;
-  left: 50%;
+  // top: 50vh;
+  // left: 50%;
   color: white;
   transform: translate3d(-50%,-50%,0);
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;
-  position: relative;
-  font-size: 1.5em;
+  //font-size: 1.5em;
+  font-size:24px;
   letter-spacing: 0.07em;
 
   .text {
@@ -656,6 +678,11 @@ a.home-btn:active {
   width: 150px;
   transform: rotate(100deg);
 }
+.result-arrow {
+  top: -60px;
+  left: 238px;
+  transform: scale(-1, 1) rotate(153deg);
+}
 
 .first-choice-txt {
   top: 0px;
@@ -705,6 +732,10 @@ input#search_name {
 
 .pt-20px {
   padding-top:20px
+}
+
+.pt-40px {
+  padding-top:40px
 }
 
 .pointer {

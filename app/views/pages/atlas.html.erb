@@ -1,16 +1,18 @@
+<div class="row pt-40px"></div>
 <% if !@graph_number.nil? && !@graph_info.nil?%>
 <div class="graph-show">
   <div class="bc-white p-20px" style="margin-top:25px;margin-bottom:50px;box-shadow: 1px 1px 3px #E7E5E5">
   <h1 class="fs-50px no-mt color-wavestone"><%= @graph_info["name"] %></h1>
   <img src="<%= @graph_info["image"]%>" alt="" style="width:100%;margin-bottom:15px">
+  <div class="flexbox-space-between">
+   <p class="color-grey">Audience Level
+      <% if @graph_info["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+      <% if @graph_info["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+      <% if @graph_info["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
+      <% if @graph_info["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
+    <p class="color-grey">Dashboard <span class="dashboard ml-10px"><i class="fa fa-tachometer <% if  @graph_info["level"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span></p>
+  </div>
 
-
-  <p class="color-grey position-abs">Level
-    <% if @graph_info["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
-    <% if @graph_info["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
-    <% if @graph_info["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
-    <% if @graph_info["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
-    <span class="position-rel dashboard"><i class="fa fa-tachometer <% if  @graph_info["level"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span>
   <br>
   <h2 class="color-wavestone fs-24px"><i class="fa fa-pencil fs-16px" aria-hidden="true"></i> Description</h2>
   <% @graph_info["reading_principle"].each do |rp| %>

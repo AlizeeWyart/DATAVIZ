@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :atlas, :find]
+  skip_before_action :authenticate_user!, only: [:home, :atlas, :find, :about]
 
   def home
     @home_text = ["Need to visualise a huge amount of data?", "Have absolutely no clue of how to show data?","Want to learn new ways of representing data?","Want to find new data visualisation ideas? "]
@@ -357,6 +357,9 @@ class PagesController < ApplicationController
     end
     # trouver les attributs
     @results = before_results(@array_results)
+  end
+
+  def about
   end
 
 
