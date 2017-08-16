@@ -5,7 +5,7 @@
  "rang": 1,
  "graph": false,
  "next_graph": false,
- "before_results":["G10","G20","G45","G50","G55","G75","G90","G95","G100","G115","G140","G145","G170","G190","G205","G225","G235","G245","G255","G266","G280","G285"],
+ "before_results":["G10","G20","G45","G50","G55","G75","G90","G95","G100", "G101","G115","G140","G145","G170","G190","G205","G225","G235","G245","G255","G266","G280","G285"],
  "children": [{
    "label": null,
    "question": "Show evolution of an attribute over different areas",
@@ -13,7 +13,7 @@
    "rang": 2,
    "graph": false,
    "next_graph": false,
-   "before_results": ["G20","G45","G50","G75","G90","G95","G100","G140","G170","G190","G235","G245","G280","G285"],
+   "before_results": ["G20","G45","G50","G75","G90","G95","G100", "G101","G140","G170","G190","G235","G245","G280","G285"],
    "children": [{
      "label": null,
      "question": "Point out outliers or highlight some areas ",
@@ -32,8 +32,8 @@
        "before_results":null,
        "graph_number": "G140",
        "comparison": [{
-         "1":"Better than elevation maps to emphasize variations and quantify them on a scale",
-         "2":"Better than dot-density maps to show variations on a continuous area"
+         "1":"Better than elevation maps to quantify variations on a scale.",
+         "2":"Better than dot-density maps to show continuous variations on an area."
        }],
        "children": null
      },{
@@ -46,8 +46,8 @@
        "before_results":null,
        "graph_number": "G90",
        "comparison": [{
-        "1":"Better than isartyhmic maps and elevation maps to show precise occurrences",
-        "2":"Better than  elevation maps to quantify data"
+        "1":"Better than elevation maps to quantify data.",
+        "2":"Better than isartyhmic maps and elevation maps to show precise occurrences."
        }],
        "children": null
      },{
@@ -60,7 +60,7 @@
        "before_results":null,
        "graph_number": "G100",
        "comparison": [{
-        "1": "Better than isarythmic maps and elevation maps to highlight important differences between the highest and lowest values."
+        "1": "Better than elevation maps and isarythmic maps to highlight striking differences between the highest and lowest values."
        }],
        "children": null
      }]
@@ -71,7 +71,7 @@
      "rang":3,
      "graph":false,
      "next_graph":false,
-     "before_results":["G20","G45","G50","G75","G95","G170","G190","G235","G245","G280","G285"],
+     "before_results":["G20","G45","G50","G75","G95", "G101","G170","G190","G235","G245","G280","G285"],
      "children": [{
        "label": null,
        "question": "Display data on a geographical map",
@@ -79,7 +79,7 @@
        "rang":4,
        "graph": false,
        "next_graph":false,
-       "before_results":["G45","G50","G75","G190","G245","G280","G285"],
+       "before_results":["G45","G50","G75", "G101", "G190","G245","G280","G285"],
        "children":[{
          "label": null,
          "question": "Show data on a geographically accurate map",
@@ -87,7 +87,7 @@
          "rang": 5,
          "graph": false,
          "next_graph":false,
-         "before_results":["G45","G50","G75","G285"],
+         "before_results":["G45","G50","G75", "G101", "G285"],
          "children":[{
            "label": null,
            "question": "Represent the variations of a physical quantity over space.",
@@ -96,14 +96,24 @@
            "next_graph":true,
            "before_results":null,
            "children":[{
+             "label": "Elevation profile",
+             "question": null,
+             "question_id": "112111G101",
+             "graph": true,
+             "next_graph": false,
+             "before_results":null,
+             "graph_number": "G101",
+             "comparison": [{"1":"Better than vector fields to display the variation of altitude."}],
+             "children": null
+           }, {
              "label": "Vector field",
              "question": null,
-             "question_id": 1121111,
+             "question_id": "1121111G285",
              "graph": true,
              "next_graph": false,
              "before_results":null,
              "graph_number": "G285",
-             "comparison": [{"1":null}],
+             "comparison": [{"1":"Better than elevation profiles to display the variation of position or its derivatives over time."}],
              "children": null
            }]
          },{
@@ -122,7 +132,7 @@
                "next_graph": false,
                "before_results":null,
                "graph_number": "G75",
-               "comparison": [{"1": "Better than stepped relief maps and chloropleth maps to show a phenomenon that is not specific to geographical areas."}],
+               "comparison": [{"1": "Better than chloropleth maps and stepped relief maps to show a phenomenon that is not confined to predefined geographical areas (states, regions, …)."}],
                "children": null
            },{
                "label": "Stepped relief map",
@@ -133,10 +143,7 @@
                "next_graph": false,
                "before_results":null,
                "graph_number": "G245",
-               "comparison": [{
-                 "1": "Better than dasymetric maps to compare data in different areas.",
-                 "2": "Better than chloropleth maps to deliver a strong message."
-               }],
+               "comparison": [{"1": "Better than  chloropleth maps and dasymetric maps to visually highlight striking differences between geographical areas."}],
                "children": null
            },{
                "label": "Chloropleth map",
@@ -148,8 +155,8 @@
                "before_results":null,
                "graph_number": "G50",
                "comparison": [{
-                 "1": "Better than dasymetric maps to compare data in different areas.",
-                 "2": "Better than stepped relief map to represent clearly a lot of data."
+                 "1": "Better than dasymetric maps to compare data between delimited geographical areas.",
+                 "2": "Better than stepped relief maps to represent clearly a large quantity of data."
                }],
                "children": null
            }]
@@ -172,7 +179,7 @@
            "before_results":null,
            "graph_number": "G190",
            "comparison": [{
-            "1": "Better than cartogram map and treemap to keep geographic distribution in mind."
+            "1": "Better than cartogram maps and treemaps to keep geographic distribution in mind."
            }],
            "children": null
          },{
@@ -196,7 +203,7 @@
            "before_results":null,
            "graph_number": "G280",
            "comparison": [{
-            "1": "Better than proportional symbol map and cartogram map to compare values between different areas on a scale."
+            "1": "Better than  cartogram maps and proportional symbol maps to compare values between different areas on a scale."
            }],
            "children": null
          }]
@@ -226,7 +233,10 @@
             "next_graph": false,
             "before_results":null,
             "graph_number": "G20",
-            "comparison": [{"1":"Better than stacked bar graphs, double-sided bar graphs and mosaic graphs to emphasize only on the quantity within a category."}],
+            "comparison": [{
+              "1":"Better than double-sided bar graphs to show absolute variations between categories.",
+              "2":"Better than mosaic graphs and stacked bar graphs to compare quantities within different categories at a glance."
+            }],
             "children":null
          },{
             "label":"double-sided bar graph",
@@ -237,7 +247,7 @@
             "next_graph": false,
             "before_results":null,
             "graph_number": "G95",
-            "comparison": [{"1":"Better than bar graphs, stacked bar graphs and mosaic graphs to show the deviation to a quantified objective."}],
+            "comparison": [{"1":"Better than bar graphs, mosaic graphs and stacked bar graphs to show the deviation from a quantified objective."}],
             "children":null
          },{
             "label":"stacked bar graph",
@@ -250,7 +260,7 @@
             "graph_number": "G235",
             "comparison": [{
               "1": "Better than bar graphs and double-sided bar graphs to show how a group is broken down into categories and their proportions.",
-              "2": "Better than mosaic graphs to rank and emphasize each element according to only one characteristic (length or height)."
+              "2": "Better than mosaic graphs to rank and emphasize each element according to a single characteristic (length or height)."
             }],
             "children":null
          },{
@@ -262,7 +272,7 @@
             "next_graph": false,
             "before_results":null,
             "graph_number": "G170",
-            "comparison": [{"1":"Better than bar graphs, stacked bar graphs and double-sided bar graphs to rank and emphasize each element according to two characteristics."}],
+            "comparison": [{"1":"Better than bar graphs, double-sided bar graphs and stacked bar graphs to rank and emphasize each element according to two parameters."}],
             "children":null
          }]
        },{
@@ -314,8 +324,8 @@
       "graph": true,
       "graph_number": "G205",
       "comparison":[{
-         "1":"better than route maps to show details associated to a particular journey",
-         "2":"better than space-time cube maps to show a trajectory on a flat surface"
+         "1":"Better than route maps to show details associated to a particular journey.",
+         "2":"Better than space-time cube maps to show a trajectory on a flat surface."
        }],
       "children":null
     },{
@@ -342,7 +352,7 @@
       "graph":true,
       "graph_number":"G225",
       "comparison": [{
-         "1":"better than route map and strip map to show step by step evolution over time"
+         "1":"Better than route maps and strip maps to show a step by step evolution over time."
        }],
       "children":null
     }]
@@ -386,7 +396,7 @@
      "graph_number": "G55",
      "comparison": [{
           "1": "Easier to read than alluvial graphs for complex interactions.",
-          "2": "Better than flow maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)."
+          "2": "Better than flow maps to show complex fluxes as areas can be rearranged (no geographical accuracy)."
         }],
      "children": null
    },{
@@ -399,7 +409,7 @@
      "graph": true,
      "graph_number": "G115",
      "comparison": [{
-       "1": "Better than circos and alluvial graphs to keep geographic specificities in mind."
+       "1": "Better than alluvial graphs and circos to keep geographic specificities in mind."
      }],
      "children": null
    },{
@@ -412,7 +422,8 @@
      "graph": true,
      "graph_number": "G10",
      "comparison": [{
-       "1": "Better than circos and alluvial graphs to keep geographic specificities in mind."
+       "1": "Better than circos for adding a temporal dimension easily.",
+       "2": "Better than flow maps to highlight fluxes regardless of geographical accuracy."
      }],
      "children": null
    }]
@@ -442,7 +453,7 @@
         "graph": true,
         "graph_number": "G225",
         "comparison": [{
-          "1": "Better than alluvial graph to show step by step evolution over time."
+          "1": "Better than alluvial graphs to show step by step evolution over time."
         }],
         "children": null
      },{
@@ -455,7 +466,7 @@
         "graph": true,
         "graph_number":" G10",
         "comparison": [{
-          "1": "Better than space-time cube map to show a before/after transition."
+          "1": "Better than space-time cube maps to show a transition between a past and a future situation."
         }],
         "children": null
      }]
@@ -528,7 +539,7 @@
         "before_results":null,
         "graph_number": "G125",
           "comparison": [{
-            "1": "Better than stacked bar graphs to compare the different values of a given element over time."
+            "1": "Better than stacked bar graphs to compare quantities within different time intervals at a glance."
           }],
         "children":null
       }]
@@ -602,7 +613,7 @@
           "graph": true,
           "graph_number": "G271",
           "comparison": [{
-            "1": "Better than stream graphs to emphasize on single events and give detail."
+            "1": "Better than stream graphs to emphasize on single events and give details."
           }],
           "children": null
         },{
@@ -650,7 +661,7 @@
           "graph": true,
           "graph_number": "G60",
           "comparison": [{
-            "1": "Better than line graphs to show a repetitive phenomenon or display a variation over a circular period (day, month, seasons, …). It is also better to compare the values over the said period."
+            "1": "Better than line graphs to compare values over a circular period (day, month, seasons, …)."
           }],
           "children": null
         }]
@@ -673,7 +684,7 @@
         "graph": true,
         "graph_number": "G21",
         "comparison": [{
-          "1": "Better than stacked bar graphs to show clearly a variation within a category between two points in time.",
+          "1": "Better than stacked bar graphs to  to compare quantities within different categories at a glance.",
           "2": "Better than superposed line graphs to compare values only at chosen points in time : offers a clearer view !"
         }],
         "children": null
@@ -687,7 +698,8 @@
         "graph": true,
         "graph_number": "G235",
         "comparison": [{
-          "1": "Better than bar graphs (several) to show proportions within each category."
+          "1": "Better than bar graphs (several) to show proportions within each category.",
+          "2": "Better than superposed line graphs to compare values only at chosen point in time."
         }],
         "children": null
       },{
@@ -700,7 +712,7 @@
         "graph": true,
         "graph_number": "G267",
         "comparison": [{
-          "1":"Better than stacked bar graphs and bar graphs (several) to display the continuous evolution of different quantities over time."
+          "1":"Better than bar graphs (several) and stacked bar graphs to display the continuous evolution of different quantities over time."
         }],
         "children": null
       }]
@@ -724,7 +736,7 @@
     "graph": true,
     "comparison":[{
       "1":"Easier to read than alluvial graphs for complex interactions.",
-      "2":"Better than flow maps and space-time cube maps to show a complex network of fluxes as areas can be rearranged (no geographic reality)."
+      "2":"Better than flow maps and space-time cube maps to show complex fluxes as areas can be rearranged (no geographical accuracy)."
     }]
   },{
     "label": "Alluvial graph",
@@ -736,8 +748,8 @@
     "graph": true,
     "graph_number": "G10",
     "comparison": [{
-      "1": "Better than circos and flow maps for adding a temporal dimension easily",
-      "2": "Better than space-time cube maps to show a network of flows on a large scale"
+      "1": "Better than circos and flow maps for adding a temporal dimension easily.",
+      "2": "Better than space-time cube maps to show a network of flows regardless of the geographical accuracy."
     }],
     "children": null
   },{
@@ -750,8 +762,8 @@
     "graph": true,
     "graph_number": "G115",
     "comparison": [{
-      "1": "Better than circos and alluvial graphs to keep geographic specificities in mind.",
-      "2": "Better than space-time cube map to show a network of flows on a large scale."
+      "1": "Better than  alluvial graphs and circos to keep geographic specificities in mind.",
+      "2": "Better than space-time cube maps to show a network of flows on a large scale."
     }],
     "children": null
   },{
@@ -764,7 +776,7 @@
     "graph": true,
     "graph_number": "G225",
     "comparison": [{
-      "1": "Better than circos and alluvial graphs to show a network of flows on a large scale.",
+      "1": "Better than  alluvial graphs and circos to show a network of flows on a large scale.",
       "2": "Better than flow maps to study the spatial and temporal evolution of a phenomenon."
     }],
     "children": null
@@ -876,7 +888,7 @@
           "graph": true,
           "graph_number": "G30",
           "comparison": [{
-            "1": "Better than pies & rings and enclosure trees to show relative importance of a very small number of topics."
+            "1": "Better than pies and rings and enclosure trees to show relative importance of a very small number of topics."
           }],
           "children": null
         },{
@@ -902,7 +914,7 @@
           "graph": true,
           "graph_number": "G105",
           "comparison": [{
-            "1": "Better than basic shsapes and pies and rings to show inclusion."
+            "1": "Better than basic shapes and pies and rings to show inclusion."
           }],
           "children": null
         }]
@@ -1083,7 +1095,7 @@
               "before_results":null,
               "graph_number": "G5",
               "comparison": [{
-                "1": "Better than circos and arc graphs when all elements are interacting with each other and each interaction can be quantified."
+                "1": "Better than  arc graphs and circos when all elements are interacting with each other and each interaction can be quantified."
               }],
               "children":null
             },{
@@ -1096,8 +1108,8 @@
               "before_results":null,
               "graph_number": "G15",
               "comparison": [{
-                "1": "Better than circos for showing interactions between elements that can be linearly organised.",
-                "2": "Better than adjacency matrix to single out interactions."
+                "1": "Better than adjacency matrixes to single out interactions.",
+                "2": "Better than circos for showing interactions between elements that can be linearly organised (e.g. chapters in a book, historical events,…)."
               }],
               "children":null
             },{
@@ -1110,8 +1122,8 @@
               "before_results":null,
               "graph_number": "G55",
               "comparison": [{
-                "1": "Easier to read than arc graphs for complex interactions.",
-                "2": "Better than adjacency matrix to single out interactions."
+                "1": "Better than adjacency matrix to single out interactions.",
+                "2": "Easier to read than arc graphs for complex interactions."
               }],
               "children":null
             }]
@@ -1176,28 +1188,28 @@
                 "before_results":null,
                 "graph_number": "G135",
                 "comparison": [{
-                  "1": "Better than tree views to classify elements in a few categories.",
-                  "2": "Can compare more dimensions than an alluvial graph."
+                  "1": "Better than alluvial graphs to study links between more than two categories. ",
+                  "2": "Better than tree views to classify elements in a few categories."
                 }],
                 "children":null
               },{
                 "label": "Alluvial graph",
                 "question": null,
-                "question_id": "3212121G10",
+                "question_id": "3212122G10",
                 "rang": 8,
                 "graph": true,
                 "next_graph": false,
                 "before_results":null,
                 "graph_number": "G10",
                 "comparison": [{
-                  "1": "Better than tree views and hive graphs to show evolution.",
-                  "2": "Better than tree views to structure elements into categories."
+                  "1": "Better than hive graphs and tree views to show evolution from a past to a future situation.",
+                  "2": "Better than tree views to highlight some categories by grouping streams."
                 }],
                 "children":null
               },{
                 "label": "Tree view",
                 "question": null,
-                "question_id": "3212121G275",
+                "question_id": "3212122G275",
                 "rang": 8,
                 "graph": true,
                 "next_graph": false,
@@ -1256,13 +1268,13 @@
               "before_results":null,
               "graph_number": "G80",
               "comparison": [{
-                "1:": "Better than radial trees to show a network without emphasizing on a certain topic.",
-                "2": "Simplified network - unhierarchised network structure.",
+                "1:": "Simplified network - unhierarchised network structure.",
+                "2": "Better than radial trees to show a network without emphasizing on a certain topic.",
                 "3": "Better than subway maps to display complex interactions."
               }],
               "children":null
             },{
-              "label": "Subway map",
+              "label": "Subway map (thematic)",
               "question": null,
               "question_id": "321222G265",
               "rang": 7,
@@ -1271,8 +1283,8 @@
               "before_results":null,
               "graph_number": "G265",
               "comparison": [{
-                "1": "Better than node-link graphs, network structures and radial graphs to show evolutions.",
-                "2": "Better than node-link graphs and network structures when there are not too many interactions between elements."
+                "1": "Better than network structures, node-link graphs and radial graphs to show thematic evolutions.",
+                "2": "Better than network structures and node-link graphs when there are not too many interactions between elements."
               }],
               "children": null
             },{
@@ -1300,7 +1312,7 @@
               "before_results":null,
               "graph_number": "G200",
               "comparison": [{
-              "1": "Better than node-link graphs, network structures and subway maps to show organisation of a network around a certain topic."
+              "1": "Better than network structures, node-link graphs and subway maps to show organisation of a network around a certain topic."
               }],
               "children": null
             }]
@@ -1369,12 +1381,12 @@
               "before_results":null,
               "graph_number": "G180",
               "comparison": [{
-                "1": "Better than radial trees to show a network without emphasizing on a certain topic.",
-                "2": "Simplified network - unhierarchised network structure."
+                "1": "Simplified network - unhierarchised network structure.",
+                "2": "Better than radial trees to show a network without emphasizing on a certain topic."
               }],
               "children": null
             },{
-              "label": "Network structure",
+              "label": "Radial tree",
               "question": null,
               "question_id": "322112G200",
               "rang": 7,
@@ -1382,13 +1394,10 @@
               "next_graph": false,
               "before_results":null,
               "graph_number": "G200",
-              "comparison": [{
-                "1": "Better than node-link graphs to show hierarchy within a network.",
-                "2": "Better than radial trees to show a network without emphasizing on a certain topic."
-              }],
+              "comparison": [{"1": "Better than network structures, node-link graphs and subway maps to show organisation of a network around a certain topic."}],
               "children": null
             },{
-              "label": "Radial tree",
+              "label": "Network structure",
               "question": null,
               "question_id": "322112G175",
               "rang": 7,
@@ -1397,7 +1406,8 @@
               "before_results":null,
               "graph_number": "G175",
               "comparison": [{
-                "1": "Better than node-link graphs, network structures and subway maps to show organisation of a network around a certain topic."
+                "1": "Better than node-link graphs to show hierarchy within a network.",
+                "2":"Better than radial trees to show a network without emphasizing on a certain topic."
               }],
               "children": null
             }]
@@ -1428,7 +1438,7 @@
               "before_results":null,
               "graph_number": "G275",
               "comparison": [{
-                "1": "Better than dendograms, link trees and enclosure trees for representing many elements and few hierarchical levels.",
+                "1": "Better than enclosure trees, dendograms and link trees for representing many elements and few hierarchical levels.",
                 "2": "Better than network structures to show an organisation where lower elements are not interdependant."
               }],
               "children": null
@@ -1442,8 +1452,8 @@
               "before_results":null,
               "graph_number": "G80",
               "comparison": [{
-                "1": "Better than link trees and enclosure trees for representing elements and few hierarchical levels.",
-                "2": "Better than network structures to show an organisation where lower elements are not interdependant."
+                "1": "Better than enclosure trees and link trees for representing many elements and few hierarchical levels.",
+                "2": "Better than network structures to show a hierarchy where lower elements are not interdependant."
               }],
               "childre":null
             },{
@@ -1456,8 +1466,8 @@
               "before_results":null,
               "graph_number": "G160",
               "comparison": [{
-                "1": "Better than tree view and dendogram to show a very large number of hierarchy levels in a limited space.",
-                "2": "Better than network structures and enclosure trees to represent a hierarchy simply."
+                "1": "Better than dendograms and tree views to show a very large number of hierarchy levels in a limited space.",
+                "2": "Better than enclosure trees and network structures to represent a hierarchy in a simple and natural way."
               }],
               "children": null
             },{
@@ -1483,7 +1493,7 @@
               "before_results":null,
               "graph_number": "G105",
               "comparison": [{
-                "1": "Better than tree views, dendograms, link trees and network structures to show inclusion."
+                "1": "Better than enclosure trees, dendograms, link trees and tree views to show interdependance between elements and hierarchy simultaneously."
               }],
               "children": null
             }]
@@ -1543,8 +1553,8 @@
               "before_results":null,
               "graph_number": "G105",
               "comparison": [{
-                "1": "Better than treemaps to represent a small quantity of data.",
-               "2": "Better than mosaic graph to show inclusion."
+                "1": "Better than mosaic graphs to show inclusion.",
+               "2": "Better than treemaps to represent a small quantity of data."
               }],
               "children": null
             },{
@@ -1557,8 +1567,8 @@
               "before_results":null,
               "graph_number": "G280",
               "comparison": [{
-                "1": "Better than mosaic graphs to represent huge quantities of data and show a colour-coded characteristic.",
-                "2": "Better than enclosure trees to represent data in an organised way and show more data."
+                "1": "Better than enclosure trees to represent data in an organised way and show a bigger quantity of data.",
+                "2": "Better than mosaic graphs to represent huge quantities of data and show a colour-coded characteristic."
               }],
               "children": null
             },{
@@ -1571,7 +1581,7 @@
               "before_results":null,
               "graph_number": "G170",
               "comparison": [{
-                "1": "Better than treemaps and enclosure trees to display numbers.",
+                "1": "Better than enclosure trees and treemaps to display numbers.",
                 "2": "Better than enclosure trees to represent data in an organised way."
               }],
               "children": null
@@ -1630,7 +1640,7 @@
               "before_results":null,
               "graph_number": "G55",
               "comparison": [{
-                "1": "Better than isoline maps to emphasize on links between topics."
+                "1": "Better than isoline maps to emphasize links between topics."
               }],
               "children": null
           },{
@@ -1643,20 +1653,7 @@
               "before_results":null,
               "graph_number": "G150",
               "comparison": [{
-                "1": "Better than circos to show groupings by topics."
-              }],
-              "children": null
-          },{
-              "label": "self-organizing map",
-              "question": null,
-              "question_id": "32222G120",
-              "rang": 7,
-              "graph": true,
-              "next_graph": false,
-              "before_results":null,
-              "graph_number": "G120",
-              "comparison": [{
-                "1": "to_do"
+                "1": "Better than circos to emphasize groupings by topics."
               }],
               "children": null
           }]
@@ -1689,8 +1686,8 @@
         "graph": true,
         "graph_number":"G10",
         "comparison": [{
-          "1":"Simplified sankey graph - better than sankey graphs for simple interactions.",
-          "2":"Better than history flows to show detailed changes between two versions of a document."
+          "1":"Better than history flows to detail the changes between two versions of a documents.",
+          "2":"Simplified sankey graph - better than sankey graphs for simple interactions."
         }],
         "children": null
       },{
@@ -1777,7 +1774,7 @@
         "graph":true,
         "graph_number": "G215",
         "comparison": [{
-          "1": "Better than dot graphs, stripe graphs and stem-and-leaf graphs to show correlation."
+          "1": "Better than dot graphs, stem-and-leaf graphs and stripe graphs to show correlation."
         }],
         "children": null
       },{
@@ -1791,8 +1788,8 @@
         "graph_number": "G85",
         "comparison": [{
           "1": "Better than scatter plots to highlight groupings and outliers.",
-          "2": "Easier to colour-code than stripe graphs.",
-          "3": "Better than stem-and-leaf graphs to show repartition rather than display precise values."
+          "2": "Better than stem-and-leaf graphs to show repartition rather than to display precise values.",
+          "3": "Easier to colour-code than stripe graphs."
         }],
         "children": null
       },{
@@ -1805,8 +1802,8 @@
         "graph": true,
         "graph_number": "G260",
         "comparison": [{
-          "1": "Better than scatter plots to highlight groupings and outliers.",
-          "2": "Better than dot graph to quantify precisely each element.",
+          "1": "Better than dot graph to see at a glance the precise quantity for each element.",
+          "2": "Better than scatter plots to highlight groupings and outliers.",
           "3": "Better than stem-and-leaf graphs to show repartition rather than display precise values."
         }],
         "children": null
@@ -1820,7 +1817,7 @@
         "graph": true,
         "graph_number": "G240",
         "comparison": [{
-          "1": "Better than scatter plots, dot graphs and stripe graphs to order and look up numeric values."
+          "1": "Better than  dot graphs, scatter plots and stripe graphs to order and look up numeric values."
         }],
         "children": null
       }]
@@ -1841,10 +1838,7 @@
         "before_results":null,
         "graph": true,
         "graph_number": "G125",
-        "comparison": [{
-          "1": "Better than line graphs to compare data over time intervals.",
-          "2": "Better than bar-and-line graphs to study the variation of only one quantity at a time."
-        }],
+        "comparison": [{"1": "Better than line graphs and spark lines to compare data over time intervals."}],
         "children": null
       },{
         "label": "Spark line",
@@ -1949,9 +1943,9 @@
         "graph":true,
         "graph_number":"G25",
         "comparison": [{
-          "1":"Better than superposed line graphs to show variation over time intervals.",
-          "2": "Better than histograms to study the variation of only one quantity at a time.",
-          "3": "Better than double-sided bar graphs to compare absolute values over time."
+          "1":"Better than double-sided bar graphs to compare absolute values over time.",
+          "2": "Better than histograms to display information about a second parameter without complexifying it uselessly.",
+          "3": "Better than superposed line graphs to show variation over time intervals."
         }],
         "children": null
       },{
@@ -1964,7 +1958,9 @@
         "graph": true,
         "graph_number": "G125",
         "comparison": [{
-          "1":"Better than line graphs, double-sided bar graphs and bar-and-line graphs to compare data over time intervals."
+          "1":"Better than bar-and-line graphs to emphasize one the variation of a single parameter.",
+          "2":"Better than double-sided bar graphs to compare absolute values over time.",
+          "3":"Better than line graphs to compare data over time intervals."
         }],
         "children": null
       },{
@@ -1977,7 +1973,7 @@
         "graph": true,
         "graph_number": "G267",
         "comparison": [{
-          "1": "Better than histograms, bar-and-line graphs or double-sided bar graphs to display the continuous evolution of different quantities over time."
+          "1": "Better than bar-and-line graphs, double-sided bar graphs and histograms to display the continuous evolution of different quantities over time."
         }],
         "children": null
       }]
@@ -2015,8 +2011,8 @@
             "graph": true,
             "graph_number": "G20",
             "comparison": [{
-              "1":"Better than stacked bars to show clearly a variation between categories.",
-              "2": "Better than double-sided bar graphs to show absolute variations between categories."
+              "1":"Better than double-sided bar graphs to show absolute variations between categories.",
+              "2":"Better than stacked bar graphs to compare quantities within different categories at a glance."
             }],
             "children": null
           },{
@@ -2030,7 +2026,7 @@
             "graph_number": "G235",
             "comparison": [{
               "1": "Better than bar graphs and double-sided bar graphs to show how a group is broken down into categories and their proportions.",
-              "2": "Better than superposed line graphs to compare values only at chosen point in time."
+              "2": "Better than superposed line graphs to compare values only at a chosen point in time."
             }],
             "children": null
           },{
@@ -2057,7 +2053,7 @@
             "graph": true,
             "graph_number": "G267",
             "comparison": [{
-              "1": "Better than stacked bar graphs,  bar graphs and double-sided bar graphs  to display the continuous evolution of different quantities over time."
+              "1": "Better than bar graphs, double-sided bar graphs and stacked bar graphs to display the continuous evolution of different quantities over time."
             }],
             "children": null
           }]
@@ -2092,7 +2088,7 @@
             "graph": true,
             "graph_number": "G30",
             "comparison": [{
-              "1": "Better than pies & rings to show relative importance of a very small number of topics ."
+              "1": "Better than pies & rings to show relative importance of a very small number of topics."
             }],
             "children": null
           }]
@@ -2128,7 +2124,7 @@
           "graph": true,
           "graph_number": "G195",
           "comparison": [{
-            "1": "Better than radar graphs to compare data according to a great number of categories."
+            "1": "Better than radar graphs to compare data in a great number of categories."
           }],
           "children": null
         }]
