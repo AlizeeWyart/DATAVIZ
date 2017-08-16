@@ -1,18 +1,18 @@
 [{
   "page":"about",
   "title":"The project",
-  "content":"qksjkqsj <br><br>sdjkksd",
+  "content":"Have you already been in a situation where you had to represent data and had absolutely no clue about where to start ?<br><br>That's quite likely.<br><br>There are two possible choices in that case. Maybe you would brace yourself and browse datavisualisation articles, blogs and websites for days and days until you found a suitable solution. Or maybe you would just give in to time pressure and settle for a cheerless pie chart or bar graph that will do the job eventually.<br><br>Time. Maybe that's the only reason you're not comfortable with data visualisation - yet. And here's what Datask is going to do for you: save your time by asking you the right questions and helping you pick the best representation for your data. If you're more of an expert already, you can try browsing all graphs to get new ideas and learn about dataviz tools, or just have a go at the best practices section.<br><br>This project will evolve and gain new features according to your feedbacks and wishes so improvement will always be on its way.<br><br>Enjoy!",
   "team":[{
     "name":"Marie",
-    "description":"Blabla",
+    "description":"Met consultants to understand their problems when representing data, thought about a decision tree to help them.<br><br>Detailed dataviz solutions and conceived the decision tree.",
     "photo_url":"http://"
   }, {
-    "name":"Marie",
-    "description":"Blabla",
+    "name":"Alizée",
+    "description":"Ruby lover.<br><br>Developed the online platform.<br><br>++",
     "photo_url":"http://"
   }, {
-    "name":"Marie",
-    "description":"Blabla",
+    "name":"Jean-Claude",
+    "description":"Mentored the project. Supports the initiative within the Digital & Emerging Techologies practice.",
     "photo_url":"http://"
   }]
 }]
