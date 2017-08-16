@@ -1,19 +1,11 @@
 [{
   "title":"Human percetion and data visualisation",
   "content":"Of all five senses, vision plays a dominant role as it is responsible for a huge part of brain activity (when our eyes are open, vision is responsible for more than 60% of the brain's electrical activity!). Quite understandably, it has a strong influence on the way we think - and that's why data should be presented in a way the brain can interpret it easily. In fact, this is one of the core goals of datavisualisation : make data understandable by humans.<br><br>Understanding data is one thing, but analysing, comparing and drawing conclusions is possible thanks to one key element: memory. Memory can be compared to successive layers of filters applied to the world around us. Indeed, the outside environnment is first filtered through our field of perception (what we see with our eyes), then reduced to the objects on which we focus. These objects of focus are then sorted so that some of them become subjects of conscious thoughts. Some of them are finally stored for later use, and that's how you create a memory!<br><br>As we have just seen, datavisualisation should both provide understandable content and be easily remembered. For your data to have the strongest impact on the reader, it should be remembered as long as possible, which means you should try to get a maximum of your data into the reader's long-term memory. Now that's easier said than done, but here are a few facts to understand this mechanism.<br><br>There are three types of memories: iconic memory, short-term memory and long-term memory. Iconic memory is a bit like the visual memory buffer for a computer: images are held there briefly until they are processed somewhere else. Short-term memory is where information is held during the conscious thinking and it has a limited storage capacity (only three to nine <i>chunks</i> of visual information can be stored in it). Once the capacity is full, when new information comes in, a chunk that was already there either has to goes into long-term memory or is forgotten. There is no precise definition of a <i>chunk</i> of visual information: it depends both on the nature of the object and the viewer. So when you are representing data, you should try and create the smallest number of chunks by building well-designed graphical patterns such as lines, borders and by thinking about how you can represent the biggest amount of data in the smallest space!<br><br>",
-  "tags":[{
-    "1":"brain",
-    "2":"perception",
-    "3":"memory"
-  }]
+  "tags":["brain","perception","memory"]
 },
 {
   "title":"What makes a good dashboard ?",
   "content":"Today, business intelligence dashboards are clearly associated with the ones that are found in cars. However, the variety of lights, gauges and speedometers can quickly become unadapted to display data for business. That's why the most stylish-looking dashboards are not always the best ones!<br><br>Here are a few tips about what makes a good dashboard.<br><br>It displays visual information. Because graphs can communicate with greater efficiency and meaning than text alone, presenting the information in the most effective way should be a priority whan designing a dashboard.<br><br>It shows information needed to achieve specified objectives. This means that a dashboard should be specific to its user (is it created for marketing purposes ? distribution efficiency ? …).<br><br>It fits on one screen. All information must be immediately available within the viewer's eye span.<br><br>It should be displayed on an adequate medium accordingly to the frequency at which it must be actualised (for example, a monthly report can be printed on a sheet of paper whereas a traffic monitoring dashboard should warn immediately when something is wrong and could be displayed in a web browser).<br><br>It should make important information visible at a glance. It is more efficient to display warnings or alerts rather than show all the details that led to the situation.<br><br>Finally, don't forget that it should make people want to use it, so it should have clear and intuitive mechanisms and be customised!<br><br>",
-  "tags":[{
-    "1":"dashboard",
-    "2":"design",
-    "3":"tips"
-  }]
+  "tags":["dashboard","design","tips"]
 }
 ]

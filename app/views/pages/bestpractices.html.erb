@@ -1,0 +1,16 @@
+<div class="row pt-40px"></div>
+<div class="graph-show" style="width:80%">
+  <% @best_pratices.each do |practice| %>
+  <div class="bc-white" style="margin-top:25px;margin-bottom:50px;box-shadow: 1px 1px 3px #E7E5E5;padding:65px 90px">
+  <h1 class="fs-50px no-mt color-wavestone" style="margin-bottom:40px;font-size:32px"><%= practice["title"] %></h1>
+  <p class="mb-50px"><span>TAGS:</span>
+    <% practice["tags"].each do |tag| %>
+      <span class="tag-div"><i class="fa fa-tag" aria-hidden="true"></i> <%= tag %></span>
+    <% end %>
+  </p>
+  <p style="font-size:14px;text-align:justify">
+  <%= practice["content"].html_safe %>
+  </p>
+  </div>
+  <% end %>
+</div>

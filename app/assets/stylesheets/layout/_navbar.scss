@@ -136,10 +136,10 @@
 }
 
 .name-logo {
-  top: -4px;
+  top: -7px;
   // left: 37px;
   left:-12px;
-  height: 34px;
+  height: 30px;
   width: auto !important;
   opacity:0;
   transition:ease-in-out 0.5s;
@@ -156,9 +156,6 @@
   opacity:1
 }
 
-#research-bar .research-bar-box .fa.fa-rocket:hover {
-  color:#50307B !important;
-}
 
 #research-bar .research-bar-box .fa.fa-rocket {
   transition:ease-in-out 0.3s;

@@ -723,7 +723,7 @@ input#search_name {
 }
 
 .clear-filter {
-      padding: 5px 10Px;
+      padding: 5px 10px;
     background: #50307B;
     color: white;
     font-size: 14px;
@@ -740,4 +740,20 @@ input#search_name {
 
 .pointer {
   cursor:pointer
+}
+
+.hover-zoom {
+  transition:transform ease-in-out 0.6s
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.tag-div {
+  background: #50307B;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size:12px
 }

@@ -1,23 +1,22 @@
 <div class="row pt-40px"></div>
 <div class="graph-show">
   <div class="bc-white" style="margin-top:25px;margin-bottom:50px;box-shadow: 1px 1px 3px #E7E5E5;padding:65px 90px">
-  <h1 class="fs-50px no-mt color-wavestone txt-center" style="margin-bottom:40px;font-size:43px">The project</h1>
-  <p style="font-size:14px;text-align:justify">
-  Have you already been in a situation where you had to represent data and had absolutely no clue about where to start ?
-  </p>
-  <p style="font-size:14px;text-align:justify">
-  That's quite likely.
-  </p>
-  <p style="font-size:14px;text-align:justify">
-  If you were in that situation, maybe you would brace yourself and browse datavisualisation articles, blogs and websites for days and days until you found a suitable solution. Or, more probably, maybe you would just give in to time pressure and settle for a cheerless pie chart or bar graph that will do the job anyway.
-  </p>
-  <p style="font-size:14px;text-align:justify">
-  Time. Maybe that's the only thing standing between you and data visualisation complexity. And here's what Datask is going to do for you: saving your time by asking you the right questions and helping you pick the best representation for your data. If you are more of an expert already, you can try browsing all graphs to get new ideas and learn about dataviz tools, or reading the best practices section.
-  </p>
-  <p style="font-size:14px;text-align:justify">
-  This project will evolve and gain new features according to your feedbacks and wishes so improvement will always be on its way!
+    <h1 class="fs-50px no-mt color-wavestone txt-center" style="margin-bottom:40px;font-size:43px"><%= @content["title"] %></h1>
+    <p style="font-size:14px;text-align:justify">
+    <%= @content["content"].html_safe %>
 
-  </p>
-  <h1 class="fs-50px color-wavestone txt-center" style="margin-bottom:40px;font-size:43px;margin-top:80px">The team</h1>
+    </p>
+    <h1 class="fs-50px color-wavestone txt-center" style="margin-bottom:40px;font-size:43px;margin-top:80px">The team</h1>
+    <div class="row">
+      <% @content["team"].each do |member| %>
+        <div class="col-xs-4">
+          <img src="<%= member["photo_url"] %>" alt="" style="width:100%">
+        </div>
+        <div class="col-xs-8">
+          <h4 class="color-wavestone"><%= member["name"] %> </h4>
+          <p style="font-size:14px"><%= member["description"].html_safe %></p>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

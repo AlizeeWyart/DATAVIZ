@@ -5,16 +5,16 @@
     </div>
     <div class="research-bar-box">
       <p>Audience Level
-        <%= link_to atlas_path(level: 1, dashboard: @is_dashboard) do %>
+        <%= link_to atlas_path(level: 1, dashboard: @is_dashboard), id:"rocket-1" do %>
           <i class="fa fa-rocket <% if params["level"].to_i == 1 || params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
         <% end %>
-        <%= link_to atlas_path(level: 2, dashboard: @is_dashboard) do %>
+        <%= link_to atlas_path(level: 2, dashboard: @is_dashboard), id:"rocket-2" do %>
           <i class="fa fa-rocket <% if params["level"].to_i == 2 || params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
         <% end %>
-        <%= link_to atlas_path(level: 3, dashboard: @is_dashboard) do %>
+        <%= link_to atlas_path(level: 3, dashboard: @is_dashboard), id:"rocket-3" do %>
           <i class="fa fa-rocket <% if params["level"].to_i == 3 || params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-1"></i>
         <% end %>
-        <%= link_to atlas_path(level: 4, dashboard: @is_dashboard) do %>
+        <%= link_to atlas_path(level: 4, dashboard: @is_dashboard), id:"rocket-4" do %>
           <i class="fa fa-rocket <% if params["level"].to_i == 4 %>color-wavestone<% else %> color-grey <% end %>" aria-hidden="true" id="level-2"></i>
         <% end %>
       </p>
@@ -22,13 +22,10 @@
     <div class="research-bar-box">
       <p>Dashboard
         <%= link_to atlas_path(dashboard: true, level: @level_nb) do %>
-          <span class="<% if @is_dashboard == "true" %>color-wavestone <% else %>color-grey<% end %>">YES</span>
-        <% end %>
-        <%= link_to atlas_path(dashboard: false, level: @level_nb) do %>
-          <span class="<% if @is_dashboard == "false" %>color-wavestone <% else %>color-grey<% end %>">NO</span>
+          <span class="ml-10px <% if @is_dashboard == "true" %>color-wavestone <% else %>color-grey<% end %>"><i class="fa fa-check" aria-hidden="true"></i></span>
         <% end %>
         <%= link_to atlas_path(dashboard: nil, level: @level_nb) do %>
-          <span class="<% if @is_dashboard.nil? %>color-wavestone <% else %>color-grey<% end %>">ALL</span>
+          <span class="<% if @is_dashboard.nil? %>color-wavestone <% else %>color-grey<% end %>"><i class="fa fa-times" aria-hidden="true"></i></span>
         <% end %>
       </p>
     </div>

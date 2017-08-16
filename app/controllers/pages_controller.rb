@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :atlas, :find, :about]
+  skip_before_action :authenticate_user!, only: [:home, :atlas, :find, :about, :bestpractices]
 
   def home
     @home_text = ["Need to visualise a huge amount of data?", "Have absolutely no clue of how to show data?","Want to learn new ways of representing data?","Want to find new data visualisation ideas? "]
@@ -360,6 +360,22 @@ class PagesController < ApplicationController
   end
 
   def about
+    require 'json'
+    filepath = 'content_website.json'
+    serialized_content = File.read(filepath)
+    json_content = JSON.parse(serialized_content)
+    @content = json_content
+  end
+
+  def bestpractices
+    require 'json'
+    filepath = 'best_pratices.json'
+    serialized_pratices = File.read(filepath)
+    json_practices = JSON.parse(serialized_pratices)
+    @best_pratices = []
+    json_practices.each do |practice|
+      @best_pratices << practice
+    end
   end
 
 
