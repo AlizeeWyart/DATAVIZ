@@ -20,9 +20,9 @@
       }
     },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G5_pfjbnw.png",
-    "similar_to": ["vector field"]
+    "similar_to": ["G285"]
   },
-  
+
   "G10" : {
     "name": "Alluvial graph",
     "level": "intermediate",
@@ -52,7 +52,7 @@
       }
     },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G10_gljugr.png",
-    "similar_to": ["circo", "flow map", "history flow", "hive graph", "sankey graph", "space-time cube map", "tree view"]
+    "similar_to": ["G55", "G115", "G130", "G135", "G210", "G225", "G275"]
   },
 
   "G15" : {
@@ -69,9 +69,9 @@
         "description":"The only free solution to create an arc graph is code (for the moment!). You can find all documention on Protovis.",
         "url":"mbostock.github.io/protovis/ex/arc.html"
       }
-    }, 
+    },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask images/G15_cngyyw.png",
-    "similar_to": ["adjacency matrix", "circo"]
+    "similar_to": ["G5", "G55"]
   },
 
   "G20": {
@@ -103,7 +103,7 @@
       }
     },
     "image" :"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G20_dota3u.png",
-    "similar_to": ["double-sided bar graph", "mosaic graph", "stacked bar graph", "superposed line graphs"]
+    "similar_to": ["G95", "G170", "G235", "G267"]
   },
 
    "G21" : {
@@ -133,9 +133,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    }, 
+    },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1500298563/Datask%20images/G21_pik0wk.png",
-    "similar_to": ["stacked bar graph", "superposed line graphs"]
+    "similar_to": ["G235", "G267"]
   },
 
    "G25" : {
@@ -160,9 +160,9 @@
         "description":"A  wide range of customisable graphs is proposed on Datahero! You only need to sign up, it's free! A big advantage is that Datahero also has a dashboard-creating option.",
         "url":"apps.datahero.com"
       }
-    },  
+    },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G25_bvynvm.png",
-    "similar_to": ["double-sided bar graph", "histogram", "superposed line graphs"]
+    "similar_to": ["G95", "G125", "G267"]
   },
 
  "G30" : {
@@ -181,7 +181,7 @@
       }
     },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G30_y7qcpk.png",
-    "similar_to": ["enclosure trees", "pies and rings"]
+    "similar_to": ["G105", "G185"]
   },
 
    "G40" : {
@@ -206,9 +206,9 @@
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"app.rawgraphs.io"
       }
-    }, 
+    },
     "image" : "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G40_ncfclc.png",
-    "similar_to": ["error bar graph"]
+    "similar_to": ["G110"]
   },
 
   "G45": {
@@ -234,9 +234,9 @@
         "description":"Very acccurate cartogram maps can be created using ScapeToad and many parameters can be modified while creating it. The only disadvantages are that it is quite slow to run and that Java has to be installed on your computer!",
         "url":"scapetoad.choros.ch"
       }
-    }, 
+    },
     "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G45_ayihlv.png",
-    "similar_to": ["proportional symbol map", "treemap"]
+    "similar_to": ["G190", "G280"]
   },
 
 "G50": {
@@ -258,9 +258,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    }, 
+    },
     "image":"http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G50_bx0eau.png",
-    "similar_to": ["dasymetric map", "stepped relief map"]
+    "similar_to": ["G75", "G245"]
 },
 
 "G55": {
@@ -277,9 +277,9 @@
         "description":"Beautiful circos visualisation tool. It can be done online by clicking on circos online on their website and uploading your data in the form of a relationship table (txt format is good but accepted formats are detailed on the website).",
         "url":"circos.ca"
       }
-    }, 
+    },
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G55_octvem.png",
-    "similar_to": ["alluvial graph", "arc graph", "flow map", "isoline map", "sankey graph", "self-organising map", "space-time cube map"]
+    "similar_to": ["G10", "G15", "G115", "G150", "G210", "G225"]
   },
 
   "G60": {
@@ -299,9 +299,9 @@
         "description":"Sorry, but we haven't found a tool to plot this graph (...yet!).",
         "url":null
       }
-    },  
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G60_xrub1s.png",
-    "similar_to": ["line graph"]
+    "similar_to": ["G155"]
  },
 
     "G65": {
@@ -326,7 +326,7 @@
         "description":"Powerpoint is rather adapted for this representation.",
         "url":null
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G65_d49lrq.png",
     "similar_to": null
  },
@@ -348,9 +348,9 @@
         "description":"Sorry, but we haven't found a tool to plot this graph (...yet!).",
         "url":null
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847025/Datask%20images/G70_bp7n6b.png",
-    "similar_to": ["mosaic graph"]
+    "similar_to": ["G170"]
  },
 
 
@@ -368,9 +368,9 @@
         "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
         "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G75_yblrsw.png",
-    "similar_to": ["stepped relief map", "chloropleth map"]
+    "similar_to": ["G245", "G50"]
  },
 
   "G80": {
@@ -403,9 +403,9 @@
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"apps.rawgraphs.io"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G80_n5le2m.png",
-    "similar_to": ["enclosure tree", "link tree", "network structure", "tree view"]
+    "similar_to": ["G105", "G160", "G175", "G275"]
  },
 
     "G85": {
@@ -422,9 +422,9 @@
         "description":"Excel is the simplest and most accessible tool for this graph!",
         "url":null
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G85_u3dpjo.png",
-    "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
+    "similar_to": ["G215", "G240", "G260"]
  },
 
   "G90": {
@@ -446,9 +446,9 @@
         "description":"Add google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
         "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G90_haifkh.png",
-    "similar_to": ["scatter plot", "stem-and-leaf graph", "stripe graph"]
+    "similar_to": ["G215", "G240", "G260"]
  },
 
 "G95": {
@@ -473,9 +473,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/q_81/v1498847026/Datask%20images/G95_nsmddn.png",
-    "similar_to": ["bar-and-line graph", "bar graph", "histogram", "mosaic graph", "stacked bar graph", "superposed line graphs"]
+    "similar_to": ["G25", "G20", "G125", "G170", "G235", "G267"]
  },
 
 "G100": {
@@ -492,11 +492,11 @@
         "description":"Create surprisingly cool maps with Excel!",
         "url":"https://support.office.com/en-us/article/Get-started-with-3D-Maps-6b56a50d-3c3e-4a9e-a527-eea62a387030"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G100_p5ekhg.png",
-    "similar_to": ["dot-density map", "isarithmic map"]
+    "similar_to": ["G90", "G140"]
  },
-  
+
  "G101": {
     "name": "Elevation profile",
     "level": "advanced",
@@ -511,10 +511,10 @@
         "description":"Geocontext is an extremely simple tool which instantly maps the profile of a chosen region.",
         "url":"http://www.geocontext.org/publ/2010/04/profiler/en/"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1502700900/Datask%20images/G101_iqan2l.png",
-    "similar_to": ["vector field"]
- },   
+    "similar_to": ["G285"]
+ },
 
   "G105": {
     "name": "Enclosure tree",
@@ -533,9 +533,9 @@
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"apps.rawgraphs.io"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G105_qnvlkf.png",
-    "similar_to": ["basic shapes", "dendogram", "link tree", "mosaic graph", "network structure", "pies and rings", "tag cloud", "treemap", "treeview"]
+    "similar_to": ["G30", "G80", "G160", "G170", "G175", "G185", "G270", "G280", "G275"]
  },
 
    "G110": {
@@ -552,9 +552,9 @@
         "description":"Excel is the simplest and most accessible tool for this graph!",
         "url":null
       }
-    },  
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847026/Datask%20images/G110_cxteni.png",
-    "similar_to": ["box-and-whisker symbol graph"]
+    "similar_to": ["G40"]
  },
 
   "G115": {
@@ -571,9 +571,9 @@
         "description":"A huge range of maps is proposed on Anycharts, so you can find almost anything there. The only inconvenient is that it's code - but the page corresponding to each graph is explained step by step in details!",
         "url":"https://docs.anychart.com/Maps/Connector_Maps"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G115_dvhpi1.png",
-    "similar_to": ["alluvial graph", "circo", "space-time cube map"]
+    "similar_to": ["G10", "G55", "G225"]
   },
 
     "G125": {
@@ -598,9 +598,9 @@
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"apps.rawgraphs.io"
       }
-    },   
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G125_iqo3ww.png",
-    "similar_to": ["bar-and-line graph", "double-sided bar graph", "line graph", "spark line", "stacked bar graphs", "superposed line graphs", "timeline (events)"]
+    "similar_to": ["G25", "G95", "G155", "G230", "G235", "G267", "G272"]
   },
 
     "G130": {
@@ -625,9 +625,9 @@
         "description":"The Sankey Diagram Generator is not immediately intuitive to use but has a very beautiful final render. One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
         "url":"sankey-diagram-generator.acquireprocure.com"
       }
-    },    
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G130_zivq25.png",
-    "similar_to": ["alluvial graph", "sankey graph"]
+    "similar_to": ["G10", "G210"]
   },
 
    "G135": {
@@ -646,13 +646,13 @@
     "how_to_do": "EXCEL",
     "tools": {
       "1":{
-        "name":"Sankeymatic",
-        "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
-        "url":"www.sankeymatic.com/build"
+        "name":"Jhive",
+        "description":"You can have a look at the Hiveplot website, where you can download the latest version of Jhive (you must have the right version of Java installed on your computer first).",
+        "url":"http://www.hiveplot.com/"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G135_z8bqgf.png",
-    "similar_to": ["alluvial graph", "tree view"]
+    "similar_to": ["G10", "G275"]
   },
 
   "G140": {
@@ -672,9 +672,9 @@
         "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
         "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
       }
-    },    
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G140_hfpzb4.png",
-    "similar_to": ["dot-density map", "elevation map"]
+    "similar_to": ["G90", "G100"]
   },
 
 
@@ -692,7 +692,7 @@
         "description":"Simple app dedicated to isochrone and isodistance maps.",
         "url":"https://www.iso4app.net/"
       }
-    },  
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G145_w61loy.png",
     "similar_to": null
   },
@@ -711,9 +711,9 @@
         "description":"With Contour Map Creator you only have to define a rectangle on a map and isolines are drawn for same altitudes. You can choose the number, unit, and meny other parameters of the isolines.",
         "url":"http://contourmapcreator.urgr8.ch/"
       }
-    },  
+    },
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
-    "similar_to": ["circo", "self-organising map"]
+    "similar_to": ["G55"]
   },
 
    "G155": {
@@ -735,9 +735,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G155_lyvlzt.png",
-    "similar_to": ["histogram", "spark line", "circular graph"]
+    "similar_to": ["G125", "G230", "G60"]
   },
 
  "G160": {
@@ -759,9 +759,9 @@
         "description":"Xmind is one of the best mind-mapping tools available today.",
         "url":"http://www.xmind.net/fr/"
       }
-    },      
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847027/Datask%20images/G160_gjjxdw.png",
-    "similar_to": ["dendogram", "enclosure tree", "network structure", "tree view"]
+    "similar_to": ["G80", "G105", "G175", "G275"]
   },
 
   "G165": {
@@ -786,9 +786,9 @@
         "description":"Word is also good for the simplest lists.",
         "url":null
       }
-    },      
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G165_qxbgxf.png",
-    "similar_to": ["tag cloud"]
+    "similar_to": ["G270"]
   },
 
  "G170": {
@@ -808,9 +808,9 @@
         "description":"Excel is the simplest and most accessible tool for this graph!",
         "url":null
       }
-    },      
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847028/Datask%20images/G170_vrgtrv.png",
-    "similar_to": ["bar graph", "crossmap", "double-sided bar graph", "enclosure tree", "stacked bar graph", "treemap"]
+    "similar_to": ["G20", "G70", "G95", "G105", "G235", "G280"]
   },
 
  "G175": {
@@ -830,9 +830,9 @@
         "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
         "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
       }
-    },      
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G175_qkfucp.png",
-    "similar_to" : ["enclosure tree", "dendogram", "link tree", "node-link graph", "radial tree", "subway map", "tree view"]
+    "similar_to" : ["G105", "G80", "G160", "G180", "G200", "G265", "G275"]
   },
 
  "G180": {
@@ -849,9 +849,9 @@
         "description":"Add Google fusion tables to your drive and you can import data from excel. Locations can be either names or coordinates.",
         "url":"https://support.google.com/fusiontables/answer/2571232?hl=en"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G180_ucdaoy.png",
-    "similar_to" : ["network structure", "radial tree", "subway map"]
+    "similar_to" : ["G175", "G200", "G265"]
   },
 
  "G181": {
@@ -874,9 +874,9 @@
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"app.rawgraphs.io"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1500389183/Datask%20images/G181.png",
-    "similar_to" : ["radar graph"]
+    "similar_to" : ["G195"]
   },
 
  "G185": {
@@ -901,9 +901,9 @@
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"app.rawgraphs.io"
       }
-    },  
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G185_debu9j.png",
-    "similar_to" : ["basic shapes", "enclosure tree"]
+    "similar_to" : ["G30", "G105"]
   },
 
 "G190": {
@@ -928,9 +928,9 @@
         "description":"Khartis : Not the the most intuitive app you have ever tried, but you can get quite quickly to a result with it. One big advantage of Khartis is that a very wide range of maps is proposed.",
         "url":"www.sciencespo.fr/cartographie/khartis/app/project/new/step1"
       }
-    },    
+    },
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G190_jsmqtn.png",
-    "similar_to": ["cartogram map", "treemap"]
+    "similar_to": ["G45", "G280"]
   },
 
   "G195": {
@@ -950,9 +950,9 @@
         "description":"Excel is the simplest and most accessible tool for this graph!",
         "url":null
       }
-    },    
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G195_ii8n4f.png",
-    "similar_to": ["parallel coordinate graph"]
+    "similar_to": ["G181"]
   },
 
    "G200": {
@@ -969,9 +969,9 @@
         "description":"Powerpoint is a rather adapted tool for this graph.",
         "url":null
       }
-    },    
+    },
     "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G200_xdtjzp",
-    "similar_to": ["network structure", "node-link graph", "subway map"]
+    "similar_to": ["G175", "G180", "G165"]
   },
 
 "G205": {
@@ -981,16 +981,16 @@
     "reading_principle": {"1":"A real route is drawn on a geographically accurate map."},
     "advantages": {"1":"Frame a route in its environnment or compare with alternative routes."},
     "disadvantages": {"1":"Becomes unadapted when the level of  detail of the map is important : the highlighted route will be lost in the mass of information."},
-    "how_to_do": "EXCEL", 
+    "how_to_do": "EXCEL",
     "tools": {
       "1":{
         "name":"Google My Maps",
         "description":"My Maps enables you to draw routes, mark places, and save the result as a map in your Drive.",
         "url":"https://www.google.fr/mymaps"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G205_z1ke1i.png",
-    "similar_to": ["space-time cube map", "strip map"]
+    "similar_to": ["G225", "G255"]
   },
 
   "G210": {
@@ -1022,10 +1022,10 @@
         "name":"The Sankey Diagram Generator",
         "description":"The Sankey Diagram Generator is not immediately intuitive to use but has a very beautiful final render. One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
         "url":"sankey-diagram-generator.acquireprocure.com"
-      } 
-    },    
+      }
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G210_dvfhxc.png",
-    "similar_to": ["alluvial graph", "circo", "history flow"]
+    "similar_to": ["G10", "G55", "G130"]
   },
 
     "G215": {
@@ -1053,9 +1053,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847021/Datask%20images/G215_yvtkoe.png",
-    "similar_to": ["dot graph", "stripe graph", "stem-and-leaf graph"]
+    "similar_to": ["G85", "G260", "G240"]
   },
 
  "G225": {
@@ -1075,9 +1075,9 @@
         "description":"The only free solution to create a space-time cube map is code (for the moment !). You can find all documention on ArcGIS but this is one of the most complicated graphs to create!",
         "url":"http://pro.arcgis.com/fr/pro-app/tool-reference/space-time-pattern-mining/create-space-time-cube.htm"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G225_bdy01r.png",
-    "similar_to": ["alluvial graph", "circo", "flow map", "route map", "strip map"]
+    "similar_to": ["G10", "G55", "G115", "G205", "G255"]
   },
 
    "G230": {
@@ -1105,9 +1105,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    },      
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G230_ylggsz.png",
-    "similar_to": ["histogram", "line graph"]
+    "similar_to": ["G125", "G155"]
   },
 
   "G235": {
@@ -1132,9 +1132,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G235_o2ayxb.png",
-    "similar_to": ["bar graph", "double-sided bar graph", "histogram", "mosaic graph", "superposed line graphs", "bar graph (several)"]
+    "similar_to": ["G20", "G95", "G125", "G170", "G267", "G21"]
   },
 
    "G240": {
@@ -1159,9 +1159,9 @@
         "description":"Despite its confusing name, Calculatorsoup helps you generate a stem-and-leaf graph very quickly!",
         "url":"https://www.calculatorsoup.com/calculators/statistics/stemleaf.php"
       }
-    },      
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G240_hdpzco.png",
-    "similar_to": ["dot graph", "scatter plot", "stripe graph"]
+    "similar_to": ["G85", "G215", "G260"]
   },
 
 "G245": {
@@ -1178,9 +1178,9 @@
         "description":"Create surpisingly cool 3D maps with Excel!",
         "url":"https://support.office.com/en-us/article/Get-started-with-3D-Maps-6b56a50d-3c3e-4a9e-a527-eea62a387030"
       }
-    },      
+    },
     "image": "https://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G245_r2rcci.png",
-    "similar_to": ["chloropleth map", "dasymetric map"]
+    "similar_to": ["G50", "G75"]
   },
 
   "G250": {
@@ -1204,10 +1204,10 @@
         "name":"Sankeymatic",
         "description":"Sankeymatic makes it possible to create a graph by manually entering each link (simple but can be a bit off-putting if there is a lot of data). One advantage is that the graph can be modified manually by dragging links and nodes around the screen.",
         "url":"www.sankeymatic.com/build"
-      } 
-    },    
+      }
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G250_jahamg.png",
-    "similar_to": ["timeline (global)"]
+    "similar_to": ["G271"]
   },
 
 "G255": {
@@ -1224,9 +1224,9 @@
         "description":"My Maps enables you to draw routes, mark places, and save the result as a map in your Drive.",
         "url":"https://www.google.fr/mymaps"
       }
-    },    
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G255_jnq1to.png",
-     "similar_to": ["route map", "space-time cube map"]
+     "similar_to": ["G205", "G225"]
   },
 
   "G260": {
@@ -1243,9 +1243,9 @@
         "description":"Excel is the simplest and most accessible tool for this graph!",
         "url":null
       }
-    },    
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847022/Datask%20images/G260_xnoyqe.png",
-     "similar_to": ["dot graph", "scatter plot", "stem-and-leaf graph"]
+     "similar_to": ["G85", "G215", "G240"]
   },
 
   "G265": {
@@ -1262,9 +1262,9 @@
         "description":"Metro Map creator enables you to create your subway map online. It's very simple to understand its use but the tool is not very ergonomic … but it's the only free subway map creator available fot now!",
         "url":"https://beno.org.uk/metromapcreator/"
       }
-    },    
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G265_bzc14f.png",
-    "similar_to": ["network structure", "node-link graph", "radial tree"]
+    "similar_to": ["G175", "G180", "G200"]
   },
 
 "G266": {
@@ -1281,7 +1281,7 @@
         "description":"Metro Map creator enables you to create your subway map online. It's very simple to understand its use but the tool is not very ergonomic … but it's the only free subway map creator available fot now!",
         "url":"https://beno.org.uk/metromapcreator/"
       }
-    },     
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G266_nhfr3m.png",
     "similar_to": null
   },
@@ -1311,9 +1311,9 @@
         "description":"One of Google's tools for datavizualisation is Datamatic. You only need to sign up with your google account to access the selection of free graphs, and edit it online (it will be saved in your Drive). The tool is not very intuitive but you can quickly get used to it.",
         "url":"datamatic.io/index.html"
       }
-    },       
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G267_rvcpgv.png",
-    "similar_to": ["bar-and-line graph", "bar graph (several)", "double-sided bar graph", "histogram", "stacked bar graph"]
+    "similar_to": ["G25", "G21", "G95", "G125", "G235"]
   },
 
 "G270": {
@@ -1339,9 +1339,9 @@
         "description":"A very simple tool to create tag clouds online is Wordlclouds.",
         "url":"http://www.wordclouds.com/"
       }
-    },       
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G270_hpomv7.png",
-    "similar_to": ["enclosure tree", "list"]
+    "similar_to": ["G105", "G165"]
 },
 
 "G271": {
@@ -1363,9 +1363,9 @@
         "description":"Tiki-toki offers great possibilities to design timelines online.",
         "url":"https://www.tiki-toki.com/"
       }
-    },  
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G271_sy7oai.png",
-    "similar_to": ["stream graph"]
+    "similar_to": ["G250"]
 },
 
 "G272": {
@@ -1387,11 +1387,11 @@
         "description":"Tiki-toki offers great possibilities to design timelines online.",
         "url":"https://www.tiki-toki.com/"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1499098672/Datask%20images/G272_g6yigk.png",
-    "similar_to": ["histogram"]
+    "similar_to": ["G125"]
  },
-  
+
 "G275": {
     "name": "Tree view",
     "level": "beginner",
@@ -1417,9 +1417,9 @@
         "description":"Xmind is one of the best mind-mapping tools available today.",
         "url":"http://www.xmind.net/fr/"
       }
-    }, 
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G275_tcqann.png",
-    "similar_to": ["alluvial graph", "dendogram", "enclosure tree", "hive graph", "link tree", "network structure"]
+    "similar_to": ["G10", "G80", "G105", "G135", "G160", "G175"]
  },
 
 "G280": {
@@ -1443,10 +1443,10 @@
         "name":"RAWGraphs",
         "description":"RAWGraphs is practical as it is possible to paste data directly (a wide range of formats is accepted) and then just choose representation. The process is very quick!",
         "url":"app.rawgraphs.io"
-      } 
-    },   
+      }
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847023/Datask%20images/G280_yr0o4z.png",
-    "similar_to": ["cartogram map", "enclosure tree", "mosaic graph", "proportional symbol map"]
+    "similar_to": ["G45", "G105", "G170", "G190"]
   },
 
 "G285": {
@@ -1463,7 +1463,7 @@
         "description":"Powerful online calculator, Desmos enables you to solve complex sets of equations and plot the results.",
         "url":"https://www.desmos.com/calculator/eijhparfmd"
       }
-    },   
+    },
     "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1498847024/Datask%20images/G285_l4j1vt.png",
     "similar_to": null
   }
