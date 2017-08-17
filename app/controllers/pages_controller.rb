@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :atlas, :find, :about, :bestpractices]
+  http_basic_authenticate_with name: "guest", password: "Datask_dataviz"
 
   def home
     @home_text = ["Need to visualise a huge amount of data?", "Have absolutely no clue of how to show data?","Want to learn new ways of representing data?","Want to find new data visualisation ideas? "]
