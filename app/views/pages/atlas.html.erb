@@ -43,7 +43,7 @@
   <h2 class="color-wavestone fs-24px"><i class="fa fa-bar-chart fs-16px" aria-hidden="true"></i> Visualisation tool</h2>
   <% if @graph_info["tools"] %>
     <% @graph_info["tools"].each do |tool| %>
-      <p class="lh-1-5"><%= link_to tool[1]["url"] do %><%= tool[1]["name"] %><% end %> : <%= tool[1]["description"] %></p>
+      <p class="lh-1-5"><%= link_to "http://#{tool[1]["url"]}", target:"blank" do %><%= tool[1]["name"] %><% end %> : <%= tool[1]["description"] %></p>
     <% end %>
   <% else %>
     <p class="lh-1-5">Available soon</p>
@@ -53,7 +53,7 @@
   <% @graph_info["similar_to"].each do |other_graph| %>
     <% graph = @all_results[other_graph] %>
       <div class="card-graph" style="flex:0 0 48%">
-            <%= link_to atlas_path(graph_number: graph[0] ) do %>
+            <%= link_to atlas_path(graph_number: other_graph ) do %>
             <div class="img-card-graph position-rel h-140px">
               <div class="img-content" style="background-image:url('<%= graph["image"]%>')">
               </div>
