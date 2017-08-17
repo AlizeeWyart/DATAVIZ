@@ -260,6 +260,10 @@ button.slide:hover, .slide:focus {
   line-height: 1.5
 }
 
+.lh-1-9 {
+  line-height:1.9
+}
+
 .txt-center {
   text-align: center;
 }
@@ -350,7 +354,7 @@ button.slide:hover, .slide:focus {
 }
 
 .graph-show {
-  width:50%;
+  width:71%;
   margin:auto
 }
 
@@ -754,6 +758,32 @@ input#search_name {
   background: #50307B;
   color: white;
   padding: 5px 10px;
-  margin: 0 10px;
+  margin: 0 2px;
   font-size:12px
+}
+
+.row-team {
+  padding: 10px 80px 20px 80px;
+}
+
+#team1-line {
+  width: 114px;
+  border-bottom: 1px solid #50307B;
+  top: 24px;
+  left: -44px;
+}
+
+#team2-line {
+  width: 118px;
+  border-bottom: 1px solid #50307B;
+  top: 24px;
+  right: -40px;
+  z-index:5
+}
+
+#team3-line {
+  width: 182px;
+  border-bottom: 1px solid #50307B;
+  top: 24px;
+  left: -44px;
 }

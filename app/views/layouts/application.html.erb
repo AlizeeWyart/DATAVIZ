@@ -8,6 +8,7 @@
     <%= action_cable_meta_tag %>
     <%= favicon_link_tag "logo.png"  %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css">
   </head>
   <body class="<% if current_page?(:controller => 'pages', :action => 'home') || current_page?(:controller => 'pages', :action => 'find') %>of-y-hidden<% end %> of-x-hidden">
     <%= render 'shared/navbar' %>

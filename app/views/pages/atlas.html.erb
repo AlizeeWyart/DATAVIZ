@@ -6,10 +6,12 @@
   <img src="<%= @graph_info["image"]%>" alt="" style="width:100%;margin-bottom:15px">
   <div class="flexbox-space-between">
    <p class="color-grey">Audience Level
+      <span data-balloon-length="small" data-balloon="<%= @graph_info["level"] %>" data-balloon-pos="up">
       <% if @graph_info["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
       <% if @graph_info["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
       <% if @graph_info["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span></p><% end %>
       <% if @graph_info["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span></p><% end %>
+      </span>
     <p class="color-grey">Dashboard <span class="dashboard ml-10px"><i class="fa fa-tachometer <% if  @graph_info["level"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span></p>
   </div>
 
@@ -47,7 +49,32 @@
     <p class="lh-1-5">Available soon</p>
   <% end %>
   <h2 class="color-wavestone fs-24px"><i class="fa fa-thumbs-up fs-16px" aria-hidden="true"></i> You could also like</h2>
-  <p class="lh-1-5">Available soon</p>
+  <div class="flexbox-wrap-space-between">
+  <% @graph_info["similar_to"].each do |other_graph| %>
+    <% graph = @all_results[other_graph] %>
+      <div class="card-graph" style="flex:0 0 48%">
+            <%= link_to atlas_path(graph_number: graph[0] ) do %>
+            <div class="img-card-graph position-rel h-140px">
+              <div class="img-content" style="background-image:url('<%= graph["image"]%>')">
+              </div>
+            </div>
+            <div class="description-card-graph">
+              <h4 class="color-wavestone no-underline no-mt mb-5px fs-18px"><%= graph["name"] %></h4>
+              <div class="">
+                <p class="color-grey no-mb">Audience level
+                  <% if graph["level"] == "beginner" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span><% end %>
+                  <% if graph["level"] == "intermediate" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span><% end %>
+                  <% if graph["level"] == "advanced" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i> <i class="fa fa-rocket color-grey" aria-hidden="true"></i></span><% end %>
+                  <% if graph["level"] == "expert" %><span class="ml-10px"><i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i> <i class="fa fa-rocket color-wavestone" aria-hidden="true"></i></span><% end %>
+                </p>
+                <p class="color-grey no-mt no-mb">Dashboard <span class="dashboard ml-10px"><i class="fa fa-tachometer <% if  graph["dashboard"] == true %> color-wavestone <% else %> color-grey <% end %>" aria-hidden="true"></i></span></p>
+              </div>
+
+            </div>
+            <% end %>
+      </div>
+  <% end %>
+    </div>
 </div>
 </div>
 <% else %>

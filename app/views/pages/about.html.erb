@@ -2,21 +2,40 @@
 <div class="graph-show">
   <div class="bc-white" style="margin-top:25px;margin-bottom:50px;box-shadow: 1px 1px 3px #E7E5E5;padding:65px 90px">
     <h1 class="fs-50px no-mt color-wavestone txt-center" style="margin-bottom:40px;font-size:43px"><%= @content["title"] %></h1>
-    <p style="font-size:14px;text-align:justify">
+    <p style="font-size:14px;text-align:justify" class="lh-1-9">
     <%= @content["content"].html_safe %>
 
     </p>
     <h1 class="fs-50px color-wavestone txt-center" style="margin-bottom:40px;font-size:43px;margin-top:80px">The team</h1>
-    <div class="row">
-      <% @content["team"].each do |member| %>
-        <div class="col-xs-4">
-          <img src="<%= member["photo_url"] %>" alt="" style="width:100%">
-        </div>
-        <div class="col-xs-8">
-          <h4 class="color-wavestone"><%= member["name"] %> </h4>
-          <p style="font-size:14px"><%= member["description"].html_safe %></p>
-        </div>
-      <% end %>
+    <div class="row row-team">
+      <div class="col-xs-4">
+        <img src="<%= asset_url "team1.jpg" %>" alt="" style="width:100%">
+      </div>
+      <div class="col-xs-8 position-rel">
+        <div class="position-abs" id="team1-line"></div>
+        <h4 class="color-wavestone no-mt"><%= @content["team"][0]["name"] %> </h4>
+        <p style="font-size:14px" class="lh-1-9"><%= @content["team"][0]["description"].html_safe %></p>
+      </div>
+    </div>
+    <div class="row row-team">
+      <div class="col-xs-8 position-rel" style="text-align:right">
+        <div class="position-abs" id="team2-line"></div>
+        <h4 class="color-wavestone no-mt"><%= @content["team"][1]["name"] %> </h4>
+        <p style="font-size:14px;" class="lh-1-9"><%= @content["team"][1]["description"].html_safe %></p>
+      </div>
+      <div class="col-xs-4">
+        <img src="<%= asset_url "team2.jpg" %>" alt="" style="width:100%">
+      </div>
+    </div>
+    <div class="row row-team">
+      <div class="col-xs-4">
+        <img src="<%= asset_url "team3.jpg" %>" alt="" style="width:100%">
+      </div>
+      <div class="col-xs-8 position-rel">
+        <div class="position-abs" id="team3-line"></div>
+        <h4 class="color-wavestone no-mt"><%= @content["team"][2]["name"] %> </h4>
+        <p style="font-size:14px" class="lh-1-9"><%= @content["team"][2]["description"].html_safe %></p>
+      </div>
     </div>
   </div>
 </div>
