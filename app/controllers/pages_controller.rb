@@ -303,6 +303,31 @@ class PagesController < ApplicationController
 
     @graph_info = json_graphs[@graph_number]
 
+    if !@graph_info.nil?
+      @level = @graph_info["level"]
+      if @level == "beginner"
+        @level_description = "The viewer is new to dataviz and understands only the most common representations"
+      elsif @level == "intermediate"
+        @level_description = "The viewer knows the most widely used representations"
+      elsif @level == "advanced"
+        @level_description = "The viewer has the necessary specific knowledge to understand the most complex representations"
+      elsif @level == "expert"
+        @level_description = "The viewer has the necessary specific knowledge to understand the most complex representations"
+      else
+        @level_description = "N/A"
+      end
+
+
+      @dashboard = @graph_info["dashboard"]
+      if @dashboard == false
+        @dashboard_description = "Not optimal for a dashboard"
+      elsif @dashboard == true
+        @dashboard_description = "Optimal for a dashboard"
+      else
+        @dashboard_description = "N/A"
+      end
+    end
+
     @all_results = json_graphs
     # Récupérer les filtres
     @level_nb = params["level"].to_i

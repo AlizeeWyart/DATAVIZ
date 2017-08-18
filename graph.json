@@ -680,7 +680,7 @@
 
 "G145": {
     "name": "Isochrone map",
-    "level": "Advanced",
+    "level": "advanced",
     "dashboard": false,
     "reading_principle": {"1":"Equal travel times are shown with isolines."},
     "advantages": {"1":"Read at a glance the travel length to/from a point."},
@@ -699,7 +699,7 @@
 
   "G150": {
     "name": "Isoline map",
-    "level": "Advanced",
+    "level": "advanced",
     "dashboard": false,
     "reading_principle": {"1":"Like a real geographical isoline map, similar topics are showed on the same altitude"},
     "advantages": {"1":"Represent the proximity between different topics in an intuitive way."},
@@ -712,7 +712,7 @@
         "url":"http://contourmapcreator.urgr8.ch/"
       }
     },
-    "image": "https://cloudinary.com/console/media_library#/dialog/image/upload/Datask%20images/G150_iclfue",
+    "image": "http://res.cloudinary.com/dmiymojtw/image/upload/v1503051510/G150_cdv1ln.png",
     "similar_to": ["G55"]
   },
 
