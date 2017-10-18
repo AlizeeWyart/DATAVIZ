@@ -12,7 +12,7 @@
   </head>
   <body class="<% if current_page?(:controller => 'pages', :action => 'home') || current_page?(:controller => 'pages', :action => 'find') %>of-y-hidden<% end %> of-x-hidden">
     <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
+
     <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>
